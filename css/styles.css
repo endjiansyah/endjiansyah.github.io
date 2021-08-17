@@ -11700,7 +11700,7 @@ html {
   height: 100%;
   transition: all 0.4s ease 0s;
   transform: translateX(250px);
-  background: #1d809f;
+  background: #1d9f4f;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -11733,7 +11733,7 @@ html {
 
 .sidebar-nav > .sidebar-brand {
   font-size: 1.2rem;
-  background: rgba(52, 58, 64, 0.1);
+  background: rgba(67, 90, 72, 0.1);
   height: 80px;
   line-height: 50px;
   padding-top: 15px;
@@ -11802,8 +11802,8 @@ html {
 }
 
 footer.footer {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 footer.footer .social-link {
   display: block;
