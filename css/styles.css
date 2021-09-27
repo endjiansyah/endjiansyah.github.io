@@ -2893,7 +2893,7 @@ textarea.form-control-lg {
   margin-top: 0.1rem;
   font-size: 0.875rem;
   color: #fff;
-  background-color: rgba(25, 135, 84, 0.9);
+  background-color: rgba(8, 27, 41, 0.9);
   border-radius: 0.25rem;
 }
 
@@ -11694,13 +11694,14 @@ html {
 
 #sidebar-wrapper {
   position: fixed;
+  font-family: rockwell;
   z-index: 2;
   right: 0;
   width: 250px;
   height: 100%;
   transition: all 0.4s ease 0s;
   transform: translateX(250px);
-  background: #1d9f4f;
+  background: #081b29;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -11733,7 +11734,7 @@ html {
 
 .sidebar-nav > .sidebar-brand {
   font-size: 1.2rem;
-  background: rgba(67, 90, 72, 0.1);
+  background: rgba(39, 46, 102, 0.1);
   height: 80px;
   line-height: 50px;
   padding-top: 15px;
@@ -11844,27 +11845,44 @@ footer.footer .social-link:hover {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0.1) 0%,
-      rgba(255, 255, 255, 0.1) 100%
-    ),
-    url("https://img.freepik.com/free-vector/green-tones-gradient-background_23-2148364596.jpg?size=626&ext=jpg");
+  background: rgb(37, 82, 112);
+  background: radial-gradient(
+    circle,
+    rgba(37, 82, 112, 1) 0%,
+    rgba(14, 42, 59, 1) 100%
+  );
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: Source Sans Pro, "Merriweather", "Montserrat", "Open Sans",
+    "Helvetica Neue", sans-serif;
+  color: #112142;
 }
 .masthead h1,
 .masthead .h1 {
+  font-size: 3rem;
+}
+.masthead h2,
+.masthead .h2 {
   font-size: 2rem;
+}
+.mastitle {
+  width: 350px;
 }
 @media (min-width: 992px) {
   .masthead {
     height: 100vh;
   }
+  .mastitle {
+    width: 550px;
+  }
   .masthead h1,
   .masthead .h1 {
-    font-size: 5.5rem;
+    font-size: 5rem;
+  }
+  .masthead h2,
+  .masthead .h2 {
+    font-size: 3rem;
   }
 }
 
