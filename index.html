@@ -14,6 +14,10 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+
+        <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
@@ -33,27 +37,79 @@
             </div>
         </header>
         <!-- About-->
-        <section class="content-section" style="background: linear-gradient(0deg, rgba(217,238,255,1) 0%, rgba(171,208,232,1) 75%,rgba(37, 82, 112,1) 100%);" id="about">
+        <section class="content-section pt-5" style="background: linear-gradient(0deg, rgba(217,238,255,1) 0%, rgba(171,208,232,1) 75%,rgba(37, 82, 112,1) 100%); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;" id="about">
             <div class="container px-4 px-lg-5">
-                <h2 class=" mb-2 text-center">Tentang Saya</h2>
-                <hr>
+                <h2 class=" mb-2 text-center">About Me</h2>
+                
                 <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-3 text-center">
+                    <div class="col-lg-3 text-center pt-4">
                         <img src="https://avatars.githubusercontent.com/u/55825607?v=4" class="rounded-circle img-fluid" style="transform: scaleX(-1); max-width: 200px;">
                     </div>
-                    <div class="col-lg-9 mt-4">
-                        
-                            <p class="h6">Perkenalkan nama saya Endjiansyah, lahir di Jepara pada 15 Juli 2000. Pendidikan terakhir saya <a href="https://pddikti.kemdikbud.go.id/data_mahasiswa/QzMxRjhENEMtRDIyRi00NzM0LTg2QzEtOTg0NzNBOEUxRENG" style="text-decoration: none;" class="text-primary" target="_blank">D2 Manajemen Informatika Politeknik Negeri Malang</a>.</p>
-                            <p class="h6"> Bahasa pemrograman yang biasa saya pakai untuk project adalah PHP dengan menggunakan Framework CodeIgniter dan Bootstrap.</p>
+                    <div class="col-lg-9 mt-1">
+                        <nav class="mb-4" style="border-bottom: 1px solid #081b29;">
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#tentang" role="tab">Profil singkat</a>
+                                <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#biodata" role="tab">Biodata</a>
+                                <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#sertifikat" role="tab">Sertifikat</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="tentang" role="tabpanel">
+            
+                                <p>Perkenalkan nama saya Endjiansyah, lahir di Jepara pada 15 Juli 2000. pertama kali mengenal pemrograman dasar disaat SMK dan mulai tertarik & fokus mempelajari pemrograman web saat dibangku kuliah.</p>
+                                <p> Bahasa pemrograman yang biasa saya pakai dalam  project adalah PHP dengan menggunakan Framework CodeIgniter dan Bootstrap. </p>
 
-                            <br>
-                                    <h4 style="border-bottom: 1px solid black;">Contact</h4>
-                                    <p class="h6"><i class="fab fa-whatsapp text-success"></i><a href="https://api.whatsapp.com/send/?phone=6285800583260" style="text-decoration: none" class="text-success" target="_blank"> 085800583260</a>
-                                         &nbsp&nbsp <i class="fas fa-envelope text-danger"></i><a href="mailto:endji1507@gmail.com" class="text-danger" style="text-decoration: none;"> endji1507@gmail.com</a></p>
+                                <p>
+                                Pendidikan terakhir saya <a href="https://pddikti.kemdikbud.go.id/data_mahasiswa/QzMxRjhENEMtRDIyRi00NzM0LTg2QzEtOTg0NzNBOEUxRENG" style="text-decoration: none;" class="text-primary" target="_blank">D2 Manajemen Informatika Politeknik Negeri Malang</a>.
+                                </p>
+                                <br>
+                                <h4 style="border-bottom: 1px solid black;">Contact</h4>
+                                <p class="h6"><i class="fab fa-whatsapp text-success"></i><a href="https://api.whatsapp.com/send/?phone=6285800583260" style="text-decoration: none" class="text-success" target="_blank"> 085800583260</a> &nbsp&nbsp <i class="fas fa-envelope text-danger"></i><a href="mailto:endji1507@gmail.com" class="text-danger" style="text-decoration: none;"> endji1507@gmail.com</a></p>
+                            </div>
 
+                            <div class="tab-pane fade" id="biodata" role="tabpanel">
+                                <table>
+                                    <tr>
+                                        <td>Nama</td>
+                                        <td>: Endjiansyah</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tempat, Tanggal Lahir</td>
+                                        <td>: Jepara, 15 Juli 2000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Alamat</td>
+                                        <td>: Ujungbatu RT 16 / RW 04, Jepara, Jawa Tengah</td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top">Riwayat Pendidikan</td>
+                                        <td>
+                                            :- SD Negeri Jobokuto 1 Jepara (2006 - 2012)<br>
+                                             - SMP Negeri 1 Jepara (2012 - 2015)<br>
+                                             - SMK Negeri 3 Jepara (2015 - 2018)<br>
+                                             - <a href="https://pddikti.kemdikbud.go.id/data_mahasiswa/QzMxRjhENEMtRDIyRi00NzM0LTg2QzEtOTg0NzNBOEUxRENG" class="font-weight-bold" style="text-decoration: none; color:#064470" target="_blank">D2 Manajemen Informatika Politeknik Negeri Malang (2018 - 2020)</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top">Riwayat Pekerjaan</td>
+                                        <td>:- Operator SMK Modern Islamic School Jabal Nur (2019)<br>
+                                             - Freelance Web Developer (2020 - Sekarang)
+                                        </td>
+                                    </tr>
                                     
+                                </table>
+                                <i class="text-muted">Last Updated 29 September 2021</i>
+                            </div>        
+                            <div class="tab-pane fade" id="sertifikat" role="tabpanel">
+                                Beberapa sertifikat yang saya miliki bisa dilihat melalui tombol berikut 
+                                <a class="btn btn-primary btn-sm btn-rounded" href="https://drive.google.com/drive/folders/1MJE6YC3uWvrZTSuboZ_V9LSPAPiujuMC?usp=sharing" target="_blank"><i class="fab fa-google-drive"></i> Sertifikat</a>
+                            </div>        
+                        </div>
                     </div>
+                        
+
                 </div>
+
             </div>
         </section>
 
@@ -124,5 +180,10 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
     </body>
 </html>
