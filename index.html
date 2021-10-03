@@ -15,9 +15,20 @@
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
 
-        <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
@@ -43,7 +54,10 @@
                 
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-3 text-center pt-4">
-                        <img src="https://avatars.githubusercontent.com/u/55825607?v=4" class="rounded-circle img-fluid" style="transform: scaleX(-1); max-width: 200px;">
+                        <a href="https://avatars.githubusercontent.com/u/55825607?v=4" class="fancybox" data-fancybox="profil">
+
+                            <img src="https://avatars.githubusercontent.com/u/55825607?v=4" class="rounded-circle img-fluid" style="transform: scaleX(-1); width:100%; max-width: 200px;">
+                        </a>
                     </div>
                     <div class="col-lg-9 mt-1">
                         <nav class="mb-4" style="border-bottom: 1px solid #081b29;">
@@ -58,10 +72,11 @@
             
                                 <p>Perkenalkan nama saya Endjiansyah, lahir di Jepara pada 15 Juli 2000. pertama kali saya mengenal pemrograman dasar saat SMK dan mulai tertarik & fokus mempelajari pemrograman web saat dibangku kuliah melalui project-project dari perkuliahan menggunakan bahasa pemrograman PHP.</p>
                                 
-                                <p>Pertama kali saya membuat website secara utuh <b>(Fullstack)</b> pada saat Praktek Kerja Lapangan di <b> Dinas Komunikasi dan Informatika Kabupaten Jepara (Diskominfo Jepara)</b> pada project <a href="https://wbs.jepara.go.id" class="font-weight-bold" style="text-decoration: none; color: rgb(207, 111, 0);" target="_blank">Whistleblowing System Jepara</a> dan disaat itu juga saya pertama kali mengenal dan menggunakan Framework <b>CodeIgniter</b>. dari situlah saya menggunakan CodeIgniter di hampir semua project yang saya dapatkan sampai saat ini.</p>
+                                <p>Pertama kali saya membuat website secara utuh <b>(Fullstack)</b> pada saat Praktek Kerja Lapangan di <b> Dinas Komunikasi dan Informatika Kabupaten Jepara (Diskominfo Jepara)</b> pada project <a href="https://wbs.jepara.go.id" class="font-weight-bold" style="text-decoration: none; color: rgb(207, 111, 0);" target="_blank">Whistleblowing System Jepara</a> dan disaat itu juga saya pertama kali mengenal dan menggunakan Framework <b>CodeIgniter</b>. dari situlah saya menggunakan CodeIgniter di hampir semua project saya secara Freelance sampai saat ini.</p>
+                                <i class="text-muted">Last Updated 29 September 2021</i>
 
                                 <br>
-                                <h4 style="border-bottom: 1px solid black;">Contact</h4>
+                                <h4 style="border-bottom: 1px solid black;" class="mt-3">Contact</h4>
                                 <p class="h6"><i class="fab fa-whatsapp text-success"></i><a href="https://api.whatsapp.com/send/?phone=6285800583260" style="text-decoration: none" class="text-success" target="_blank"> 085800583260</a> &nbsp&nbsp <i class="fas fa-envelope text-danger"></i><a href="mailto:endji1507@gmail.com" class="text-danger" style="text-decoration: none;"> endji1507@gmail.com</a></p>
                             </div>
 
@@ -110,55 +125,44 @@
 
             </div>
         </section>
-
-        <!-- Portfolio-->
         <section class="py-5" id="portfolio" style="background: #d9eeff;">
             <div class="container px-4 px-lg-5">
                 <div class="text-center">
                     <h2 class=" mb-0">Project Portofolio</h2>
                     <hr>
-                    <!-- <h4 class="mb-5">Project Jadi</h2> -->
                 </div>
                 <div class="row gx-0">
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="">
+                    <div class="col-lg-6 col-md-6">
+                        <a class="portfolio-item" href="#mdep" data-toggle="modal">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <!-- <div class="h2">Web Portofolio</div> -->
-                                    <!-- <p class="mb-0">HTML, CSS, Bootstrap</p> -->
                                 </div>
                             </div>
                             <img class="img-fluid" src="assets/img/portofolio.png" alt="..." />
                         </a>
                     </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="https://sman1jepara.sch.id" target="_blank">
+                    <div class="col-lg-6 col-md-6">
+                        <a class="portfolio-item" href="#mdsmansara" data-toggle="modal">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <!-- <div class="h2">SMAN 1 Jepara</div> -->
-                                    <!-- <p class="mb-0">HTML, CSS, PHP, CodeIgniter3, Bootstrap</p> -->
                                 </div>
                             </div>
                             <img class="img-fluid" src="assets/img/sman1jepara.png" alt="..." />
                         </a>
                     </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="https://gekaes.sman1jepara.sch.id" target="_blank">
+                    <div class="col-lg-6 col-md-6">
+                        <a class="portfolio-item" href="#mdgks" data-toggle="modal">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <!-- <div class="h2">GeKAES</div> -->
-                                    <!-- <p class="mb-0">HTML, CSS, PHP, CodeIgniter3, Bootstrap</p> -->
                                 </div>
                             </div>
                             <img class="img-fluid" src="assets/img/gekaes.png" alt="..." />
                         </a>
                     </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="http://wbs.jepara.go.id" target="_blank">
+                    <div class="col-lg-6 col-md-6">
+                        <a class="portfolio-item" href="#mdwbs" data-toggle="modal">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <!-- <div class="h2">WBS Jepara</div> -->
-                                    <!-- <p class="mb-0">HTML, CSS, PHP, CodeIgniter3, Bootstrap</p> -->
                                 </div>
                             </div>
                             <img class="img-fluid" src="assets/img/wbs.png" alt="..." />
@@ -167,10 +171,182 @@
                 </div>
             </div>
         </section>
+
+        <!-- --------------------(Modal)------------------------- -->
+
+        <!-- --------------------(WBS)------------------------- -->
+        <div class="modal fade" id="mdwbs" role="dialog">
+            <div class="modal-dialog modal-lg">
+            
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Whistleblowing System Jepara<h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    
+                  <p>WBS Jepara adalah web pelaporan dilingkup ASN Pemda Jepara. web ini adalah project yang pertama kali saya buat secara fullstack dimana saat itu saya juga baru pertama kali mengenal CodeIgniter. Project ini dibuat pada Februari 2020 ketika saya masih duduk dibangku kuliah saat Magang / PKL di Diskominfo Kabupaten Jepara. web ini memiliki beberapa fitur seperti tulis aduan, mendapatkan nomor aduan setelah tulis aduan (nomor aduan digunakan untuk mengecek status aduan / pelaporan), mendapatkan info melalui email setiap status aduan berubah, cetak aduan dalam 6 bulan terakhir (admin), filter aduan, dan lain-lain. Sekarang web ini bisa dikunjungi dengan link berikut <a class="text-decoration-none text-primary" href="http://wbs.jepara.go.id/">http://wbs.jepara.go.id/</a></p>
+                  <hr>
+                  <h5>Framework :</h5>
+                  <ul>
+                      <li>CodeIgniter 3</li>
+                      <li>Bootstraps 4</li>
+                  </ul>
+                  <hr>
+                  <h5>Sumber Daya : </h5>
+                  <ul>
+                      <li><a href="https://startbootstrap.com/theme/creative" class="btn text-primary font-weight-bold">Creative (startbootstrap.com)</a></li>
+                      <li><a href="https://startbootstrap.com/theme/sb-admin-2" class="btn text-primary font-weight-bold">SB Admin 2 (startbootstrap.com)</a></li>
+                  </ul>
+                  <hr>
+                  <h5>Galeri :</h5>
+                  <div class="row">
+                      <div class="col-lg-4 p-1">
+                            <a href="assets/img/wbs.png" class="fancybox" data-fancybox="wbsjepara">
+                                <img src="assets/img/wbs.png" style="width: 100%;" alt="">
+                            </a>
+                      </div>
+
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <a href="http://wbs.jepara.go.id" target="_blank" class="btn btn-primary"><i class="fas fa-globe"></i> Lihat Web</a>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        <!-- --------------------(Gekaes)------------------------- -->
+        <div class="modal fade" id="mdgks" role="dialog">
+            <div class="modal-dialog modal-lg">
+            
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">GeKAES<h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    
+                  <p>
+                    GeKAES adalah web event SMAN 1 Jepara yang dibuat sekitar bulan Mei & Juni 2021. web ini dibuat untuk acara GeKAES XXV dan seterusnya. didalamnya memuat informasi event yang akan diselenggarakan, Video GeKAES, serta contact person panitia sesuai dengan event yang diadakan.  
+                    Web ini dapat dikunjungi dengan link berikut <a class="text-decoration-none text-primary" href="https://gekaes.sman1jepara.sch.id/">https://gekaes.sman1jepara.sch.id/</a></p>
+                  <hr>
+                  <h5>Framework :</h5>
+                  <ul>
+                      <li>CodeIgniter 3</li>
+                      <li>Bootstraps 4</li>
+                  </ul>
+                  <hr>
+                  <h5>Sumber Daya : </h5>
+                  <ul>
+                      <li><a href="https://startbootstrap.com/theme/coming-soon" class="btn text-primary font-weight-bold">Coming Soon (startbootstrap.com)</a></li>
+                      <li><a href="https://startbootstrap.com/theme/sb-admin-2" class="btn text-primary font-weight-bold">SB Admin 2 (startbootstrap.com)</a></li>
+                      <li><a href="https://ckeditor.com/ckeditor-5/" class="btn text-primary font-weight-bold">CKEditor-5</a></li>
+                  </ul>
+                  <hr>
+                  <h5>Galeri :</h5>
+                  <div class="row">
+                      <div class="col-lg-4 p-1">
+                            <a href="assets/img/gekaes.png" class="fancybox" data-fancybox="gekaes">
+                                <img src="assets/img/gekaes.png" style="width: 100%;" alt="">
+                            </a>
+                      </div>
+
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <a href="https://gekaes.sman1jepara.sch.id" target="_blank" class="btn btn-primary"><i class="fas fa-globe"></i> Lihat Web</a>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        <!-- --------------------(SMAN1Jepara)------------------------- -->
+        <div class="modal fade" id="mdsmansara" role="dialog">
+            <div class="modal-dialog modal-lg">
+            
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">SMAN 1 Jepara<h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    
+                  <p>
+                    Web ini adalah website resmi <b>SMA Negeri 1 Jepara</b> yang baru. project ini digarap setelah pengerjaan project web GeKAES selesai, yaitu pada sekitar bulan Juli - Agustus 2021.
+                    Web ini dapat dikunjungi dengan link berikut <a class="text-decoration-none text-primary" href="https://sman1jepara.sch.id/">https://sman1jepara.sch.id/</a></p>
+                  <hr>
+                  <h5>Framework :</h5>
+                  <ul>
+                      <li>CodeIgniter 3</li>
+                      <li>Bootstraps 4</li>
+                  </ul>
+                  <hr>
+                  <h5>Sumber Daya : </h5>
+                  <ul>
+                      <li><a href="https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/" class="btn text-primary font-weight-bold">Mamba - Free One Page Bootstrap Template (bootstrapmade.com)</a></li>
+                      <li><a href="https://startbootstrap.com/theme/sb-admin-2" class="btn text-primary font-weight-bold">SB Admin 2 (startbootstrap.com)</a></li>
+                      <li><a href="https://ckeditor.com/ckeditor-4/" class="btn text-primary font-weight-bold">ckeditor-4</a></li>
+                  </ul>
+                  <hr>
+                  <h5>Galeri :</h5>
+                  <div class="row">
+                      <div class="col-lg-4 p-1">
+                            <a href="assets/img/sman1jepara.png" class="fancybox" data-fancybox="sman1jepara">
+                                <img src="assets/img/sman1jepara.png" style="width: 100%;" alt="">
+                            </a>
+                      </div>
+
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <a href="https://sman1jepara.sch.id" target="_blank" class="btn btn-primary"><i class="fas fa-globe"></i> Lihat Web</a>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        <!-- --------------------(endprojects)------------------------- -->
+        <div class="modal fade" id="mdep" role="dialog">
+            <div class="modal-dialog modal-lg">
+            
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">end projects portfolio<h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    
+                  <p>
+                    Projects ini adalah projects web portofolio saya sendiri di web ini. saat ini web ini masih berupa web statis karena saya masih belum memiliki web hosting & domain pribadi. sehingga saya memanfaatkan adanya fitur pada github agar saya memiliki web portofolio saya sendiri.
+                    </p>
+                  <hr>
+                  <h5>Framework :</h5>
+                  <ul>
+                      <li>Bootstraps 4</li>
+                  </ul>
+                  <hr>
+                  <h5>Sumber Daya : </h5>
+                  <ul>
+                      <li><a href="https://startbootstrap.com/theme/stylish-portfolio" class="btn text-primary font-weight-bold">stylish-portfolio (startbootstrap.com)</a></li>
+                      <li><a href="https://fancyapps.com/docs/ui/fancybox/" class="btn text-primary font-weight-bold">Fancybox</a></li>
+                  </ul>
+                  <hr>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          
+        <!-- --------------------(End Modal)------------------------- -->
         
         <!-- Footer-->
         <footer class="footer text-center" style="background-color: #00457e;">
-                <p class="text-white small mb-0">Copyright &copy;Endjiansyah 2021</p>
+                <p class="text-white small mb-0">Copyright &copy;endprojects 2021</p>
         </footer>
         <!-- Scroll to Top Button-->
         <a class="scroll-to-top rounded" href="#home"><i class="fas fa-angle-up"></i></a>
@@ -179,9 +355,6 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
 
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  
+
     </body>
 </html>
