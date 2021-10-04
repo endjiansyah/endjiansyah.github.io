@@ -11867,7 +11867,7 @@ footer.footer .social-link:hover {
   font-size: 2rem;
 }
 .mastitle {
-  width: 350px;
+  width: 320px;
 }
 @media (min-width: 992px) {
   .masthead {
@@ -11964,6 +11964,6 @@ footer.footer .social-link:hover {
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
-.hubla:hover{
+.hubla:hover {
   filter: brightness(70%);
 }
