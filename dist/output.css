@@ -1481,6 +1481,10 @@ video {
   transition-duration: 150ms;
 }
 
+.delay-300 {
+  transition-delay: 300ms;
+}
+
 .duration-200 {
   transition-duration: 200ms;
 }
@@ -1662,6 +1666,10 @@ video {
 
 .group\/about:hover .group-hover\/about\:w-2\/3 {
   width: 66.666667%;
+}
+
+.group\/about:hover .group-hover\/about\:w-full {
+  width: 100%;
 }
 
 .group\/mis:hover .group-hover\/mis\:font-medium {
@@ -1858,6 +1866,10 @@ video {
     width: 100%;
   }
 
+  .md\:w-0 {
+    width: 0px;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -1882,10 +1894,18 @@ video {
     gap: 4rem;
   }
 
+  .md\:gap-6 {
+    gap: 1.5rem;
+  }
+
   .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .md\:p-4 {
+    padding: 1rem;
   }
 
   .md\:px-4 {
