@@ -1,441 +1,777 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Endjiansyah</title>
-        <meta content="End Project, Endjiansyah" name="descriptison">
-  <meta content="endproject, endjiansyah, end project, fullstack web developer, freelance" name="keywords">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="sEndjiansyah">
+    <meta name="keywords" content="Endjiansyah, Portfolio, github, tailwind, frontend">
+    <title>Endjiansyah</title>
+    <link rel="icon" type="image/x-icon" href="./assets/logo.png">
 
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/logo.png" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
-        <!-- Simple line icons-->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-        <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/output.css">
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        #hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('assets/img/hero.jpg');
+            background-size: cover;
+            background-position: left bottom;
+            color: white;
+            text-align: center;
+            transition: background-image 1s ease;
+        }
 
-<!-- Popper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        #hero .hero-text {
 
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            transform: translateY(-50%);
+            /* font-size: 24px; */
+        }
+    </style>
+</head>
+<body>
+    <header class="text-gray-600 body-font border-b w-full fixed top-0 bg-[#00457e] backdrop-blur z-20">
+        <div class="mx-auto flex flex-wrap px-5 flex-col md:flex-row items-center">
+            <div class="flex justify-between w-full lg:w-auto items-center">
+                <a class="flex title-font font-medium items-center text-gray-100 py-2">
+                    <img src="./assets/title.png" alt="Endjiansyah Logo" class="h-16">
+                </a>
+                <button
+                    data-collapse-toggle="navbar-default"
+                    type="button"
+                    class="lg:hidden block ml-auto flex"
+                    aria-controls="navbar-default"
+                    aria-expanded="false"
+                    onclick="toggleNavbar()"
+                >
+                    <span class="sr-only">open nav</span>
+                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                    </svg>
+                </button>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="home">
-        <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
-        <nav id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand"><a href="">Endjiansyah</a></li>
-                <li class="sidebar-nav-item"><a href="#about">about me</a></li>
-                <li class="sidebar-nav-item"><a href="#portfolio">portfolio</a></li>
-            </ul>
-        </nav>
-        <!-- Header-->
-        <header class="masthead d-flex align-items-center">
-            <div class="container text-center">
-                <img src="assets/title.png" alt="" class="mastitle">
             </div>
-        </header>
-        <!-- About-->
-        <section class="content-section pt-5" style="background: linear-gradient(0deg, rgba(217,238,255,1) 0%, rgba(171,208,232,1) 75%,rgba(37, 82, 112,1) 100%); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;" id="about">
-            <div class="container px-4 px-lg-5">
-                <h2 class=" mb-2 text-center">About Me</h2>
-                
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-3 text-center pt-4">
-                        <a href="https://avatars.githubusercontent.com/u/55825607?v=4" class="fancybox" data-fancybox="profil">
+            <!-- <div id="navbar-default" class=" bg-green-300"> -->
+                <nav id="navbar-default" class="hidden lg:block md:ml-auto flex gap-4 flex-col md:flex-row items-center text-base justify-center pb-4 lg:pb-0 text-white">
+                    <a href="#welcome" class="mr-5 hover:text-gray-300">Welcome</a>
+                    <a href="#about" class="mr-5 hover:text-gray-300">About Us</a>
+                    <a href="#services" class="mr-5 hover:text-gray-300">Services</a>
+                    <a href="#projects" class="mr-5 hover:text-gray-300">Projects</a>
+                    <a href="#consultants" class="mr-5 hover:text-gray-300">Principal Consultants</a>
+                    <a href="#contact" class="mr-5 hover:text-gray-300">Contact Us</a>
+                </nav>
+            <!-- </div> -->
+        </div>
+    </header>
+    <!-- ----------------------------- -->
 
-                            <img src="https://avatars.githubusercontent.com/u/55825607?v=4" class="rounded-circle img-fluid" style="transform: scaleX(-1); width:100%; max-width: 200px;">
-                        </a>
+    <section id="hero" class="text-gray-600 body-font">
+        <div class=" mx-auto lg:ml-16 flex px-5 py-24 items-center justify-center flex-col">
+            <div class="lg:-mt-16 text-center lg:text-left w-full">
+            <h1 class="title-font md:text-4xl text-4xl mb-4 leading-relaxed font-bold text-white">Independent<br>Lottery and Gaming<br>Consulting</h1>
+            <p class="text-2xl font-semibold leading-relaxed">Privatization and licencing</p>
+            <p class="text-2xl font-semibold leading-relaxed">Procurements and tenders</p>
+            <p class="text-2xl font-semibold leading-relaxed">Feasibility studies and business plans</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="welcome" class="text-gray-600 body-font">
+        <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+            <div class="text-center w-full">
+                <p class="text-2xl leading-relaxed">We provide</p>
+                <h1 class="mb-6 title-font md:text-4xl text-2xl mb-4 font-medium text-gray-900">supplier-independent, premium quality</h1>
+                <p class="text-2xl leading-relaxed">consulting to</p>
+                <h1 class="mb-6 title-font md:text-4xl text-2xl mb-4 font-medium text-gray-900">Lotteries, Gaming operators, Suppliers,
+                Investors and Governments</h1>
+                <p class="text-2xl leading-relaxed">as well as other entities having an interest in</p>
+                <h1 class="mb-6 title-font md:text-4xl text-2xl mb-4 font-medium text-gray-900">the lottery or gaming industry.</h1>
+            </div>
+            <div class="mx-auto flex px-5 pt-12 pb-24 md:flex-row flex-col items-center">
+                <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-justify mb-16 md:mb-0 items-center text-center text-lg">
+                  <p class="mb-8 leading-relaxed">There are many, many years of collective lottery and gaming market experience within <b>QLot</b>. By drawing on this experience, our clients get “tangible relief of responsibility, decreased business risk and/or increased profitability”. Avoiding pitfalls, security risks or inferior technological products is critical to the success of your processes and operation. <b>QLot</b> will ensure your success.</p>
+      
+                </div>
+                <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                  <img class="object-cover object-center rounded mx-auto" alt="Qlot.com" src="./assets/img/bussiness_Statement.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="text-gray-700 body-font bg-[rgba(129,208,235,0.3)]">
+        <div class="container px-5 py-24 mx-auto">
+            <h1 class="text-4xl font-medium title-font mb-4 text-center text-gray-900 mb-20">About Us</h1>
+
+            <div class="flex flex-col text-justify w-full mb-6">
+                <h2 class="text-2xl font-semibold text-gray-900">QLot Company Profile</h2>
+                <p class="leading-relaxed text-lg py-2">QLot Consulting AB is a Swedish company, focusing solely on lottery and gaming consulting world-wide. Founded in 1998, employing consultants across Europe and the United States and having direct experience from lotteries and operators around the world, QLot has established itself as the leading vendor-independent consulting company in the lottery and gaming industry.</p>
+                <p class="leading-relaxed text-lg py-2">The company has conducted lottery feasibility studies, licensing, privatization and procurement processes for a large number of entities around the world and is able to undertake very complex and demanding assignments.</p>
+                <p class="leading-relaxed text-lg py-2">QLot is an associate member of the World Lottery Association (WLA) and enjoys an impeccable reputation within the lottery/gaming industry, being very well acquainted with all established industry players. It is also the retained consultant to the WLA, responsible among other things, for the WLA RFP standardization program, which has since become the Global RFP Best Practice and for the WLA Security Control Standard, which forms the security norm for state lotteries and suppliers alike.</p>
+            </div>
+            <hr class="h-1 w-full bg-blue-600 my-8">
+            <div class="flex flex-col text-justify w-full mb-6">
+                <h2 class="text-2xl font-semibold text-gray-900">QLot Experience</h2>
+                <p class="leading-relaxed text-lg py-2">By selecting QLot, our clients draw on QLot Principal Consultant’s experience from many projects, lotteries and gaming environments worldwide. This expertise specifically includes:</p>
+                <ul class="list-disc flex flex-col gap-2 ml-4 text-justify text-lg">
+                    <li>Start-up of over 50 lotteries world wide</li>
+                    <li>Privatizations and licensing of lotteries</li>
+                    <li>Licensing of gaming operations and casinos</li>
+                    <li>Lottery product development and selection; product launches</li>
+                    <li>Establishment of over 20 lottery systems worldwide, including Minnesota, the UK, seven German Bundesländern, Ireland, DRC, Mauritius, Republic of Georgia, etc.</li>
+                    <li>Establishing, reviewing and improving legislative and regulatory frameworks.</li>
+                    <li>Procurement processes including evaluation, RFPs, proposals, drafts, reviews, etc.</li>
+                    <li>Standardization work for the areas of gaming procurements, security, anti-money laundering, etc.</li>
+                    <li>A unique in-depth knowledge of lottery and gaming systems and other technologies such as on-line (Internet), Hand-held terminals, Central Processing systems, ePayments (“Mobile money”), etc.</li>
+                    <li>Lottery operation</li>
+                    <li>Investment analysis and support and consequential start-up in new lotteries or gaming operations</li>
+                    <li>Selecting Drawing equipment (mechanical and computer generated), development of drawing procedures, studio layout, etc.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="text-center mb-8">
+                <h1 class="text-4xl font-medium title-font text-center text-gray-900 mb-16">Services</h1>
+                <div class="mx-auto flex md:flex-row flex-col items-center">
+                    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-justify md:mb-0 items-center text-center text-lg">
+                        <h2 class="text-2xl font-semibold text-gray-900">Comprehensive Services</h2>
+                        <p class="leading-relaxed text-lg py-2">The combined know-how of QLot’s lottery and gaming professionals enables qualified, supplier-independent consulting and support from the planning of a lottery or gaming site start-up, via product development and devising marketing/sales programs through to the implementation and operation of a lottery or gaming system. In addition to its Principal Consultants, QLot has direct access to a large network of select, highly qualified industry experts, enabling support for any conceivable lottery or gaming project. For the client, this means comfort in acquiring all necessary services from one source. It also enables QLot to take a greater responsibility within each project.</p>
                     </div>
-                    <div class="col-lg-9 mt-1">
-                        <nav class="mb-4" style="border-bottom: 1px solid #081b29;">
-                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#tentang" role="tab">Profil</a>
-                                <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#biodata" role="tab">Biodata</a>
-                                <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#sertifikat" role="tab">Sertifikat</a>
-                            </div>
-                        </nav>
-                        <div class="tab-content" id="nav-tabContent">
-                            <div class="tab-pane fade show active" id="tentang" role="tabpanel">
-            
-                                <p>Perkenalkan nama saya Endjiansyah, Saya mulai mengerjakan project aplikasi secara freelance sebagai Fullstack web developer sejak magang di Dinas Komunikasi dan Informatika Kabupaten Jepara (Diskominfo Kabupaten Jepara) pada Desember 2019 hingga Februari 2020 dengan project <a href="https://wbs.jepara.go.id" class="font-weight-bold" style="text-decoration: none; color: rgb(207, 111, 0);" target="_blank">Whistleblowing System Jepara</a> menggunakan Codeigniter 3 (PHP Framework) dan Bootstrap. sejak saat itu saya sering mendapatkan project skala kecil dan menengah dari banyak client menggunakan bahasa pemrograman PHP.</p>
-
-                                <p>untuk meningkatkan skill, saya pernah mengikuti Bootcamp Alkademi (UMPTN Farcapital) di bandung pada November 2022 - Januari 2023 dan mempelajari TALL Stack (Tailwind, Alpine Js, Laravel, Livewire)</p>
-                                
-                                <p>Tidak hanya project PHP, saya juga pernah bekerja sebagai Backend Developer di CODELITE pada Maret 2023 - Juli 2023 dan mengerjakan project menggunakan bahasa pemrograman Go (Go Lang)</p>
-                                <i class="text-muted">Last Updated 11 October 2023</i>
-
-                                <br>
-                                <h4 style="border-bottom: 1px solid black;" class="mt-3">Contact</h4>
-                                <div class="d-flex flex-wrap flex-row h6 gap-2">
-                                    <div class="">
-                                        <i class="fab fa-whatsapp text-success"></i>
-                                        <a href="https://api.whatsapp.com/send/?phone=6285800583260" style="text-decoration: none" class="text-success" target="_blank">085800583260</a>
-                                    </div>
-
-                                    <div class="">
-                                        <i class="fas fa-envelope text-danger"></i>
-                                        <a href="mailto:endji1507@gmail.com" class="text-danger" style="text-decoration: none;">endji1507@gmail.com</a>
-                                    </div>
-
-                                    <div class="">
-                                        <a href="https://www.canva.com/design/DAFxHfMVyR4/KxyG_7SBQG9u-mS_9cclkQ/view?utm_content=DAFxHfMVyR4&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank" class="btn btn-sm btn-primary"><i class="fas fa-file"></i> Curriculum Vitae</a>
-                                    </div>
-
-                                    <div class="">
-                                        <a href="https://www.linkedin.com/in/endji-ansyah-30322a115/" target="_blank" class="btn btn-sm btn-primary"><i class="fab fa-linkedin"></i> Linkedin</a>
-                                    </div>
-
-                                    <div class="">
-                                        <a href="https://github.com/endjiansyah" target="_blank" class="btn btn-sm btn-primary"><i class="fab fa-github"></i> Github</a>
-                                    </div>
-
-                                </div>
-                                <!-- <table class="h6">
-                                    <tr>
-                                        <td><i class="fab fa-whatsapp text-success"></i><a href="https://api.whatsapp.com/send/?phone=6285800583260" style="text-decoration: none" class="text-success" target="_blank">085800583260</a></td>
-
-                                        <td><i class="fas fa-envelope text-danger"></i><a href="mailto:endji1507@gmail.com" class="text-danger" style="text-decoration: none;">endji1507@gmail.com</a></td>
-                                    </tr>
-                                </table> -->
-                                <!-- <p class="h6"><i class="fab fa-whatsapp text-success"></i><a href="https://api.whatsapp.com/send/?phone=6285800583260" style="text-decoration: none" class="text-success" target="_blank">085800583260</a> &nbsp<i class="fas fa-envelope text-danger"></i><a href="mailto:endji1507@gmail.com" class="text-danger" style="text-decoration: none;">endji1507@gmail.com</a></p> -->
-                            </div>
-
-                            <div class="tab-pane fade" id="biodata" role="tabpanel">
-                                <table>
-                                    <tr>
-                                        <td valign="top">Nama</td>
-                                        <td valign="top">: </td>
-                                        <td valign="top"> <b>Endjiansyah</b></td>
-                                    </tr>
-                                    <tr>
-                                        <td valign="top">Tempat, Tanggal Lahir</td>
-                                        <td valign="top">: </td>
-                                        <td valign="top"> Jepara, 15 Juli 2000</td>
-                                    </tr>
-                                    <tr>
-                                        <td valign="top">Alamat</td>
-                                        <td valign="top">: </td>
-                                        <td valign="top"> Ujungbatu RT 16 / RW 04, Jepara, Jawa Tengah</td>
-                                    </tr>
-                                    <tr>
-                                        <td valign="top">Pendidikan</td>
-                                        <td valign="top">:</td>
-                                        <td valign="top">
-                                            <ul>
-                                                <li><a href="https://pddikti.kemdikbud.go.id/data_mahasiswa/QzMxRjhENEMtRDIyRi00NzM0LTg2QzEtOTg0NzNBOEUxRENG" class="font-weight-bold" style="color:#064470" target="_blank">D2 Manajemen Informatika Politeknik Negeri Malang (2018 - 2020)</a></li>
-                                                <li>SMK Negeri 3 Jepara - Jurusan Teknik Komputer dan Jaringan</li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td valign="top">Pekerjaan</td>
-                                        <td valign="top">:</td>
-                                        <td valign="top">
-                                            <ul>
-                                                <li><b>Operator SMK Modern Islamic School Jabal Nur </b>
-                                                    <br>(Desember 2018 - Juni 2019)</li>
-
-                                                <li><b>Magang Diskominfo Jepara 
-                                                    <br><span style="color:#064470">[Codeigniter 3 & Bootstraps]</span></b> 
-                                                    <br>(Desember 2019 - Februari 2020)</li>
-
-                                                <li><b>Freelance Web Developer & parttime inideku.id 
-                                                    <br><span style="color:#064470">[Codeigniter 3 & Bootstraps]</span></b> 
-                                                    <br>(Desember 2020 - Oktober 2022)</li>
-
-                                                <li><b>Bootcamp Alkademi - UMPTN Farcapital 
-                                                    <br><span style="color:#064470">[Tailwind, Alpine js, Laravel, Livewire]</span></b> 
-                                                    <br>(November 2022 - Januari 2023)</li>
-
-                                                <li><b>Backend Developer di CODELITE 
-                                                    <br><span style="color:#064470">[Golang]</span></b> 
-                                                    <br>(Maret 2023 - Juli 2023)</li>
-
-                                                <li><b>Freelance Web Developer & parttime inideku.id 
-                                                    <br><span style="color:#064470">[Laravel, Tailwind css, Reactjs, Alpine js, Livewire]</span></b> 
-                                                    <br>(Juli 2023 - Sekarang)</li>
-                                            </ul>
-                                            <!-- :- Operator SMK Modern Islamic School Jabal Nur (2019)<br>
-                                            &nbsp- Freelance Web Developer (2020 - Sekarang) -->
-                                        </td>
-                                    </tr>
-                                    
-                                </table>
-                                <i class="text-muted">Last Updated 11 October 2023</i>
-                            </div>        
-                            <div class="tab-pane fade" id="sertifikat" role="tabpanel">
-                                Beberapa sertifikat yang saya miliki bisa dilihat melalui tombol berikut 
-                                <a class="btn btn-primary btn-sm btn-rounded" href="https://drive.google.com/drive/folders/1MJE6YC3uWvrZTSuboZ_V9LSPAPiujuMC?usp=sharing" target="_blank"><i class="fab fa-google-drive"></i> Sertifikat</a>
-                            </div>        
+                    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                        <img class="object-cover object-center rounded mx-auto" alt="QLot Lotery" src="./assets/img/NJ-Lottery-Tickets.png">
+                    </div>
+                </div>
+            </div>
+            <h1 class="text-xl leading-7 mb-4">QLot’s Principal Consultants provide qualified consulting in a very wide range of areas, including:</h1>
+            <div class="flex flex-wrap sm:mx-auto sm:mb-2 -mx-2">
+                <div class="px-2 md:w-1/2 w-full">
+                    <div class="bg-gray-100 mb-2 rounded flex flex-col p-2 justify-start items-center w-full">
+                        <div class="flex flex-row justify-start w-full">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                <path d="M22 4L12 14.01l-3-3"></path>
+                            </svg>
+                            <span class="title-font font-semibold">Legislation and regulation processes</span>
                         </div>
                     </div>
+                    <div class="bg-gray-100 mb-2 rounded flex flex-col p-2 justify-start items-center w-full">
+                        <div class="flex flex-row justify-start w-full">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                <path d="M22 4L12 14.01l-3-3"></path>
+                            </svg>
+                            <span class="title-font font-semibold">Investment Analysis, Financing, Business Plans</span>
+                        </div>
+                    </div>
+                    <div class="bg-gray-100 mb-2 rounded flex flex-col p-2 justify-start items-center w-full">
+                        <div class="flex flex-row justify-start w-full">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                <path d="M22 4L12 14.01l-3-3"></path>
+                            </svg>
+                            <span class="title-font font-semibold">Market Analysis, Business Analysis and Business Development</span>
+                        </div>
+                        <ul class="list-disc flex flex-col pl-12 px-2 gap-2 pt-2 w-full">
+                            <li>Development; with or without a technology content</li>
+                            <li>Game (Product) Analysis and Development</li>
+                            <li>Passive and Instant lottery tickets</li>
+                            <li>Sales Networks; Establishment of, mergers & development, training</li>
+                            <li>Design and development of lottery organisations</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-100 mb-2 rounded flex flex-col p-2 justify-start items-center w-full">
+                        <div class="flex flex-row justify-start w-full">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                <path d="M22 4L12 14.01l-3-3"></path>
+                            </svg>
+                            <span class="title-font font-semibold">Procurement and licensing processes of all kinds</span>
+                        </div>
+                        <ul class="list-disc flex flex-col pl-12 px-2 gap-2 pt-2 w-full">
+                            <li>Technology; analysis and selection</li>
+                            <li>Vendor qualification</li>
+                            <li>Design and management of complete tender procedures</li>
+                            <li>RFP development, commercial and technical</li>
+                            <li>Bid evaluation, commercial and technical</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="px-2 md:w-1/2 w-full">
+                    <div class="bg-gray-100 mb-2 rounded flex flex-col p-2 justify-start items-center w-full">
+                        <div class="flex flex-row justify-start w-full">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                <path d="M22 4L12 14.01l-3-3"></path>
+                            </svg>
+                            <span class="title-font font-semibold">Project Implementation including staffing</span>
+                        </div>
+                        <ul class="list-disc flex flex-col pl-12 px-2 gap-2 pt-2 w-full">
+                            <li>Project Management; technical and commercial</li>
+                            <li>Computer System Delivery- and Acceptance Tests</li>
+                            <li>Computer System Performance Analysis and Upgrading</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-100 mb-2 rounded flex flex-col p-2 justify-start items-center w-full">
+                        <div class="flex flex-row justify-start w-full">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                <path d="M22 4L12 14.01l-3-3"></path>
+                            </svg>
+                            <span class="title-font font-semibold">Computer System Performance Analysis and Upgrading</span>
+                        </div>
+                        <ul class="list-disc flex flex-col pl-12 px-2 gap-2 pt-2 w-full">
+                            <li>Lottery operation</li>
+                            <li>Computer System Operation</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-gray-100 mb-2 rounded flex flex-col p-2 justify-start items-center w-full">
+                        <div class="flex flex-row justify-start w-full">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                <path d="M22 4L12 14.01l-3-3"></path>
+                            </svg>
+                            <span class="title-font font-semibold">Security Reviews, Audits</span>
+                        </div>
+                    </div>
+                    <div class="bg-gray-100 mb-2 rounded flex flex-col p-2 justify-start items-center w-full">
+                        <div class="flex flex-row justify-start w-full">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                <path d="M22 4L12 14.01l-3-3"></path>
+                            </svg>
+                            <span class="title-font font-semibold">Standardization work (Procurements, Security, etc)</span>
+                        </div>
+                    </div>
+                    <div class="bg-gray-100 mb-2 rounded flex flex-col p-2 justify-start items-center w-full">
+                        <div class="flex flex-row justify-start w-full">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                <path d="M22 4L12 14.01l-3-3"></path>
+                            </svg>
+                            <span class="title-font font-semibold">Quality Reviews</span>
+                        </div>
+                    </div>
+                    <div class="bg-gray-100 mb-2 rounded flex flex-col p-2 justify-start items-center w-full">
+                        <div class="flex flex-row justify-start w-full">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                <path d="M22 4L12 14.01l-3-3"></path>
+                            </svg>
+                            <span class="title-font font-semibold">Independent Arbitrators</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="text-center mb-8">
+                <h1 class="text-4xl font-medium title-font text-center text-gray-900 mb-16">Projects</h1>
+                <h1 class="text-xl text-justify leading-7 mb-4">QLot is proud to support projects and customers literally on all continents. The following examples serve to indicate the impressive scope of QLot’s services:</h1>
+            </div>
+
+            <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+                
+                <div class="sm:w-1/2 mb-10 px-4">
+                  <div class="rounded-lg h-32 overflow-hidden mx-auto">
+                    <img alt="QLot.com" class="object-contain object-center h-full w-full" src="./assets/img/cyprus.jpg">
+                  </div>
+                  <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Privatization in Cyprus</h2>
+                  <p class="leading-relaxed text-base text-justify">QLot is the lead consultant and matter expert in a consortium supporting the Cyprus government (represented by the Ministry of Finance through its Privatization Unit) for the licensing of the operation of the National Lottery to a private entity. QLot, together with among others KPMG Cyprus, is providing services in technical, commercial, legal and financial areas, facilitating the Cypriot government’s license award expected in 2018.</p>
+                </div>
+
+                <div class="sm:w-1/2 mb-10 px-4">
+                  <div class="rounded-lg h-32 overflow-hidden mx-auto">
+                    <img alt="QLot.com" class="object-contain object-center h-full w-full" src="./assets/img/project-logo01.jpg">
+                  </div>
+                  <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Minnesota Procurement</h2>
+                  <p class="leading-relaxed text-base text-justify">After a competitive tender in 2015 for consulting services, QLot was selected by the Minnesota State Lottery (MSL), assisting the lottery with its gaming system tender. The tender and implementation were successfully concluded in 2016. QLot has now been awarded a second contract to assist MSL in further technology procurement, implementation activities and best practices related to the lottery’s complete gaming environment.</p>
+                </div>
+
+                <div class="sm:w-1/2 mb-10 px-4">
+                  <div class="rounded-lg h-32 overflow-hidden mx-auto">
+                    <img alt="QLot.com" class="object-contain object-center h-full w-full" src="./assets/img/project-logo04.jpg">
+                  </div>
+                  <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Irish Privatization</h2>
+                  <p class="leading-relaxed text-base text-justify">QLot (in a consortium with Irish stockbroker firm Davy Corporate Finance Ltd.) was retained by the Ministry of Public Expenditure and Reform of Ireland to assist them with the licensing and privatisation process of the Irish National Lottery, also including Internet gaming. QLot was responsible for all gaming related aspects of the process, provision of extensive advice on revising the Irish lottery legislation and regulation, recommendation of suitable procurement process, drafting the Request For Application (RFA), drafting the Operation License, gauging interest from the market, supporting the assessment of the license valuation, assistance in bidders’ proposal evaluation, support during contract negotiations with the successful bidder and support in monitoring and supervising the licensee.</p>
+                </div>
+
+                <div class="sm:w-1/2 mb-10 px-4">
+                  <div class="rounded-lg h-32 overflow-hidden mx-auto">
+                    <img alt="QLot.com" class="object-contain object-center h-full w-full" src="./assets/img/project-logo03.jpg">
+                  </div>
+                  <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Austrian Lottery, Casino and Internet</h2>
+                  <p class="leading-relaxed text-base text-justify">QLot was retained by the Austrian Ministry of Finance, on behalf of which it completed the regulatory, privatisation and licensing process for the Austrian National Lottery (complete operations including state-of-the-art Internet gaming and VLTs) for awarding a new 15-year lottery license. Following an EU procurement process, QLot was further awarded a second contract by the Ministry in order to support the licensing, privatisation and regulation process for fifteen land based Casinos and a land based Poker Parlours as well as to support the Regulator in monitoring and auditing all licensees. This contract was successfully completed in 2017.</p>
+                </div>
+
+              </div>
+        </div>
+    </section>
+
+    <section id="consultants" class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="text-center mb-20">
+                <h1 class="text-3xl font-medium title-font text-center w-full text-gray-900">Principal Consultants</h1>
+
+            <!-- ----------------- -->
+            <div id="card-detail" class="mx-auto border rounded-xl p-6 border-2 bg-blue-100/90 hidden">
+                <!-- ------ -->
+                <div id="detail1" class="flex flex-wrap relative w-full hidden">
+                    <div class="absolute md:right-2 right-0 top-0 "><button class="py-2 px-2 md:px-4 text-sm md:text-base rounded-full text-black font-light font-medium bg-white minimizeButton">minimize</button></div>
+
+                    <div class="flex md:gap-16 items-center flex-col pt-6 mt-4 justify-center gap-4 md:flex-row md:justify-start">
+                        <img src="./assets/img/face_Kulich.jpg" alt="ales kulich Qlot.com" class="border shadow border-blue-300 object-center h-40 w-40 md:h-52 md:w-52 rounded-full mb-4 shadow">
+                        <div class="flex flex-col items-center text-left justify-start">
+                            <h1 class="text-gray-900 text-2xl title-font font-medium mb-1">Mr. Ales Kulich, President</h1>
+                            <div class="w-full flex flex-row font-medium"><span class="w-20">Email</span> <b class="w-2">: </b> <a href="mailto:ales@qlot.com" class="text-indigo-500"> ales@qlot.com</a>
+                            </div>
+                            <div class="w-full flex flex-row font-medium"><span class="w-20">Location</span> <b class="w-2">: </b>Czech Republic</div>
+                            <div class="w-full flex flex-row font-medium"><span class="w-20">Phone</span> <b class="w-2">: </b> <a href="tel:+420777729777" class=" text-indigo-500"> +420 777 729 777</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:w-full w-full lg:py-6 mt-6 lg:mt-0 text-justify">
+                      
+                        <p class="leading-relaxed py-2">Mr. Kulich established QLot Consulting in response to the increasing demand from the lottery industry for a qualified consulting organization. For 6 years, Mr. Kulich was responsible for a large number of sales and implementation projects of On-line systems in Europe and North & South America on behalf of EssNet AB. In his active involvement in numerous world wide lottery operations, Mr. Kulich has acquired a genuine understanding of the issues facing a lottery, both in start-up projects as well as day-to-day operations.</p>
+
+                        <p class="leading-relaxed py-2">Procurement, marketing and sales, agent networks, on-line systems and gaming product development are some of the areas in which Mr. Kulich is proficient. Prior to his joining EssNet AB, Mr. Kulich held a position as Marketing Manager at Atlas Copco, being responsible for industry specific marketing of the company’s agents and sister companies throughout the world.</p>
                         
+                        <p class="ml-8 leading-relaxed py-2 italic border-l-4 border-gray-300 pl-8 font-light">“To successfully establish a lottery or increase an existing lottery’s bottom line is immensely gratifying: The client’s success is our success.”</p>
+                    </div>
+                </div>
 
+                <!-- ------ -->
+                <div id="detail2" class="flex flex-wrap relative w-full hidden">
+                    <div class="absolute md:right-2 right-0 top-0 "><button class="py-2 px-2 md:px-4 text-sm md:text-base rounded-full text-black font-light font-medium bg-white minimizeButton">minimize</button></div>
+
+                    <div class="flex md:gap-16 items-center flex-col pt-6 mt-4 justify-center gap-4 md:flex-row md:justify-start">
+                        <img src="./assets/img/face_Moumouris.jpg" alt="Chris Moumouris Qlot.com" class="border shadow border-blue-300 object-center h-40 w-40 md:h-52 md:w-52 rounded-full mb-4 shadow">
+                        <div class="flex flex-col items-center text-left justify-start">
+                            <h1 class="text-gray-900 text-2xl title-font font-medium mb-1">Mr. Chris Moumouris, Principal Consultant</h1>
+                            <div class="w-full flex flex-row font-medium"><span class="w-20">Email</span> <b class="w-2">: </b> <a href="mailto:Chris@qlot.com" class="text-indigo-500"> Chris@qlot.com</a>
+                            </div>
+                            <div class="w-full flex flex-row font-medium"><span class="w-20">Location</span> <b class="w-2">: </b>Greece</div>
+                            <div class="w-full flex flex-row font-medium"><span class="w-20">Phone</span> <b class="w-2">: </b> <a href="tel:+30 (6) 948 889 320" class=" text-indigo-500"> +30 (6) 948 889 320</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:w-full w-full lg:py-6 mt-6 lg:mt-0 text-justify">
+                      
+                        <p class="leading-relaxed py-2">Chris Moumouris is an international lottery, gaming and gambling industry expert, with over eighteen years of experience, a proven, outstanding international track record and a strong all round understanding of all aspects of the business.</p>
+
+                        <p class="leading-relaxed py-2">Prior to joining QLot, he had a long career in Intralot, one of the global top vendors in the sector of lotteries, gaming and sports book, through which he gained his all-round expertise in the industry. During his tenure in Intralot he has served in several functions, including commercial, strategic, project management and top management.</p>                        
+
+                        <p class="leading-relaxed py-2">His senior positions at Intralot include CEO of Intralot Nederland BV, Managing Director of Intralot Asia Pacific Ltd., acting Director, International Markets of Intralot Interactive SA (I2) and Sales Director Intralot SA. He served as a Board Director in the Boards of Intralot Nederland, Intralot Asia Pacific, Intralot Korea, MelcoLot, Intralot South Africa and Gidani (the South Africa National Lottery Operator) and has participated as a member in the project implementation, steering and executive committees for the Intralot projects in Malaysia, Korea, The Netherlands and South Africa. He has set up Intralot’s subsidiary in The Netherlands, has concluded major JVs/acquisitions in South Africa, Korea and Hong Kong and has secured the Intralot projects in The Netherlands, Spain, The Philippines, Taiwan, Malaysia, Korea, China, Hong Kong, New Zealand, Australia, Israel, Nigeria and South Africa.</p>
+                        
+                        <p class="leading-relaxed py-2">Prior to joining Intralot he held various positions in Hitachi, the global electronics company, where he reached the position of Strategy and Business Development Manager, EMEA.</p>
+
+                        <p class="leading-relaxed py-2">He has a proven track record in expanding business, forging strong alliances, setting-up successful companies and operations from scratch and managing companies and operations to profitable business and dominant market shares. His areas of expertise include Business Analysis, Company Set-up Organisation and Management, Strategy, Alliances, Joint Ventures, Mergers, Acquisitions, Business / Technology Partner Evaluation and Monitoring, International Marketing, Sales and Business Development, Government, Press and Major Account Relations, Procurements, Training, Technology Evaluation.</p>
+
+                        <p class="leading-relaxed py-2">Chris holds a BEng Honours in Electronic Engineering from the University of Westminster in London, England and a Masters in Electronic Engineering from the Eindhoven University of Technology in the Netherlands.</p>
+
+                        <p class="leading-relaxed py-2">With an engineering background and a strong commercial/operational track record, C. Moumouris has working experience in the gaming sector in Europe, North and South America, Asia, Africa and Oceania.</p>
+                        
+                    </div>
+                </div>
+
+                <!-- ------ -->
+                <div id="detail3" class="flex flex-wrap relative w-full hidden">
+                    <div class="absolute md:right-2 right-0 top-0 "><button class="py-2 px-2 md:px-4 text-sm md:text-base rounded-full text-black font-light font-medium bg-white minimizeButton">minimize</button></div>
+
+                    <div class="flex md:gap-16 items-center flex-col pt-6 mt-4 justify-center gap-4 md:flex-row md:justify-start">
+                        <img src="./assets/img/face_Steinegger.jpg" alt="Tony Steinegger Qlot.com" class="border shadow border-blue-300 object-center h-40 w-40 md:h-52 md:w-52 rounded-full mb-4 shadow">
+                        <div class="flex flex-col items-center text-left justify-start">
+                            <h1 class="text-gray-900 text-2xl title-font font-medium mb-1">Mr. Tony Steinegger, Principal Consultant</h1>
+                            <div class="w-full flex flex-row font-medium"><span class="w-20">Email</span> <b class="w-2">: </b> <a href="mailto:Tony@qlot.com" class="text-indigo-500"> Tony@qlot.com</a>
+                            </div>
+                            <div class="w-full flex flex-row font-medium"><span class="w-20">Location</span> <b class="w-2">: </b>Austria</div>
+                            <div class="w-full flex flex-row font-medium"><span class="w-20">Phone</span> <b class="w-2">: </b> <a href="tel:+43 664 5008623" class=" text-indigo-500"> +43 664 5008623</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:w-full w-full lg:py-6 mt-6 lg:mt-0 text-justify">
+                      
+                        <p class="leading-relaxed py-2">Ing. Tony Steinegger is a very professional, results oriented, dedicated achiever and senior manager. Being versatile and resourceful, he is a results oriented individual, capable of quickly analyzing processes and adapting to new environments.</p>
+
+                        <p class="leading-relaxed py-2">Tony is highly familiar with all gaming business related principles and activities. He is an expert in the entire Lottery life-cycle process – from Initial Studies, Legislation & Regulation, Procurement Management (Privatizations, RFP process and Bid evaluation), Lottery Project Management, Technology (Central System and Terminal), System Implementation Supervision, Acceptance Testing and Certification. He is therefore uniquely qualified for the widest spectrum of lottery projects.</p>                        
+
+                        <p class="leading-relaxed py-2">Tony holds a combined engineer’s degree in corporate organization and IT and has served in various top management functions. He is also a certified and qualified ISO 27001 and WLA-SCS Lead Auditor and contributes as an Expert member to the Austrian Standards Institute, working group 001.27 (Information Security) and group 001.18 (Data Protection and Privacy).</p>
+                        
+                        <p class="leading-relaxed py-2">“Having worked with many lotteries, major lottery industry suppliers, governments as well as investors and having seen and managed numerous major projects, I am happy and able to bring the best to our customers.”</p>
+
+                    </div>
+                </div>
+
+                <!-- ------ -->
+                <div id="detail4" class="flex flex-wrap relative w-full hidden">
+                    <div class="absolute md:right-2 right-0 top-0 "><button class="py-2 px-2 md:px-4 text-sm md:text-base rounded-full text-black font-light font-medium bg-white minimizeButton">minimize</button></div>
+
+                    <div class="flex md:gap-16 items-center flex-col pt-6 mt-4 justify-center gap-4 md:flex-row md:justify-start">
+                        <img src="./assets/img/michael-hutton-210.jpg" alt="Michael Hutton Qlot.com" class="border shadow border-blue-300 object-center h-40 w-40 md:h-52 md:w-52 rounded-full mb-4 shadow">
+                        <div class="flex flex-col items-center text-left justify-start">
+                            <h1 class="text-gray-900 text-2xl title-font font-medium mb-1">Mr. Michael Hutton, Principal Consultant</h1>
+                            <div class="w-full flex flex-row font-medium"><span class="w-20">Email</span> <b class="w-2">: </b> <a href="mailto:Mike@qlot.com" class="text-indigo-500"> Mike@qlot.com</a>
+                            </div>
+                            <div class="w-full flex flex-row font-medium"><span class="w-20">Location</span> <b class="w-2">: </b>RI, USA</div>
+                            <div class="w-full flex flex-row font-medium"><span class="w-20">Phone</span> <b class="w-2">: </b> <a href="tel:+1 (401) 486-9433" class=" text-indigo-500"> +1 (401) 486-9433</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:w-full w-full lg:py-6 mt-6 lg:mt-0 text-justify">
+                      
+                        <p class="leading-relaxed py-2">With a very extensive technical and business development experience from AWI and IGT ( formerly: GTech), Mr. Hutton brings with him valuable know-how in the field of On-line and Internet systems. Mike worked for GTech in various senior technical positions, including a position as the company’s Director, Software Architecture and Director, Software Communications. Previously, Mike spent 8 years at Automated Wagering International, developing Lottery technology.</p>
+
+                        <p class="leading-relaxed py-2">Among his areas of expertise are:</p>                        
+                        <ul class="list-disc flex flex-col py-2 gap-1 ml-6">
+                            <li>Internet based wagering systems</li>
+                            <li>E-Commerce</li>
+                            <li>On-line system development and implementation</li>
+                            <li>Communication networks</li>
+                        </ul>
+
+                        <p class="leading-relaxed py-2">In the course of his responsibilities at GTech, Mike has been involved in installations in the US as well as Europe and Asia. Some examples of where he has been active include:</p>
+                        <ul class="list-disc flex flex-col py-2 gap-1 ml-6">
+                            <li>Florida Lottery</li>
+                            <li>OY Veikkaus AB</li>
+                            <li>Dansk Tipstjanst AB</li>
+                            <li>Lotteria Nationale (Spain)</li>
+                            <li>Texas Lottery</li>
+                            <li>California Lottery</li>
+                            <li>UK National Lottery</li>
+                        </ul>
+
+                        <p class="leading-relaxed py-2">“New technologies, including broadband and wireless communication, have or will become very important to lotteries and other gaming operators world wide. We ensure that each client is given the opportunity to use whatever technology suits his application the best.”</p>
+
+                    </div>
+                </div>
+
+                <!-- ------ -->
+                <div id="detail5" class="flex flex-wrap relative w-full hidden">
+                    <div class="absolute md:right-2 right-0 top-0 "><button class="py-2 px-2 md:px-4 text-sm md:text-base rounded-full text-black font-light font-medium bg-white minimizeButton">minimize</button></div>
+
+                    <div class="flex md:gap-16 items-center flex-col pt-6 mt-4 justify-center gap-4 md:flex-row md:justify-start">
+                        <img src="./assets/img/face_Stavast.jpg" alt="Jaap Stavast Qlot.com" class="border shadow border-blue-300 object-center h-40 w-40 md:h-52 md:w-52 rounded-full mb-4 shadow">
+                        <div class="flex flex-col items-center text-left justify-start">
+                            <h1 class="text-gray-900 text-2xl title-font font-medium mb-1">Mr. Jaap Stavast, Principal Consultant</h1>
+                            <div class="w-full flex flex-row font-medium"><span class="w-20">Email</span> <b class="w-2">: </b> <a href="mailto:Jaap@qlot.com" class="text-indigo-500"> Jaap@qlot.com</a>
+                            </div>
+                            <div class="w-full flex flex-row font-medium"><span class="w-20">Location</span> <b class="w-2">: </b>The Netherlands</div>
+                            <div class="w-full flex flex-row font-medium"><span class="w-20">Phone</span> <b class="w-2">: </b> <a href="tel:+31 65 1222 733" class=" text-indigo-500"> +31 65 1222 733</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:w-full w-full lg:py-6 mt-6 lg:mt-0 text-justify">
+                      
+                        <p class="leading-relaxed py-2">Jaap Stavast is one of the most experienced and respected lottery professionals in the industry. With well over 35 year in various senior lottery positions, including Technical Director and Business Development Director at the De Lotto (Lotto, Instants, Sportsbetting) (now Nederlandse Loterij) in Holland, there is very little Jaap has not seen or done. By taking advantage of Jaap’s wealth of experience, any customer can gain immediate and tangible benefits, be it in the area of operations, technology, game development, lottery training, procurements, or any other area of a lottery project.</p>
+
+                        <p class="leading-relaxed py-2">Throughout his career, Jaap has been responsible for a multitude of new game development projects, including market introductions. He has conducted several major technology procurements, held numerous international industry training seminars and been involved in multi-jurisdictional projects, all in his capacity as Director at De Lotto.</p>                        
+
+                        <p class="leading-relaxed py-2">“Putting my many years of lottery experience to good use makes me happy. We help customers making maximum use of their resources and avoid pitfalls and mistakes already made by others. But a lottery project is not just about avoiding mistakes. It is also about making the right choices, good choices, to create a highly successful project. And that is what I and my QLot colleagues pride ourselves on.”</p>
+
+                    </div>
+                </div>
+
+                <!-- ------ -->
+                <div id="detail6" class="flex flex-wrap relative w-full hidden">
+                    <div class="absolute md:right-2 right-0 top-0 "><button class="py-2 px-2 md:px-4 text-sm md:text-base rounded-full text-black font-light font-medium bg-white minimizeButton">minimize</button></div>
+
+                    <div class="flex md:gap-16 items-center flex-col pt-6 mt-4 justify-center gap-4 md:flex-row md:justify-start">
+                        <img src="./assets/img/face_Bozzini.jpg" alt="Giaccomo Bozzini Qlot.com" class="border shadow border-blue-300 object-center h-40 w-40 md:h-52 md:w-52 rounded-full mb-4 shadow">
+                        <div class="flex flex-col items-center text-left justify-start">
+                            <h1 class="text-gray-900 text-2xl title-font font-medium mb-1">Mr. Giaccomo Bozzini, Principal Consultant</h1>
+                            <div class="w-full flex flex-row font-medium"><span class="w-20">Email</span> <b class="w-2">: </b> <a href="mailto:Giacomo@qlot.com" class="text-indigo-500"> Giacomo@qlot.com</a>
+                            </div>
+                            <div class="w-full flex flex-row font-medium"><span class="w-20">Location</span> <b class="w-2">: </b>Italy</div>
+                            <div class="w-full flex flex-row font-medium"><span class="w-20">Phone</span> <b class="w-2">: </b> <a href="tel:+39 348 494 8318" class=" text-indigo-500"> +39 348 494 8318</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:w-full w-full lg:py-6 mt-6 lg:mt-0 text-justify">
+                      
+                        <p class="leading-relaxed py-2">Mr. Bozzini is an Internet expert with a Degree in Internet Law and a Masters degree in Web Marketing. In addition to his detailed knowledge of internet gaming, Mr. Bozzini also has a thorough procurement, project and operations experience from other gaming segments. His career includes positions such as Head of Landbased Gaming at SNAITECH s.p.a, Italy, Managing Director for INSPIRED Entertainment Inc. (Nasdaq INSE) in Italy, Chief VLT Office at OPAP in Greece, SALES DIRECTOR (Italy, Monaco, Switzerland, Eastern Countries) for CIRSA Corp. (Milan, Barcelona- Spain), etc.</p>
+
+                        <p class="leading-relaxed py-2">Mr. Bozzini is intimately familiar with modern consumer trends, retail as well as online sales channels, and having led many major procurement projects. Speaking Italian, English, French, Spanish and Greek, Mr. Bozzini is an ideal consultant to any lottery or gaming operations organization.</p>                        
+
+                    </div>
+                </div>
+
+                <!-- ------ -->
+                <div id="detail7" class="flex flex-wrap relative w-full hidden">
+                    <div class="absolute md:right-2 right-0 top-0 "><button class="py-2 px-2 md:px-4 text-sm md:text-base rounded-full text-black font-light font-medium bg-white minimizeButton">minimize</button></div>
+                    <div class="flex md:gap-16 items-center flex-col pt-6 mt-4 justify-center gap-4 md:flex-row md:justify-start">
+                        <img src="./assets/img/larry-montgomery-210.jpg" alt="Larry Montgomery Qlot.com" class="border shadow border-blue-300 object-center h-40 w-40 md:h-52 md:w-52 rounded-full mb-4 shadow">
+                        <div class="flex flex-col items-center text-left justify-start">
+                            <h1 class="text-gray-900 text-2xl title-font font-medium mb-1">Mr. Larry Montgomery, Principal Consultant (Retired)</h1>
+                            <div class="w-full flex flex-row font-medium"><span class="w-20">Email</span> <b class="w-2">: </b> <a href="mailto:Larry@qlot.com" class="text-indigo-500"> Larry@qlot.com</a>
+                            </div>
+                            <div class="w-full flex flex-row font-medium"><span class="w-20">Location</span> <b class="w-2">: </b>KS, USA</div>
+                            <div class="w-full flex flex-row font-medium"><span class="w-20">Phone</span> <b class="w-2">: </b> <a href="tel:+1 (785) 224-7052" class=" text-indigo-500"> +1 (785) 224-7052</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:w-full w-full lg:py-6 mt-6 lg:mt-0 text-justify">
+                      
+                        <p class="leading-relaxed py-2">After years of invaluable service to QLot and its clients, Mr. Montgomery retired in 2015, and is today Consultant Emeritus within QLot.</p>
+
+                        <p class="leading-relaxed py-2">Dr. Montgomery is very familiar with the regulatory process and environment of lotteries across the world. He is an expert in legislative policy, the format and content of laws, the formation of regulatory bodies, rules for the conduct of regulatory bodies, social and government policy regarding lotteries, policies and procedures, regulation and enforcement. Dr. Montgomery has been an innovator in identifying and designing new games utilizing currently available technology within legal, marketplace and policy environments. Dr. Montgomery holds a Juris Doctorate (Law Degree) from the prestigious George Washington University in Washington D.C. He has served his Government in the FBI and U.S. Department of State in both Foreign Affairs and Trade Development.</p>             
+
+                        <p class="leading-relaxed py-2">Dr. Montgomery is a highly respected public speaker and will assist, when requested, in making expert presentations to parties interested in this process. He will be supporting on the assessment of changes in legislative policies or market environment as well as in the evaluation of bids.</p> 
+
+                        <p class="leading-relaxed py-2">As a former lottery director, Dr. Montgomery has the hands-on knowledge of not only the workings of lotteries, but also the government interests and concerns around lotteries and how other world governments have chosen to structure their activities. Dr. Montgomery can bring creative solutions to the surface and is a skilled negotiator.</p> 
+
+                        <p class="leading-relaxed py-2">Dr. Montgomery is very familiar with government processes including procurement issues. He has drafted recommendations on the regulatory arrangements to be established for off-line and online management operators including directions to be issued by the government, as well as make comments and recommendations on the regulatory arrangements.</p>   
+
+                        <p class="leading-relaxed py-2">Dr. Montgomery is a consummate professional capable of serving any lottery project in many capacities.</p>          
+
+                        <p class="leading-relaxed py-2">“Over the years, we have come to see, learn and experience great many things within our industry. It gives a true satisfaction to be able to share that experience with industry peers, be it in the form of clients or colleagues.”</p>                        
+
+                    </div>
                 </div>
 
             </div>
-        </section>
-        <section class="py-5" id="portfolio" style="background: #d9eeff;">
-            <div class="container px-4 px-lg-5">
-                <div class="text-center">
-                    <h2 class=" mb-0">Project Portofolio</h2>
-                    <hr>
-                </div>
-                <div class="row gx-0">
-                    <div class="col-lg-6 col-md-6 p-2">
-                        <a class="portfolio-item" href="#mdep" data-toggle="modal">
-                            <div class="caption">
-                                <div class="caption-content">
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portofolio.png" alt="..." />
-                        </a>
-                    </div>
-                    <div class="col-lg-6 col-md-6 p-2">
-                        <a class="portfolio-item" href="#mdsmansara" data-toggle="modal">
-                            <div class="caption">
-                                <div class="caption-content">
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/sman1jepara.png" alt="..." />
-                        </a>
-                    </div>
-                    <div class="col-lg-6 col-md-6 p-2">
-                        <a class="portfolio-item" href="#mdgks" data-toggle="modal">
-                            <div class="caption">
-                                <div class="caption-content">
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/gekaes.png" alt="..." />
-                        </a>
-                    </div>
-                    <div class="col-lg-6 col-md-6 p-2">
-                        <a class="portfolio-item" href="#mdwbs" data-toggle="modal">
-                            <div class="caption">
-                                <div class="caption-content">
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/wbs.png" alt="..." />
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
+            <!-- ----------------- -->
 
-        <!-- --------------------(Modal)------------------------- -->
-
-        <!-- --------------------(WBS)------------------------- -->
-        <div class="modal fade" id="mdwbs" role="dialog">
-            <div class="modal-dialog modal-lg">
-            
-              <!-- Modal content-->
-              <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Whistleblowing System Jepara<h4>
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                    
-                  <p>WBS Jepara adalah web pelaporan dilingkup ASN Pemda Jepara. web ini adalah project yang pertama kali saya buat secara fullstack dimana saat itu saya juga baru pertama kali mengenal CodeIgniter. Project ini dibuat pada Februari 2020 ketika saya masih duduk dibangku kuliah saat Magang / PKL di Diskominfo Kabupaten Jepara. web ini memiliki beberapa fitur seperti tulis aduan, mendapatkan nomor aduan setelah tulis aduan (nomor aduan digunakan untuk mengecek status aduan / pelaporan), mendapatkan info melalui email setiap status aduan berubah, cetak aduan dalam 6 bulan terakhir (admin), filter aduan, dan lain-lain. Sekarang web ini bisa dikunjungi dengan link berikut <a class="text-decoration-none text-primary" href="http://wbs.jepara.go.id/">http://wbs.jepara.go.id/</a></p>
-                  <hr>
-                  <h5>Framework :</h5>
-                  <ul>
-                      <li>CodeIgniter 3</li>
-                      <li>Bootstraps 4</li>
-                  </ul>
-                  <hr>
-                  <h5>Sumber Daya : </h5>
-                  <ul>
-                      <li><a href="https://startbootstrap.com/theme/creative" class="btn text-primary font-weight-bold">Creative (startbootstrap.com)</a></li>
-                      <li><a href="https://startbootstrap.com/theme/sb-admin-2" class="btn text-primary font-weight-bold">SB Admin 2 (startbootstrap.com)</a></li>
-                  </ul>
-                  <hr>
-                  <h5>Galeri :</h5>
-                  <div class="row">
-                      <div class="col-lg-4 p-1">
-                            <a href="assets/img/wbs.png" class="fancybox" data-fancybox="wbsjepara">
-                                <img src="assets/img/wbs.png" style="width: 100%;" alt="" class="hubla">
-                            </a>
-                      </div>
-
-                  </div>
-                </div>
-                <div class="modal-footer">
-                  <a href="http://wbs.jepara.go.id" target="_blank" class="btn btn-primary"><i class="fas fa-globe"></i> Lihat Web</a>
-                </div>
-              </div>
-              
+            <div class="flex mt-6 justify-center">
+              <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
             </div>
           </div>
-        <!-- --------------------(Gekaes)------------------------- -->
-        <div class="modal fade" id="mdgks" role="dialog">
-            <div class="modal-dialog modal-lg">
-            
-              <!-- Modal content-->
-              <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">GeKAES<h4>
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                    
-                  <p>
-                    GeKAES adalah web event SMAN 1 Jepara yang dibuat sekitar bulan Mei & Juni 2021. web ini dibuat untuk acara GeKAES XXV dan seterusnya. didalamnya memuat informasi event yang akan diselenggarakan, Video GeKAES, serta contact person panitia sesuai dengan event yang diadakan.  
-                    Web ini dapat dikunjungi dengan link berikut <a class="text-decoration-none text-primary" href="https://gekaes.sman1jepara.sch.id/">https://gekaes.sman1jepara.sch.id/</a></p>
-                  <hr>
-                  <h5>Framework :</h5>
-                  <ul>
-                      <li>CodeIgniter 3</li>
-                      <li>Bootstraps 4</li>
-                  </ul>
-                  <hr>
-                  <h5>Sumber Daya : </h5>
-                  <ul>
-                      <li><a href="https://startbootstrap.com/theme/coming-soon" class="btn text-primary font-weight-bold">Coming Soon (startbootstrap.com)</a></li>
-                      <li><a href="https://startbootstrap.com/theme/sb-admin-2" class="btn text-primary font-weight-bold">SB Admin 2 (startbootstrap.com)</a></li>
-                      <li><a href="https://ckeditor.com/ckeditor-5/" class="btn text-primary font-weight-bold">CKEditor-5</a></li>
-                  </ul>
-                  <hr>
-                  <h5>Galeri :</h5>
-                  <div class="row">
-                      <div class="col-lg-4 p-1">
-                            <a href="assets/img/gekaes.png" class="fancybox" data-fancybox="gekaes">
-                                <img src="assets/img/gekaes.png" style="width: 100%;" alt="" class="hubla">
-                            </a>
-                      </div>
-                      <div class="col-lg-4 p-1">
-                            <a href="assets/img/gekaes1.png" class="fancybox" data-fancybox="gekaes">
-                                <img src="assets/img/gekaes1.png" style="width: 100%;" alt="" class="hubla">
-                            </a>
-                      </div>
-                      <div class="col-lg-4 p-1">
-                            <a href="assets/img/gekaes2.png" class="fancybox" data-fancybox="gekaes">
-                                <img src="assets/img/gekaes2.png" style="width: 100%;" alt="" class="hubla">
-                            </a>
-                      </div>
-                      <div class="col-lg-4 p-1">
-                            <a href="assets/img/gekaes3.png" class="fancybox" data-fancybox="gekaes">
-                                <img src="assets/img/gekaes3.png" style="width: 100%;" alt="" class="hubla">
-                            </a>
-                      </div>
+          <div class="flex flex-wrap justify-center sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
 
-                  </div>
-                </div>
-                <div class="modal-footer">
-                  <a href="https://gekaes.sman1jepara.sch.id" target="_blank" class="btn btn-primary"><i class="fas fa-globe"></i> Lihat Web</a>
-                </div>
-              </div>
-              
-            </div>
-          </div>
-        <!-- --------------------(SMAN1Jepara)------------------------- -->
-        <div class="modal fade" id="mdsmansara" role="dialog">
-            <div class="modal-dialog modal-lg">
-            
-              <!-- Modal content-->
-              <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">SMAN 1 Jepara<h4>
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                    
-                  <p>
-                    Web ini adalah website resmi <b>SMA Negeri 1 Jepara</b> yang baru. project ini digarap setelah pengerjaan project web GeKAES selesai, yaitu pada sekitar bulan Juli - Agustus 2021.
-                    Web ini dapat dikunjungi dengan link berikut <a class="text-decoration-none text-primary" href="https://sman1jepara.sch.id/">https://sman1jepara.sch.id/</a></p>
-                  <hr>
-                  <h5>Framework :</h5>
-                  <ul>
-                      <li>CodeIgniter 3</li>
-                      <li>Bootstraps 4</li>
-                  </ul>
-                  <hr>
-                  <h5>Sumber Daya : </h5>
-                  <ul>
-                      <li><a href="https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/" class="btn text-primary font-weight-bold">Mamba - Free One Page Bootstrap Template (bootstrapmade.com)</a></li>
-                      <li><a href="https://startbootstrap.com/theme/sb-admin-2" class="btn text-primary font-weight-bold">SB Admin 2 (startbootstrap.com)</a></li>
-                      <li><a href="https://ckeditor.com/ckeditor-4/" class="btn text-primary font-weight-bold">ckeditor-4</a></li>
-                  </ul>
-                  <hr>
-                  <h5>Galeri :</h5>
-                  <div class="row">
-                      <div class="col-lg-4 p-1">
-                            <a href="assets/img/sman1jepara.png" class="fancybox" data-fancybox="sman1jepara">
-                                <img src="assets/img/sman1jepara.png" style="width: 100%;" alt="" class="hubla">
-                            </a>
-                      </div>
-
-                  </div>
-                </div>
-                <div class="modal-footer">
-                  <a href="https://sman1jepara.sch.id" target="_blank" class="btn btn-primary"><i class="fas fa-globe"></i> Lihat Web</a>
-                </div>
-              </div>
-              
-            </div>
-          </div>
-        <!-- --------------------(endprojects)------------------------- -->
-        <div class="modal fade" id="mdep" role="dialog">
-            <div class="modal-dialog modal-lg">
-            
-              <!-- Modal content-->
-              <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">end projects portfolio<h4>
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                    
-                  <p>
-                    Projects ini adalah projects web portofolio saya sendiri di web ini. saat ini web ini masih berupa web statis karena saya masih belum memiliki web hosting & domain pribadi. sehingga saya memanfaatkan adanya fitur pada github agar saya memiliki web portofolio saya sendiri.
+            <div class="p-4 w-full md:w-1/3 lg:w-1/4 flex flex-col text-center justify-center items-center">
+                <img src="./assets/img/face_Kulich.jpg" alt="ales kulich Qlot.com" class="border shadow border-blue-300 object-center h-52 w-52 rounded-full mb-4 shadow">
+                <div class="flex-grow">
+                    <h2 class="text-gray-900 text-xl title-font font-medium mb-3">Mr. Ales Kulich</h2>
+                    <p class="leading-relaxed text-lg text-gray-600">President</p>
+                    <p class="leading-relaxed text-lg text-gray-600">Czech Republic</p>
+                    <p class="mt-3">
+                        <a href="tel:+420777729777" class=" text-indigo-500">+420 777 729 777</a>
                     </p>
-                  <hr>
-                  <h5>Framework :</h5>
-                  <ul>
-                      <li>Bootstraps 4</li>
-                  </ul>
-                  <hr>
-                  <h5>Sumber Daya : </h5>
-                  <ul>
-                      <li><a href="https://startbootstrap.com/theme/stylish-portfolio" class="btn text-primary font-weight-bold">stylish-portfolio (startbootstrap.com)</a></li>
-                      <li><a href="https://fancyapps.com/docs/ui/fancybox/" class="btn text-primary font-weight-bold">Fancybox</a></li>
-                  </ul>
-                  <hr>
+                    <p>
+                        <a href="mailto:ales@qlot.com" class="text-indigo-500">ales@qlot.com</a>
+                    </p>
+                    <button class="mt-3 text-indigo-500 inline-flex items-center" id="tombol1">Show More
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
                 </div>
-              </div>
-              
             </div>
+
+            <div class="p-4 w-full md:w-1/3 lg:w-1/4 flex flex-col text-center justify-center items-center">
+                <img src="./assets/img/face_Moumouris.jpg" alt="Chris Moumouris Qlot.com" class="border shadow border-blue-300 object-center h-52 w-52 rounded-full mb-4 shadow">
+                <div class="flex-grow">
+                    <h2 class="text-gray-900 text-xl title-font font-medium mb-3">Mr. Chris Moumouris</h2>
+                    <p class="leading-relaxed text-lg text-gray-600">Principal Consultant</p>
+                    <p class="leading-relaxed text-lg text-gray-600">Greece</p>
+                    <p class="mt-3">
+                        <a href="tel:+30 (6) 948 889 320" class=" text-indigo-500">+30 (6) 948 889 320</a>
+                    </p>
+                    <p>
+                        <a href="mailto:chris@qlot.com" class="text-indigo-500">chris@qlot.com</a>
+                    </p>
+                    <button class="mt-3 text-indigo-500 inline-flex items-center showMoreButton" id="tombol2">Show More
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="p-4 w-full md:w-1/3 lg:w-1/4 flex flex-col text-center justify-center items-center">
+                <img src="./assets/img/face_Steinegger.jpg" alt="Tony Steinegger Qlot.com" class="border shadow border-blue-300 object-center h-52 w-52 rounded-full mb-4 shadow">
+                <div class="flex-grow">
+                    <h2 class="text-gray-900 text-xl title-font font-medium mb-3">Mr. Tony Steinegger</h2>
+                    <p class="leading-relaxed text-lg text-gray-600">Principal Consultant</p>
+                    <p class="leading-relaxed text-lg text-gray-600">Austria</p>
+                    <p class="mt-3">
+                        <a href="tel:+43 664 5008623" class=" text-indigo-500">+43 664 5008623</a>
+                    </p>
+                    <p>
+                        <a href="mailto:Tony@qlot.com" class="text-indigo-500">Tony@qlot.com</a>
+                    </p>
+                    <button class="mt-3 text-indigo-500 inline-flex items-center showMoreButton" id="tombol3">Show More
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="p-4 w-full md:w-1/3 lg:w-1/4 flex flex-col text-center justify-center items-center">
+                <img src="./assets/img/michael-hutton-210.jpg" alt="Michael Hutton Qlot.com" class="border shadow border-blue-300 object-center h-52 w-52 rounded-full mb-4 shadow">
+                <div class="flex-grow">
+                    <h2 class="text-gray-900 text-xl title-font font-medium mb-3">Mr. Michael Hutton</h2>
+                    <p class="leading-relaxed text-lg text-gray-600">Principal Consultant</p>
+                    <p class="leading-relaxed text-lg text-gray-600">RI, USA</p>
+                    <p class="mt-3">
+                        <a href="tel:+1 (401) 486-9433" class=" text-indigo-500">+1 (401) 486-9433</a>
+                    </p>
+                    <p>
+                        <a href="mailto:mike@qlot.com" class="text-indigo-500">mike@qlot.com</a>
+                    </p>
+                    <button class="mt-3 text-indigo-500 inline-flex items-center showMoreButton" id="tombol4">Show More
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="p-4 w-full md:w-1/3 lg:w-1/4 flex flex-col text-center justify-center items-center">
+                <img src="./assets/img/face_Stavast.jpg" alt="Jaap Stavast Qlot.com" class="border shadow border-blue-300 object-center h-52 w-52 rounded-full mb-4 shadow">
+                <div class="flex-grow">
+                    <h2 class="text-gray-900 text-xl title-font font-medium mb-3">Mr. Jaap Stavast</h2>
+                    <p class="leading-relaxed text-lg text-gray-600">Principal Consultant</p>
+                    <p class="leading-relaxed text-lg text-gray-600">Netherlands</p>
+                    <p class="mt-3">
+                        <a href="tel:+31 65 1222 733" class=" text-indigo-500">+31 65 1222 733</a>
+                    </p>
+                    <p>
+                        <a href="mailto:Jaap@qlot.com" class="text-indigo-500">Jaap@qlot.com</a>
+                    </p>
+                    <button class="mt-3 text-indigo-500 inline-flex items-center showMoreButton" id="tombol5">Show More
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="p-4 w-full md:w-1/3 lg:w-1/4 flex flex-col text-center justify-center items-center">
+                <img src="./assets/img/face_Bozzini.jpg" alt="Giacomo Bozzini Qlot.com" class="border shadow border-blue-300 object-center h-52 w-52 rounded-full mb-4 shadow">
+                <div class="flex-grow">
+                    <h2 class="text-gray-900 text-xl title-font font-medium mb-3">Mr. Giacomo Bozzini</h2>
+                    <p class="leading-relaxed text-lg text-gray-600">Principal Consultant</p>
+                    <p class="leading-relaxed text-lg text-gray-600">Italy</p>
+                    <p class="mt-3">
+                        <a href="tel:+39 348 494 8318" class=" text-indigo-500">+39 348 494 8318</a>
+                    </p>
+                    <p>
+                        <a href="mailto:Giacomo@qlot.com" class="text-indigo-500">Giacomo@qlot.com</a>
+                    </p>
+                    <button class="mt-3 text-indigo-500 inline-flex items-center showMoreButton" id="tombol6">Show More
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="p-4 w-full md:w-1/3 lg:w-1/4 flex flex-col text-center justify-center items-center">
+                <img src="./assets/img/larry-montgomery-210.jpg" alt="Larry Montgomery Qlot.com" class="border shadow border-blue-300 object-center h-52 w-52 rounded-full mb-4 shadow">
+                <div class="flex-grow">
+                    <h2 class="text-gray-900 text-xl title-font font-medium mb-3">Dr. Larry Montgomery</h2>
+                    <p class="leading-relaxed text-lg text-gray-600">Consultant Emeritus</p>
+                    <p class="leading-relaxed text-lg text-gray-600">(Retired)</p>
+                    <p class="leading-relaxed text-lg text-gray-600">KS, USA</p>
+                    <p class="mt-3">
+                        <a href="tel:+1 (785) 224-7052" class=" text-indigo-500">+1 (785) 224-7052</a>
+                    </p>
+                    <p>
+                        <a href="mailto:Larry@qlot.com" class="text-indigo-500">Larry@qlot.com</a>
+                    </p>
+                    <button class="mt-3 text-indigo-500 inline-flex items-center showMoreButton" id="tombol7">Show More
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
           </div>
-          
-        <!-- --------------------(End Modal)------------------------- -->
-        
-        <!-- Footer-->
-        <footer class="footer text-center" style="background-color: #00457e;">
-                <p class="text-white small mb-0">Copyright &copy;endprojects 2021</p>
-        </footer>
-        <!-- Scroll to Top Button-->
-        <a class="scroll-to-top rounded" href="#home"><i class="fas fa-angle-up"></i></a>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        </div>
+    </section>
 
+    <section id="contact" class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap items-center">
+                <h1 class="text-4xl font-medium title-font text-center w-full text-gray-900 mb-16">Contact Us</h1>
+            <div class="md:w-1/3 w-full text-center lg:pr-0 pr-0">
+                <h1 class="title-font font-medium text-xl text-gray-900">Headquarters:</h1>
+                <p class="leading-relaxed my-6">QLot Consulting AB</p>
+                <div>
+                    <p class="leading-relaxed my-1">P.O Box 159</p>
+                    <p class="leading-relaxed my-1">S-195 24 Märsta</p>
+                    <p class="leading-relaxed my-1">Sweden</p>
+                </div>
+                <h1 class="title-font font-medium text-xl mt-6 text-gray-900">Phone:</h1>
+                <div>
+                    <p class="leading-relaxed my-1">+46 708 777 525</p>
+                    <p class="leading-relaxed my-1">+420 777 729 777</p>
+                </div>
+                    <p class="my-6">Email: <a href="mailto:info@qlot.com" class="text-indigo-500">info@qlot.com</a></p>
 
-    </body>
+            </div>
+
+            <div class="md:w-2/3 bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
+                <h2 class="text-gray-900 text-lg font-medium title-font mb-5">Send us quick message:</h2>
+                <form id="contact-form" action="https://formspree.io/f/mgejdqwb" method="post">
+                    <input type="hidden" name="subject" value="message from QLot.com">
+
+                    <div class="relative mb-4">
+                    <label for="full-name" class="leading-7 text-sm text-gray-600">Full Name</label>
+                    <input type="text" id="full-name" name="name" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" placeholder="Please enter your name.">
+                    </div>
+                    <div class="relative mb-4">
+                    <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                    <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" placeholder="Your email address.">
+                    </div>
+                    <div class="relative mb-4">
+                    <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+                    <textarea id="message" name="message" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" placeholder="The message you wish to send."></textarea>
+                    </div>
+                    <button id="buttonSubmit" class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Send Message</button>
+                    
+                </form>
+            </div>
+        </div>
+      </section>
+
+      <footer class="text-gray-600 body-font border-t-2 bg-gray-200">
+        <div class="container px-5 py-2 mx-auto flex justify-center items-center sm:flex-row flex-col">
+          <a class="flex title-font font-medium items-center justify-center text-gray-900">
+            <img src="./assets/img/Qlot-logo-transparent-70p.png" alt="QLot.com Logo" class="h-16">
+          </a>
+          <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-700 sm:py-2 sm:mt-0 mt-4">© 2023 QLot.com
+          </p>
+
+        </div>
+      </footer>
+    <!-- ----------------------------- -->
+
+    <script src="./assets/js/script.js"></script>
+      <script>
+        function toggleNavbar() {
+    const navbar = document.getElementById('navbar-default');
+    if (navbar.classList.contains('hidden')) {
+        navbar.classList.remove('hidden');
+    } else {
+        navbar.classList.add('hidden');
+    }
+}
+      </script>
+</body>
 </html>
