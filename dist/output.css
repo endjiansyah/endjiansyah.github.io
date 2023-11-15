@@ -649,6 +649,10 @@ video {
   margin-top: 1.5rem;
 }
 
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -751,6 +755,10 @@ video {
 
 .scroll-smooth {
   scroll-behavior: smooth;
+}
+
+.\!scroll-smooth {
+  scroll-behavior: smooth !important;
 }
 
 .rounded {
@@ -1060,6 +1068,10 @@ video {
   transition-duration: 500ms;
 }
 
+.duration-200 {
+  transition-duration: 200ms;
+}
+
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1166,6 +1178,10 @@ video {
 
 .hover\:opacity-80:hover {
   opacity: 0.8;
+}
+
+.focus\:scroll-auto:focus {
+  scroll-behavior: auto;
 }
 
 .group:hover .group-hover\:box-border {
