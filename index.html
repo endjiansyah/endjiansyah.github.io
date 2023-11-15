@@ -40,7 +40,7 @@
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body class="scroll-smooth">
     <header class="text-gray-600 body-font border-b w-full fixed top-0 bg-[#00457e] backdrop-blur z-20">
         <div class="container mx-auto flex flex-wrap px-5 flex-col md:flex-row items-center">
             <div class="flex justify-between w-full lg:w-auto items-center">
@@ -64,7 +64,7 @@
             </div>
             <!-- <div id="navbar-default" class=" bg-green-300"> -->
                 <nav id="navbar-default" class="hidden lg:block md:ml-auto flex gap-4 flex-col md:flex-row items-center text-base justify-center pb-4 lg:pb-0 text-white">
-                    <a href="#welcome" class="mr-5 hover:text-gray-300">Welcome</a>
+                    <a href="#hero" class="mr-5 hover:text-gray-300">Welcome</a>
                     <a href="#about" class="mr-5 hover:text-gray-300">About</a>
                     <a href="#portfolio" class="mr-5 hover:text-gray-300">Portfolio</a>
                 </nav>
@@ -79,7 +79,7 @@
         </div>
     </section>
 
-    <section class="text-gray-600 body-font bg-blue-50 group/about hover:bg-blue-100 duration-500">
+    <section id="about" class="text-gray-600 body-font bg-blue-50 group/about hover:bg-blue-100 duration-500">
         <div class="container">
             <div class="text-center transition-opacity ease-in-out duration-300 group pt-24 px-5">
                 <div class="mb-4 mt-12 md:mt-0">
@@ -208,7 +208,7 @@
             </div>
             <div class="mx-auto h-1 group-hover/about:w-full  mt-6 bg-gray-600 md:w-0 duration-300"></div>
 
-            <div class="flex gap-2 mx-auto flex-col md:flex-row mb-24 justify-center items-center py-4 opacity-100 md:opacity-0 delay-300 duration-300 group-hover/about:opacity-100">
+            <div class="flex gap-2 mx-auto flex-col flex-wrap px-4 md:flex-row mb-24 justify-center items-center py-4 opacity-100 md:opacity-0 delay-300 duration-300 group-hover/about:opacity-100">
                 <a href="https://api.whatsapp.com/send/?phone=6285800583260" class="bg-green-600 px-4 py-2 rounded-lg text-white hover:bg-green-500" target="_blank"><i class="fa-brands fa-whatsapp"></i> 085800583260</a>
 
                 <a href="mailto:endji1507@gmail.com" class="bg-red-500 px-4 py-2 rounded-lg text-white hover:bg-red-600" target="_blank"><i class="fa-regular fa-envelope-open"></i> endji1507@gmail.com</a> 
@@ -225,6 +225,84 @@
         </div>
     </section>
     
+    <section id="portfolio" class="text-gray-600 body-font group/port">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-16">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Portfolio</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Berikut beberapa project yang bisa atau pernah bisa diakses secara online yang saya kerjakan. untuk project yang tidak bisa di publish bisa dilihat di repositori <a href="https://github.com/endjiansyah" target="_blank" class="text-gray-900 font-bold hover:text-gray-600 duration-300">Github</a> saya</p>
+                <div class="h-1 w-0 group-hover/port:w-2/3 duration-500 mx-auto bg-gray-600 my-4"></div>
+            </div>
+            <div class="flex flex-wrap -m-4">
+                <div class="aspect-video md:w-1/2 p-4">
+                    <a class="flex relative h-full group overflow-hidden" href="https://sman1jepara.sch.id" target="_blank">
+                        <img alt="endprojects sman1jepara" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-110 duration-300" src="./assets/img/smansara.png">
+                        <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-80 delay-150 duration-300">
+                            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Laravel, Tailwind css, Alpine Js</h2>
+                            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">SMA Negeri 1 Jepara (2023)</h1>
+                            <p class="leading-relaxed">website resmi SMA Negeri 1 Jepara versi terbaru (September 2023)</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="aspect-video md:w-1/2 p-4">
+                    <a class="flex relative h-full group overflow-hidden" href="https://illustrious-parfait-a6f428.netlify.app/" target="_blank">
+                        <img alt="endprojects arcticvip" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-110 duration-300" src="./assets/img/arcticvip.png">
+                        <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-80 delay-150 duration-300">
+                            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Tailwind css</h2>
+                            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Redesign ArcticVIP</h1>
+                            <p class="leading-relaxed">redesign website ArcticVIP menggunakan tailwind css dari contest freelancer.com</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="aspect-video md:w-1/2 p-4">
+                    <a class="flex relative h-full group overflow-hidden" href="https://endjiansyah.github.io" target="_blank">
+                        <img alt="endprojects arcticvip" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-110 duration-300" src="./assets/img/endproject.png">
+                        <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-80 delay-150 duration-300">
+                            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Tailwind css</h2>
+                            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">EndProjects;</h1>
+                            <p class="leading-relaxed">pada awalnya web ini saya buat menggunakan bootstrap, namun pada 14 November 2023 saya putuskan untuk mengubah tampilanya menggunakan Tailwind CSS.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="aspect-video md:w-1/2 p-4">
+                    <div class="flex relative h-full group overflow-hidden">
+                        <img alt="endprojects arcticvip" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-110 duration-300" src="./assets/img/sman1jepara.png">
+                        <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-80 delay-150 duration-300">
+                            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Codeigniter 3, Bootstrap</h2>
+                            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">SMA Negeri 1 Jepara (versi lama)</h1>
+                            <p class="leading-relaxed">website SMA Negeri 1 Jepara pada Juni 2021 dibuat menggunakan Codeigniter 3 & Bootstrap, namu saat ini sudah beralih ke versi baru dengan TALL Stack (Tailwind css, Alpine Js, Laravel, Livewire) sejak September 2023.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="aspect-video md:w-1/2 p-4">
+                    <div class="flex relative h-full group overflow-hidden">
+                        <img alt="endprojects arcticvip" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-110 duration-300" src="./assets/img/gekaes.png">
+                        <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-80 delay-150 duration-300">
+                            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Codeigniter 3, Bootstrap</h2>
+                            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">GeKAES SMAN 1 Jepara</h1>
+                            <p class="leading-relaxed">website event GeKAES SMA Negeri 1 Jepara yang digunakan untuk memperingati GeKAES XXV & XXVI (2021 & 2022), namun pada 2023 Event GeKAES tidak menggunakan website event lagi sehingga web GeKAES tidak bisa diakses untuk saat ini (2023)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="aspect-video md:w-1/2 p-4">
+                    <a class="flex relative h-full group overflow-hidden" href="http://wbs.jepara.go.id" target="_blank">
+                        <img alt="endprojects arcticvip" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-110 duration-300" src="./assets/img/wbs.png">
+                        <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-80 delay-150 duration-300">
+                            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Codeigniter 3, Bootstrap</h2>
+                            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Whistleblowing System Jepara (WBS Jepara)</h1>
+                            <p class="leading-relaxed">WBS Jepara adalah project fullstack pertama yang saya buat dan digunakan oleh pemda Kabupaten Jepara. project ini dibuat ketika saya Praktek Kerja Lapangan (kuliah) pada Desember 2019 - Februari 2020 di Diskominfo Kab. Jepara, namun project ini diberikan ke saya dan saya kerjakan pada Februari 2020.</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+      </section>
+
     <footer class="text-gray-600 body-font border-t-2 border-blue-900 bg-blue-950">
     <div class="container px-5 py-2 mx-auto flex justify-center items-center sm:flex-row flex-col">
         <a class="flex title-font font-medium items-center justify-center text-gray-900">
