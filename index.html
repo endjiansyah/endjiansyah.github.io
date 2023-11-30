@@ -68,7 +68,7 @@
                     <a href="#hero" class="mr-5 hover:text-gray-300">Welcome</a>
                     <a href="#about" class="mr-5 hover:text-gray-300">About</a>
                     <a href="#portfolio" class="mr-5 hover:text-gray-300">Portfolio</a>
-                    <button @click="indo=!indo" class="px-4 py-2 rounded-lg text-blue-800 bg-white text-center font-medium border-blue-800 border-2 hover:bg-blue-100 duration-300 hover:scale-105">switch language</button>
+                    <button @click="indo=!indo" class="px-4 py-2 rounded-lg !text-blue-800 bg-white text-center font-medium border-blue-800 border-2 hover:bg-blue-100 duration-300 hover:scale-105" x-text="indo?'Switch to English':'Switch to Indonesia'"></button>
                 </nav>
             <!-- </div> -->
         </div>
@@ -332,7 +332,9 @@
         <div class="container px-5 py-24 mx-auto">
             <div class="flex flex-col text-center w-full mb-16">
                 <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Portfolio</h1>
-                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Berikut beberapa project yang bisa atau pernah bisa diakses secara online yang saya kerjakan. untuk project yang tidak bisa di publish bisa dilihat di repositori <a href="https://github.com/endjiansyah" target="_blank" class="text-gray-900 font-bold hover:text-gray-600 duration-300">Github</a> saya</p>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base" x-show="indo">Berikut beberapa project yang bisa atau pernah bisa diakses secara online yang saya kerjakan. untuk project yang tidak bisa di publish bisa dilihat di repositori <a href="https://github.com/endjiansyah" target="_blank" class="text-gray-900 font-bold hover:text-gray-600 duration-300">Github</a> saya</p>
+
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base" x-show="!indo">Here are some of the projects that could or could ever be accessed online that I've been working on. For projects that can't be published can be seen in my  <a href="https://github.com/endjiansyah" target="_blank" class="text-gray-900 font-bold hover:text-gray-600 duration-300">Github</a> repository.</p>
                 <div class="h-1 w-0 group-hover/port:w-2/3 duration-500 mx-auto bg-gray-600 my-4"></div>
             </div>
             <div class="flex flex-wrap -m-4">
@@ -342,7 +344,8 @@
                         <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-90 delay-150 duration-300">
                             <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Laravel, Tailwind css, Alpine Js</h2>
                             <h1 class="title-font text-lg font-medium text-gray-900 mb-3">SMA Negeri 1 Jepara (2023)</h1>
-                            <p class="leading-relaxed">website resmi SMA Negeri 1 Jepara versi terbaru (September 2023)</p>
+                            <p class="leading-relaxed" x-show="indo">website resmi SMA Negeri 1 Jepara versi terbaru (September 2023)</p>
+                            <p class="leading-relaxed" x-show="!indo">New version of "SMA Negeri 1 Jepara" websites (September 2023)</p>
                         </div>
                     </a>
                 </div>
@@ -353,7 +356,8 @@
                         <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-90 delay-150 duration-300">
                             <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Tailwind css</h2>
                             <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Redesign ArcticVIP</h1>
-                            <p class="leading-relaxed">redesign website ArcticVIP menggunakan tailwind css dari contest freelancer.com</p>
+                            <p class="leading-relaxed" x-show="indo">redesign website ArcticVIP menggunakan tailwind css dari contest freelancer.com</p>
+                            <p class="leading-relaxed" x-show="!indo">redesign ArcticVIP website using tailwind css from freelancer.com contest</p>
                         </div>
                     </a>
                 </div>
@@ -364,7 +368,8 @@
                         <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-90 delay-150 duration-300">
                             <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Tailwind css</h2>
                             <h1 class="title-font text-lg font-medium text-gray-900 mb-3">EndProjects;</h1>
-                            <p class="leading-relaxed">pada awalnya web ini saya buat menggunakan bootstrap, namun pada 14 November 2023 saya putuskan untuk mengubah tampilanya menggunakan Tailwind CSS.</p>
+                            <p class="leading-relaxed" x-show="indo">pada awalnya web ini saya buat menggunakan bootstrap, namun pada 14 November 2023 saya putuskan untuk mengubah tampilanya menggunakan Tailwind CSS.</p>
+                            <p class="leading-relaxed" x-show="!indo">first time this website was created using bootstrap, but at November 14th 2023 I decided to change the view of this website using Tailwind CSS.</p>
                         </div>
                     </a>
                 </div>
@@ -375,7 +380,8 @@
                         <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-90 delay-150 duration-300">
                             <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Codeigniter 3, Bootstrap</h2>
                             <h1 class="title-font text-lg font-medium text-gray-900 mb-3">SMA Negeri 1 Jepara (versi lama)</h1>
-                            <p class="leading-relaxed">website SMA Negeri 1 Jepara pada Juni 2021 dibuat menggunakan Codeigniter 3 & Bootstrap, namu saat ini sudah beralih ke versi baru dengan TALL Stack (Tailwind css, Alpine Js, Laravel, Livewire) sejak September 2023.</p>
+                            <p class="leading-relaxed" x-show="indo">website SMA Negeri 1 Jepara pada Juni 2021 dibuat menggunakan Codeigniter 3 & Bootstrap, namun saat ini sudah beralih ke versi baru dengan TALL Stack (Tailwind css, Alpine Js, Laravel, Livewire) sejak September 2023.</p>
+                            <p class="leading-relaxed" x-show="!indo">SMA Negeri 1 Jepara's website at June 2021 was created using Codeigniter 3 & Bootstrap, but now this website was updated to new version using TALL Stack (Tailwind css, Alpine Js, Laravel, Livewire) since September 2023.</p>
                         </div>
                     </div>
                 </div>
@@ -386,7 +392,8 @@
                         <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-90 delay-150 duration-300">
                             <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Codeigniter 3, Bootstrap</h2>
                             <h1 class="title-font text-lg font-medium text-gray-900 mb-3">GeKAES SMAN 1 Jepara</h1>
-                            <p class="leading-relaxed">website event GeKAES SMA Negeri 1 Jepara yang digunakan untuk memperingati GeKAES XXV & XXVI (2021 & 2022), namun pada 2023 Event GeKAES tidak menggunakan website event lagi sehingga web GeKAES tidak bisa diakses untuk saat ini (2023)</p>
+                            <p class="leading-relaxed" x-show="indo">website event GeKAES SMA Negeri 1 Jepara yang digunakan untuk memperingati GeKAES XXV & XXVI (2021 & 2022), namun pada 2023 Event GeKAES tidak menggunakan website event lagi sehingga web GeKAES tidak bisa diakses untuk saat ini (2023)</p>
+                            <p class="leading-relaxed" x-show="!indo">event website "GeKAES SMA Negeri 1 Jepara" that use to celebrate "GeKAES XXV & XXVI (2021 & 2022)", but in 2023 GeKAES event was not using event website again, so Gekaes websites can't be accessed until now (2023)</p>
                         </div>
                     </div>
                 </div>
@@ -397,7 +404,8 @@
                         <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-90 delay-150 duration-300">
                             <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Codeigniter 3, Bootstrap</h2>
                             <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Whistleblowing System Jepara (WBS Jepara)</h1>
-                            <p class="leading-relaxed">WBS Jepara adalah project fullstack pertama yang saya buat dan digunakan oleh pemda Kabupaten Jepara. project ini dibuat ketika saya Praktek Kerja Lapangan (kuliah) pada Desember 2019 - Februari 2020 di Diskominfo Kab. Jepara, namun project ini diberikan ke saya dan saya kerjakan pada Februari 2020.</p>
+                            <p class="leading-relaxed" x-show="indo">WBS Jepara adalah project fullstack pertama yang saya buat dan digunakan oleh pemda Kabupaten Jepara. project ini dibuat ketika saya Praktek Kerja Lapangan (kuliah) pada Desember 2019 - Februari 2020 di Diskominfo Kab. Jepara, namun project ini diberikan ke saya dan saya kerjakan pada Februari 2020.</p>
+                            <p class="leading-relaxed" x-show="!indo">WBS Jepara is my first full-stack project and is used by Pemda Kabupaten Jepara. This project was created during my internship at Diskominfo Jepara from December 2019 to February 2020, but it was given to me and created in February 2020.</p>
                         </div>
                     </a>
                 </div>
