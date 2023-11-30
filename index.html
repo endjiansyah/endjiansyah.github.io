@@ -68,7 +68,7 @@
                     <a href="#hero" class="mr-5 hover:text-gray-300">Welcome</a>
                     <a href="#about" class="mr-5 hover:text-gray-300">About</a>
                     <a href="#portfolio" class="mr-5 hover:text-gray-300">Portfolio</a>
-                    <button @click="indo=!indo" class="px-4 py-2 rounded-lg !text-blue-800 bg-white text-center font-medium border-blue-800 border-2 hover:bg-blue-100 duration-300 hover:scale-105" x-text="indo?'Switch to English':'Switch to Indonesia'"></button>
+                    <button @click="indo=!indo" class="px-4 py-2 rounded-lg !text-blue-800 bg-white text-center font-medium border-blue-800 border-2 hover:bg-blue-100 duration-300 hover:scale-105" x-text="indo?'Switch to English':'Switch to Indonesia'" x-transition.duration.500ms></button>
                 </nav>
             <!-- </div> -->
         </div>
@@ -334,9 +334,9 @@
         <div class="container px-5 py-24 mx-auto">
             <div class="flex flex-col text-center w-full mb-16">
                 <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Portfolio</h1>
-                <p class="lg:w-2/3 mx-auto leading-relaxed text-base" x-show="indo">Berikut beberapa project yang bisa atau pernah bisa diakses secara online yang saya kerjakan. untuk project yang tidak bisa di publish bisa dilihat di repositori <a href="https://github.com/endjiansyah" target="_blank" class="text-gray-900 font-bold hover:text-gray-600 duration-300">Github</a> saya</p>
+                <p class="lg:w-2/3 mx-auto leading-8 text-base" x-show="indo">Berikut beberapa project yang bisa atau pernah bisa diakses secara online yang saya kerjakan. untuk project yang tidak bisa di publish bisa dilihat di repositori <a href="https://github.com/endjiansyah" target="_blank" class="text-gray-900 font-bold hover:bg-gray-800 rounded px-1 duration-300 hover:text-white p-1"><i class="fab fa-github"></i> Github</a> saya</p>
 
-                <p class="lg:w-2/3 mx-auto leading-relaxed text-base" x-show="!indo">Here are some of the projects that could or could ever be accessed online that I've been working on. For projects that can't be published can be seen in my  <a href="https://github.com/endjiansyah" target="_blank" class="text-gray-900 font-bold hover:text-gray-600 duration-300">Github</a> repository.</p>
+                <p class="lg:w-2/3 mx-auto leading-8 text-base" x-show="!indo">Here are some of the projects that could or could ever be accessed online that I've been working on. For projects that can't be published can be seen in my <a href="https://github.com/endjiansyah" target="_blank" class="text-gray-900 font-bold hover:bg-gray-800 rounded px-1 duration-300 hover:text-white p-1"><i class="fab fa-github"></i> Github</a> repository.</p>
                 <div class="h-1 w-0 group-hover/port:w-2/3 duration-500 mx-auto bg-gray-600 my-4"></div>
             </div>
             <div class="flex flex-wrap -m-4">
