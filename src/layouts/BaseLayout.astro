@@ -156,6 +156,22 @@ const canonicalURL = new URL(Astro.url.pathname, 'https://endjiansyah.github.io'
     .prose a:hover {
       color: #3b82f6;
     }
+
+    /* Scroll Reveal Animations */
+    .reveal {
+      opacity: 0;
+      transition: all 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal-up {
+      transform: translateY(40px);
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .reveal-delay-100 { transition-delay: 100ms; }
+    .reveal-delay-200 { transition-delay: 200ms; }
+    .reveal-delay-300 { transition-delay: 300ms; }
   </style>
 </head>
 <body class="bg-[#F8F9FA] text-gray-800 antialiased selection:bg-brand-dark selection:text-white">
@@ -164,5 +180,24 @@ const canonicalURL = new URL(Astro.url.pathname, 'https://endjiansyah.github.io'
   <slot />
   <slot name="footer" />
 
+  <script>
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.15
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal').forEach((el) => {
+      observer.observe(el);
+    });
+  </script>
 </body>
 </html>
