@@ -65,11 +65,11 @@ const canonicalURL = new URL(Astro.url.pathname, 'https://endjiansyah.github.io'
     }
     /* Prose styling for markdown content */
     .prose img {
-      border-radius: 1rem;
-      margin: 2rem 0;
+      border-radius: 1.25rem;
+      margin: 3.5rem 0 1.5rem 0;
       width: 100%;
       height: auto;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     }
     .prose img + em,
     .prose figcaption {
@@ -77,8 +77,9 @@ const canonicalURL = new URL(Astro.url.pathname, 'https://endjiansyah.github.io'
       text-align: center;
       font-size: 0.875rem;
       color: #9ca3af;
-      margin-top: -1rem;
-      margin-bottom: 2rem;
+      margin-top: -0.5rem;
+      margin-bottom: 3.5rem;
+      font-style: italic;
     }
     .prose h2 {
       font-size: 1.5rem;
