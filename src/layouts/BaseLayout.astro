@@ -50,7 +50,7 @@ const canonicalURL = new URL(Astro.url.pathname, 'https://endjiansyah.github.io'
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
-  <style>
+  <style is:global>
     body { font-family: 'Inter', system-ui, sans-serif; }
     .glass-nav {
       background: rgba(18, 30, 45, 0.75);
@@ -63,33 +63,32 @@ const canonicalURL = new URL(Astro.url.pathname, 'https://endjiansyah.github.io'
     .group:hover .project-card-img {
       transform: scale(1.05);
     }
-    /* Prose styling for markdown content */
+    
+    /* Global Prose styling for markdown content */
     .prose p {
-      margin-bottom: 2.25rem;
+      margin-bottom: 2.5rem;
       line-height: 1.9;
       color: #4b5563;
     }
-    /* Targeted spacing for paragraphs containing images */
-    .prose p:has(img) {
-      margin-top: 5rem;
-      margin-bottom: 2.5rem;
-    }
-    .prose img {
+    /* Target paragraphs that contain images for massive spacing */
+    .prose p img {
       display: block;
       border-radius: 1.5rem;
-      margin: 0 auto;
+      margin: 4.5rem auto 1.5rem auto;
       width: 100%;
       height: auto;
-      box-shadow: 0 25px 60px rgba(0,0,0,0.06);
+      box-shadow: 0 25px 60px rgba(0,0,0,0.08);
     }
-    .prose img + em,
-    .prose figcaption {
+    .prose p:has(img) {
+      margin-bottom: 0; /* Let the image/caption handle the space */
+    }
+    .prose em {
       display: block;
       text-align: center;
       font-size: 0.9rem;
       color: #9ca3af;
-      margin-top: 0.75rem;
-      margin-bottom: 5.5rem;
+      margin-top: -0.5rem;
+      margin-bottom: 5rem;
       font-style: italic;
       line-height: 1.6;
     }
@@ -105,38 +104,43 @@ const canonicalURL = new URL(Astro.url.pathname, 'https://endjiansyah.github.io'
       font-size: 1.35rem;
       font-weight: 600;
       margin-top: 3.5rem;
-      margin-bottom: 1rem;
+      margin-bottom: 1.25rem;
       color: #1f2937;
     }
     .prose ul, .prose ol {
-      margin-bottom: 1.25rem;
+      margin-bottom: 2rem;
       padding-left: 1.5rem;
       color: #4b5563;
     }
     .prose li {
-      margin-bottom: 0.5rem;
-      line-height: 1.7;
+      margin-bottom: 0.75rem;
+      line-height: 1.8;
     }
     .prose blockquote {
-      border-left: 3px solid #121E2D;
-      padding-left: 1rem;
-      margin: 1.5rem 0;
+      border-left: 4px solid #121E2D;
+      padding-left: 1.5rem;
+      margin: 2.5rem 0;
       font-style: italic;
-      color: #6b7280;
+      color: #374151;
+      background: #f9fafb;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
     }
     .prose code {
       background: #f3f4f6;
-      padding: 0.15rem 0.4rem;
+      padding: 0.2rem 0.4rem;
       border-radius: 0.25rem;
-      font-size: 0.875em;
+      font-size: 0.85em;
+      color: #111827;
     }
     .prose pre {
       background: #1f2937;
       color: #e5e7eb;
-      padding: 1.25rem;
-      border-radius: 0.75rem;
+      padding: 1.5rem;
+      border-radius: 1rem;
       overflow-x: auto;
-      margin: 1.5rem 0;
+      margin: 2.5rem 0;
+      box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
     }
     .prose pre code {
       background: none;
@@ -146,7 +150,8 @@ const canonicalURL = new URL(Astro.url.pathname, 'https://endjiansyah.github.io'
     .prose a {
       color: #121E2D;
       text-decoration: underline;
-      text-underline-offset: 2px;
+      text-underline-offset: 4px;
+      font-weight: 500;
     }
     .prose a:hover {
       color: #3b82f6;
