@@ -3,7 +3,7 @@ title: "Pendekatan CT & Budaya Jepara"
 description: "Pengenalan Computational Thinking melalui pola ukiran Jepara."
 date: "2024-02"
 type: "mentoring"
-coverImage: "/assets/img/stories/pendekatan-ct-budaya/cover.jpg"
+coverImage: "/assets/img/stories/pendekatan-ct-budaya/cover.png"
 tags: ["Mentoring", "Computational Thinking", "Budaya Lokal"]
 order: 3
 ---

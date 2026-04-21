@@ -3,7 +3,7 @@ title: "Titian Karier Terpadu ITB"
 description: "Integrasi LMS dan pengelolaan dokumentasi untuk platform bimbingan karir."
 date: "2024-05"
 type: "event"
-coverImage: "/assets/img/stories/titian-karier-itb/cover.jpg"
+coverImage: "/assets/img/stories/titian-karier-itb/cover.png"
 tags: ["LMS", "Product Management", "ITB"]
 order: 4
 ---

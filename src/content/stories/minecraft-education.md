@@ -3,7 +3,7 @@ title: "Minecraft Education Mentor"
 description: "Memfasilitasi pembelajaran interaktif berbasis game untuk anak-anak."
 date: "2024-03"
 type: "mentoring"
-coverImage: "/assets/img/stories/minecraft-education/cover.jpg"
+coverImage: "/assets/img/stories/minecraft-education/cover.png"
 tags: ["Minecraft Education", "Mentoring", "Edukasi"]
 order: 1
 ---
