@@ -1,99 +1,18 @@
 ---
-// PANDUAN PENGISIAN DATA MENTORING & PORTFOLIO TAMBAHAN
-// 1. Tambahkan atau ubah data di bawah ini.
-// 2. Ganti link `image` ke lokasi file gambar Anda di folder public/assets/img/ (misalnya: '/assets/img/foto.jpg')
-// 3. Tulis detail panjang di `fullStory`.
-const mentoringItems = [
-  {
-    id: 'placeholder-1',
-    title: 'Judul Mentoring / Inisiatif',
-    shortDesc: 'Tuliskan deskripsi singkat mengenai apa yang Anda lakukan atau ajarkan pada program ini.',
-    fullStory: 'Ketik cerita dan detail lengkap dokumentasi Anda di sini. Jelaskan latar belakang, tantangan, dan impact yang dihasilkan.',
-    tag: 'Kategori (e.g. Edukasi)',
-    image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=600&auto=format&fit=crop', // Ganti dengan path gambar Anda
-    iconBg: 'bg-indigo-100',
-    iconText: 'text-indigo-600',
-    iconPath: 'M13 10V3L4 14h7v7l9-11h-7z'
-  },
-  {
-    id: 'placeholder-2',
-    title: 'Program / Workshop Pilihan',
-    shortDesc: 'Penjelasan singkat acara atau aktivitas yang berjalan.',
-    fullStory: 'Jabarkan proses dan teknis pelaksanaannya di sini sebagai studi kasus portfolio Anda.',
-    tag: 'Kategori (e.g. Workshop)',
-    image: 'https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=600&auto=format&fit=crop', // Ganti dengan path gambar Anda
-    iconBg: 'bg-orange-100',
-    iconText: 'text-orange-600',
-    iconPath: 'M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z'
-  }
-  // Copy-paste blok di atas untuk menambahkan lebih banyak kartu.
-];
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import WorkCard from '../components/WorkCard.astro';
+import StoryCard from '../components/StoryCard.astro';
+import { getCollection } from 'astro:content';
+
+// Fetch content collections
+const allWorks = (await getCollection('works')).sort((a, b) => a.data.order - b.data.order);
+const allStories = (await getCollection('stories')).sort((a, b) => a.data.order - b.data.order);
 ---
 
-<html lang="id" class="scroll-smooth">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  
-  <!-- Basic SEO -->
-  <title>Endjiansyah - Software Engineer, Product Manager & Educator</title>
-  <meta name="description" content="Portfolio Endjiansyah. Berakar dari pengembangan fundamental hingga menakhodai arsitektur sistem berskala enterprise. Rekayasa teknis, visi produk, dan edukasi inklusi." />
-  <meta name="keywords" content="Endjiansyah, Endji Ansyah, Software Engineer, Product Manager, Educator, Fullstack Developer, Backend Developer, Programmer Jepara, TALL Stack, Golang, Web Developer Indonesia, Portfolio" />
-  <meta name="author" content="Endjiansyah" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://endjiansyah.github.io/" />
-  
-  <!-- Favicon & Icons -->
-  <link rel="icon" type="image/png" href="/assets/logo.png" />
-  <link rel="apple-touch-icon" href="/assets/logo.png" />
-  
-  <!-- Open Graph / Social -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://endjiansyah.github.io/" />
-  <meta property="og:title" content="Endjiansyah - Software Engineer Portfolio" />
-  <meta property="og:description" content="Menjembatani eksekusi teknis perangkat lunak. Cek ragam pengalaman industri dan portfolio teknis saya." />
-  <meta property="og:image" content="https://endjiansyah.github.io/assets/Logokedip.png" />
-  
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Endjiansyah - Software Engineer Portfolio" />
-  <meta name="twitter:description" content="Menjembatani eksekusi teknis perangkat lunak. Cek ragam pengalaman industri dan portfolio teknis saya." />
-  <meta name="twitter:image" content="https://endjiansyah.github.io/assets/Logokedip.png" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Inter', system-ui, sans-serif; }
-    .glass-nav {
-      background: rgba(18, 30, 45, 0.75);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-    }
-    .project-card-img {
-      transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    }
-    .group:hover .project-card-img {
-      transform: scale(1.05);
-    }
-  </style>
-</head>
-<body class="bg-[#F8F9FA] text-gray-800 antialiased selection:bg-brand-dark selection:text-white">
-
-  <!-- ======================== -->
-  <!-- Floating Navigation      -->
-  <!-- ======================== -->
-  <nav class="fixed top-5 left-0 right-0 z-50 px-4 pointer-events-none">
-    <div class="max-w-max mx-auto glass-nav border border-white/10 shadow-lg rounded-full pointer-events-auto px-5 py-2.5 flex items-center gap-6 text-sm font-medium tracking-wide text-gray-300">
-      <a href="#hero" class="block h-9 w-9 hover:scale-110 transition-transform flex-shrink-0 rounded-full overflow-hidden border border-white/20">
-        <img src="/assets/logo.png" alt="End Projects" class="h-full w-full object-cover" />
-      </a>
-      <div class="h-4 w-px bg-white/20"></div>
-      <a href="#works" class="hover:text-white transition-colors">Works</a>
-      <a href="#journey" class="hover:text-white transition-colors">Journey</a>
-      <a href="#contact" class="hover:text-white transition-colors">Contact</a>
-    </div>
-  </nav>
+<BaseLayout title="Endjiansyah - Software Engineer, Product Manager & Educator">
+  <Navbar slot="nav" />
 
   <!-- ======================== -->
   <!-- Hero Section             -->
@@ -131,208 +50,6 @@ const mentoringItems = [
         </div>
       </div>
 
-    </div>
-  </section>
-
-  <!-- ======================== -->
-  <!-- Section: Works           -->
-  <!-- ======================== -->
-  <section id="works" class="py-24 sm:py-32 bg-[#F8F9FA]">
-    <div class="max-w-6xl mx-auto px-6 sm:px-12 md:px-20">
-      <div class="mb-14 flex items-baseline gap-4">
-        <h3 class="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight">Selected Works</h3>
-        <span class="h-px bg-gray-300 flex-1 ml-4 hidden sm:block"></span>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        
-        <!-- Project 1: WBS Jepara -->
-        <a href="http://wbs.jepara.go.id" target="_blank" rel="noopener noreferrer" class="group block bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl hover:border-brand-dark/20 transition-all duration-300 ease-out hover:-translate-y-1">
-          <div class="aspect-video overflow-hidden bg-gray-100">
-            <img src="/assets/img/wbs.png" alt="Whistleblowing System Jepara" class="w-full h-full object-cover project-card-img" />
-          </div>
-          <div class="p-7">
-            <h4 class="text-xl font-semibold mb-2 text-gray-900 group-hover:text-brand-dark transition-colors">Whistleblowing System Jepara</h4>
-            <p class="text-gray-500 text-sm leading-relaxed mb-5">
-              Sistem pelaporan terintegrasi pertama untuk Pemerintah Daerah Kabupaten Jepara. Project fullstack pertama yang masih digunakan hingga saat ini.
-            </p>
-            <div class="flex gap-2 flex-wrap text-xs font-mono">
-              <span class="px-3 py-1 bg-gray-50 text-gray-500 rounded-full border border-gray-100">Codeigniter_3</span>
-              <span class="px-3 py-1 bg-gray-50 text-gray-500 rounded-full border border-gray-100">Bootstrap</span>
-              <span class="px-3 py-1 bg-gray-50 text-gray-500 rounded-full border border-gray-100">Fullstack</span>
-            </div>
-          </div>
-        </a>
-
-        <!-- Project 2: SMA Negeri 1 Jepara (New) -->
-        <a href="https://sman1jepara.sch.id" target="_blank" rel="noopener noreferrer" class="group block bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl hover:border-brand-dark/20 transition-all duration-300 ease-out hover:-translate-y-1">
-          <div class="aspect-video overflow-hidden bg-gray-100">
-            <img src="/assets/img/smansara.png" alt="SMA Negeri 1 Jepara Website" class="w-full h-full object-cover project-card-img" />
-          </div>
-          <div class="p-7">
-            <h4 class="text-xl font-semibold mb-2 text-gray-900 group-hover:text-brand-dark transition-colors">SMA Negeri 1 Jepara</h4>
-            <p class="text-gray-500 text-sm leading-relaxed mb-5">
-              Revitalisasi platform akademik utama sekolah negeri menggunakan TALL Stack. Dibangun ulang dari Codeigniter ke arsitektur modern sejak September 2023.
-            </p>
-            <div class="flex gap-2 flex-wrap text-xs font-mono">
-              <span class="px-3 py-1 bg-gray-50 text-gray-500 rounded-full border border-gray-100">Laravel</span>
-              <span class="px-3 py-1 bg-gray-50 text-gray-500 rounded-full border border-gray-100">Tailwind_CSS</span>
-              <span class="px-3 py-1 bg-gray-50 text-gray-500 rounded-full border border-gray-100">Livewire</span>
-            </div>
-          </div>
-        </a>
-
-        <!-- Project 3: ArcticVIP -->
-        <a href="https://illustrious-parfait-a6f428.netlify.app/" target="_blank" rel="noopener noreferrer" class="group block bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl hover:border-brand-dark/20 transition-all duration-300 ease-out hover:-translate-y-1">
-          <div class="aspect-video overflow-hidden bg-gray-100">
-            <img src="/assets/img/arcticvip.png" alt="ArcticVIP Redesign" class="w-full h-full object-cover project-card-img" />
-          </div>
-          <div class="p-7">
-            <h4 class="text-xl font-semibold mb-2 text-gray-900 group-hover:text-brand-dark transition-colors">ArcticVIP Redesign</h4>
-            <p class="text-gray-500 text-sm leading-relaxed mb-5">
-              Re-engineering visual dari mock-up desain contest freelance menjadi kode yang akurat, responsif, dan pixel-perfect.
-            </p>
-            <div class="flex gap-2 flex-wrap text-xs font-mono">
-              <span class="px-3 py-1 bg-gray-50 text-gray-500 rounded-full border border-gray-100">Tailwind_CSS</span>
-              <span class="px-3 py-1 bg-gray-50 text-gray-500 rounded-full border border-gray-100">Frontend</span>
-            </div>
-          </div>
-        </a>
-
-        <!-- Project 4: GeKAES -->
-        <div class="group block bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl hover:border-brand-dark/20 transition-all duration-300 ease-out hover:-translate-y-1">
-          <div class="aspect-video overflow-hidden bg-gray-100">
-            <img src="/assets/img/gekaes.png" alt="GeKAES SMAN 1 Jepara" class="w-full h-full object-cover project-card-img" />
-          </div>
-          <div class="p-7">
-            <h4 class="text-xl font-semibold mb-2 text-gray-900 group-hover:text-brand-dark transition-colors">GeKAES SMA N 1 Jepara</h4>
-            <p class="text-gray-500 text-sm leading-relaxed mb-5">
-              Website event GeKAES XXV & XXVI (2021–2022) untuk SMA Negeri 1 Jepara. Mengelola informasi kegiatan dan registrasi peserta secara digital.
-            </p>
-            <div class="flex gap-2 flex-wrap text-xs font-mono">
-              <span class="px-3 py-1 bg-gray-50 text-gray-500 rounded-full border border-gray-100">Codeigniter_3</span>
-              <span class="px-3 py-1 bg-gray-50 text-gray-500 rounded-full border border-gray-100">Bootstrap</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 5: EndProjects Portfolio -->
-        <div class="group block bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl hover:border-brand-dark/20 transition-all duration-300 ease-out hover:-translate-y-1">
-          <div class="aspect-video overflow-hidden bg-gray-100">
-            <img src="/assets/img/endproject.png" alt="EndProjects Portfolio" class="w-full h-full object-cover project-card-img" />
-          </div>
-          <div class="p-7">
-            <h4 class="text-xl font-semibold mb-2 text-gray-900 group-hover:text-brand-dark transition-colors">EndProjects; Portfolio</h4>
-            <p class="text-gray-500 text-sm leading-relaxed mb-5">
-              Iterasi web portfolio personal. Migrasi dari Bootstrap konvensional menuju ekosistem Tailwind CSS dengan switch bahasa menggunakan Alpine JS.
-            </p>
-            <div class="flex gap-2 flex-wrap text-xs font-mono">
-              <span class="px-3 py-1 bg-gray-50 text-gray-500 rounded-full border border-gray-100">Tailwind_CSS</span>
-              <span class="px-3 py-1 bg-gray-50 text-gray-500 rounded-full border border-gray-100">Alpine_JS</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 6: SMA N 1 Jepara (Old) -->
-        <div class="group block bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl hover:border-brand-dark/20 transition-all duration-300 ease-out hover:-translate-y-1">
-          <div class="aspect-video overflow-hidden bg-gray-100">
-            <img src="/assets/img/sman1jepara.png" alt="SMA Negeri 1 Jepara versi lama" class="w-full h-full object-cover project-card-img" />
-          </div>
-          <div class="p-7">
-            <h4 class="text-xl font-semibold mb-2 text-gray-900 group-hover:text-brand-dark transition-colors">SMA N 1 Jepara (v1)</h4>
-            <p class="text-gray-500 text-sm leading-relaxed mb-5">
-              Versi awal website SMA Negeri 1 Jepara yang dibangun pada Juni 2021. Menjadi fondasi sebelum dimigrasi ke arsitektur TALL Stack.
-            </p>
-            <div class="flex gap-2 flex-wrap text-xs font-mono">
-              <span class="px-3 py-1 bg-gray-50 text-gray-500 rounded-full border border-gray-100">Codeigniter_3</span>
-              <span class="px-3 py-1 bg-gray-50 text-gray-500 rounded-full border border-gray-100">Bootstrap</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ======================== -->
-  <!-- Section: Mentoring & PM  -->
-  <!-- ======================== -->
-  <section id="mentoring" class="py-24 sm:py-32 bg-white border-t border-gray-100">
-    <div class="max-w-6xl mx-auto px-6 sm:px-12 md:px-20">
-      <div class="mb-12">
-        <div class="flex items-baseline gap-4 mb-5">
-          <h3 class="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight">Mentoring & Initiatives</h3>
-          <span class="h-px bg-gray-300 flex-1 ml-4 hidden sm:block"></span>
-        </div>
-        <p class="text-gray-500 text-base md:text-lg max-w-3xl leading-relaxed">
-          Berikut adalah sorotan eksklusif dari beberapa inisiatif pengajaran dan program pengembangan pilihan. Kurasi ini menampilkan rekam jejak mentorship yang paling berdampak dalam membagikan ekosistem teknologi di komunitas.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        
-        {mentoringItems.map((item) => (
-          <div>
-            <!-- Card -->
-            <div 
-              class="bg-white rounded-2xl overflow-hidden border border-gray-100 hover:border-brand-dark/20 shadow-sm hover:shadow-xl transition-all duration-300 group cursor-pointer flex flex-col h-full"
-              onclick={`document.getElementById('modal-${item.id}').showModal()`}
-            >
-              <!-- Image Banner Placeholder -->
-              <div class="h-40 w-full overflow-hidden relative bg-gray-100 shrink-0">
-                <img src={item.image} alt={item.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                <!-- Gradient overlay -->
-                <div class="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent"></div>
-                <div class="absolute bottom-4 left-4 flex gap-2 items-center text-white">
-                  <div class={`w-8 h-8 rounded shrink-0 flex items-center justify-center ${item.iconBg} ${item.iconText}`}>
-                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d={item.iconPath}></path></svg>
-                  </div>
-                  <h4 class="text-base font-semibold truncate pr-2 leading-tight">{item.title}</h4>
-                </div>
-              </div>
-
-              <!-- Card Content -->
-              <div class="p-6 flex-1 flex flex-col justify-between">
-                <p class="text-gray-500 text-sm leading-relaxed mb-4 line-clamp-3">
-                  {item.shortDesc}
-                </p>
-                <div>
-                  <span class="px-3 py-1 bg-gray-50 text-gray-500 rounded-full text-xs font-medium border border-gray-100">{item.tag}</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Modal Pop-Up Dialog Native HTML -->
-            <dialog id={`modal-${item.id}`} class="p-0 rounded-2xl shadow-2xl backdrop:bg-black/60 overflow-hidden w-[95%] max-w-2xl bg-white m-auto fixed inset-0 z-[100]">
-              <div class="relative max-h-[85vh] flex flex-col">
-                
-                <!-- Close Button -->
-                <button 
-                  onclick={`document.getElementById('modal-${item.id}').close()`} 
-                  class="absolute top-4 right-4 w-8 h-8 flex items-center justify-center bg-black/40 text-white rounded-full hover:bg-black/70 z-10 transition-colors backdrop-blur-sm"
-                >&times;</button>
-                
-                <!-- Expanded Image -->
-                <div class="h-56 sm:h-72 w-full shrink-0">
-                   <img src={item.image} class="w-full h-full object-cover" alt={item.title} />
-                </div>
-                
-                <!-- Full Story / Content -->
-                <div class="p-6 sm:p-10 overflow-y-auto">
-                   <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">{item.title}</h2>
-                   <span class="inline-block px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-xs font-medium mb-6">{item.tag}</span>
-                   
-                   <div class="prose prose-sm sm:prose-base text-gray-600 leading-relaxed">
-                      <p>{item.fullStory}</p>
-                   </div>
-                </div>
-
-              </div>
-            </dialog>
-          </div>
-        ))}
-
-      </div>
     </div>
   </section>
 
@@ -481,6 +198,61 @@ const mentoringItems = [
   </section>
 
   <!-- ======================== -->
+  <!-- Section: Works           -->
+  <!-- ======================== -->
+  <section id="works" class="py-24 sm:py-32 bg-white border-t border-gray-100">
+    <div class="max-w-6xl mx-auto px-6 sm:px-12 md:px-20">
+      <div class="mb-14 flex items-baseline gap-4">
+        <h3 class="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight">Selected Works</h3>
+        <span class="h-px bg-gray-300 flex-1 ml-4 hidden sm:block"></span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {allWorks.map((work) => (
+          <WorkCard
+            title={work.data.title}
+            description={work.data.description}
+            coverImage={work.data.coverImage}
+            tools={work.data.tools}
+            slug={work.slug}
+            liveUrl={work.data.liveUrl}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== -->
+  <!-- Section: Stories         -->
+  <!-- ======================== -->
+  <section id="stories" class="py-24 sm:py-32 bg-[#F8F9FA]">
+    <div class="max-w-6xl mx-auto px-6 sm:px-12 md:px-20">
+      <div class="mb-12">
+        <div class="flex items-baseline gap-4 mb-5">
+          <h3 class="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight">Stories & Initiatives</h3>
+          <span class="h-px bg-gray-300 flex-1 ml-4 hidden sm:block"></span>
+        </div>
+        <p class="text-gray-500 text-base md:text-lg max-w-3xl leading-relaxed">
+          Berikut adalah sorotan eksklusif dari beberapa inisiatif pengajaran dan program pengembangan pilihan. Kurasi ini menampilkan rekam jejak mentorship yang paling berdampak dalam membagikan ekosistem teknologi di komunitas.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {allStories.map((story) => (
+          <StoryCard
+            title={story.data.title}
+            description={story.data.description}
+            coverImage={story.data.coverImage}
+            type={story.data.type}
+            tags={story.data.tags}
+            slug={story.slug}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== -->
   <!-- Section: Contact CTA     -->
   <!-- ======================== -->
   <section id="contact" class="py-20 bg-brand-dark text-white relative overflow-hidden">
@@ -497,15 +269,5 @@ const mentoringItems = [
     </div>
   </section>
 
-  <!-- ======================== -->
-  <!-- Footer                   -->
-  <!-- ======================== -->
-  <footer class="bg-[#0D1520] text-gray-500 py-10 text-center text-sm relative overflow-hidden">
-    <div class="max-w-4xl mx-auto px-6 relative z-10 flex flex-col items-center gap-4">
-      <img src="/assets/Logokedip.png" alt="End Projects" class="h-10 object-contain opacity-50 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0" />
-      <p class="text-gray-600 text-xs">&copy; {new Date().getFullYear()} Endjiansyah. Membangun dengan Integritas.</p>
-    </div>
-  </footer>
-
-</body>
-</html>
+  <Footer slot="footer" />
+</BaseLayout>

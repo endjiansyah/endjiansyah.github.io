@@ -1,0 +1,106 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const works = await getCollection('works');
+  return works.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+
+// Get other works for "See other projects" navigation
+const allWorks = await getCollection('works');
+const otherWorks = allWorks
+  .filter((w) => w.slug !== entry.slug)
+  .sort((a, b) => a.data.order - b.data.order)
+  .slice(0, 3);
+
+// Format date
+const dateStr = entry.data.date;
+const [year, month] = dateStr.split('-');
+const monthNames = ['', 'Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+const formattedDate = `${monthNames[parseInt(month)]} ${year}`;
+---
+
+<BaseLayout title={`${entry.data.title} — Endjiansyah`} description={entry.data.description} ogImage={entry.data.coverImage}>
+  <Navbar slot="nav" />
+
+  <main>
+    <!-- Cover Hero -->
+    <div class="relative w-full h-[50vh] md:h-[60vh] overflow-hidden bg-brand-dark">
+      <img 
+        src={entry.data.coverImage} 
+        alt={entry.data.title} 
+        class="w-full h-full object-cover opacity-40"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/60 to-transparent"></div>
+      
+      <!-- Content overlay -->
+      <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-12 md:p-20">
+        <div class="max-w-4xl mx-auto">
+          <a href="/#works" class="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm mb-6 group">
+            <svg class="w-4 h-4 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+            Kembali
+          </a>
+          <h1 class="text-3xl md:text-5xl font-bold text-white tracking-tight mb-4 leading-tight">{entry.data.title}</h1>
+          <p class="text-gray-300 text-base md:text-lg max-w-2xl leading-relaxed font-light mb-6">{entry.data.description}</p>
+          
+          <div class="flex flex-wrap items-center gap-4">
+            <span class="text-gray-400 text-sm">{formattedDate}</span>
+            <span class="w-1 h-1 bg-gray-500 rounded-full"></span>
+            <div class="flex gap-2 flex-wrap">
+              {entry.data.tools.map((tool) => (
+                <span class="px-3 py-1 bg-white/10 text-gray-300 rounded-full text-xs font-medium border border-white/10 backdrop-blur-sm">{tool}</span>
+              ))}
+            </div>
+          </div>
+
+          {entry.data.liveUrl && (
+            <a href={entry.data.liveUrl} target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 mt-6 px-6 py-2.5 bg-white text-brand-dark rounded-full text-sm font-medium hover:bg-gray-100 transition-colors shadow-sm">
+              Kunjungi Website
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            </a>
+          )}
+        </div>
+      </div>
+    </div>
+
+    <!-- Article Body -->
+    <article class="max-w-3xl mx-auto px-6 sm:px-12 py-16 md:py-20">
+      <div class="prose">
+        <Content />
+      </div>
+    </article>
+
+    <!-- Other Projects -->
+    {otherWorks.length > 0 && (
+      <section class="bg-white border-t border-gray-100 py-16 md:py-20">
+        <div class="max-w-6xl mx-auto px-6 sm:px-12 md:px-20">
+          <h3 class="text-2xl font-bold text-gray-900 tracking-tight mb-10">Project Lainnya</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {otherWorks.map((work) => (
+              <a href={`/works/${work.slug}`} class="group block bg-[#F8F9FA] rounded-2xl overflow-hidden border border-gray-100 hover:border-brand-dark/20 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                <div class="aspect-video overflow-hidden bg-gray-100">
+                  <img src={work.data.coverImage} alt={work.data.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                </div>
+                <div class="p-5">
+                  <h4 class="text-base font-semibold text-gray-900 group-hover:text-brand-dark transition-colors mb-1">{work.data.title}</h4>
+                  <p class="text-gray-500 text-xs line-clamp-2">{work.data.description}</p>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+    )}
+  </main>
+
+  <Footer slot="footer" />
+</BaseLayout>

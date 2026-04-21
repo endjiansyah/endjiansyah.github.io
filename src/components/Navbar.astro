@@ -1,0 +1,19 @@
+---
+interface Props {
+  currentPage?: string;
+}
+const { currentPage = 'home' } = Astro.props;
+---
+
+<nav class="fixed top-5 left-0 right-0 z-50 px-4 pointer-events-none" slot="nav">
+  <div class="max-w-max mx-auto glass-nav border border-white/10 shadow-lg rounded-full pointer-events-auto px-5 py-2.5 flex items-center gap-6 text-sm font-medium tracking-wide text-gray-300">
+    <a href="/#hero" class="block h-9 w-9 hover:scale-110 transition-transform flex-shrink-0 overflow-hidden border border-white/20 rounded-lg">
+      <img src="/assets/logo.png" alt="End Projects" class="h-full w-full object-contain" />
+    </a>
+    <div class="h-4 w-px bg-white/20"></div>
+    <a href="/#journey" class="hover:text-white transition-colors">Journey</a>
+    <a href="/#works" class="hover:text-white transition-colors">Works</a>
+    <a href="/#stories" class="hover:text-white transition-colors">Stories</a>
+    <a href="/#contact" class="hover:text-white transition-colors">Contact</a>
+  </div>
+</nav>
