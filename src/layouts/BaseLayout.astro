@@ -66,45 +66,45 @@ const canonicalURL = new URL(Astro.url.pathname, 'https://endjiansyah.github.io'
     
     /* Global Prose styling for markdown content */
     .prose p {
-      margin-bottom: 2.5rem;
-      line-height: 1.9;
+      margin-bottom: 1.5rem;
+      line-height: 1.8;
       color: #4b5563;
     }
-    /* Target paragraphs that contain images for massive spacing */
+    /* Targeted spacing for paragraphs containing images */
     .prose p img {
       display: block;
-      border-radius: 1.5rem;
-      margin: 4.5rem auto 1.5rem auto;
+      border-radius: 1.25rem;
+      margin: 2.5rem auto 1rem auto;
       width: 100%;
       height: auto;
-      box-shadow: 0 25px 60px rgba(0,0,0,0.08);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.05);
     }
     .prose p:has(img) {
-      margin-bottom: 0; /* Let the image/caption handle the space */
+      margin-bottom: 0;
     }
     .prose em {
       display: block;
       text-align: center;
-      font-size: 0.9rem;
+      font-size: 0.875rem;
       color: #9ca3af;
-      margin-top: -0.5rem;
-      margin-bottom: 5rem;
+      margin-top: -0.25rem;
+      margin-bottom: 3rem;
       font-style: italic;
       line-height: 1.6;
     }
     .prose h2 {
-      font-size: 1.85rem;
+      font-size: 1.75rem;
       font-weight: 700;
-      margin-top: 4.5rem;
-      margin-bottom: 1.75rem;
+      margin-top: 3.5rem;
+      margin-bottom: 1.25rem;
       color: #111827;
       letter-spacing: -0.015em;
     }
     .prose h3 {
       font-size: 1.35rem;
       font-weight: 600;
-      margin-top: 3.5rem;
-      margin-bottom: 1.25rem;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
       color: #1f2937;
     }
     .prose ul, .prose ol {
