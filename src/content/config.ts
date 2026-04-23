@@ -5,7 +5,7 @@ const worksCollection = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
-    date: z.string(),
+    date: z.date(),
     coverImage: z.string(),
     tools: z.array(z.string()),
     liveUrl: z.string().optional(),
@@ -18,8 +18,10 @@ const storiesCollection = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
-    date: z.string(),
-    type: z.enum(['mentoring', 'event', 'other']),
+    date: z.date(),
+    endDate: z.date().optional(),
+    dateLabel: z.string().optional(),
+    type: z.enum(['mentoring', 'event', 'bootcamp', 'other']),
     coverImage: z.string(),
     tags: z.array(z.string()).optional(),
     order: z.number().default(999),

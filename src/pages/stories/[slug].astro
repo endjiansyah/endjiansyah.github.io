@@ -19,19 +19,17 @@ const { Content } = await entry.render();
 const allStories = await getCollection('stories');
 const otherStories = allStories
   .filter((s) => s.slug !== entry.slug)
-  .sort((a, b) => a.data.order - b.data.order)
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
   .slice(0, 3);
 
 // Format date
-const dateStr = entry.data.date;
-const [year, month] = dateStr.split('-');
-const monthNames = ['', 'Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
-const formattedDate = `${monthNames[parseInt(month)]} ${year}`;
+const formattedDate = entry.data.dateLabel || entry.data.date.toLocaleDateString('id-ID', { year: 'numeric', month: 'long' });
 
 // Type badge styles
 const typeStyles: Record<string, { bg: string; text: string; label: string }> = {
   mentoring: { bg: 'bg-indigo-100', text: 'text-indigo-700', label: 'Mentoring' },
   event: { bg: 'bg-amber-100', text: 'text-amber-700', label: 'Event' },
+  bootcamp: { bg: 'bg-orange-100', text: 'text-orange-700', label: 'Bootcamp' },
   other: { bg: 'bg-teal-100', text: 'text-teal-700', label: 'Lainnya' },
 };
 const style = typeStyles[entry.data.type] || typeStyles.other;

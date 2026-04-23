@@ -8,7 +8,7 @@ import { getCollection } from 'astro:content';
 
 // Fetch content collections
 const allWorks = (await getCollection('works')).sort((a, b) => a.data.order - b.data.order);
-const allStories = (await getCollection('stories')).sort((a, b) => a.data.order - b.data.order);
+const allStories = (await getCollection('stories')).sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 ---
 
 <BaseLayout title="Endjiansyah - Software Engineer, Product Manager & Educator">
@@ -246,6 +246,9 @@ const allStories = (await getCollection('stories')).sort((a, b) => a.data.order 
             type={story.data.type}
             tags={story.data.tags}
             slug={story.slug}
+            date={story.data.date}
+            endDate={story.data.endDate}
+            dateLabel={story.data.dateLabel}
           />
         ))}
       </div>

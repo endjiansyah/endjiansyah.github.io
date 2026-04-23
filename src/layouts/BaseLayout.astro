@@ -83,13 +83,16 @@ const canonicalURL = new URL(Astro.url.pathname, 'https://endjiansyah.github.io'
       margin-bottom: 0;
     }
     .prose em {
+      font-style: italic;
+    }
+    /* Targeted styling for image captions (italics immediately following an image paragraph) */
+    .prose p:has(img) + p em {
       display: block;
       text-align: center;
       font-size: 0.875rem;
       color: #9ca3af;
       margin-top: -0.25rem;
       margin-bottom: 3rem;
-      font-style: italic;
       line-height: 1.6;
     }
     .prose h2 {

@@ -3,16 +3,20 @@ interface Props {
   title: string;
   description: string;
   coverImage: string;
-  type: 'mentoring' | 'event' | 'other';
+  type: 'mentoring' | 'event' | 'bootcamp' | 'other';
   tags?: string[];
   slug: string;
+  date: Date;
+  endDate?: Date;
+  dateLabel?: string;
 }
 
-const { title, description, coverImage, type, tags, slug } = Astro.props;
+const { title, description, coverImage, type, tags, slug, date, endDate, dateLabel } = Astro.props;
 
 const typeStyles: Record<string, { bg: string; text: string; label: string }> = {
   mentoring: { bg: 'bg-indigo-50', text: 'text-indigo-600', label: 'Mentoring' },
   event: { bg: 'bg-amber-50', text: 'text-amber-600', label: 'Event' },
+  bootcamp: { bg: 'bg-orange-50', text: 'text-orange-600', label: 'Bootcamp' },
   other: { bg: 'bg-teal-50', text: 'text-teal-600', label: 'Lainnya' },
 };
 
@@ -37,6 +41,12 @@ const style = typeStyles[type] || typeStyles.other;
   </div>
 
   <div class="p-6">
+    <!-- Date display -->
+    <div class="flex items-center gap-2 text-xs text-gray-400 mb-3 font-medium uppercase tracking-wider">
+      <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+      {dateLabel || date.toLocaleDateString('id-ID', { year: 'numeric', month: 'long' })}
+    </div>
+
     <p class="text-gray-500 text-sm leading-relaxed mb-4 line-clamp-3">
       {description}
     </p>
