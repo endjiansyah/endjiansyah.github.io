@@ -10,7 +10,7 @@ tags: ["Event", "Alkademi", "Agate Academy", "Mentoring", "Inclusion"]
 order: 1
 ---
 
-Kesempatan luar biasa datang di penghujung April 2026. Saya berkesempatan untuk terbang ke Bali, tepatnya ke SLBN 1 Buleleng, untuk mengikuti kegiatan **"Games for Inclusion"**. Acara ini merupakan kolaborasi luar biasa yang diinisiasi oleh **ALkademi Foundation** dan **AGATE Academy**, dengan dukungan penuh dari **Telkom Indonesia**, laptop **Axioo**, serta **Universitas Pendidikan Ganesha (Undiksha)**.
+Kesempatan luar biasa datang di penghujung April 2026. Saya berkesempatan untuk terbang ke Bali, tepatnya ke [**SLBN 1 Buleleng**](https://www.instagram.com/slb_negeri_1_buleleng/) (berlokasi di [Jl. Yudistira Selatan No.16, Singaraja, Kab. Buleleng](https://www.google.com/maps/search/?api=1&query=SLB+Negeri+1+Buleleng)), untuk mengikuti kegiatan **"Games for Inclusion"**. Acara ini merupakan kolaborasi luar biasa yang diinisiasi oleh **ALkademi Foundation** dan **AGATE Academy**, dengan dukungan penuh dari **Telkom Indonesia**, laptop **Axioo**, serta **Universitas Pendidikan Ganesha (Undiksha)**.
 
 ![Suasana Kelas](/assets/img/stories/games-for-inclusion/suasana-kelas.webp)
 
