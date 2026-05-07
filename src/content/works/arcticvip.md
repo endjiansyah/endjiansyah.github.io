@@ -2,7 +2,7 @@
 title: "ArcticVIP Redesign"
 description: "Re-engineering visual dari mock-up desain contest freelance menjadi kode yang akurat, responsif, dan pixel-perfect."
 date: 2023-06-01
-coverImage: "/assets/img/arcticvip.png"
+coverImage: "/assets/img/arcticvip.webp"
 tools: ["Tailwind CSS", "Frontend"]
 liveUrl: "https://illustrious-parfait-a6f428.netlify.app/"
 order: 3

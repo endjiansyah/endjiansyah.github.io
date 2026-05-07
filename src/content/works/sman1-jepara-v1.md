@@ -2,7 +2,7 @@
 title: "SMA N 1 Jepara (v1)"
 description: "Versi awal website SMA Negeri 1 Jepara yang dibangun pada Juni 2021. Menjadi fondasi sebelum dimigrasi ke arsitektur TALL Stack."
 date: 2021-06-01
-coverImage: "/assets/img/sman1jepara.png"
+coverImage: "/assets/img/sman1jepara.webp"
 tools: ["Codeigniter 3", "Bootstrap"]
 order: 6
 ---

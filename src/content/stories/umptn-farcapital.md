@@ -5,7 +5,7 @@ date: 2022-11-01
 endDate: 2023-01-31
 dateLabel: "November 2022 - Januari 2023"
 type: "bootcamp"
-coverImage: "/assets/img/stories/umptn-farcapital/cover.png"
+coverImage: "/assets/img/stories/umptn-farcapital/cover.webp"
 tags: ["Bootcamp", "Alkademi", "TALL Stack", "Bandung"]
 order: 1
 ---
@@ -24,7 +24,7 @@ Dua bulan pertama, kami belajar habis-habisan soal basic web programming. Kami m
 
 Nah, masuk ke bulan ketiga (Januari 2023), kami ditantang dalam proyek final yang namanya proyek **DOJO**. Di sini saya bergabung ke dalam **Tim OCR**. Fokus kami adalah mengembangkan solusi untuk membaca teks dari gambar secara otomatis. Pengalaman yang cukup memutar otak, tapi sangat memuaskan saat aplikasinya berhasil jalan.
 
-![Kebersamaan Tim Alkademi](/assets/img/stories/umptn-farcapital/cover.png)
+![Kebersamaan Tim Alkademi](/assets/img/stories/umptn-farcapital/cover.webp)
 *Foto bersama teman-teman seperjuangan. Ini yang membuat saya betah di Bandung!*
 
 ## Penutup (Untuk Sekarang)
