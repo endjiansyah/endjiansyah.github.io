@@ -10,7 +10,7 @@ tags: ["Event", "Alkademi", "Agate Academy", "Mentoring", "Inclusion"]
 order: 1
 ---
 
-Menjelang akhir April 2026, saya mendapatkan sebuah kehormatan yang tidak akan pernah saya lupakan. Perjalanan kali ini membawa saya jauh ke utara Pulau Dewata, tepatnya ke [**SLBN 1 Buleleng**](https://www.instagram.com/slb_negeri_1_buleleng/) di Singaraja. Kami hadir membawa sebuah misi besar bertajuk **"Games for Inclusion"**, sebuah inisiatif kolaboratif yang diinisiasi oleh **Alkademi Foundation** dan **Agate Academy**. 
+Menjelang akhir April 2026, saya mendapatkan sebuah kehormatan yang tidak akan pernah saya lupakan. Perjalanan kali ini membawa saya jauh ke utara Pulau Dewata, tepatnya ke [**SLBN 1 Buleleng**](https://www.instagram.com/slb_negeri_1_buleleng/) di Singaraja. Kami hadir membawa sebuah misi besar bertajuk **"Games for Inclusion"**, sebuah kolaborasi luar biasa untuk menghadirkan inklusivitas di dunia teknologi.
 
 Program ini bukan sekadar kunjungan biasa, melainkan upaya nyata untuk memberikan *up-skilling* teknologi kepada teman-teman disabilitas pendengaran (tunarungu). Inisiatif ini terwujud berkat kolaborasi erat dan dukungan penuh dari **Agate Academy**, **Alkademi Foundation**, **Telkom Indonesia**, **Axioo**, serta bantuan dari teman-teman **Universitas Pendidikan Ganesha (Undiksha)**. Bersama-sama, kami ingin membuktikan bahwa batasan fisik bukanlah penghalang untuk menguasai teknologi masa depan.
 
