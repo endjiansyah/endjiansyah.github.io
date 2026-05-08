@@ -16,7 +16,7 @@ const {
 const canonicalURL = new URL(Astro.url.pathname, 'https://endjiansyah.github.io');
 ---
 
-<html lang={lang} class="scroll-smooth">
+<html lang={lang} class="scroll-smooth overflow-x-hidden">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -151,6 +151,32 @@ const canonicalURL = new URL(Astro.url.pathname, 'https://endjiansyah.github.io'
       color: #3b82f6;
     }
 
+    /* Mobile responsive prose overrides */
+    @media (max-width: 640px) {
+      .prose h2 {
+        font-size: 1.4rem;
+        margin-top: 2.5rem;
+      }
+      .prose h3 {
+        font-size: 1.15rem;
+        margin-top: 2rem;
+      }
+      .prose p img {
+        border-radius: 0.75rem;
+        margin: 1.5rem auto 0.75rem auto;
+      }
+      .prose blockquote {
+        margin: 1.5rem 0;
+        padding-left: 1rem;
+      }
+      .prose pre {
+        padding: 1rem;
+        border-radius: 0.75rem;
+        margin: 1.5rem 0;
+        font-size: 0.8em;
+      }
+    }
+
     /* Scroll Reveal Animations */
     .reveal {
       opacity: 0;
@@ -168,7 +194,7 @@ const canonicalURL = new URL(Astro.url.pathname, 'https://endjiansyah.github.io'
     .reveal-delay-300 { transition-delay: 300ms; }
   </style>
 </head>
-<body class="bg-[#F8F9FA] text-gray-800 antialiased selection:bg-brand-dark selection:text-white">
+<body class="bg-[#F8F9FA] text-gray-800 antialiased selection:bg-brand-dark selection:text-white overflow-x-hidden">
 
   <slot name="nav" />
   <slot />
