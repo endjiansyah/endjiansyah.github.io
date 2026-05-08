@@ -1,6 +1,6 @@
 ---
-title: "Games for Inclusion: Mengajar Bikin Game di Bali"
-description: "Pengalaman seru menjadi mentor untuk teman-teman tunarungu di SLBN 1 Buleleng, mengajarkan cara membuat game arcade."
+title: "Games for Inclusion: Upskilling Disabilitas Melalui Teknologi Game dan AI"
+description: "Kisah inspiratif perjalanan ke Bali Utara untuk memberdayakan teman-teman disabilitas melalui literasi teknologi game dan kecerdasan buatan (AI)."
 date: 2026-04-27
 endDate: 2026-04-28
 dateLabel: "27-28 April 2026"
@@ -10,38 +10,38 @@ tags: ["Event", "Alkademi", "Agate Academy", "Mentoring", "Inclusion"]
 order: 1
 ---
 
-Kesempatan luar biasa datang di penghujung April 2026. Saya berkesempatan untuk terbang ke Bali, tepatnya ke [**SLBN 1 Buleleng**](https://www.instagram.com/slb_negeri_1_buleleng/) (berlokasi di [Jl. Yudistira Selatan No.16, Singaraja, Kab. Buleleng](https://www.google.com/maps/search/?api=1&query=SLB+Negeri+1+Buleleng)), untuk mengikuti kegiatan **"Games for Inclusion"**. Acara ini merupakan kolaborasi luar biasa yang diinisiasi oleh **ALkademi Foundation** dan **AGATE Academy**, dengan dukungan penuh dari **Telkom Indonesia**, laptop **Axioo**, serta **Universitas Pendidikan Ganesha (Undiksha)**.
+Menjelang akhir April 2026, saya mendapatkan sebuah kehormatan yang tidak akan pernah saya lupakan. Perjalanan kali ini membawa saya jauh ke utara Pulau Dewata, tepatnya ke [**SLBN 1 Buleleng**](https://www.instagram.com/slb_negeri_1_buleleng/) di Singaraja. Kami hadir membawa sebuah misi besar bertajuk **"Games for Inclusion"**, sebuah inisiatif kolaboratif yang diinisiasi oleh **Alkademi Foundation** dan **Agate Academy**. 
 
-![Suasana Kelas](/assets/img/stories/games-for-inclusion/suasana-kelas.webp)
+Program ini bukan sekadar kunjungan biasa, melainkan upaya nyata untuk memberikan *up-skilling* teknologi kepada teman-teman disabilitas pendengaran (tunarungu). Inisiatif ini terwujud berkat kolaborasi erat dan dukungan penuh dari **Agate Academy**, **Alkademi Foundation**, **Telkom Indonesia**, **Axioo**, serta bantuan dari teman-teman **Universitas Pendidikan Ganesha (Undiksha)**. Bersama-sama, kami ingin membuktikan bahwa batasan fisik bukanlah penghalang untuk menguasai teknologi masa depan.
 
-Fokus utama dari kegiatan yang berlangsung selama 2 hari (27-28 April 2026) ini adalah memberikan *up-skilling* terkait teknologi game dan AI untuk teman-teman siswa dengan disabilitas pendengaran (tunarungu). Terus terang, ini adalah **pengalaman pertama kalinya** saya mengajar dan melaksanakan *event* secara langsung di Sekolah Luar Biasa (SLB) dengan peserta tunarungu.
+![Suasana kelas pelatihan Games for Inclusion bersama Endjiansyah di SLBN 1 Buleleng Bali](/assets/img/stories/games-for-inclusion/suasana-kelas.webp)
 
-![Kelas Pelatihan](/assets/img/stories/games-for-inclusion/kelas.webp)
+### Menembus Batas Komunikasi
+Ini adalah pengalaman pertama saya mengajar di lingkungan Sekolah Luar Biasa (SLB). Jujur, ada rasa gugup di awal—bagaimana saya bisa menyampaikan logika pemrograman yang rumit kepada teman-teman tunarungu? Namun, kegugupan itu sirna begitu melihat senyum ramah para siswa dan dedikasi luar biasa dari para guru SLBN 1 Buleleng. Para guru ini menjadi jembatan komunikasi yang sangat sabar, menerjemahkan setiap penjelasan teknis ke dalam bahasa isyarat yang dinamis.
 
-## Rangkaian Acara Dua Hari
+![Endjiansyah memberikan mentoring teknologi game di kelas inklusif](/assets/img/stories/games-for-inclusion/kelas.webp)
 
-Kegiatan ini dibagi menjadi dua hari yang sangat padat dan bermanfaat. Pada **hari pertama (27 April)**, acara diisi dengan pemaparan materi luar biasa yang disampaikan oleh **Kak Karina Dewanti Shafwan**. Sesi ini membuka wawasan para siswa tentang industri game dan peluang yang ada di dalamnya.
+### Dua Hari Penuh Inspirasi
+Kegiatan berlangsung selama dua hari yang sangat intens. Pada hari pertama, **Kak Karina Dewanti Shafwan** membuka cakrawala para siswa dengan materi industri game. Beliau memaparkan bagaimana sebuah hobi bisa menjadi profesi, dan bagaimana industri kreatif global sangat terbuka bagi siapa saja yang memiliki keahlian.
 
-Memasuki **hari kedua (28 April)**, giliran saya yang mengambil peran sebagai mentor. Saya membawakan materi teknis tentang bagaimana merancang dan membuat game arcade sederhana menggunakan platform **Makecode Arcade**.
+Di hari kedua, giliran saya yang masuk ke ranah teknis. Fokus utama kami adalah merancang game arcade menggunakan **MakeCode Arcade**. Saya mengajak para siswa untuk tidak hanya menjadi pemain, tetapi menjadi kreator. Kami menyusun logika blok demi blok: mengatur pergerakan karakter, menciptakan rintangan, hingga menentukan skor.
 
-![Materi Makecode Arcade](/assets/img/stories/games-for-inclusion/materi-makecode-arcade.webp)
+![Endjiansyah menjelaskan materi Makecode Arcade untuk siswa disabilitas pendengaran](/assets/img/stories/games-for-inclusion/materi-makecode-arcade.webp)
 
-Tidak hanya itu, saya juga membagikan materi dasar-dasar *Prompting* sederhana agar teman-teman siswa bisa mulai mengenal dan memanfaatkan kecerdasan buatan (AI) dalam proses kreatif mereka.
+Tak berhenti di sana, saya juga memperkenalkan dasar-dasar **AI Prompting**. Saya ingin mereka tahu bahwa kecerdasan buatan (AI) bisa menjadi "asisten pribadi" yang membantu mereka dalam proses kreatif, mulai dari mencari ide hingga memecahkan masalah logika.
 
-![Materi Prompting AI](/assets/img/stories/games-for-inclusion/materi-prompt.webp)
+![Sesi pelatihan AI Prompting oleh Endjiansyah di SLB Negeri 1 Buleleng](/assets/img/stories/games-for-inclusion/materi-prompt.webp)
 
-Antusiasme mereka sungguh di luar dugaan! Melihat bagaimana mereka fokus merangkai logika blok di Makecode dan tersenyum puas ketika melihat game buatan mereka sendiri berhasil dimainkan, benar-benar menjadi pengalaman emosional yang sangat berharga bagi saya pribadi. 
+### Momen "Aha!" yang Emosional
+Puncak kebahagiaan saya adalah saat melihat wajah-wajah serius itu berubah menjadi tawa dan decak kagum. Ada momen "Aha!" ketika game yang mereka susun logikanya akhirnya bisa dijalankan dan dimainkan. Melihat mereka bangga menunjukkan hasil karyanya kepada teman sebangku benar-benar menyentuh hati. Literasi digital bukan hanya tentang kode, tapi tentang memberikan rasa percaya diri bahwa mereka mampu bersaing di era digital.
 
-![Hasil Game Buatan Siswa](/assets/img/stories/games-for-inclusion/hasil-game.webp)
+![Hasil karya game arcade buatan siswa disabilitas hasil bimbingan Endjiansyah](/assets/img/stories/games-for-inclusion/hasil-game.webp)
 
-Meskipun ini pengalaman pertama saya, proses komunikasi berjalan sangat lancar karena dibantu oleh para guru SLB yang sangat sabar dan berdedikasi. Berkat mereka, materi teknis yang rumit ini bisa tersampaikan dengan sangat baik ke bahasa isyarat.
+### Teknologi untuk Semua
+Program ini mempertegas keyakinan saya: teknologi adalah alat pemberdayaan yang universal. Jika kita mampu memberikan akses dan pendekatan yang tepat, inklusivitas dalam industri teknologi bukan lagi sekadar impian, melainkan realitas yang bisa kita wujudkan bersama.
 
-![Penyerahan Sertifikat](/assets/img/stories/games-for-inclusion/penyerahan-sertifikat.webp)
+![Endjiansyah menerima sertifikat apresiasi dari SLBN 1 Buleleng](/assets/img/stories/games-for-inclusion/penyerahan-sertifikat.webp)
 
-## Teknologi untuk Semua & Ucapan Terima Kasih
+![Foto bersama Endjiansyah dan peserta program Games for Inclusion Bali](/assets/img/stories/games-for-inclusion/foto-bersama.webp)
 
-Bagi saya, acara ini bukan sekadar mengajarkan teknologi, tapi juga membuktikan bahwa dengan pendekatan yang tepat, teknologi benar-benar bisa menjangkau dan memberdayakan siapa saja tanpa terkecuali. 
-
-![Foto Bersama Games for Inclusion](/assets/img/stories/games-for-inclusion/foto-bersama.webp)
-
-Pengalaman luar biasa ini tidak akan terjadi tanpa kerja keras banyak pihak. Terima kasih yang sebesar-besarnya untuk tim **AGATE Academy**, khususnya **Kak Restya Winda Astari** dan **Kak Nadia Ukhti**, atas kolaborasi dan pengalaman serunya—mulai dari perjalanan berangkat dari Bandung ke Bali, hingga kembali lagi ke Bandung. Kalian luar biasa!
+Terima kasih yang mendalam untuk tim **Agate Academy**, terutama **Kak Restya Winda Astari** dan **Kak Nadia Ukhti**, yang telah mendampingi, mengawal, dan berkolaborasi erat dalam seluruh rangkaian kegiatan dari Bandung hingga Singaraja. Dedikasi kalian adalah kunci keberhasilan program ini. Kolaborasi ini memberikan pelajaran berharga bagi saya bahwa setiap individu memiliki potensi luar biasa, selama kita bersedia membukakan pintunya. *Games for Inclusion is a gateway to a world where everyone belongs.*
