@@ -24,9 +24,28 @@ const otherWorks = allWorks
 
 // Format date
 const formattedDate = entry.data.date.toLocaleDateString('id-ID', { year: 'numeric', month: 'long' });
+
+const projectSchema = {
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": entry.data.title,
+  "description": entry.data.description,
+  "image": `https://endjiansyah.github.io${entry.data.coverImage}`,
+  "url": `https://endjiansyah.github.io/works/${entry.slug}/`,
+  "datePublished": entry.data.date.toISOString().split('T')[0],
+  "author": {
+    "@type": "Person",
+    "name": "Endjiansyah"
+  }
+};
 ---
 
-<BaseLayout title={`${entry.data.title} — Endjiansyah`} description={entry.data.description} ogImage={entry.data.coverImage}>
+<BaseLayout 
+  title={`${entry.data.title} — Endjiansyah`} 
+  description={entry.data.description} 
+  ogImage={entry.data.coverImage}
+  jsonSchema={projectSchema}
+>
   <Navbar slot="nav" />
 
   <main>

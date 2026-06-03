@@ -33,9 +33,29 @@ const typeStyles: Record<string, { bg: string; text: string; label: string }> = 
   other: { bg: 'bg-teal-100', text: 'text-teal-700', label: 'Lainnya' },
 };
 const style = typeStyles[entry.data.type] || typeStyles.other;
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": entry.data.title,
+  "description": entry.data.description,
+  "image": `https://endjiansyah.github.io${entry.data.coverImage}`,
+  "url": `https://endjiansyah.github.io/stories/${entry.slug}/`,
+  "datePublished": entry.data.date.toISOString().split('T')[0],
+  "author": {
+    "@type": "Person",
+    "name": "Endjiansyah",
+    "url": "https://endjiansyah.github.io"
+  }
+};
 ---
 
-<BaseLayout title={`${entry.data.title} — Endjiansyah`} description={entry.data.description} ogImage={entry.data.coverImage}>
+<BaseLayout 
+  title={`${entry.data.title} — Endjiansyah`} 
+  description={entry.data.description} 
+  ogImage={entry.data.coverImage}
+  jsonSchema={articleSchema}
+>
   <Navbar slot="nav" />
 
   <main>

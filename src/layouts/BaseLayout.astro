@@ -4,13 +4,15 @@ interface Props {
   description?: string;
   lang?: string;
   ogImage?: string;
+  jsonSchema?: Record<string, any>;
 }
 
 const { 
   title, 
   description = 'Portfolio Endjiansyah. Berakar dari pengembangan fundamental hingga menakhodai arsitektur sistem berskala enterprise.', 
   lang = 'id',
-  ogImage = '/assets/Logokedip.webp'
+  ogImage = '/assets/Logokedip.webp',
+  jsonSchema
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, 'https://endjiansyah.github.io');
@@ -193,6 +195,9 @@ const canonicalURL = new URL(Astro.url.pathname, 'https://endjiansyah.github.io'
     .reveal-delay-200 { transition-delay: 200ms; }
     .reveal-delay-300 { transition-delay: 300ms; }
   </style>
+  {jsonSchema && (
+    <script type="application/ld+json" set:html={JSON.stringify(jsonSchema)} />
+  )}
 </head>
 <body class="bg-[#F8F9FA] text-gray-800 antialiased selection:bg-brand-dark selection:text-white overflow-x-hidden">
 

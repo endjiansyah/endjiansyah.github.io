@@ -9,9 +9,32 @@ import { getCollection } from 'astro:content';
 // Fetch content collections
 const allWorks = (await getCollection('works')).sort((a, b) => a.data.order - b.data.order);
 const allStories = (await getCollection('stories')).sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Endjiansyah",
+  "alternateName": "Endji Ansyah",
+  "url": "https://endjiansyah.github.io",
+  "image": "https://endjiansyah.github.io/assets/profile.webp",
+  "description": "Software Engineer, Product Manager & Educator",
+  "jobTitle": "Product Manager / Engineering Manager",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Alkademi"
+  },
+  "sameAs": [
+    "https://github.com/endjiansyah",
+    "https://www.linkedin.com/in/endji-ansyah-30322a115/"
+  ]
+};
 ---
 
-<BaseLayout title="Endjiansyah - Software Engineer, Product Manager & Educator">
+<BaseLayout 
+  title="Endjiansyah - Software Engineer, Product Manager & Educator"
+  ogImage="/assets/profile.webp"
+  jsonSchema={personSchema}
+>
   <Navbar slot="nav" />
 
   <!-- ======================== -->
