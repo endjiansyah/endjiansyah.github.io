@@ -1,0 +1,390 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import EducationCard from '../../components/EducationCard.astro';
+import VideoEmbed from '../../components/VideoEmbed.astro';
+import { getCollection } from 'astro:content';
+
+// Static paths: gabungkan playlists + modules. Keduanya berbagi namespace /learning/[slug].
+// Jika ada tabrakan slug, module diprioritaskan (lebih spesifik).
+// Modules di-fetch defensif: cek file via glob dulu agar tidak memicu warning Astro saat kosong.
+export async function getStaticPaths() {
+  const playlists = await getCollection('playlists');
+  const moduleFiles = import.meta.glob('../../content/modules/*.md', { eager: true });
+  const modules = Object.keys(moduleFiles).length > 0 ? await getCollection('modules') : [];
+
+  const moduleSlugs = new Set(modules.map((m) => m.slug));
+
+  const playlistPaths = playlists
+    .filter((p) => !moduleSlugs.has(p.slug))
+    .map((p) => ({ params: { slug: p.slug }, props: { entry: p, kind: 'video' as const } }));
+
+  const modulePaths = modules.map((m) => ({
+    params: { slug: m.slug },
+    props: { entry: m, kind: 'module' as const },
+  }));
+
+  return [...playlistPaths, ...modulePaths];
+}
+
+const { entry, kind } = Astro.props;
+const { Content } = await entry.render();
+
+// Fetch semua education entry untuk "Lihat juga" navigation (campuran playlist + module)
+const allPlaylists = await getCollection('playlists');
+const moduleFiles = import.meta.glob('../../content/modules/*.md', { eager: true });
+const allModules = Object.keys(moduleFiles).length > 0 ? await getCollection('modules') : [];
+
+const others = [
+  ...allPlaylists
+    .filter((p) => p.slug !== entry.slug)
+    .map((p) => ({ ...p, kind: 'video' as const })),
+  ...allModules
+    .filter((m) => m.slug !== entry.slug)
+    .map((m) => ({ ...m, kind: 'module' as const })),
+]
+  .sort((a, b) => a.data.order - b.data.order)
+  .slice(0, 3);
+
+const formattedDate = entry.data.date.toLocaleDateString('id-ID', { year: 'numeric', month: 'long' });
+
+// Schema.org JSON-LD: berbeda per jenis
+const jsonSchema =
+  kind === 'video'
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        name: entry.data.title,
+        description: entry.data.description,
+        image: `https://endjiansyah.github.io${entry.data.coverImage}`,
+        url: `https://endjiansyah.github.io/learning/${entry.slug}/`,
+        itemListElement: entry.data.videos.map((v, i) => ({
+          '@type': 'ListItem',
+          position: i + 1,
+          name: v.title,
+          url: `https://www.youtube.com/watch?v=${v.youtubeId}`,
+        })),
+      }
+    : {
+        '@context': 'https://schema.org',
+        '@type': 'Article',
+        headline: entry.data.title,
+        description: entry.data.description,
+        image: `https://endjiansyah.github.io${entry.data.coverImage}`,
+        url: `https://endjiansyah.github.io/learning/${entry.slug}/`,
+        datePublished: entry.data.date.toISOString().split('T')[0],
+        author: { '@type': 'Person', name: 'Endjiansyah', url: 'https://endjiansyah.github.io' },
+      };
+
+// Helper untuk playlist
+const firstVideo = kind === 'video' ? entry.data.videos[0] : null;
+const totalVideos = kind === 'video' ? entry.data.videos.length : 0;
+---
+
+<BaseLayout
+  title={`${entry.data.title} — Endjiansyah`}
+  description={entry.data.description}
+  ogImage={entry.data.coverImage}
+  jsonSchema={jsonSchema}
+>
+  <Navbar slot="nav" />
+
+  <main>
+    {/* ============================ */}
+    {/* COVER HERO (sama untuk keduanya) */}
+    {/* ============================ */}
+    <div class="relative w-full h-[50vh] md:h-[60vh] overflow-hidden bg-brand-dark">
+      <img src={entry.data.coverImage} alt={entry.data.title} class="w-full h-full object-cover opacity-40" />
+      <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/60 to-transparent"></div>
+
+      <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-12 md:p-20">
+        <div class="max-w-4xl mx-auto">
+          <a href="/#learning" class="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm mb-6 group">
+            <svg class="w-4 h-4 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+            Kembali
+          </a>
+
+          {/* Kind badge */}
+          <span class={`inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold rounded-full mb-4 ${kind === 'video' ? 'bg-red-100 text-red-700' : 'bg-emerald-100 text-emerald-700'}`}>
+            {kind === 'video' ? (
+              <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
+            ) : (
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+            )}
+            {kind === 'video' ? 'Video' : 'Modul'}
+          </span>
+
+          <h1 class="text-3xl md:text-5xl font-bold text-white tracking-tight mb-4 leading-tight">{entry.data.title}</h1>
+          <p class="text-gray-300 text-base md:text-lg max-w-2xl leading-relaxed font-light mb-6">{entry.data.description}</p>
+
+          <div class="flex flex-wrap items-center gap-4">
+            <span class="text-gray-400 text-sm">{formattedDate}</span>
+            {kind === 'video' && (
+              <>
+                <span class="w-1 h-1 bg-gray-500 rounded-full"></span>
+                <span class="text-gray-400 text-sm">{totalVideos} Video</span>
+                {entry.data.youtubePlaylistUrl && (
+                  <>
+                    <span class="w-1 h-1 bg-gray-500 rounded-full"></span>
+                    <a href={entry.data.youtubePlaylistUrl} target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white text-sm inline-flex items-center gap-1 transition-colors">
+                      Tonton di YouTube
+                      <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                    </a>
+                  </>
+                )}
+              </>
+            )}
+            {kind === 'module' && entry.data.readTime && (
+              <>
+                <span class="w-1 h-1 bg-gray-500 rounded-full"></span>
+                <span class="text-gray-400 text-sm">{entry.data.readTime}</span>
+              </>
+            )}
+            {entry.data.tags && entry.data.tags.length > 0 && (
+              <>
+                <span class="w-1 h-1 bg-gray-500 rounded-full"></span>
+                <div class="flex gap-2 flex-wrap">
+                  {entry.data.tags.map((tag) => (
+                    <span class="px-3 py-1 bg-white/10 text-gray-300 rounded-full text-xs font-medium border border-white/10 backdrop-blur-sm">{tag}</span>
+                  ))}
+                </div>
+              </>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* ============================ */}
+    {/* BODY: PLAYLIST (layout YouTube) */}
+    {/* ============================ */}
+    {kind === 'video' && firstVideo && (
+      <Fragment>
+        {/* Player + Queue — container lebar ala YouTube */}
+        <section class="bg-[#F8F9FA] py-6 md:py-8">
+          <div class="max-w-[1600px] mx-auto px-4 lg:px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8">
+              {/* Kolom kiri: player + info video aktif */}
+              <div class="lg:col-span-8">
+                <div id="active-player">
+                  <VideoEmbed
+                    youtubeId={firstVideo.youtubeId}
+                    title={firstVideo.title}
+                    duration={firstVideo.duration}
+                  />
+                </div>
+
+                {/* Info video aktif (YouTube-style) */}
+                <div id="active-info" class="mt-4 md:mt-5">
+                  <div class="flex items-center gap-2 text-xs font-semibold text-brand-dark uppercase tracking-wider mb-2">
+                    <span id="active-episode-label">Episode 1</span>
+                    <span class="text-gray-300">/</span>
+                    <span class="text-gray-400 normal-case tracking-normal">{totalVideos} Episode</span>
+                  </div>
+                  <h2 class="text-lg md:text-2xl font-bold text-gray-900 mb-3 leading-snug">{firstVideo.title}</h2>
+                  {firstVideo.description && (
+                    <div class="bg-white rounded-xl p-4 md:p-5 border border-gray-100 text-sm text-gray-600 leading-relaxed">
+                      {firstVideo.description}
+                    </div>
+                  )}
+                </div>
+              </div>
+
+              {/* Kolom kanan: queue/playlist (sticky di desktop) */}
+              <div class="lg:col-span-4">
+                <div class="lg:sticky lg:top-20 lg:self-start bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm">
+                  {/* Queue header (gelap ala YouTube) */}
+                  <div class="flex items-center justify-between px-4 py-3 bg-brand-dark text-white">
+                    <div class="min-w-0">
+                      <h3 class="text-sm font-bold truncate">{entry.data.title}</h3>
+                      <p class="text-xs text-gray-400">{totalVideos} video</p>
+                    </div>
+                    {entry.data.youtubePlaylistUrl && (
+                      <a href={entry.data.youtubePlaylistUrl} target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-3 text-gray-300 hover:text-white transition-colors" aria-label="Buka di YouTube">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
+                      </a>
+                    )}
+                  </div>
+                  {/* Queue items */}
+                  <div class="p-2 space-y-0.5 lg:max-h-[calc(100vh-220px)] lg:overflow-y-auto">
+                    {entry.data.videos.map((video, i) => (
+                      <button
+                        type="button"
+                        class:list={[
+                          'video-item w-full flex gap-3 p-2 rounded-lg text-left transition-colors group border-l-[3px]',
+                          i === 0 ? 'bg-brand-dark/5 border-brand-dark' : 'border-transparent hover:bg-gray-50',
+                        ]}
+                        data-youtube-id={video.youtubeId}
+                        data-title={video.title}
+                        data-description={video.description || ''}
+                        data-duration={video.duration || ''}
+                        data-index={i + 1}
+                        aria-label={`Putar ${video.title}`}
+                      >
+                        <div class="relative flex-shrink-0 w-32 sm:w-36 aspect-video rounded-md overflow-hidden bg-gray-900">
+                          <img
+                            src={`https://img.youtube.com/vi/${video.youtubeId}/mqdefault.jpg`}
+                            alt={video.title}
+                            class="w-full h-full object-cover"
+                            loading="lazy"
+                          />
+                          <div class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors">
+                            <svg class="w-7 h-7 text-white/90" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
+                          </div>
+                          {video.duration && (
+                            <span class="absolute bottom-1 right-1 px-1.5 py-0.5 bg-black/80 text-white text-[10px] font-medium rounded">{video.duration}</span>
+                          )}
+                        </div>
+                        <div class="flex-1 min-w-0 py-0.5">
+                          <span class="block text-[10px] text-gray-400 mb-0.5 uppercase tracking-wider">Episode {i + 1}</span>
+                          <span class="block text-xs sm:text-sm font-medium text-gray-900 line-clamp-2 group-hover:text-brand-dark transition-colors">{video.title}</span>
+                        </div>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA ke YouTube playlist */}
+        {entry.data.youtubePlaylistUrl && (
+          <div class="mt-8 text-center">
+            <a
+              href={entry.data.youtubePlaylistUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 px-6 py-2.5 bg-brand-dark text-white rounded-full text-sm font-medium hover:bg-brand-dark/90 transition-colors shadow-sm"
+            >
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
+              Tonton Semua di YouTube
+            </a>
+          </div>
+        )}
+      </Fragment>
+    )}
+
+    {/* ============================ */}
+    {/* BODY: MODULE (artikel bacaan) */}
+    {/* ============================ */}
+    {kind === 'module' && (
+      <article class="max-w-4xl mx-auto px-6 sm:px-12 py-16 md:py-20">
+        <div class="prose">
+          <Content />
+        </div>
+      </article>
+    )}
+
+    {/* ============================ */}
+    {/* LIHAT JUGA: playlist/modul lain */}
+    {/* ============================ */}
+    {others.length > 0 && (
+      <section class="bg-[#F8F9FA] border-t border-gray-100 py-16 md:py-20">
+        <div class="max-w-6xl mx-auto px-6 sm:px-12 md:px-20">
+          <h3 class="text-2xl font-bold text-gray-900 tracking-tight mb-10">Materi Lainnya</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {others.map((item) => (
+              <EducationCard
+                title={item.data.title}
+                description={item.data.description}
+                coverImage={item.data.coverImage}
+                kind={item.kind}
+                slug={item.slug}
+                tags={item.data.tags}
+                videoCount={item.kind === 'video' ? item.data.videos.length : undefined}
+                readTime={item.kind === 'module' ? item.data.readTime : undefined}
+                date={item.data.date}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+    )}
+  </main>
+
+  <Footer slot="footer" />
+</BaseLayout>
+
+<script>
+  // Swap player: klik video di queue kanan → ganti player + info di kiri.
+  // Pattern vanilla JS, konsisten dengan BaseLayout/Navbar.
+  function initPlaylistPlayer() {
+    const items = document.querySelectorAll<HTMLElement>('.video-item');
+    const playerContainer = document.getElementById('active-player');
+    const infoContainer = document.getElementById('active-info');
+    if (!playerContainer || !infoContainer || items.length === 0) return;
+
+    const totalEpisodes = items.length;
+
+    const setActiveItem = (item: HTMLElement) => {
+      items.forEach((i) => {
+        i.classList.remove('bg-brand-dark/5', 'border-brand-dark');
+        i.classList.add('border-transparent');
+      });
+      item.classList.remove('border-transparent');
+      item.classList.add('bg-brand-dark/5', 'border-brand-dark');
+    };
+
+    items.forEach((item) => {
+      item.addEventListener('click', () => {
+        const id = item.dataset.youtubeId;
+        const title = item.dataset.title || '';
+        const description = item.dataset.description || '';
+        const duration = item.dataset.duration || '';
+        const index = item.dataset.index || '1';
+        const safeTitle = title.replace(/"/g, '&quot;');
+
+        if (!id) return;
+
+        // Ganti player dengan facade baru (autoplay langsung)
+        playerContainer.innerHTML = `
+          <div
+            class="video-facade relative w-full aspect-video bg-gray-900 rounded-xl overflow-hidden cursor-pointer group"
+            data-youtube-id="${id}"
+            data-title="${safeTitle}"
+            role="button"
+            tabindex="0"
+            aria-label="Putar video: ${safeTitle}"
+          >
+            <img src="https://img.youtube.com/vi/${id}/hqdefault.jpg" alt="${safeTitle}" class="w-full h-full object-cover" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/10"></div>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="w-16 h-16 sm:w-20 sm:h-20 bg-red-600 group-hover:bg-red-500 group-hover:scale-110 rounded-full flex items-center justify-center shadow-2xl transition-all duration-300">
+                <svg class="w-7 h-7 sm:w-9 sm:h-9 text-white ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
+              </div>
+            </div>
+            ${duration ? `<span class="absolute bottom-3 right-3 px-2 py-0.5 bg-black/80 text-white text-xs font-medium rounded">${duration}</span>` : ''}
+            <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
+              <p class="text-white text-sm font-medium line-clamp-1">${title}</p>
+            </div>
+          </div>
+        `;
+
+        // Re-init facade listener untuk elemen baru
+        document.dispatchEvent(new Event('video-facade:refresh'));
+
+        // Update info di bawah player
+        infoContainer.innerHTML = `
+          <div class="flex items-center gap-2 text-xs font-semibold text-brand-dark uppercase tracking-wider mb-2">
+            <span>Episode ${index}</span>
+            <span class="text-gray-300">/</span>
+            <span class="text-gray-400 normal-case tracking-normal">${totalEpisodes} Episode</span>
+          </div>
+          <h2 class="text-lg md:text-2xl font-bold text-gray-900 mb-3 leading-snug">${title}</h2>
+          ${description ? `<div class="bg-white rounded-xl p-4 md:p-5 border border-gray-100 text-sm text-gray-600 leading-relaxed">${description}</div>` : ''}
+        `;
+
+        setActiveItem(item);
+
+        // Scroll ke player (mobile)
+        if (window.innerWidth < 1024) {
+          playerContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  }
+
+  initPlaylistPlayer();
+</script>

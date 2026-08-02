@@ -1,0 +1,86 @@
+---
+interface Props {
+  youtubeId: string;
+  title: string;
+  duration?: string;
+}
+const { youtubeId, title, duration } = Astro.props;
+const thumbUrl = `https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg`;
+---
+
+<div
+  class="video-facade relative w-full aspect-video bg-gray-900 rounded-xl overflow-hidden cursor-pointer group"
+  data-youtube-id={youtubeId}
+  data-title={title}
+  role="button"
+  tabindex="0"
+  aria-label={`Putar video: ${title}`}
+>
+  <!-- Thumbnail -->
+  <img
+    src={thumbUrl}
+    alt={title}
+    class="w-full h-full object-cover group-hover:opacity-90 transition-opacity"
+    loading="lazy"
+  />
+  <!-- Gradient overlay -->
+  <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/10"></div>
+  <!-- Play button -->
+  <div class="absolute inset-0 flex items-center justify-center">
+    <div class="w-16 h-16 sm:w-20 sm:h-20 bg-red-600 group-hover:bg-red-500 group-hover:scale-110 rounded-full flex items-center justify-center shadow-2xl transition-all duration-300">
+      <svg class="w-7 h-7 sm:w-9 sm:h-9 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M8 5v14l11-7z"></path>
+      </svg>
+    </div>
+  </div>
+  <!-- Duration badge -->
+  {duration && (
+    <span class="absolute bottom-3 right-3 px-2 py-0.5 bg-black/80 text-white text-xs font-medium rounded">
+      {duration}
+    </span>
+  )}
+  <!-- Title overlay -->
+  <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
+    <p class="text-white text-sm font-medium line-clamp-1">{title}</p>
+  </div>
+</div>
+
+<script>
+  // Facade pattern: load iframe YouTube hanya saat user klik (hemat bandwidth & cepat).
+  // Pola vanilla JS, konsisten dengan pola script yang sudah ada di BaseLayout/Navbar.
+  function initVideoFacades() {
+    const facades = document.querySelectorAll<HTMLElement>('.video-facade');
+    facades.forEach((facade) => {
+      if (facade.dataset.initialized === 'true') return;
+      facade.dataset.initialized = 'true';
+
+      const loadIframe = () => {
+        const id = facade.dataset.youtubeId;
+        const title = facade.dataset.title || 'Video';
+        const iframe = document.createElement('iframe');
+        iframe.src = `https://www.youtube.com/embed/${id}?autoplay=1&rel=0`;
+        iframe.title = title;
+        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+        iframe.allowFullscreen = true;
+        iframe.className = 'w-full h-full absolute inset-0';
+        facade.innerHTML = '';
+        facade.appendChild(iframe);
+        facade.classList.remove('cursor-pointer', 'group');
+        facade.removeAttribute('role');
+        facade.removeAttribute('tabindex');
+      };
+
+      facade.addEventListener('click', loadIframe);
+      facade.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          loadIframe();
+        }
+      });
+    });
+  }
+
+  initVideoFacades();
+  // Re-init untuk konten yang dirender dinamis (mis. swap player)
+  document.addEventListener('video-facade:refresh', initVideoFacades);
+</script>
