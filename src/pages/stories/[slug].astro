@@ -97,7 +97,7 @@ const articleSchema = {
     </div>
 
     <!-- Article Body -->
-    <article class="max-w-4xl mx-auto px-6 sm:px-12 py-16 md:py-20">
+    <article class="max-w-3xl mx-auto px-6 sm:px-12 py-16 md:py-20">
       <div class="prose">
         <Content />
       </div>
@@ -113,7 +113,7 @@ const articleSchema = {
               const sStyle = storyTypeStyle(story.data.type);
               return (
                 <a href={`/stories/${story.slug}`} class="group block bg-[#F8F9FA] rounded-2xl overflow-hidden border border-gray-100 hover:border-brand-dark/20 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-                  <div class="h-40 overflow-hidden bg-gray-100 relative">
+                  <div class="aspect-video overflow-hidden bg-gray-100 relative">
                     <img src={story.data.coverImage} alt={story.data.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
                     <div class="absolute inset-0 bg-gradient-to-t from-gray-900/50 to-transparent"></div>
                     <span class={`absolute top-3 left-3 px-2.5 py-0.5 text-[10px] font-semibold rounded-full ${sStyle.badge}`}>{sStyle.label}</span>
