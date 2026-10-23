@@ -398,3 +398,17 @@ const personSchema = {
 
   <Footer slot="footer" />
 </BaseLayout>
+
+<script>
+  // Load more education: tampilkan kartu yang tersembunyi (sisa dari INITIAL_EDU_COUNT),
+  // lalu sembunyikan tombolnya. Pola vanilla JS, konsisten dengan BaseLayout/Navbar.
+  const loadMoreBtn = document.getElementById('education-load-more');
+
+  loadMoreBtn?.addEventListener('click', () => {
+    document.querySelectorAll<HTMLElement>('.education-item').forEach((item) => {
+      if (item.style.display === 'none') item.style.display = '';
+    });
+    // Bungkus tombol (div tengah) ikut dihapus agar tidak menyisakan ruang kosong
+    loadMoreBtn.parentElement?.remove();
+  });
+</script>
