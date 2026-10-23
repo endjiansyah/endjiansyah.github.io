@@ -1,4 +1,5 @@
 import { z, defineCollection } from 'astro:content';
+import { storyTypes } from '../lib/storyTypes';
 
 const worksCollection = defineCollection({
   type: 'content',
@@ -21,7 +22,7 @@ const storiesCollection = defineCollection({
     date: z.date(),
     endDate: z.date().optional(),
     dateLabel: z.string().optional(),
-    type: z.enum(['mentoring', 'event', 'bootcamp', 'other']),
+    type: z.enum(storyTypes),
     coverImage: z.string(),
     tags: z.array(z.string()).optional(),
     order: z.number().default(999),

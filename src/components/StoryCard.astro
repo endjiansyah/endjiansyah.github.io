@@ -1,9 +1,11 @@
 ---
+import { storyTypeStyle, type StoryType } from '../lib/storyTypes';
+
 interface Props {
   title: string;
   description: string;
   coverImage: string;
-  type: 'mentoring' | 'event' | 'bootcamp' | 'other';
+  type: StoryType;
   tags?: string[];
   slug: string;
   date: Date;
@@ -11,16 +13,9 @@ interface Props {
   dateLabel?: string;
 }
 
-const { title, description, coverImage, type, tags, slug, date, endDate, dateLabel } = Astro.props;
+const { title, description, coverImage, type, tags, slug, date, dateLabel } = Astro.props;
 
-const typeStyles: Record<string, { bg: string; text: string; label: string }> = {
-  mentoring: { bg: 'bg-indigo-50/90 text-indigo-700 border-indigo-200/60', text: 'text-indigo-700', label: 'Mentoring' },
-  event: { bg: 'bg-amber-50/90 text-amber-800 border-amber-200/60', text: 'text-amber-800', label: 'Inisiatif / Event' },
-  bootcamp: { bg: 'bg-orange-50/90 text-orange-800 border-orange-200/60', text: 'text-orange-800', label: 'Karir & Vokasi' },
-  other: { bg: 'bg-teal-50/90 text-teal-800 border-teal-200/60', text: 'text-teal-800', label: 'Field Note' },
-};
-
-const style = typeStyles[type] || typeStyles.other;
+const style = storyTypeStyle(type);
 ---
 
 <a 
@@ -38,7 +33,7 @@ const style = typeStyles[type] || typeStyles.other;
     
     <!-- Type badge -->
     <div class="absolute top-4 left-4">
-      <span class={`px-3.5 py-1 text-xs font-semibold rounded-full border backdrop-blur-md shadow-sm ${style.bg}`}>
+      <span class={`px-3.5 py-1 text-xs font-semibold rounded-full border backdrop-blur-md shadow-sm ${style.badge}`}>
         {style.label}
       </span>
     </div>
