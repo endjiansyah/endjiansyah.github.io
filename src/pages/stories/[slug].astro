@@ -23,8 +23,13 @@ const otherStories = allStories
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
   .slice(0, 3);
 
-// Format date
-const formattedDate = entry.data.dateLabel || entry.data.date.toLocaleDateString('id-ID', { year: 'numeric', month: 'long' });
+// Format date: dateLabel > rentang date–endDate > date tunggal
+const formatDate = (d: Date) => d.toLocaleDateString('id-ID', { year: 'numeric', month: 'long' });
+const formattedDate =
+  entry.data.dateLabel ||
+  (entry.data.endDate
+    ? `${formatDate(entry.data.date)} – ${formatDate(entry.data.endDate)}`
+    : formatDate(entry.data.date));
 
 // Type badge style (single source: src/lib/storyTypes.ts)
 const style = storyTypeStyle(entry.data.type);
