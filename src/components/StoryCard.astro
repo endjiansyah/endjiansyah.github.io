@@ -10,9 +10,11 @@ interface Props {
   slug: string;
   date: Date;
   dateLabel?: string;
+  /** Nama penulis, dipakai untuk memperkaya alt text (Image SEO). */
+  authorName?: string;
 }
 
-const { title, description, coverImage, type, tags, slug, date, dateLabel } = Astro.props;
+const { title, description, coverImage, type, tags, slug, date, dateLabel, authorName = 'Endjiansyah' } = Astro.props;
 
 const style = storyTypeStyle(type);
 ---
@@ -24,7 +26,9 @@ const style = storyTypeStyle(type);
   <div class="h-52 w-full overflow-hidden relative bg-gray-900">
     <img 
       src={coverImage} 
-      alt={title} 
+      alt={`${title} — dokumentasi ${authorName}`} 
+      width="1200"
+      height="800"
       class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out opacity-90 group-hover:opacity-100" 
       loading="lazy" 
     />

@@ -5,6 +5,8 @@ import Footer from '../../components/Footer.astro';
 import EducationCard from '../../components/EducationCard.astro';
 import VideoEmbed from '../../components/VideoEmbed.astro';
 import { getCollection } from 'astro:content';
+import { findLearningEntry } from '../../lib/contentImages';
+import { entryImageObjects } from '../../lib/imageSchema';
 
 // Static paths: gabungkan playlists + modules. Keduanya berbagi namespace /learning/[slug].
 // Jika ada tabrakan slug, module diprioritaskan (lebih spesifik).
@@ -49,7 +51,12 @@ const others = [
 
 const formattedDate = entry.data.date.toLocaleDateString('id-ID', { year: 'numeric', month: 'long' });
 
-// Schema.org JSON-LD: berbeda per jenis
+// Schema.org JSON-LD: berbeda per jenis.
+// Semua gambar entri (cover + gambar body) didaftarkan sebagai ImageObject.
+const contentEntry = findLearningEntry(entry.slug);
+const learningImages = entryImageObjects(contentEntry?.images ?? [], { context: 'materi edukasi' });
+const imageValue = learningImages.length === 1 ? learningImages[0] : learningImages;
+
 const jsonSchema =
   kind === 'video'
     ? {
@@ -57,7 +64,7 @@ const jsonSchema =
         '@type': 'ItemList',
         name: entry.data.title,
         description: entry.data.description,
-        image: `https://endjiansyah.github.io${entry.data.coverImage}`,
+        image: imageValue,
         url: `https://endjiansyah.github.io/learning/${entry.slug}/`,
         itemListElement: entry.data.videos.map((v, i) => ({
           '@type': 'ListItem',
@@ -71,10 +78,17 @@ const jsonSchema =
         '@type': 'Article',
         headline: entry.data.title,
         description: entry.data.description,
-        image: `https://endjiansyah.github.io${entry.data.coverImage}`,
+        image: imageValue,
         url: `https://endjiansyah.github.io/learning/${entry.slug}/`,
         datePublished: entry.data.date.toISOString().split('T')[0],
-        author: { '@type': 'Person', name: 'Endjiansyah', url: 'https://endjiansyah.github.io' },
+        keywords: entry.data.tags?.join(', '),
+        inLanguage: 'id',
+        author: {
+          '@type': 'Person',
+          '@id': 'https://endjiansyah.github.io/#person',
+          name: 'Endjiansyah',
+          url: 'https://endjiansyah.github.io',
+        },
       };
 
 // Helper untuk playlist
@@ -86,6 +100,7 @@ const totalVideos = kind === 'video' ? entry.data.videos.length : 0;
   title={`${entry.data.title} — Endjiansyah`}
   description={entry.data.description}
   ogImage={entry.data.coverImage}
+  ogImageAlt={`${entry.data.title} — materi edukasi Endjiansyah`}
   jsonSchema={jsonSchema}
 >
   <Navbar slot="nav" />
@@ -95,7 +110,7 @@ const totalVideos = kind === 'video' ? entry.data.videos.length : 0;
     {/* COVER HERO (sama untuk keduanya) */}
     {/* ============================ */}
     <div class="relative w-full h-[50vh] md:h-[60vh] overflow-hidden bg-brand-dark">
-      <img src={entry.data.coverImage} alt={entry.data.title} class="w-full h-full object-cover opacity-40" />
+      <img src={entry.data.coverImage} alt={`${entry.data.title} — project Endjiansyah`} class="w-full h-full object-cover opacity-40" />
       <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/60 to-transparent"></div>
 
       <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-12 md:p-20">

@@ -3,6 +3,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
 import { getCollection } from 'astro:content';
+import { findEntry } from '../../lib/contentImages';
+import { entryImageObjects } from '../../lib/imageSchema';
 
 export async function getStaticPaths() {
   const works = await getCollection('works');
@@ -25,17 +27,30 @@ const otherWorks = allWorks
 // Format date
 const formattedDate = entry.data.date.toLocaleDateString('id-ID', { year: 'numeric', month: 'long' });
 
+// Semua gambar project (cover + screenshot di body) jadi ImageObject, lengkap
+// dengan dimensi asli yang dibaca langsung dari header file.
+const contentEntry = findEntry('works', entry.slug);
+const projectImages = entryImageObjects(contentEntry?.images ?? [], { context: 'project' });
+
 const projectSchema = {
   "@context": "https://schema.org",
   "@type": "CreativeWork",
   "name": entry.data.title,
   "description": entry.data.description,
-  "image": `https://endjiansyah.github.io${entry.data.coverImage}`,
+  "image": projectImages.length === 1 ? projectImages[0] : projectImages,
   "url": `https://endjiansyah.github.io/works/${entry.slug}/`,
   "datePublished": entry.data.date.toISOString().split('T')[0],
+  "keywords": entry.data.tools.join(', '),
   "author": {
     "@type": "Person",
-    "name": "Endjiansyah"
+    "@id": "https://endjiansyah.github.io/#person",
+    "name": "Endjiansyah",
+    "url": "https://endjiansyah.github.io"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Endjiansyah",
+    "url": "https://endjiansyah.github.io"
   }
 };
 ---
@@ -44,6 +59,7 @@ const projectSchema = {
   title={`${entry.data.title} — Endjiansyah`} 
   description={entry.data.description} 
   ogImage={entry.data.coverImage}
+  ogImageAlt={`${entry.data.title} — project Endjiansyah`}
   jsonSchema={projectSchema}
 >
   <Navbar slot="nav" />
@@ -53,7 +69,7 @@ const projectSchema = {
     <div class="relative w-full h-[50vh] md:h-[60vh] overflow-hidden bg-brand-dark">
       <img 
         src={entry.data.coverImage} 
-        alt={entry.data.title} 
+        alt={`${entry.data.title} — project Endjiansyah`} 
         class="w-full h-full object-cover opacity-40"
       />
       <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/60 to-transparent"></div>

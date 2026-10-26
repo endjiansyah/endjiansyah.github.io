@@ -24,10 +24,24 @@ const INITIAL_EDU_COUNT = 6;
 const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
+  "@id": "https://endjiansyah.github.io/#person",
   "name": "Endjiansyah",
   "alternateName": "Endji Ansyah",
   "url": "https://endjiansyah.github.io",
-  "image": "https://endjiansyah.github.io/assets/profile.webp",
+  // ImageObject lengkap: Google Images butuh dimensi + caption, bukan sekadar string URL.
+  "image": {
+    "@type": "ImageObject",
+    "@id": "https://endjiansyah.github.io/#portrait",
+    "url": "https://endjiansyah.github.io/assets/profile.webp",
+    "contentUrl": "https://endjiansyah.github.io/assets/profile.webp",
+    "width": 382,
+    "height": 382,
+    "caption": "Foto Endjiansyah, Software Engineer, Product Manager & Educator",
+    "name": "Endjiansyah",
+    "encodingFormat": "image/webp",
+    "representativeOfPage": true,
+    "author": { "@id": "https://endjiansyah.github.io/#person" }
+  },
   "description": "Software Engineer, Product Manager & Educator",
   "jobTitle": "Product Manager / Engineering Manager",
   "worksFor": {
@@ -89,7 +103,7 @@ const personSchema = {
         <div class="relative group">
           <div class="absolute -inset-3 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full blur-2xl opacity-30 group-hover:opacity-60 transition duration-700"></div>
           <div class="relative w-56 h-56 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-white/15 shadow-2xl transition-all duration-500 hover:border-blue-400/50 z-10">
-            <img src="/assets/profile.webp" alt="Endjiansyah" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
+            <img src="/assets/profile.webp" alt="Endjiansyah — Software Engineer, Product Manager & Educator" width="382" height="382" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
           </div>
         </div>
       </div>

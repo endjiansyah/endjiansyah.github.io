@@ -5,9 +5,11 @@ interface Props {
   coverImage: string;
   tools: string[];
   slug: string;
+  /** Nama pemilik karya, dipakai untuk memperkaya alt text (Image SEO). */
+  authorName?: string;
 }
 
-const { title, description, coverImage, tools, slug } = Astro.props;
+const { title, description, coverImage, tools, slug, authorName = 'Endjiansyah' } = Astro.props;
 ---
 
 <a 
@@ -20,7 +22,9 @@ const { title, description, coverImage, tools, slug } = Astro.props;
   <div class="aspect-[16/10] overflow-hidden relative bg-gray-100">
     <img 
       src={coverImage} 
-      alt={title} 
+      alt={`${title} — project ${authorName} (${tools.slice(0, 3).join(', ')})`} 
+      width="1366"
+      height="768"
       class="w-full h-full object-cover project-card-img transition-transform duration-700 ease-out group-hover:scale-105" 
       loading="lazy" 
     />

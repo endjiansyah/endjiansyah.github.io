@@ -9,9 +9,11 @@ interface Props {
   videoCount?: number;
   readTime?: string;
   date: Date;
+  /** Nama penyusun materi, dipakai untuk memperkaya alt text (Image SEO). */
+  authorName?: string;
 }
 
-const { title, description, coverImage, kind, slug, tags, videoCount, readTime, date } = Astro.props;
+const { title, description, coverImage, kind, slug, tags, videoCount, readTime, date, authorName = 'Endjiansyah' } = Astro.props;
 
 const kindStyles = {
   video: { bg: 'bg-red-50/90 text-red-700 border-red-200/60', label: 'Video Course', icon: 'play' },
@@ -29,7 +31,9 @@ const formattedDate = date.toLocaleDateString('id-ID', { year: 'numeric', month:
   <div class="h-52 w-full overflow-hidden relative bg-gray-900">
     <img 
       src={coverImage} 
-      alt={title} 
+      alt={`${title} — ${kind === 'video' ? 'video pembelajaran' : 'modul bacaan'} oleh ${authorName}`} 
+      width="1200"
+      height="675"
       class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out opacity-90 group-hover:opacity-100" 
       loading="lazy" 
     />

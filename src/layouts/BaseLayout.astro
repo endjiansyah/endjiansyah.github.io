@@ -1,9 +1,13 @@
 ---
+import { readImageDimensions } from '../lib/imageDimensions';
+
 interface Props {
   title: string;
   description?: string;
   lang?: string;
   ogImage?: string;
+  /** Alt text gambar OG — dipakai juga oleh Google Images. Default ke title. */
+  ogImageAlt?: string;
   jsonSchema?: Record<string, any>;
 }
 
@@ -12,10 +16,16 @@ const {
   description = 'Portfolio Endjiansyah. Berakar dari pengembangan fundamental hingga menakhodai arsitektur sistem berskala enterprise.', 
   lang = 'id',
   ogImage = '/assets/Logokedip.webp',
+  ogImageAlt,
   jsonSchema
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, 'https://endjiansyah.github.io');
+
+// Dimensi asli gambar OG (dibaca dari header file) agar og:image:width/height akurat.
+const ogImageDim = readImageDimensions(ogImage);
+// Alt OG: pakai yang dikirim halaman, kalau tidak ada susun dari title agar tetap deskriptif.
+const ogImageAltText = ogImageAlt ?? `${title} — Endjiansyah`;
 ---
 
 <html lang={lang} class="scroll-smooth overflow-x-hidden">
@@ -41,6 +51,11 @@ const canonicalURL = new URL(Astro.url.pathname, 'https://endjiansyah.github.io'
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
   <meta property="og:image" content={`https://endjiansyah.github.io${ogImage}`} />
+  <meta property="og:image:secure_url" content={`https://endjiansyah.github.io${ogImage}`} />
+  <!-- og:image:width/height + alt membantu Google Images membaca dimensi & konteks gambar -->
+  <meta property="og:image:width" content={String(ogImageDim?.width ?? 1200)} />
+  <meta property="og:image:height" content={String(ogImageDim?.height ?? 630)} />
+  <meta property="og:image:alt" content={ogImageAltText} />
   
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
