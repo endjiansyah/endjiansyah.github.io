@@ -1,0 +1,24 @@
+<svg width="1200" height="750" viewBox="0 0 1200 750" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="750" rx="36" fill="#0B132B"/>
+  <circle cx="1030" cy="90" r="210" fill="#2563EB" fill-opacity=".18"/>
+  <circle cx="120" cy="690" r="230" fill="#06B6D4" fill-opacity=".12"/>
+  <text x="72" y="104" fill="#93C5FD" font-family="Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="4">ENDPROJECTS</text>
+  <text x="72" y="178" fill="white" font-family="Arial, sans-serif" font-size="64" font-weight="700">Congklak</text>
+  <text x="76" y="220" fill="#CBD5E1" font-family="Arial, sans-serif" font-size="24">Digital traditional game · Game based learning</text>
+  <g transform="translate(164 302) rotate(-4 436 148)">
+    <rect x="0" y="0" width="872" height="296" rx="148" fill="#A65F32"/>
+    <rect x="24" y="24" width="824" height="248" rx="124" fill="#D28A4D"/>
+    <ellipse cx="94" cy="148" rx="58" ry="90" fill="#7C3F26"/>
+    <ellipse cx="778" cy="148" rx="58" ry="90" fill="#7C3F26"/>
+    <g fill="#7C3F26">
+      <ellipse cx="208" cy="89" rx="49" ry="43"/><ellipse cx="326" cy="89" rx="49" ry="43"/><ellipse cx="444" cy="89" rx="49" ry="43"/><ellipse cx="562" cy="89" rx="49" ry="43"/><ellipse cx="680" cy="89" rx="49" ry="43"/>
+      <ellipse cx="208" cy="207" rx="49" ry="43"/><ellipse cx="326" cy="207" rx="49" ry="43"/><ellipse cx="444" cy="207" rx="49" ry="43"/><ellipse cx="562" cy="207" rx="49" ry="43"/><ellipse cx="680" cy="207" rx="49" ry="43"/>
+    </g>
+    <g fill="#FDE68A">
+      <circle cx="83" cy="125" r="9"/><circle cx="105" cy="162" r="9"/><circle cx="768" cy="130" r="9"/><circle cx="793" cy="166" r="9"/>
+      <circle cx="190" cy="82" r="7"/><circle cx="225" cy="101" r="7"/><circle cx="308" cy="94" r="7"/><circle cx="340" cy="76" r="7"/><circle cx="432" cy="95" r="7"/><circle cx="456" cy="76" r="7"/><circle cx="550" cy="79" r="7"/><circle cx="580" cy="101" r="7"/><circle cx="668" cy="95" r="7"/><circle cx="694" cy="78" r="7"/>
+    </g>
+  </g>
+  <rect x="72" y="664" width="238" height="4" rx="2" fill="#3B82F6"/>
+  <text x="72" y="708" fill="#94A3B8" font-family="Arial, sans-serif" font-size="20">Belajar · Bermain · Melestarikan</text>
+</svg>
