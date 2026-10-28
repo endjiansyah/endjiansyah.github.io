@@ -61,6 +61,12 @@ const imageValue = learningImages.length === 1 ? learningImages[0] : learningIma
 const firstVideo = kind === 'video' ? entry.data.videos[0] : null;
 const totalVideos = kind === 'video' ? entry.data.videos.length : 0;
 
+// Kalimat kredit yang wajib IDENTIK antara deskripsi YouTube dan deskripsi web
+// (JSON-LD + tampilan). Salin kalimat ini juga ke deskripsi tiap episode di YouTube
+// agar konteksnya konsisten bagi Google.
+const videoCreditLine = 'Materi ini disusun dan diajarkan oleh Endjiansyah (https://endjiansyah.github.io) — Software Engineer, AI-Augmented Developer & Technical Mentor.';
+const videoCreditHtml = `Materi ini disusun dan diajarkan oleh <a href="https://endjiansyah.github.io" target="_blank" rel="noopener noreferrer" class="font-semibold text-brand-dark hover:underline">Endjiansyah</a> (<a href="https://endjiansyah.github.io" target="_blank" rel="noopener noreferrer" class="font-semibold text-brand-dark hover:underline">endjiansyah.github.io</a>) — Software Engineer, AI-Augmented Developer &amp; Technical Mentor.`;
+
 // VideoObject JSON-LD per video YouTube (struktur @graph berisi ItemList + VideoObject[]).
 // Ini yang membuat video YouTube muncul sebagai Video Rich Result yang terikat ke
 // halaman learning ini, bukan hanya ke youtube.com. embedUrl = format valid
@@ -86,7 +92,7 @@ const videoGraph = kind === 'video'
         ...entry.data.videos.map((v) => ({
           '@type': 'VideoObject',
           name: v.title,
-          description: v.description || entry.data.description,
+          description: `${v.description || entry.data.description} ${videoCreditLine}`,
           thumbnailUrl: [`https://img.youtube.com/vi/${v.youtubeId}/hqdefault.jpg`],
           embedUrl: `https://www.youtube.com/embed/${v.youtubeId}`,
           contentUrl: `https://www.youtube.com/watch?v=${v.youtubeId}`,
@@ -231,6 +237,7 @@ const jsonSchema =
                   {firstVideo.description && (
                     <div class="bg-white rounded-xl p-4 md:p-5 border border-gray-100 text-sm text-gray-600 leading-relaxed">
                       {firstVideo.description}
+                      <p class="mt-3 pt-3 border-t border-gray-100 text-xs text-gray-500 leading-relaxed" set:html={videoCreditHtml} />
                     </div>
                   )}
                 </div>
@@ -353,6 +360,9 @@ const jsonSchema =
 </BaseLayout>
 
 <script>
+  // Kredit identik dengan JSON-LD — sinkron dengan videoCreditLine di frontmatter.
+  const CREDIT_HTML = 'Materi ini disusun dan diajarkan oleh <a href="https://endjiansyah.github.io" target="_blank" rel="noopener noreferrer" class="font-semibold text-brand-dark hover:underline">Endjiansyah</a> (<a href="https://endjiansyah.github.io" target="_blank" rel="noopener noreferrer" class="font-semibold text-brand-dark hover:underline">endjiansyah.github.io</a>) — Software Engineer, AI-Augmented Developer &amp; Technical Mentor.';
+
   // Swap player: klik video di queue kanan → ganti player + info di kiri.
   // Pattern vanilla JS, konsisten dengan BaseLayout/Navbar.
   function initPlaylistPlayer() {
@@ -418,7 +428,7 @@ const jsonSchema =
             <span class="text-gray-400 normal-case tracking-normal">${totalEpisodes} Episode</span>
           </div>
           <h2 class="text-lg md:text-2xl font-bold text-gray-900 mb-3 leading-snug">${title}</h2>
-          ${description ? `<div class="bg-white rounded-xl p-4 md:p-5 border border-gray-100 text-sm text-gray-600 leading-relaxed">${description}</div>` : ''}
+          ${description ? `<div class="bg-white rounded-xl p-4 md:p-5 border border-gray-100 text-sm text-gray-600 leading-relaxed">${description}<p class="mt-3 pt-3 border-t border-gray-100 text-xs text-gray-500 leading-relaxed">${CREDIT_HTML}</p></div>` : ''}
         `;
 
         setActiveItem(item);
