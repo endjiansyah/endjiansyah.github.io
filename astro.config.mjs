@@ -35,8 +35,8 @@ function buildImageMap() {
   map.set(`${SITE}/`, [
     {
       url: `${SITE}/assets/profile.webp`,
-      title: 'Endjiansyah',
-      caption: 'Endjiansyah — Software Engineer, Product Manager & Educator',
+      title: 'Endjiansyah — Software Engineer, AI-Augmented Developer & Technical Mentor',
+      caption: 'Endjiansyah — Software Engineer, AI-Augmented Developer & Technical Mentor',
     },
   ]);
 

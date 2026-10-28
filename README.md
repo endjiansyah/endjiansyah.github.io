@@ -1,6 +1,6 @@
 # Endjiansyah — Personal Portfolio & Field Notes
 
-Situs portofolio pribadi dan *field notes* milik **Endjiansyah** (Software Engineer, Product Manager & Educator). Dibuat dengan performa tinggi, desain visual modern, serta struktur konten yang terorganisir.
+Situs portofolio pribadi dan *field notes* milik **Endjiansyah** (Software Engineer, AI-Augmented Developer & Technical Mentor). Dibuat dengan performa tinggi, desain visual modern, serta struktur konten yang terorganisir.
 
 ---
 
