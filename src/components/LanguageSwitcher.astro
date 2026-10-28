@@ -1,0 +1,36 @@
+---
+import { t, langFromPath, alternatePath } from '../lib/i18n';
+const lang = langFromPath(Astro.url.pathname);
+const otherLang = lang === 'en' ? 'id' : 'en';
+const switchHref = alternatePath(Astro.url.pathname, otherLang);
+---
+
+<!-- Floating Language Switcher: pojok kiri bawah, selalu tampil kecuali fullscreen
+     (disembunyikan otomatis via event fullscreenchange). Pola: langsung tukar bahasa
+     dengan satu klik ke halaman padanannya (pasangan URL identik antara / dan /en/). -->
+<div id="lang-switcher" class="fixed bottom-5 left-5 z-[70] transition-opacity duration-300" data-lang={lang}>
+  <a
+    href={switchHref}
+    class="flex items-center gap-2 px-4 py-2.5 rounded-full bg-[#0B132B]/90 text-white/90 text-xs font-semibold tracking-wide backdrop-blur-md border border-white/15 shadow-lg shadow-black/30 hover:bg-blue-600 hover:border-blue-400/50 transition-all duration-300"
+    title={t(lang, 'lang.label')}
+    aria-label={`Switch language to ${otherLang === 'en' ? 'English' : 'Indonesia'}`}
+  >
+    <!-- Globe icon -->
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 21a9 9 0 100-18 9 9 0 000 18zm0-18c2.5 2.2 4 5.4 4 9s-1.5 6.8-4 9m0-18c-2.5 2.2-4 5.4-4 9s1.5 6.8 4 9M3.5 9h17m-17 6h17"></path>
+    </svg>
+    <span class="uppercase">{otherLang}</span>
+  </a>
+</div>
+
+<script>
+  const sw = document.getElementById('lang-switcher');
+  if (sw) {
+    // Sembunyikan switcher saat fullscreen aktif (mis. video YouTube fullscreen),
+    // tampilkan kembali saat keluar fullscreen.
+    document.addEventListener('fullscreenchange', () => {
+      const isFullscreen = !!document.fullscreenElement;
+      (sw as HTMLElement).style.visibility = isFullscreen ? 'hidden' : '';
+    });
+  }
+</script>

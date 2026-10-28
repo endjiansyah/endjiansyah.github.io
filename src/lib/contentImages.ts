@@ -29,6 +29,8 @@ export interface ContentImage {
 export interface ContentEntry {
   collection: CollectionName;
   slug: string;
+  /** 'id' untuk file master; 'en' untuk file pendamping *.en.md. */
+  lang: 'id' | 'en';
   title: string;
   description: string;
   date: string | null;
@@ -69,7 +71,9 @@ export function parseContentFile(collection: CollectionName, filePath: string): 
   const fm = parseFrontmatter(raw);
   const body = stripHtmlComments(raw.slice(fm.length + 8));
   const slug = path.basename(filePath).replace(/\.md$/, '');
-  const title = fmValue(fm, 'title') ?? slug;
+  const entryLang: 'id' | 'en' = /-en$/.test(slug) ? 'en' : 'id';
+  const baseSlug = entryLang === 'en' ? slug.replace(/-en$/, '') : slug;
+  const title = fmValue(fm, 'title') ?? baseSlug;
 
   const images: ContentImage[] = [];
   const seen = new Set<string>();
@@ -100,7 +104,8 @@ export function parseContentFile(collection: CollectionName, filePath: string): 
 
   return {
     collection,
-    slug,
+    slug: baseSlug,
+    lang: entryLang,
     title,
     description: fmValue(fm, 'description') ?? '',
     date: fmValue(fm, 'date'),
@@ -126,9 +131,9 @@ export function getCollectionEntries(collection: CollectionName): ContentEntry[]
   return cache.get(collection)!;
 }
 
-/** Cari entri berdasarkan collection + slug. */
-export function findEntry(collection: CollectionName, slug: string): ContentEntry | null {
-  return getCollectionEntries(collection).find((e) => e.slug === slug) ?? null;
+/** Cari entri berdasarkan collection + slug + bahasa (file .en.md untuk EN). */
+export function findEntry(collection: CollectionName, slug: string, lang: 'id' | 'en' = 'id'): ContentEntry | null {
+  return getCollectionEntries(collection).find((e) => e.slug === slug && e.lang === lang) ?? null;
 }
 
 /** Cari entri di playlists ATAU modules (keduanya di bawah /learning/[slug]). */

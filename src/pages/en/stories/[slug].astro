@@ -1,0 +1,13 @@
+---
+import StoryDetail from '../../../components/pages/StoryDetail.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const stories = (await getCollection('stories')).filter((s) => s.data.lang === 'en');
+  return stories.map((entry) => ({ params: { slug: entry.slug.replace(/-en$/, '') }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+---
+
+<StoryDetail entry={entry} />

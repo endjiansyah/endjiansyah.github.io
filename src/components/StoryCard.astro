@@ -1,5 +1,6 @@
 ---
 import { storyTypeStyle, type StoryType } from '../lib/storyTypes';
+import type { Lang } from '../lib/i18n';
 
 interface Props {
   title: string;
@@ -10,17 +11,21 @@ interface Props {
   slug: string;
   date: Date;
   dateLabel?: string;
+  lang?: Lang;
   /** Nama penulis, dipakai untuk memperkaya alt text (Image SEO). */
   authorName?: string;
 }
 
-const { title, description, coverImage, type, tags, slug, date, dateLabel, authorName = 'Endjiansyah' } = Astro.props;
+const { title, description, coverImage, type, tags, slug, date, dateLabel, lang: langProp, authorName = 'Endjiansyah' } = Astro.props;
+const lang: Lang = langProp ?? (Astro.url.pathname.startsWith('/en') ? 'en' : 'id');
+const base = lang === 'en' ? '/en' : '';
+const localeDate = date.toLocaleDateString(lang === 'en' ? 'en-US' : 'id-ID', { year: 'numeric', month: 'long' });
 
 const style = storyTypeStyle(type);
 ---
 
 <a 
-  href={`/stories/${slug}`} 
+  href={`${base}/stories/${slug}`} 
   class="reveal reveal-up group relative flex flex-col justify-between block bg-white rounded-3xl overflow-hidden border border-gray-200/80 shadow-sm hover:shadow-xl hover:border-blue-400/30 transition-all duration-500 ease-out hover:-translate-y-1.5"
 >
   <div class="h-52 w-full overflow-hidden relative bg-gray-900">
@@ -54,7 +59,7 @@ const style = storyTypeStyle(type);
       <!-- Date display -->
       <div class="flex items-center gap-2 text-xs font-semibold text-gray-400 mb-3 tracking-wider uppercase">
         <svg class="w-3.5 h-3.5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-        {dateLabel || date.toLocaleDateString('id-ID', { year: 'numeric', month: 'long' })}
+        {dateLabel || localeDate}
       </div>
 
       <p class="text-gray-600 text-sm leading-relaxed mb-6 line-clamp-3 font-normal">

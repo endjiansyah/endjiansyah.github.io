@@ -1,9 +1,12 @@
 import { z, defineCollection } from 'astro:content';
 import { storyTypes } from '../lib/storyTypes';
 
+const langField = { lang: z.enum(['id', 'en']).default('id') };
+
 const worksCollection = defineCollection({
   type: 'content',
   schema: z.object({
+    lang: langField.lang,
     title: z.string(),
     description: z.string(),
     date: z.date(),
@@ -17,6 +20,7 @@ const worksCollection = defineCollection({
 const storiesCollection = defineCollection({
   type: 'content',
   schema: z.object({
+    lang: langField.lang,
     title: z.string(),
     description: z.string(),
     date: z.date(),
@@ -34,6 +38,7 @@ const storiesCollection = defineCollection({
 const playlistsCollection = defineCollection({
   type: 'content',
   schema: z.object({
+    lang: langField.lang,
     title: z.string(),
     description: z.string(),
     date: z.date(),
@@ -54,6 +59,7 @@ const playlistsCollection = defineCollection({
 const modulesCollection = defineCollection({
   type: 'content',
   schema: z.object({
+    lang: langField.lang,
     title: z.string(),
     description: z.string(),
     date: z.date(),

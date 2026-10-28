@@ -1,0 +1,14 @@
+---
+import WorkDetail from '../../../components/pages/WorkDetail.astro';
+import { getCollection } from 'astro:content';
+
+// Hanya konten bahasa Inggris (file pendamping *.en.md).
+export async function getStaticPaths() {
+  const works = (await getCollection('works')).filter((w) => w.data.lang === 'en');
+  return works.map((entry) => ({ params: { slug: entry.slug.replace(/-en$/, '') }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+---
+
+<WorkDetail entry={entry} />

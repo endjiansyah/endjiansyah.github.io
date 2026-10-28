@@ -27,20 +27,27 @@ function buildImageMap() {
   for (const collection of ['works', 'stories', 'playlists', 'modules']) {
     const routePrefix = collection === 'playlists' || collection === 'modules' ? 'learning' : collection;
     for (const entry of getCollectionEntries(collection)) {
-      map.set(`${SITE}/${routePrefix}/${entry.slug}/`, sitemapImagesFor(entry));
+      // File *-en.md mewakili versi Inggris di bawah prefix /en/.
+      const prefix = entry.lang === 'en' ? '/en' : '';
+      map.set(`${SITE}${prefix}/${routePrefix}/${entry.slug}/`, sitemapImagesFor(entry));
     }
   }
 
   // Halaman beranda: foto profil adalah gambar utama untuk query nama orang.
-  map.set(`${SITE}/`, [
+  map.set(`${SITE}/`, sitemapImagesHome());
+  map.set(`${SITE}/en/`, sitemapImagesHome());
+
+  return map;
+}
+
+function sitemapImagesHome() {
+  return [
     {
       url: `${SITE}/assets/profile.webp`,
       title: 'Endjiansyah — Software Engineer, AI-Augmented Developer & Technical Mentor',
       caption: 'Endjiansyah — Software Engineer, AI-Augmented Developer & Technical Mentor',
     },
-  ]);
-
-  return map;
+  ];
 }
 
 // https://astro.build/config

@@ -1,19 +1,24 @@
 ---
+import type { Lang } from '../lib/i18n';
+
 interface Props {
   title: string;
   description: string;
   coverImage: string;
   tools: string[];
   slug: string;
+  lang?: Lang;
   /** Nama pemilik karya, dipakai untuk memperkaya alt text (Image SEO). */
   authorName?: string;
 }
 
-const { title, description, coverImage, tools, slug, authorName = 'Endjiansyah' } = Astro.props;
+const { title, description, coverImage, tools, slug, lang: langProp, authorName = 'Endjiansyah' } = Astro.props;
+const lang: Lang = langProp ?? (Astro.url.pathname.startsWith('/en') ? 'en' : 'id');
+const base = lang === 'en' ? '/en' : '';
 ---
 
 <a 
-  href={`/works/${slug}`} 
+  href={`${base}/works/${slug}`} 
   class="reveal reveal-up group relative block h-full rounded-3xl overflow-hidden bg-white border border-gray-200/80 shadow-sm hover:shadow-2xl hover:border-blue-500/30 transition-all duration-500 ease-out hover:-translate-y-1.5"
 >
   <!-- Ambient Hover Glow -->

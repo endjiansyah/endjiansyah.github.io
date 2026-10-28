@@ -1,0 +1,22 @@
+---
+import LearningDetail from '../../../components/pages/LearningDetail.astro';
+import { getCollection } from 'astro:content';
+
+// Static paths: gabungkan playlists + modules bahasa Inggris (*.en.md).
+export async function getStaticPaths() {
+  const playlists = (await getCollection('playlists')).filter((p) => p.data.lang === 'en');
+  const moduleFiles = import.meta.glob('../../../content/modules/*.md', { eager: true });
+  const modules = Object.keys(moduleFiles).length > 0
+    ? (await getCollection('modules')).filter((m) => m.data.lang === 'en')
+    : [];
+
+  const playlistPaths = playlists.map((p) => ({ params: { slug: p.slug.replace(/-en$/, '') }, props: { entry: p, kind: 'video' as const } }));
+  const modulePaths = modules.map((m) => ({ params: { slug: m.slug.replace(/-en$/, '') }, props: { entry: m, kind: 'module' as const } }));
+
+  return [...playlistPaths, ...modulePaths];
+}
+
+const { entry, kind } = Astro.props;
+---
+
+<LearningDetail entry={entry} kind={kind} />

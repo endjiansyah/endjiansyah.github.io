@@ -1,4 +1,6 @@
 ---
+import type { Lang } from '../lib/i18n';
+
 interface Props {
   title: string;
   description: string;
@@ -9,23 +11,26 @@ interface Props {
   videoCount?: number;
   readTime?: string;
   date: Date;
+  lang?: Lang;
   /** Nama penyusun materi, dipakai untuk memperkaya alt text (Image SEO). */
   authorName?: string;
 }
 
-const { title, description, coverImage, kind, slug, tags, videoCount, readTime, date, authorName = 'Endjiansyah' } = Astro.props;
+const { title, description, coverImage, kind, slug, tags, videoCount, readTime, date, lang: langProp, authorName = 'Endjiansyah' } = Astro.props;
+const lang: Lang = langProp ?? (Astro.url.pathname.startsWith('/en') ? 'en' : 'id');
+const base = lang === 'en' ? '/en' : '';
 
 const kindStyles = {
-  video: { bg: 'bg-red-50/90 text-red-700 border-red-200/60', label: 'Video Course', icon: 'play' },
-  module: { bg: 'bg-emerald-50/90 text-emerald-800 border-emerald-200/60', label: 'Modul Bacaan', icon: 'doc' },
+  video: { bg: 'bg-red-50/90 text-red-700 border-red-200/60', label: lang === 'id' ? 'Video Course' : 'Video Course', icon: 'play' },
+  module: { bg: 'bg-emerald-50/90 text-emerald-800 border-emerald-200/60', label: lang === 'id' ? 'Modul Bacaan' : 'Reading Module', icon: 'doc' },
 };
 const style = kindStyles[kind];
 
-const formattedDate = date.toLocaleDateString('id-ID', { year: 'numeric', month: 'long' });
+const formattedDate = date.toLocaleDateString(lang === 'en' ? 'en-US' : 'id-ID', { year: 'numeric', month: 'long' });
 ---
 
 <a 
-  href={`/learning/${slug}`} 
+  href={`${base}/learning/${slug}`} 
   class="reveal reveal-up group relative flex flex-col justify-between block bg-white rounded-3xl overflow-hidden border border-gray-200/80 shadow-sm hover:shadow-xl hover:border-blue-400/30 transition-all duration-500 ease-out hover:-translate-y-1.5"
 >
   <div class="h-52 w-full overflow-hidden relative bg-gray-900">
@@ -65,7 +70,7 @@ const formattedDate = date.toLocaleDateString('id-ID', { year: 'numeric', month:
         {kind === 'video' && videoCount !== undefined ? (
           <span class="inline-flex items-center gap-1">
             <svg class="w-3.5 h-3.5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
-            {videoCount} Video Seri
+            {videoCount} {lang === 'id' ? 'Video Seri' : 'Series Videos'}
           </span>
         ) : readTime ? (
           <span class="inline-flex items-center gap-1">

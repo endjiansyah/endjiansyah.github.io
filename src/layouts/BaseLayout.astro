@@ -1,10 +1,11 @@
 ---
 import { readImageDimensions } from '../lib/imageDimensions';
+import { langFromPath, alternatePath } from '../lib/i18n';
 
 interface Props {
   title: string;
   description?: string;
-  lang?: string;
+  lang?: 'id' | 'en';
   ogImage?: string;
   /** Alt text gambar OG — dipakai juga oleh Google Images. Default ke title. */
   ogImageAlt?: string;
@@ -14,13 +15,17 @@ interface Props {
 const { 
   title, 
   description = 'Portfolio Endjiansyah. Berakar dari pengembangan fundamental hingga menakhodai arsitektur sistem berskala enterprise.', 
-  lang = 'id',
+  lang: langProp,
   ogImage = '/assets/Logokedip.webp',
   ogImageAlt,
   jsonSchema
 } = Astro.props;
 
+const pageLang = langProp ?? langFromPath(Astro.url.pathname);
 const canonicalURL = new URL(Astro.url.pathname, 'https://endjiansyah.github.io');
+const enURL = new URL(alternatePath(Astro.url.pathname, 'en'), 'https://endjiansyah.github.io');
+const idURL = new URL(alternatePath(Astro.url.pathname, 'id'), 'https://endjiansyah.github.io');
+const localeDate = pageLang === 'en' ? 'en-US' : 'id-ID';
 
 // Dimensi asli gambar OG (dibaca dari header file) agar og:image:width/height akurat.
 const ogImageDim = readImageDimensions(ogImage);
@@ -28,7 +33,7 @@ const ogImageDim = readImageDimensions(ogImage);
 const ogImageAltText = ogImageAlt ?? `${title} — Endjiansyah`;
 ---
 
-<html lang={lang} class="scroll-smooth overflow-x-hidden">
+<html lang={pageLang} class="scroll-smooth overflow-x-hidden">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -40,6 +45,10 @@ const ogImageAltText = ogImageAlt ?? `${title} — Endjiansyah`;
   <meta name="author" content="Endjiansyah" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href={canonicalURL.href} />
+  <!-- hreflang: beri tahu Google bahwa / dan /en/ padanannya masing-masing -->
+  <link rel="alternate" hreflang="id" href={idURL.href} />
+  <link rel="alternate" hreflang="en" href={enURL.href} />
+  <link rel="alternate" hreflang="x-default" href={canonicalURL.pathname.startsWith('/en') ? enURL.href : canonicalURL.href} />
   
   <!-- Favicon & Icons -->
   <link rel="icon" type="image/png" href="/assets/logo.png" />
