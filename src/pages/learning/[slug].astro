@@ -57,22 +57,56 @@ const contentEntry = findLearningEntry(entry.slug);
 const learningImages = entryImageObjects(contentEntry?.images ?? [], { context: 'materi edukasi' });
 const imageValue = learningImages.length === 1 ? learningImages[0] : learningImages;
 
+// Helper untuk playlist
+const firstVideo = kind === 'video' ? entry.data.videos[0] : null;
+const totalVideos = kind === 'video' ? entry.data.videos.length : 0;
+
+// VideoObject JSON-LD per video YouTube (struktur @graph berisi ItemList + VideoObject[]).
+// Ini yang membuat video YouTube muncul sebagai Video Rich Result yang terikat ke
+// halaman learning ini, bukan hanya ke youtube.com. embedUrl = format valid
+// untuk video yang di-embed, thumbnailUrl memakai CDN thumbnail YouTube.
+const playlistPageUrl = `https://endjiansyah.github.io/learning/${entry.slug}/`;
+const videoGraph = kind === 'video'
+  ? {
+      '@context': 'https://schema.org',
+      '@graph': [
+        {
+          '@type': 'ItemList',
+          name: entry.data.title,
+          description: entry.data.description,
+          image: imageValue,
+          url: playlistPageUrl,
+          itemListElement: entry.data.videos.map((v, i) => ({
+            '@type': 'ListItem',
+            position: i + 1,
+            name: v.title,
+            url: `https://www.youtube.com/watch?v=${v.youtubeId}`,
+          })),
+        },
+        ...entry.data.videos.map((v) => ({
+          '@type': 'VideoObject',
+          name: v.title,
+          description: v.description || entry.data.description,
+          thumbnailUrl: [`https://img.youtube.com/vi/${v.youtubeId}/hqdefault.jpg`],
+          embedUrl: `https://www.youtube.com/embed/${v.youtubeId}`,
+          contentUrl: `https://www.youtube.com/watch?v=${v.youtubeId}`,
+          uploadDate: entry.data.date.toISOString(),
+          inLanguage: 'id',
+          url: playlistPageUrl,
+          author: {
+            '@type': 'Person',
+            '@id': 'https://endjiansyah.github.io/#person',
+            name: 'Endjiansyah',
+            url: 'https://endjiansyah.github.io',
+          },
+        })),
+      ],
+    }
+  : null;
+
 const jsonSchema =
   kind === 'video'
-    ? {
-        '@context': 'https://schema.org',
-        '@type': 'ItemList',
-        name: entry.data.title,
-        description: entry.data.description,
-        image: imageValue,
-        url: `https://endjiansyah.github.io/learning/${entry.slug}/`,
-        itemListElement: entry.data.videos.map((v, i) => ({
-          '@type': 'ListItem',
-          position: i + 1,
-          name: v.title,
-          url: `https://www.youtube.com/watch?v=${v.youtubeId}`,
-        })),
-      }
+    ? videoGraph
     : {
         '@context': 'https://schema.org',
         '@type': 'Article',
@@ -90,10 +124,6 @@ const jsonSchema =
           url: 'https://endjiansyah.github.io',
         },
       };
-
-// Helper untuk playlist
-const firstVideo = kind === 'video' ? entry.data.videos[0] : null;
-const totalVideos = kind === 'video' ? entry.data.videos.length : 0;
 ---
 
 <BaseLayout
