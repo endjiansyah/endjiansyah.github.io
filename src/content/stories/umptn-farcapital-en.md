@@ -1,19 +1,19 @@
 ---
 lang: "en"
 title: "A Career Turning Point in Bandung: UMPTN Farcapital & Alkademi"
-description: "Notes from an intensive 3-month journey in Bandung â€” from deepening the TALL Stack to executing an OCR system project."
+description: "Notes from an intensive 3-month journey in Bandung with Alkademi & Far Capital — from mentors including Sandhika Galih to executing an OCR system project."
 date: 2022-11-01
 endDate: 2023-01-31
 dateLabel: "November 2022 - January 2023"
 type: "bootcamp"
 coverImage: "/assets/img/stories/umptn-farcapital/cover.webp"
-tags: ["Bootcamp", "Alkademi", "TALL Stack", "Bandung"]
+tags: ["Endjiansyah", "Alkademi", "Far Capital", "Farcapital", "Bootcamp", "Sandhika Galih", "Shandika Galih", "TALL Stack", "Bandung"]
 order: 2
 ---
 
-The intensive training program of Alkademi through **UMPTN Farcapital** became a *pivotal moment* in my career journey as a Software Engineer. Starting with selection in October 2022, this program took me away from home to Bandung for a three-month on-site *bootcamp*.
+The intensive training program of Alkademi through **UMPTN Farcapital** (Far Capital) became a *pivotal moment* in my career journey as a Software Engineer. Starting with selection in October 2022, this program took me away from home to Bandung for a three-month on-site *bootcamp*.
 
-The early phase consisted of self-learning and online mentoring to align basic technical foundations. But the real acceleration happened when all participants gathered in Bandung to forge their technical skills intensively.
+The early phase consisted of self-learning and online mentoring to align basic technical foundations. But the real acceleration happened when all participants gathered in Bandung to forge their technical skills intensively alongside inspiring mentors and industry practitioners, including valuable guidance from **Sandhika Galih** (Web Programming UNPAS) and senior Alkademi instructors.
 
 ---
 
@@ -31,8 +31,8 @@ Entering the third month (January 2023), all the material was tested through a f
 
 The main challenges of this project were extraction accuracy and integrating a responsive backend workflow. A solid team collaboration and mentor guidance were the keys to completing this project on time.
 
-![Togetherness of the Alkademi Team](/assets/img/stories/umptn-farcapital/cover.webp)
-*Togetherness of Alkademi participants and mentors during the program in Bandung.*
+![Endjiansyah with Alkademi UMPTN Farcapital Bandung team and mentor Sandhika Galih](/assets/img/stories/umptn-farcapital/cover.webp)
+*Endjiansyah together with Alkademi and Far Capital participants and mentors during the bootcamp program in Bandung.*
 
 ---
 

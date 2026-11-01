@@ -1,18 +1,18 @@
 ---
 title: "Titik Balik Karir di Bandung: UMPTN Farcapital & Alkademi"
-description: "Catatan perjalanan intensif selama 3 bulan di Bandung—dari pendalaman TALL Stack hingga eksekusi proyek sistem OCR."
+description: "Catatan perjalanan intensif selama 3 bulan di Bandung bersama Alkademi & Far Capital—dari bimbingan mentor termasuk Sandhika Galih hingga eksekusi proyek sistem OCR."
 date: 2022-11-01
 endDate: 2023-01-31
 dateLabel: "November 2022 - Januari 2023"
 type: "bootcamp"
 coverImage: "/assets/img/stories/umptn-farcapital/cover.webp"
-tags: ["Bootcamp", "Alkademi", "TALL Stack", "Bandung"]
+tags: ["Endjiansyah", "Alkademi", "Far Capital", "Farcapital", "Bootcamp", "Sandhika Galih", "TALL Stack", "Bandung"]
 order: 1
 ---
 
-Program pelatihan intensif Alkademi melalui **UMPTN Farcapital** menjadi salah satu *pivotal moment* dalam perjalanan karir saya sebagai seorang Software Engineer. Berawal dari seleksi pada Oktober 2022, program ini membawa saya merantau ke Bandung untuk mengikuti *bootcamp* luring (*on-site*) selama tiga bulan.
+Program pelatihan intensif Alkademi melalui **UMPTN Farcapital** (Far Capital) menjadi salah satu *pivotal moment* dalam perjalanan karir saya sebagai seorang Software Engineer. Berawal dari seleksi pada Oktober 2022, program ini membawa saya merantau ke Bandung untuk mengikuti *bootcamp* luring (*on-site*) selama tiga bulan.
 
-Fase awal dimulai dari *self-learning* serta bimbingan daring untuk menyelaraskan fondasi teknis dasar. Namun, akselerasi sesungguhnya terjadi ketika seluruh peserta berkumpul langsung di Bandung untuk menggembleng keahlian teknis secara intensif.
+Fase awal dimulai dari *self-learning* serta bimbingan daring untuk menyelaraskan fondasi teknis dasar. Namun, akselerasi sesungguhnya terjadi ketika seluruh peserta berkumpul langsung di Bandung untuk menggembleng keahlian teknis secara intensif bersama para mentor dan praktisi industri terbaik, termasuk sesi dan arahan berharga dari sosok inspiratif seperti **Sandhika Galih** (Web Programming UNPAS) serta para pengajar senior Alkademi lainnya.
 
 ---
 
@@ -30,8 +30,8 @@ Memasuki bulan ketiga (Januari 2023), seluruh materi diuji melalui proyek akhir 
 
 Tantangan utama proyek ini terletak pada akurasi ekstraksi serta integrasi alur kerja backend yang responsif. Kolaborasi tim yang solid serta bimbingan mentor menjadi kunci keberhasilan penyelesaian proyek ini tepat waktu.
 
-![Kebersamaan Tim Alkademi](/assets/img/stories/umptn-farcapital/cover.webp)
-*Kebersamaan para peserta dan mentor Alkademi selama program ber langsung di Bandung.*
+![Endjiansyah bersama tim Alkademi UMPTN Farcapital Bandung mentor Sandhika Galih](/assets/img/stories/umptn-farcapital/cover.webp)
+*Kebersamaan Endjiansyah bersama para peserta dan mentor Alkademi serta Far Capital selama program bootcamp di Bandung.*
 
 ---
 
