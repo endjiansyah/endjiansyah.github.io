@@ -10,12 +10,12 @@ tags: ["Mentoring", "Alkademi", "Agate Academy", "MakeCode Arcade", "Computation
 order: 2
 ---
 
-Undangan dari **Agate Academy** datang lewat **Alkademi** — dan saya tidak perlu berpikir panjang untuk mengiyakannya. Selama satu minggu penuh, 30 Juni hingga 4 Juli 2025, saya berkesempatan hadir sebagai mentor di **Holiday Camp 2025**, sebuah program liburan edukatif yang dirancang untuk mengenalkan dunia teknologi kepada anak-anak usia SD dan SMP secara menyenangkan dan interaktif.
+Mendapatkan kesempatan berharga untuk menjadi mentor di event **Holiday Camp 2025**, sebuah program liburan edukatif yang diselenggarakan oleh **Agate Academy** bersama **Alkademi**. Selama satu minggu penuh, dari 30 Juni hingga 4 Juli 2025, saya berkesempatan mendampingi dan mengenalkan dunia teknologi serta computational thinking kepada anak-anak usia SD dan SMP secara menyenangkan dan interaktif.
 
 Lokasinya? Langsung di kantor **Agate** — salah satu game studio terkemuka di Indonesia. Sebuah privilege tersendiri bisa mengajar di tempat yang begitu lekat dengan dunia game yang sesungguhnya.
 
-![Endjiansyah mentor Alkademi bersama peserta Holiday Camp 2025 Agate Academy sesi hari pertama](/assets/img/stories/holiday-camp-2025/suasana-hari-pertama.webp)
-*Suasana semangat di hari pertama Holiday Camp 2025 — Agate Academy, Bandung.*
+![Endjiansyah mentor Alkademi sedang mengajar peserta anak SD SMP di Holiday Camp 2025 Agate Academy Bandung](/assets/img/stories/holiday-camp-2025/suasana-hari-pertama.webp)
+*Endjiansyah saat mengajar dan membimbing peserta di sesi awal Holiday Camp 2025 — Agate Academy, Bandung.*
 
 ---
 
@@ -25,8 +25,8 @@ Materi utama yang kami bawakan adalah **Computational Thinking** — cara berpik
 
 Alat yang kami gunakan adalah **MakeCode Arcade**, platform *game development* berbasis blok yang memungkinkan peserta membangun game arcade sederhana mereka sendiri tanpa harus bergelut dengan sintaks kode yang rumit. Blok demi blok, mereka belajar memahami logika: karakter bergerak, ada rintangan, ada skor — semuanya dirakit sendiri oleh tangan-tangan kecil yang penuh semangat.
 
-![Endjiansyah Alkademi mengajar anak SD SMP coding game MakeCode Arcade Holiday Camp Agate Academy Bandung](/assets/img/stories/holiday-camp-2025/sesi-makecode.webp)
-*Peserta usia SD & SMP antusias merakit game pertama mereka menggunakan MakeCode Arcade.*
+![Endjiansyah mentor Alkademi mengajar coding game anak MakeCode Arcade di Holiday Camp Agate Academy Bandung](/assets/img/stories/holiday-camp-2025/sesi-makecode.webp)
+*Endjiansyah saat membimbing peserta dalam merakit logika game menggunakan MakeCode Arcade.*
 
 ---
 
@@ -58,8 +58,8 @@ Momen ini benar-benar emosional. Melihat anak-anak yang beberapa hari sebelumnya
 
 Senyum bangga di wajah para orang tua, dan rasa antusias anak-anak saat mendemonstrasikan hasil kerja keras mereka, menjadi pemandangan yang akan saya ingat lama setelah Holiday Camp ini berakhir.
 
-![Endjiansyah Alkademi mentor Holiday Camp 2025 Agate Academy Final Day presentasi game anak SD SMP Bandung](/assets/img/stories/holiday-camp-2025/final-day.webp)
-*Final Day 4 Juli 2025 — peserta dengan bangga mempresentasikan game karya mereka kepada orang tua.*
+![Endjiansyah mentor Alkademi sedang mengajar coding MakeCode Arcade di Holiday Camp Agate Academy Bandung](/assets/img/stories/holiday-camp-2025/final-day.webp)
+*Endjiansyah saat mendampingi peserta dan mengajar sesi pembuatan game di Holiday Camp 2025 Agate Academy.*
 
 ---
 

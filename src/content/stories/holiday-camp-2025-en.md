@@ -11,12 +11,12 @@ tags: ["Mentoring", "Alkademi", "Agate Academy", "MakeCode Arcade", "Computation
 order: 2
 ---
 
-The invitation from **Agate Academy** came through **Alkademi** — and I didn't need to think twice. For a full week, from June 30 to July 4, 2025, I had the opportunity to serve as a mentor at **Holiday Camp 2025**, an educational holiday program designed to introduce children in elementary and middle school to the world of technology in a fun and interactive way.
+Having a valuable opportunity to serve as a mentor at **Holiday Camp 2025**, an educational holiday program organized by **Agate Academy** in collaboration with **Alkademi**. For a full week, from June 30 to July 4, 2025, I had the privilege of guiding and introducing elementary and middle school students to the world of technology and computational thinking in a fun, interactive way.
 
 The venue? Right at the **Agate** office — one of Indonesia's leading game studios. It was a privilege in itself to teach at a place so deeply connected to the real world of games.
 
-![Endjiansyah Alkademi mentor with Holiday Camp 2025 Agate Academy participants first day session](/assets/img/stories/holiday-camp-2025/suasana-hari-pertama.webp)
-*The energetic atmosphere on day one of Holiday Camp 2025 — Agate Academy, Bandung.*
+![Endjiansyah mentor Alkademi teaching kids students at Holiday Camp 2025 Agate Academy Bandung](/assets/img/stories/holiday-camp-2025/suasana-hari-pertama.webp)
+*Endjiansyah mentoring and teaching students during the initial sessions of Holiday Camp 2025 — Agate Academy, Bandung.*
 
 ---
 
@@ -26,8 +26,8 @@ The core material we delivered was **Computational Thinking** — the systematic
 
 The tool we used was **MakeCode Arcade**, a block-based game development platform that lets participants build their own simple arcade games without having to wrestle with complex code syntax. Block by block, they learned to understand logic: a character moves, obstacles appear, a score is tracked — all assembled by small, eager hands.
 
-![Endjiansyah Alkademi teaching kids coding game development MakeCode Arcade Holiday Camp Agate Academy Bandung](/assets/img/stories/holiday-camp-2025/sesi-makecode.webp)
-*Elementary and middle school participants enthusiastically building their first games using MakeCode Arcade.*
+![Endjiansyah mentor Alkademi teaching kids game coding with MakeCode Arcade at Holiday Camp Agate Academy Bandung](/assets/img/stories/holiday-camp-2025/sesi-makecode.webp)
+*Endjiansyah guiding students in assembling game logic using MakeCode Arcade.*
 
 ---
 
@@ -59,8 +59,8 @@ It was a genuinely emotional moment. Watching children who, just days earlier, w
 
 The proud smiles on the parents' faces, and the excitement of the kids as they demonstrated the fruits of their hard work, created a scene I'll carry with me long after Holiday Camp ended.
 
-![Endjiansyah Alkademi mentor Holiday Camp 2025 Agate Academy Final Day kids game presentation Bandung](/assets/img/stories/holiday-camp-2025/final-day.webp)
-*Final Day July 4, 2025 — participants proudly presenting their self-made games to their parents.*
+![Endjiansyah mentor Alkademi teaching coding game MakeCode Arcade at Holiday Camp Agate Academy Bandung](/assets/img/stories/holiday-camp-2025/final-day.webp)
+*Endjiansyah mentoring students and conducting the game development session at Holiday Camp 2025 Agate Academy.*
 
 ---
 
