@@ -68,12 +68,17 @@ const style = storyTypeStyle(type);
     </div>
 
     {tags && tags.length > 0 && (
-      <div class="flex gap-2 flex-wrap pt-4 border-t border-gray-100">
-        {tags.map((tag) => (
+      <div class="flex gap-2 flex-wrap pt-4 border-t border-gray-100 items-center">
+        {tags.slice(0, 3).map((tag) => (
           <span class="px-3 py-0.5 bg-gray-100/70 text-gray-500 rounded-full text-xs font-medium border border-gray-200/50">
             #{tag}
           </span>
         ))}
+        {tags.length > 3 && (
+          <span class="px-2 py-0.5 text-gray-400 text-xs font-medium" title={tags.slice(3).map((t) => `#${t}`).join(', ')}>
+            +{tags.length - 3}
+          </span>
+        )}
       </div>
     )}
   </div>
