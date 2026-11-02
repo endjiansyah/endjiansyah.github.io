@@ -1,16 +1,16 @@
 ---
 lang: "en"
-title: "Kids Corner at Alkademi Learning Festival 2025: Empowering Kids to Build Their Own Games at Paragon Community Hub"
-description: "Endjiansyah's notes as an organizing committee member and mentor for the Kids Corner side-event at Alkademi Learning Festival 2025, Paragon Community Hub Jakarta."
+title: "Kids Corner - Festival Belajar Bersama Alkademi 2025 at Paragon Community Hub"
+description: "Endjiansyah's notes as an organizing committee member and mentor for the Kids Corner side-event at Festival Belajar Bersama Alkademi 2025, Paragon Community Hub Jakarta."
 date: 2025-07-12
 dateLabel: "July 12, 2025"
 type: "event"
 coverImage: "/assets/img/stories/alkademifest-kids-corner-2025/cover.webp"
-tags: ["Endjiansyah", "Alkademi", "ParagonCorp", "Kids Corner", "Computational Thinking", "MakeCode Arcade", "Mentoring", "Event"]
+tags: ["Endjiansyah", "Alkademi", "ParagonCorp", "Kids Corner", "Festival Belajar Bersama", "Computational Thinking", "MakeCode Arcade", "Mentoring", "Event"]
 order: 3
 ---
 
-On July 12, 2025, at **Paragon Community Hub, Jakarta**, the inaugural edition of the **Alkademi Learning Festival (Festival Belajar Bersama Alkademi 2025)** took place. This collaborative gathering brought together various communities—ranging from academic partners like STT Cipasung to industry allies like ParagonCorp and tech enthusiasts—to learn and grow together.
+On July 12, 2025, at **Paragon Community Hub, Jakarta**, the inaugural edition of **Festival Belajar Bersama Alkademi 2025** took place. This collaborative gathering brought together various communities—ranging from academic partners like STT Cipasung to industry allies like ParagonCorp and tech enthusiasts—to learn and grow together.
 
 In this event, I had the privilege of serving as part of the **organizing committee as well as a mentor** for the dedicated side-event: the **Kids Corner**. My role was not as a main stage speaker, but rather guiding the children of event attendees so they too could experience computational thinking and creative game design firsthand.
 

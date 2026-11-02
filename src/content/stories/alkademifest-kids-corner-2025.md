@@ -1,15 +1,15 @@
 ---
-title: "Kids Corner di Festival Belajar Bersama Alkademi 2025: Mengajak Anak Merakit Game Sendiri di Paragon Community Hub"
+title: "Kids Corner - Festival Belajar Bersama Alkademi 2025 di Paragon Community Hub"
 description: "Catatan pengalaman Endjiansyah sebagai panitia dan mentor Kids Corner pada Festival Belajar Bersama Alkademi 2025 di Paragon Community Hub, Jakarta."
 date: 2025-07-12
 dateLabel: "12 Juli 2025"
 type: "event"
 coverImage: "/assets/img/stories/alkademifest-kids-corner-2025/cover.webp"
-tags: ["Endjiansyah", "Alkademi", "ParagonCorp", "Kids Corner", "Computational Thinking", "MakeCode Arcade", "Mentoring", "Event"]
+tags: ["Endjiansyah", "Alkademi", "ParagonCorp", "Kids Corner", "Festival Belajar Bersama", "Computational Thinking", "MakeCode Arcade", "Mentoring", "Event"]
 order: 3
 ---
 
-Pada 12 Juli 2025, bertempat di **Paragon Community Hub, Jakarta**, diselenggarakan edisi perdana dari **Festival Belajar Bersama Alkademi (Alkademi Fest 2025)**. Event ini menjadi ruang temu kolaboratif yang mempertemukan berbagai kalangan—mulai dari akademisi seperti rekan-rekan STT Cipasung, mitra industri seperti ParagonCorp, hingga para pegiat teknologi—untuk saling berbagi inspirasi dan belajar bersama.
+Pada 12 Juli 2025, bertempat di **Paragon Community Hub, Jakarta**, diselenggarakan edisi perdana dari **Festival Belajar Bersama Alkademi 2025**. Event ini menjadi ruang temu kolaboratif yang mempertemukan berbagai kalangan—mulai dari akademisi seperti rekan-rekan STT Cipasung, mitra industri seperti ParagonCorp, hingga para pegiat teknologi—untuk saling berbagi inspirasi dan belajar bersama.
 
 Di acara ini, saya (Endjiansyah) mendapatkan amanah sebagai bagian dari **tim panitia sekaligus mentor** untuk mengisi sesi *side event* khusus, yaitu **Kids Corner**. Peran saya bukan sebagai pembicara utama di panggung utama festival, melainkan memfasilitasi anak-anak dari para peserta yang hadir agar mereka juga mendapatkan pengalaman berharga seputar teknologi, logika berpikir (*computational thinking*), dan kreasi game.
 
