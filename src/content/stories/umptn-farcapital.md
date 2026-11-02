@@ -35,6 +35,22 @@ Tantangan utama proyek ini terletak pada akurasi ekstraksi serta integrasi alur 
 
 ---
 
+### Menembus Batas: Persahabatan Lintas Pulau dan Lintas Negara
+
+Di luar baris-baris kode dan tantangan arsitektur sistem, salah satu berkah terbesar dari tiga bulan di Bandung adalah hadirnya keluarga dan jejaring pertemanan baru. Program ini mempertemukan talenta-talenta luar biasa dari berbagai pelosok Nusantara hingga mancanegara.
+
+Ada **Mas Ameerul** sahabat dari Malaysia, **Tegar** dari Medan, **Nando** dari Muara Enim, **Mas Arif** dari Bukittinggi, hingga **Obi** dari Papua. Keragaman logat, latar belakang budaya, dan cerita hidup justru melebur menjadi keakraban yang begitu erat. Di sela-sela padatnya kurikulum, kami menyempatkan diri melepas penat bersama—mengeksplorasi Kota Kembang dari Museum Geologi hingga menikmati sejuknya gemuruh air terjun di pelosok Bandung.
+
+![Endjiansyah bersama rekan peserta UMPTN Farcapital berwisata di Museum Geologi Bandung](/assets/img/stories/umptn-farcapital/teman-lintas-daerah-museum-geologi.webp)
+*Kebersamaan Endjiansyah bersama rekan-rekan peserta lintas daerah saat berkunjung ke Museum Geologi Bandung.*
+
+Bagi saya pribadi, pengalaman ini membuktikan bahwa teknologi adalah bahasa universal yang mampu merekatkan siapa saja tanpa sekat wilayah. Persahabatan dan tali silaturahmi yang terjalin saat itu bukan sekadar kenangan masa *bootcamp*, melainkan tetap terjaga hangat dan kokoh hingga saat ini di tahun 2026.
+
+![Momen kebersamaan rekan UMPTN Farcapital menikmati suasana air terjun di Bandung](/assets/img/stories/umptn-farcapital/kebersamaan-curug-bandung.webp)
+*Momen hangat melepas penat bersama teman-teman seperjuangan di salah satu air terjun di kawasan Bandung.*
+
+---
+
 ### Refleksi & Dampak Perjalanan
 
 Pengalaman di Bandung bukan sekadar tentang penulisan baris kode, melainkan tentang pembentukan pola pikir *problem-solving*, kerja sama tim dalam tekanan *deadline*, serta pembentukan jejaring profesional yang solid. 

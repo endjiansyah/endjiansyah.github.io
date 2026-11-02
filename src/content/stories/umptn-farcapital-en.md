@@ -36,6 +36,22 @@ The main challenges of this project were extraction accuracy and integrating a r
 
 ---
 
+### Breaking Boundaries: Friendships Across Islands and Borders
+
+Beyond the technical lines of code and architectural sprints, one of the greatest blessings from those three months in Bandung was the formation of a brand-new family and professional circle. The program brought together remarkable minds from across the archipelago and beyond.
+
+I found lifelong friends in **Mas Ameerul** from Malaysia, **Tegar** from Medan, **Nando** from Muara Enim, **Mas Arif** from Bukittinggi, and **Obi** from Papua. Our diverse dialects, cultural backgrounds, and life perspectives blended into an unbreakable bond. Between intensive study sessions, we explored Bandung together—from historical visits to the Geological Museum to unwinding by scenic waterfalls nestled in the highlands.
+
+![Endjiansyah with fellow UMPTN Farcapital participants visiting the Geological Museum of Bandung](/assets/img/stories/umptn-farcapital/teman-lintas-daerah-museum-geologi.webp)
+*Endjiansyah alongside fellow participants from across regions during a cultural visit to Museum Geologi Bandung.*
+
+For me personally, this proved that technology is truly a universal language capable of uniting people across any geographic boundary. The fellowship forged during those months wasn't merely a transient bootcamp memory—it remains vibrant, supportive, and strongly maintained to this day in 2026.
+
+![Camaraderie of UMPTN Farcapital friends unwinding at a waterfall in Bandung](/assets/img/stories/umptn-farcapital/kebersamaan-curug-bandung.webp)
+*A refreshing moment of camaraderie unwinding by a highland waterfall in Bandung.*
+
+---
+
 ### Reflections & the Impact of the Journey
 
 The experience in Bandung was not merely about writing lines of code â€” it was about shaping a *problem-solving* mindset, teamwork under *deadline* pressure, and building a solid professional network.
