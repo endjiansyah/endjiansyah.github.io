@@ -54,12 +54,18 @@ Ini adalah sesuatu yang tidak bisa dipelajari dari buku manapun.
 
 Puncak dari seluruh rangkaian Holiday Camp adalah **Final Day** pada 4 Juli 2025. Hari di mana seluruh peserta mempresentasikan game hasil karya mereka sendiri di hadapan para orang tua dan wali.
 
+![Suasana peserta anak-anak dan orang tua saat sesi Final Day Holiday Camp 2025 Agate Academy Alkademi](/assets/img/stories/holiday-camp-2025/suasana-peserta-dan-orang-tua.webp)
+*Antusiasme para peserta anak-anak didampingi orang tua saat menyimak materi dan presentasi proyek game.*
+
 Momen ini benar-benar emosional. Melihat anak-anak yang beberapa hari sebelumnya masih bingung dengan konsep dasar *sprite* dan *event*, kini berdiri percaya diri menjelaskan bagaimana game mereka bekerja kepada orang tua mereka masing-masing — itu adalah kepuasan yang sulit diungkapkan dengan kata-kata.
+
+![Endjiansyah mentor Alkademi berbicara di hadapan orang tua dan peserta Holiday Camp 2025 Agate Academy Bandung](/assets/img/stories/holiday-camp-2025/endjiansyah-di-hadapan-orang-tua-dan-peserta.webp)
+*Endjiansyah saat memberikan pemaparan serta mendampingi presentasi di hadapan para orang tua dan peserta.*
 
 Senyum bangga di wajah para orang tua, dan rasa antusias anak-anak saat mendemonstrasikan hasil kerja keras mereka, menjadi pemandangan yang akan saya ingat lama setelah Holiday Camp ini berakhir.
 
-![Endjiansyah mentor Alkademi sedang mengajar coding MakeCode Arcade di Holiday Camp Agate Academy Bandung](/assets/img/stories/holiday-camp-2025/final-day.webp)
-*Endjiansyah saat mendampingi peserta dan mengajar sesi pembuatan game di Holiday Camp 2025 Agate Academy.*
+![Foto bersama Endjiansyah mentor Alkademi dan para peserta di Final Day Holiday Camp 2025 Agate Academy Bandung](/assets/img/stories/holiday-camp-2025/foto-bersama-peserta-final-day.webp)
+*Foto bersama Endjiansyah, tim mentor, dan para peserta anak-anak dengan sertifikat kelulusan di Final Day Holiday Camp 2025 Agate Academy.*
 
 ---
 

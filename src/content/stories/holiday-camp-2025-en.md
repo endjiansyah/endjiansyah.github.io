@@ -55,12 +55,18 @@ That's something no book can teach you.
 
 The highlight of the entire Holiday Camp was **Final Day** on July 4, 2025. The day when all participants presented their self-made games in front of their parents and guardians.
 
+![Participants and parents during Final Day of Holiday Camp 2025 Agate Academy Alkademi](/assets/img/stories/holiday-camp-2025/suasana-peserta-dan-orang-tua.webp)
+*Eager kids accompanied by their parents attentively listening to presentations and game showcase.*
+
 It was a genuinely emotional moment. Watching children who, just days earlier, were still puzzled by basic concepts of sprites and events — now standing confidently, explaining how their games worked to their own parents — that's a satisfaction that's hard to put into words.
+
+![Endjiansyah mentor Alkademi speaking in front of parents and kids at Holiday Camp 2025 Agate Academy Bandung](/assets/img/stories/holiday-camp-2025/endjiansyah-di-hadapan-orang-tua-dan-peserta.webp)
+*Endjiansyah speaking and facilitating student game presentations before parents and participants.*
 
 The proud smiles on the parents' faces, and the excitement of the kids as they demonstrated the fruits of their hard work, created a scene I'll carry with me long after Holiday Camp ended.
 
-![Endjiansyah mentor Alkademi teaching coding game MakeCode Arcade at Holiday Camp Agate Academy Bandung](/assets/img/stories/holiday-camp-2025/final-day.webp)
-*Endjiansyah mentoring students and conducting the game development session at Holiday Camp 2025 Agate Academy.*
+![Group photo of Endjiansyah mentor Alkademi with kids participants on Final Day Holiday Camp 2025 Agate Academy Bandung](/assets/img/stories/holiday-camp-2025/foto-bersama-peserta-final-day.webp)
+*Group photo of Endjiansyah, the mentoring team, and young graduates holding their completion certificates on Final Day at Agate Academy.*
 
 ---
 
