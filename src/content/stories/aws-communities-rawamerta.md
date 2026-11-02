@@ -1,16 +1,16 @@
 ---
 title: "AWS in Communities di Rawamerta: Menjembatani Digitalisasi Posyandu & Skrining Kesehatan Desa Gombongsari"
 description: "Catatan Project Management Endjiansyah memimpin tim pengembang dalam program CSR AWS in Communities untuk digitalisasi posyandu dan pemantauan kesehatan balita di Rawamerta, Karawang."
-date: 2025-08-01
-endDate: 2025-10-31
-dateLabel: "Agustus - Oktober 2025"
+date: 2024-08-01
+endDate: 2024-10-31
+dateLabel: "Agustus - Oktober 2024"
 type: "event"
 coverImage: "/assets/img/stories/aws-communities-rawamerta/cover.webp"
 tags: ["Endjiansyah", "Project Management", "AWS in Communities", "Alkademi", "Posyandu", "Rawamerta", "Karawang", "Desa Gombongsari", "Healthtech"]
 order: 2
 ---
 
-Membawa teknologi mutakhir ke tingkat akar rumput (*grassroots*) selalu menghadirkan tantangan tersendiri, sekaligus kepuasan batin yang mendalam. Selama periode **Agustus hingga Oktober 2025**, saya mendapatkan amanah sebagai **Project Manager (PM)** dalam program CSR bergengsi **AWS in Communities**, berfokus pada digitalisasi layanan, pemantauan kesehatan, serta pintu posyandu di wilayah **Kecamatan Rawamerta, Kabupaten Karawang**.
+Membawa teknologi mutakhir ke tingkat akar rumput (*grassroots*) selalu menghadirkan tantangan tersendiri, sekaligus kepuasan batin yang mendalam. Selama periode **Agustus hingga Oktober 2024**, saya mendapatkan amanah sebagai **Project Manager (PM)** dalam program CSR bergengsi **AWS in Communities**, berfokus pada digitalisasi layanan, pemantauan kesehatan, serta pintu posyandu di wilayah **Kecamatan Rawamerta, Kabupaten Karawang**.
 
 Di proyek ini, saya memimpin tim pengembang muda yang luar biasa solid: **Farid, Karlina, Khalil, dan Affan** sebagai tim *developer*. Bersama-sama, kami merancang dan mengeksekusi sistem yang diberi nama **Gumelis**—sebuah platform pendataan, rekam kesehatan balita, dan skrining kesehatan digital untuk warga desa.
 

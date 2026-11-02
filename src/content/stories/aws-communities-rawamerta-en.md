@@ -2,16 +2,16 @@
 lang: "en"
 title: "AWS in Communities in Rawamerta: Bridging Posyandu Digitalization & Health Screening in Gombongsari Village"
 description: "Endjiansyah's Project Management journey leading a developer team under the AWS in Communities CSR program to digitize community posyandu health screening in Rawamerta, Karawang."
-date: 2025-08-01
-endDate: 2025-10-31
-dateLabel: "August - October 2025"
+date: 2024-08-01
+endDate: 2024-10-31
+dateLabel: "August - October 2024"
 type: "event"
 coverImage: "/assets/img/stories/aws-communities-rawamerta/cover.webp"
 tags: ["Endjiansyah", "Project Management", "AWS in Communities", "Alkademi", "Posyandu", "Rawamerta", "Karawang", "Desa Gombongsari", "Healthtech"]
 order: 2
 ---
 
-Bringing modern technology to grassroots communities is always a unique challenge, accompanied by profound fulfillment. From **August to October 2025**, I served as **Project Manager (PM)** under the prestigious **AWS in Communities** CSR initiative, focusing on digitalizing community healthcare, child health monitoring, and posyandu services across **Rawamerta District, Karawang Regency**.
+Bringing modern technology to grassroots communities is always a unique challenge, accompanied by profound fulfillment. From **August to October 2024**, I served as **Project Manager (PM)** under the prestigious **AWS in Communities** CSR initiative, focusing on digitalizing community healthcare, child health monitoring, and posyandu services across **Rawamerta District, Karawang Regency**.
 
 Leading a dedicated development team—**Farid, Karlina, Khalil, and Affan**—we engineered and delivered **Gumelis**, a digital platform tailored for village resident health screening and toddler growth tracking.
 
