@@ -26,8 +26,16 @@ Diskusi berjalan sangat produktif dan konstruktif. Kami membedah capaian fase pe
 
 ---
 
-### Refleksi Perjalanan
+### Refleksi Perjalanan: Dari Skala Lokal ke Panggung Regional
 
-Berdiri di depan lambang resmi dan jajaran bendera negara-negara anggota ASEAN menjadi momen reflektif tersendiri bagi perjalanan karir saya sebagai seorang Software Engineer. Dari proyek-proyek lokal berskala daerah hingga dipercaya berkontribusi dalam inisiatif kerja sama internasional, perjalanan ini menegaskan pentingnya konsistensi, integritas teknis, dan komunikasi lintas tim.
+Berdiri di bawah lambang resmi ASEAN yang megah diapit jajaran bendera negara-negara anggota Asia Tenggara menjadi momen reflektif tersendiri bagi perjalanan karir saya. Mengenakan batik dan blangkon tradisional di gedung bersejarah ini membawa kebanggaan tersendiri—membawa identitas dan semangat lokal ke ruang diplomasi dan kolaborasi internasional.
 
-Kunjungan ini memberikan suntikan semangat baru bagi kami untuk terus menjaga standar rekayasa perangkat lunak terbaik, memastikan setiap kolaborasi dapat memberikan manfaat dan dampak positif yang berkelanjutan bagi kawasan.
+![Endjiansyah bersama rekan kerja di depan lambang resmi ASEAN Secretariat Heritage Building Jakarta](/assets/img/stories/kunjungan-asean-foundation/endjiansyah-rekan-lambang-asean-heritage-building.webp)
+*Endjiansyah bersama rekan kerja berfoto di lobi utama ASEAN Secretariat Heritage Building dengan latar lambang resmi ASEAN dan bendera negara-negara anggota.*
+
+Dari proyek-proyek rekayasa perangkat lunak berskala daerah hingga dipercaya berkontribusi dalam inisiatif platform digital kawasan, perjalanan ini menegaskan pentingnya konsistensi, integritas teknis, dan kerja sama tim yang solid.
+
+![Endjiansyah berpose di depan lambang resmi ASEAN di ASEAN Secretariat Heritage Building Jakarta](/assets/img/stories/kunjungan-asean-foundation/endjiansyah-lambang-asean-secretariat-jakarta.webp)
+*Momen reflektif Endjiansyah di depan lambang ASEAN, mempertegas komitmen menghadirkan solusi teknologi yang berdampak luas.*
+
+Kunjungan ini memberikan suntikan semangat baru untuk terus menjaga standar rekayasa perangkat lunak terbaik, memastikan setiap kolaborasi digital dapat memberikan manfaat dan dampak positif yang berkelanjutan bagi kemajuan masyarakat di Asia Tenggara.

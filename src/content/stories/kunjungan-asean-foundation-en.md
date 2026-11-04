@@ -27,8 +27,16 @@ Our discussions were both insightful and productive. We reviewed technical devel
 
 ---
 
-### A Moment of Reflection
+### Reflections: From Local Foundations to the Regional Stage
 
-Standing before the official ASEAN emblem and the national flags of member countries marked a memorable personal milestone in my software engineering journey. From early local client projects to contributing to regional international initiatives, it reinforces the enduring value of consistency, technical craftsmanship, and collaborative teamwork.
+Standing beneath the iconic ASEAN emblem flanked by the national flags of Southeast Asian member states was a deeply reflective milestone in my engineering journey. Wearing traditional batik and blangkon within this historic institution brought a distinct sense of pride—bringing local identity and heritage into an international space of diplomacy and collaboration.
 
-This visit renewed our dedication to upholding the highest standards of software engineering, ensuring our collaborative efforts create lasting value for the region.
+![Endjiansyah with a colleague in front of the official ASEAN emblem at the ASEAN Secretariat Heritage Building Jakarta](/assets/img/stories/kunjungan-asean-foundation/endjiansyah-rekan-lambang-asean-heritage-building.webp)
+*Endjiansyah alongside a colleague in the grand hall of the ASEAN Secretariat Heritage Building, backed by the official ASEAN emblem and member flags.*
+
+From local software engineering projects to contributing to regional digital platform initiatives, this milestone reaffirms the enduring value of consistency, technical craftsmanship, and resilient teamwork.
+
+![Endjiansyah standing before the official ASEAN emblem at the ASEAN Secretariat Heritage Building Jakarta](/assets/img/stories/kunjungan-asean-foundation/endjiansyah-lambang-asean-secretariat-jakarta.webp)
+*A reflective moment for Endjiansyah before the ASEAN emblem, reinforcing the dedication to delivering technology that makes an enduring impact.*
+
+This visit renewed our commitment to upholding world-class engineering standards, ensuring our collaborative digital efforts create tangible, lasting value for communities across Southeast Asia.
