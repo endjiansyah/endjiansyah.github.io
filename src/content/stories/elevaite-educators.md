@@ -6,13 +6,26 @@ endDate: 2026-09-30
 dateLabel: "November 2025 – September 2026"
 type: "mentoring"
 coverImage: "/assets/img/stories/elevaite-educators/cover.webp"
-tags: ["Endjiansyah", "Microsoft Elevate", "Alkademi", "ParagonCorp", "UMB Bandung", "SMA Alfa Centauri", "SMKN 1 Kaligondang", "Purbalingga", "Minecraft Education", "Hour of Code", "Hour of AI"]
+tags: ["Endjiansyah", "Microsoft Elevate", "Alkademi", "ParagonCorp", "Wardah Inspiring Teacher", "WIT Gen 8", "Training of Trainers", "UMB Bandung", "SMA Alfa Centauri", "SMKN 1 Kaligondang", "Purbalingga", "Minecraft Education", "Hour of Code", "Hour of AI"]
 order: 1
 ---
 
 Menghadirkan literasi kecerdasan buatan (*Artificial Intelligence*) dan pemrograman ke ruang kelas tidak akan pernah terwujud tanpa memberdayakan garda terdepannya: para guru. Dalam rentang waktu **November 2025 hingga September 2026**, program **Practical AI & Coding Skills for Educators** di bawah payung **Microsoft Elevate** bersama **Alkademi** dan didukung oleh **ParagonCorp** hadir sebagai wadah belajar bersama yang mempertemukan ribuan pendidik dari Sabang sampai Merauke.
 
 Di sini, tidak ada istilah "pengajar utama" atau hierarki instruktur. Kami memegang teguh prinsip bahwa **semua pengajar dan pendidik berada di posisi yang setara**. Ruang kelas—baik saat bertatap muka secara daring maupun luring—merupakan forum kolaboratif tempat kami saling berbagi pengalaman, menepis keraguan terhadap teknologi, dan bersama-sama merancang cara terbaik membawa logika komputasi ke dunia anak didik.
+
+---
+
+### Kolaborasi Paragon: Wardah Inspiring Teacher Gen 8 & Training of Trainers (TOT)
+
+Selain rangkaian lokakarya luring dan kelas reguler, inisiatif ini juga berkolaborasi erat dengan **ParagonCorp** melalui program unggulan **Wardah Inspiring Teacher (WIT) Generasi 8**. Kami mendapatkan amanah istimewa untuk mengisi materi pada **Pertemuan 2 dan Pertemuan 3**, membekali para guru terpilih se-Indonesia dengan literasi digital dan *Computational Thinking*.
+
+Skala program WIT Gen 8 yang masif menuntut kehadiran banyak pengajar secara simultan di waktu yang sama, di mana para peserta dibagi ke dalam puluhan *breakout rooms* (seperti Room 13 dan ruang-ruang kelas paralel lainnya). Untuk memastikan kesiapan dan keselarasan penyampaian materi, saya mendapatkan kesempatan memfasilitasi sesi **Training of Trainers (TOT)** guna mempersiapkan sekitar **50 pemateri** sebelum mereka bertugas memandu pertemuan.
+
+![Sesi daring Wardah Inspiring Teacher Gen 8 bersama para pendidik dari berbagai daerah di Indonesia](/assets/img/stories/elevaite-educators/wardah-inspiring-teacher-gen-8-tot.webp)
+*Tangkapan layar ruang kelas daring Wardah Inspiring Teacher Gen 8 di Microsoft Teams, memperlihatkan interaksi aktif para guru mendiskusikan konsep berpikir komputasional dan dekomposisi masalah.*
+
+Dinamika kelas daring ini menyajikan kehangatan yang luar biasa. Di kolom obrolan, kita dapat menyaksikan dedikasi para guru: dari yang dengan tulus meminta izin karena keterbatasan sinyal di pelosok desa, hingga antusiasme mereka saat berhasil memahami konsep dekomposisi masalah secara sistematis. TOT ini menjadi bukti nyata bahwa keberhasilan memberdayakan ribuan guru berakar dari kesiapan dan keselarasan hati para pematerinya.
 
 ---
 

@@ -7,13 +7,26 @@ endDate: 2026-09-30
 dateLabel: "November 2025 – September 2026"
 type: "mentoring"
 coverImage: "/assets/img/stories/elevaite-educators/cover.webp"
-tags: ["Endjiansyah", "Microsoft Elevate", "Alkademi", "ParagonCorp", "UMB Bandung", "SMA Alfa Centauri", "SMKN 1 Kaligondang", "Purbalingga", "Minecraft Education", "Hour of Code", "Hour of AI"]
+tags: ["Endjiansyah", "Microsoft Elevate", "Alkademi", "ParagonCorp", "Wardah Inspiring Teacher", "WIT Gen 8", "Training of Trainers", "UMB Bandung", "SMA Alfa Centauri", "SMKN 1 Kaligondang", "Purbalingga", "Minecraft Education", "Hour of Code", "Hour of AI"]
 order: 1
 ---
 
 Introducing artificial intelligence literacy and computational thinking into classrooms begins with empowering those on the frontlines: our educators. Between **November 2025 and September 2026**, the **Practical AI & Coding Skills for Educators** program—held under **Microsoft Elevate**, led by **Alkademi**, and supported by **ParagonCorp**—served as an expansive collaborative hub connecting thousands of passionate teachers across Indonesia.
 
 Within this program, there was never a notion of a "lead instructor" or rigid hierarchy. We upheld the core principle that **all educators and facilitators stand on equal footing**. Whether gathered in-person or across online video rooms, every session functioned as a collaborative circle to exchange real-world classroom challenges, demystify technology, and co-create engaging ways to deliver computational thinking to young learners.
+
+---
+
+### Paragon Collaboration: Wardah Inspiring Teacher Gen 8 & Training of Trainers (TOT)
+
+Beyond routine offline workshops and cohorts, this initiative collaborated closely with **ParagonCorp** through its flagship education empowerment program, **Wardah Inspiring Teacher (WIT) Generation 8**. Our team had the special honor of leading the curriculum for **Sessions 2 and 3**, equipping selected educators across Indonesia with foundational digital literacy and computational thinking.
+
+The immense scale of WIT Gen 8 necessitated dozens of instructors facilitating simultaneously across multiple parallel breakout rooms (such as Room 13 and other cohort rooms). To ensure delivery quality and curriculum consistency across all cohorts, I had the opportunity to lead the **Training of Trainers (TOT)** program, preparing and aligning around **50 facilitators** ahead of their teaching sessions.
+
+![Online session of Wardah Inspiring Teacher Gen 8 connecting educators from across Indonesia on Microsoft Teams](/assets/img/stories/elevaite-educators/wardah-inspiring-teacher-gen-8-tot.webp)
+*Screenshot from the Wardah Inspiring Teacher Gen 8 virtual classroom on Microsoft Teams, showcasing lively educator participation discussing computational thinking and problem decomposition.*
+
+The atmosphere in these virtual rooms was truly moving. The chat panel reflected the authentic commitment of teachers across the country—from educators politely sharing signal constraints in rural villages to collective enthusiasm as they grasped systematic problem-solving concepts like decomposition. This TOT reinforced that empowering thousands of teachers begins with thoroughly equipping and aligning the educators who guide them.
 
 ---
 
