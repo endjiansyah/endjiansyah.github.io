@@ -1,6 +1,6 @@
 ---
-title: "Dua Tahun Bertumbuh Sebagai Project Manager di Alkademi: Dari Meja Bootcamp ke Garis Depan Manajemen Proyek"
-description: "Catatan reflektif Endjiansyah memegang peran Project Manager di Alkademi (Februari 2024 – Februari 2026), bertumbuh tanpa Senior PM di bawah bimbingan langsung CTO Mas Alfan, mengorkestrasi developer, dan mengawal berbagai inisiatif teknologi strategis."
+title: "Bertumbuh Sebagai Project Manager di Alkademi: Dari Meja Bootcamp ke Garis Depan Manajemen Proyek"
+description: "Catatan reflektif Endjiansyah memegang peran Project Manager di Alkademi (Februari 2024 – Februari 2026), bertumbuh tanpa Senior PM di bawah bimbingan langsung CTO Mas Alfan, hingga transisi strategis kembali ke rekayasa perangkat lunak."
 date: 2024-02-01
 endDate: 2026-02-28
 dateLabel: "Februari 2024 – Februari 2026"
@@ -12,11 +12,11 @@ order: 1
 
 Setiap perjalanan karir selalu memiliki titik belok yang menentukan. Bagi saya, titik itu bermula di awal tahun 2024. Setelah menyelesaikan rangkaian bootcamp intensif di Alkademi, sebuah kepercayaan besar tiba tanpa diduga: saya diminta mengemban tanggung jawab sebagai **Project Manager (PM)** di Alkademi. Kepercayaan ini lahir setelah manajemen melihat gaya kepemimpinan, inisiatif komunikasi, serta kemampuan mengurai masalah yang saya tunjukkan selama masa pelatihan.
 
-Melangkah dari seorang peserta bootcamp menjadi nakhoda proyek tentu bukan lompatan kecil. Namun, justru di fase dua tahun berikutnya—**Februari 2024 hingga Februari 2026**—fondasi kepemimpinan dan manajemen teknologi saya ditempa secara nyata di garis depan.
+Melangkah dari seorang peserta bootcamp menjadi nakhoda proyek tentu bukan lompatan kecil. Namun, justru di fase perjalanan inilah fondasi kepemimpinan dan manajemen teknologi saya ditempa secara nyata di garis depan.
 
 ---
 
-### Bertumbuh Tanpa Senior PM: Berguru Langsung pada Mas Alfan (CTO)
+### Bertumbuh Tanpa Senior PM
 
 Kondisi awal saat saya mulai menjabat sebagai Project Manager menghadirkan tantangan unik: di Alkademi saat itu **tidak ada Senior PM**. Tidak ada jalur perantara atau figur senior di bidang manajemen proyek untuk tempat bertanya sehari-hari. 
 
@@ -32,14 +32,18 @@ Belajar langsung dari pucuk pimpinan teknologi memberikan perspektif helikopter 
 
 ---
 
-### Meja Bundar: Jantung Kolaborasi dan Eksekusi Proyek
+### Meja Bundar: Seluruh Tim Developer Alkademi 2024
 
-Salah satu memori paling berkesan dalam keseharian sebagai PM adalah sesi-sesi diskusi di meja bundar kantor Alkademi. Di meja inilah para engineer, developer, dan rekan tim berkumpul membuka laptop masing-masing untuk *daily standup*, *sprint review*, hingga *brainstorming* arsitektur solusi.
+Salah satu memori paling berkesan dalam keseharian sebagai PM adalah sesi-sesi diskusi di meja bundar kantor Alkademi. Di meja inilah seluruh tim developer Alkademi tahun 2024 berkumpul membuka laptop masing-masing untuk *daily standup*, *sprint review*, hingga *brainstorming* arsitektur solusi.
 
-![Suasana diskusi intensif tim developer Alkademi di meja bundar](/assets/img/stories/project-manager-alkademi/diskusi-tim-meja-bundar-alkademi.webp)
-*Suasana kerja harian tim developer Alkademi saat berkumpul di meja bundar untuk menyelaraskan sprint dan memecahkan tantangan teknis bersama.*
+Formasi tim di meja bundar saat itu memiliki dinamika yang sangat istimewa:
+- **Mas Robet dan Mas Alif**: Dua sosok senior developer di Alkademi yang pada tahun sebelumnya merupakan mentor kami saat menjalani bootcamp.
+- **Adnan, Farid, Hanif, Maahir, dan Rijal**: Rekan-rekan junior mereka yang juga merupakan sahabat seperjuangan saya sejak masa bootcamp Far Capital.
 
-Sebagai PM, peran saya bukan sekadar membagikan tiket tugas, melainkan menciptakan ruang aman di mana setiap developer dapat menyuarakan kendala, mendebat pendekatan arsitektur terbaik, dan bersama-sama merayakan setiap modul yang berhasil dirilis ke tahap produksi.
+![Seluruh tim developer Alkademi 2024 berkumpul di meja bundar kantor Alkademi](/assets/img/stories/project-manager-alkademi/diskusi-tim-meja-bundar-alkademi.webp)
+*Momen kebersamaan seluruh tim developer Alkademi tahun 2024 di meja bundar: Robet dan Alif (senior developer & mantan mentor bootcamp), bersama Adnan, Farid, Hanif, Maahir, dan Rijal.*
+
+Sebagai PM yang tumbuh dari almamater bootcamp yang sama, komunikasi di antara kami berjalan sangat cair namun tetap profesional. Meja bundar ini menjadi saksi lahirnya berbagai solusi atas kebuntuan teknis hingga perayaan modul-modul yang berhasil dirilis ke tahap produksi.
 
 ---
 
@@ -49,4 +53,16 @@ Jika melihat berbagai cerita yang tertulis di portofolio ini—mulai dari inisia
 
 Setiap inisiatif tersebut digerakkan oleh peran saya sebagai Project Manager: menyatukan talenta teknis, menjaga tenggat waktu, mengelola ekspektasi mitra lintas sektor, dan memastikan setiap baris kode yang dibangun benar-benar memberikan dampak nyata bagi masyarakat.
 
-Dua tahun (Februari 2024 – Februari 2026) di Alkademi membuktikan bahwa kepemimpinan teknologi bukan tentang otoritas gelar, melainkan tentang empati mendengarkan tim, ketelitian mengawal proses, dan komitmen pantang menyerah menjaga amanah hingga garis akhir.
+---
+
+### Dinamika Februari 2026: Transisi Strategis Menjawab Kebutuhan Esensial
+
+Waktu bergulir cepat, dan pada awal tahun 2026, Alkademi telah bertransformasi dan berkembang dengan sangat pesat. Menariknya, dinamika organisasi justru mengalami pergeseran 180 derajat dari masa awal saya bergabung:
+- Jika di tahun 2024 Alkademi sama sekali tidak memiliki PM, di awal **Februari 2026** Alkademi justru memiliki surplus Project Manager.
+- Di sisi lain, Alkademi menghadapi defisit signifikan pada lini tim rekayasa perangkat lunak karena tim developer inti hanya tersisa 4 orang: **Adnan, Farid, Hanif, dan Maahir**.
+
+Pada saat yang sama, terjadi lonjakan kebutuhan besar untuk mentor teknis serta pengembangan modul-modul materi pembelajaran (*curriculum & module development*). Mayoritas rekan PM yang ada memiliki latar belakang non-teknis, sehingga tidak memungkinkan bagi mereka untuk menangani penulisan modul teknis yang mendalam atau terjun langsung ke dalam *hands-on code development*.
+
+Melihat situasi krusial ini, manajemen mengambil keputusan strategis: **menggeser peran saya kembali ke lini Software Engineer / Developer**. Bekal pemahaman teknis mendalam yang saya miliki sejak awal, dipadukan dengan pengalaman dua tahun mengorkestrasi proyek sebagai PM, menjadikan transisi ini langkah paling tepat untuk menopang kekurangan tenaga developer sekaligus memimpin pengembangan modul materi teknologi Alkademi ke depan.
+
+Perjalanan ini membuktikan bahwa peran profesional dalam dunia teknologi bersifat dinamis dan adaptif. Baik saat memegang kemudi sebagai Project Manager maupun saat kembali menyusun arsitektur sistem sebagai Software Engineer, komitmen saya tetap satu: memberikan kontribusi terbaik di mana pun kehadiran saya paling dibutuhkan.
