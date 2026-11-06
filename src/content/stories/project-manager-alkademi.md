@@ -55,14 +55,14 @@ Setiap inisiatif tersebut digerakkan oleh peran saya sebagai Project Manager: me
 
 ---
 
-### Dinamika Februari 2026: Transisi Strategis Menjawab Kebutuhan Esensial
+### Dinamika Februari 2026: Estafet Peran dan Penguatan Lini Rekayasa
 
-Waktu bergulir cepat, dan pada awal tahun 2026, Alkademi telah bertransformasi dan berkembang dengan sangat pesat. Menariknya, dinamika organisasi justru mengalami pergeseran 180 derajat dari masa awal saya bergabung:
-- Jika di tahun 2024 Alkademi sama sekali tidak memiliki PM, di awal **Februari 2026** Alkademi justru memiliki surplus Project Manager.
-- Di sisi lain, Alkademi menghadapi defisit signifikan pada lini tim rekayasa perangkat lunak karena tim developer inti hanya tersisa 4 orang: **Adnan, Farid, Hanif, dan Maahir**.
+Waktu bergulir cepat, dan memasuki awal tahun 2026, Alkademi telah bertransformasi dan berkembang dengan sangat pesat. Struktur organisasi kian matang dengan bertambahnya talenta-talenta di divisi manajemen proyek.
 
-Pada saat yang sama, terjadi lonjakan kebutuhan besar untuk mentor teknis serta pengembangan modul-modul materi pembelajaran (*curriculum & module development*). Mayoritas rekan PM yang ada memiliki latar belakang non-teknis, sehingga tidak memungkinkan bagi mereka untuk menangani penulisan modul teknis yang mendalam atau terjun langsung ke dalam *hands-on code development*.
+Seiring perkembangan tersebut, tongkat estafet tanggung jawab Project Manager saya serahkan kepada **Mas Hanif Fajri**, yang kini mengawal kelancaran operasional dan eksekusi proyek-proyek di Alkademi.
 
-Melihat situasi krusial ini, manajemen mengambil keputusan strategis: **menggeser peran saya kembali ke lini Software Engineer / Developer**. Bekal pemahaman teknis mendalam yang saya miliki sejak awal, dipadukan dengan pengalaman dua tahun mengorkestrasi proyek sebagai PM, menjadikan transisi ini langkah paling tepat untuk menopang kekurangan tenaga developer sekaligus memimpin pengembangan modul materi teknologi Alkademi ke depan.
+Di saat yang sama, Alkademi menghadapi lonjakan kebutuhan strategis pada lini pengembangan modul-modul materi pembelajaran (*curriculum & technical module development*) serta akselerasi produk rekayasa perangkat lunak. Mengingat sebagian besar rekan manajemen berfokus pada sisi operasional non-teknis, kehadiran figur yang memiliki pemahaman arsitektur kode mendalam menjadi sangat krusial di garda rekayasa.
+
+Melihat kebutuhan esensial tersebut, saya mengambil langkah strategis untuk **kembali berfokus memperkuat divisi Software Engineering**. Bersama rekan-rekan tim developer inti—**Adnan, Farid, Hanif, dan Maahir**—fokus saya kini tercurah pada perancangan modul teknologi mutakhir, mentoring teknis, serta rekayasa sistem yang andal. Menariknya, kolaborasi dengan Mas Hanif Fajri tetap terjalin sangat erat; untuk berbagai diskusi dan keputusan yang menyangkut aspek teknikal (*technical advisory*), kami senantiasa duduk bersama menyelaraskan solusinya.
 
 Perjalanan ini membuktikan bahwa peran profesional dalam dunia teknologi bersifat dinamis dan adaptif. Baik saat memegang kemudi sebagai Project Manager maupun saat kembali menyusun arsitektur sistem sebagai Software Engineer, komitmen saya tetap satu: memberikan kontribusi terbaik di mana pun kehadiran saya paling dibutuhkan.

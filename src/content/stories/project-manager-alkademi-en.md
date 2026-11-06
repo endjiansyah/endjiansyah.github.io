@@ -56,14 +56,14 @@ Each of these endeavors was anchored in my role as Project Manager: orchestratin
 
 ---
 
-### February 2026 Dynamics: A Strategic Shift to Answer Critical Needs
+### February 2026 Dynamics: Passing the Baton and Reinforcing Engineering Frontlines
 
-Time progressed, and by early 2026, Alkademi had grown and scaled substantially. Curiously, organizational dynamics underwent a complete 180-degree shift from when I first started:
-- While Alkademi had zero PMs back in 2024, by **February 2026** the company had an abundance of Project Managers.
-- Conversely, Alkademi faced an acute developer shortage as the core engineering team narrowed down to just four developers: **Adnan, Farid, Hanif, and Maahir**.
+Time progressed, and by early 2026, Alkademi had scaled substantially. The organizational structure had matured with a growing roster of dedicated talent across project management operations.
 
-Simultaneously, there was a surge in demand for technical mentors and hands-on curriculum development for specialized learning modules. Most of the other PMs came from non-technical backgrounds, making it impractical for them to produce rigorous technical curriculum modules or dive into direct software development.
+With this evolution, the operational baton of Project Manager was handed over to **Mas Hanif Fajri**, who now stewards project deliveries across Alkademi.
 
-Recognizing this critical bottleneck, management executed a strategic realignment: **transitioning my role back into Software Engineering**. My foundational engineering capabilities, coupled with two years of cross-functional PM execution, positioned me uniquely to reinforce the development pipeline, spearhead technical curriculum authoring, and safeguard ongoing engineering deliveries.
+Simultaneously, the organization experienced a surge in strategic demand for specialized technical curriculum authoring, module development, and direct software engineering. Because most project management colleagues were dedicated to operational and non-technical domains, having leadership with deep, hands-on architectural understanding at the engineering front became essential.
+
+Recognizing this strategic priority, I made the conscious transition to **refocus my energy back onto Software Engineering**. Working alongside the core engineering team—**Adnan, Farid, Hanif, and Maahir**—my focus is now dedicated to technical module design, engineering mentorship, and robust system architecture. Furthermore, the partnership with Mas Hanif Fajri remains seamlessly collaborative; on topics requiring deep technical deliberations and architectural advisory, we continue to sit together to formulate the best solutions.
 
 This journey confirms that professional roles in tech are fundamentally fluid and adaptive. Whether steering strategy as a Project Manager or architecting systems as a Software Engineer, my core mission remains unchanged: delivering the highest impact wherever the organization needs it most.
