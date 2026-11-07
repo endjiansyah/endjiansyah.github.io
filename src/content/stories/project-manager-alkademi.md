@@ -58,10 +58,10 @@ Peran yang saya jalani terasa sangat identik dengan **Technical Project Manager 
 
 Jika melihat berbagai cerita yang tertulis di portofolio ini—mulai dari inisiatif digital bersama **ASEAN Foundation**, proyek sistem Posyandu dan Bansos **AWS in Communities di Karawang**, piloting literasi AI **Minecraft Education** yang ditinjau Wapres Gibran, pelatihan guru **Microsoft Elevate**, hingga gelaran **Lailatul Coding**—semuanya digerakkan oleh kombinasi kepemimpinan teknis dan manajemen proyek yang solid.
 
-![Dokumentasi profil Endjiansyah ditampilkan di panggung utama The 6th West Java Investment Summit 2024](/assets/img/stories/project-manager-alkademi/endjiansyah-west-java-investment-summit-2024.webp)
-*Dokumentasi wawancara dan profil Endjiansyah yang diputar di layar raksasa panggung utama The 6th West Java Investment Summit (WJIS) 2024 sebagai representasi dampak program teknologi.*
+![Endjiansyah saat mengikuti event The 6th West Java Investment Summit 2024](/assets/img/stories/project-manager-alkademi/endjiansyah-west-java-investment-summit-2024.webp)
+*Endjiansyah saat mengikuti event The 6th West Java Investment Summit (WJIS) 2024, di mana dokumentasi dan dampak program teknologi ditampilkan di panggung utama.*
 
-Salah satu momen berharga dalam representasi proyek ini adalah ketika profil dan wawancara saya diputar di layar raksasa panggung utama **The 6th West Java Investment Summit (WJIS) 2024**, mencerminkan bagaimana karya teknis yang dirancang di balik layar mampu menjangkau panggung strategis investasi dan pembangunan daerah.
+Salah satu momen berharga dalam representasi proyek ini adalah ketika berkesempatan mengikuti event **The 6th West Java Investment Summit (WJIS) 2024**, di mana dokumentasi dan hasil implementasi teknologi kami ditampilkan di panggung utama forum investasi dan pembangunan daerah tersebut.
 
 ---
 

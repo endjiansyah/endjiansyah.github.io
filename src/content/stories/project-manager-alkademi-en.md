@@ -59,10 +59,10 @@ The scope of this journey resonated deeply with the role of a **Technical Projec
 
 Reviewing the wider spectrum of initiatives in this portfolio—from regional platforms with the **ASEAN Foundation**, healthcare and social aid systems for **AWS in Communities in Karawang**, AI literacy piloting with **Minecraft Education** reviewed by VP Gibran, educator empowerment in **Microsoft Elevate**, to community hackathons like **Lailatul Coding**—each endeavor was powered by this synthesis of technical fluency and disciplined project execution.
 
-![Documentation of Endjiansyah showcased on the grand LED screen at The 6th West Java Investment Summit 2024](/assets/img/stories/project-manager-alkademi/endjiansyah-west-java-investment-summit-2024.webp)
-*Documentation of Endjiansyah's video profile displayed on the grand screen of The 6th West Java Investment Summit (WJIS) 2024, highlighting the tangible impact of technology initiatives.*
+![Endjiansyah attending The 6th West Java Investment Summit 2024](/assets/img/stories/project-manager-alkademi/endjiansyah-west-java-investment-summit-2024.webp)
+*Endjiansyah participating in The 6th West Java Investment Summit (WJIS) 2024, where technology program documentation was featured on the main stage screen.*
 
-A standout moment in program representation occurred when my interview and project impact profile were broadcast across the monumental center stage of **The 6th West Java Investment Summit (WJIS) 2024**, underscoring how technical work engineered behind the scenes bridges directly into strategic regional economic forums.
+A standout moment in program representation was participating in **The 6th West Java Investment Summit (WJIS) 2024**, where our technology initiatives and program documentation were showcased on the grand center stage of this regional investment forum.
 
 ---
 
