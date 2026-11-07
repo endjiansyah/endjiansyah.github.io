@@ -46,6 +46,11 @@ The team formation around the round table held a unique dynamic:
 
 As a PM emerging from the exact same bootcamp cohort, our communication was organic, empathetic, yet rigorously professional. This round table bore witness to countless breakthroughs in technical architecture and shared celebrations for every production release.
 
+Remarkably, the round table was not always a physical one. During **Jabar Digital Academy 2024**, the entire developer team was scattered across different locations: some in Cianjur, myself in Cikole (Lembang), and the rest at the Alkademi office in Bandung. Despite being dispersed across regions while simultaneously running mentoring activities, our daily standups and development cycles continued to run seamlessly—a testament to the team's mature collaboration rhythm that was no longer dependent on physical proximity.
+
+![Virtual daily standup of the Alkademi developer team during Jabar Digital Academy 2024 with members spread across Cianjur Cikole and Bandung](/assets/img/stories/project-manager-alkademi/daily-standup-tim-dev-alkademi-jda-2024.webp)
+*Virtual daily standup of the Alkademi developer team during Jabar Digital Academy 2024—development continued smoothly despite the team being spread across Cianjur, Cikole (Lembang), and the Alkademi office in Bandung.*
+
 Team dynamics naturally experience transitions and farewells as well. Over time, both of our senior developers alongside Rijal stepped forward into the next chapters of their careers. This departure marked a new dynamic: the internal development team was left without any senior developers.
 
 A warm farewell moment with one of the senior developers served as a treasured reminder that behind codebases and sprint deadlines lies an enduring bond of professional camaraderie.

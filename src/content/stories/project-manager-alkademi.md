@@ -45,6 +45,11 @@ Formasi tim di meja bundar saat itu memiliki dinamika yang sangat istimewa:
 
 Sebagai PM yang tumbuh dari almamater bootcamp yang sama, komunikasi di antara kami berjalan sangat cair namun tetap profesional. Meja bundar ini menjadi saksi lahirnya berbagai solusi atas kebuntuan teknis hingga perayaan modul-modul yang berhasil dirilis ke tahap produksi.
 
+Uniknya, meja bundar itu tidak selalu berupa meja fisik. Saat berlangsungnya **Jabar Digital Academy 2024**, seluruh tim developer tersebar di lokasi yang berbeda-beda: sebagian di Cianjur, saya di Cikole (Lembang), dan sebagian lagi tetap di kantor Alkademi Bandung. Meski terpencar-pencar karena menjalankan kegiatan mentoring lintas area secara bersamaan, *daily standup* dan siklus pengembangan tetap berjalan lancar tanpa hambatan—bukti nyata bahwa ritme kolaborasi tim sudah sangat matang dan tidak tergantung pada kedekatan fisik semata.
+
+![Daily standup virtual tim developer Alkademi saat Jabar Digital Academy 2024 dengan anggota tersebar di Cianjur Cikole dan Bandung](/assets/img/stories/project-manager-alkademi/daily-standup-tim-dev-alkademi-jda-2024.webp)
+*Daily standup virtual tim developer Alkademi di tengah kegiatan Jabar Digital Academy 2024—development tetap berjalan meskipun tim tersebar di Cianjur, Cikole (Lembang), dan kantor Alkademi Bandung.*
+
 Dinamika tim tentu juga melewati fase pasang surut dan perpisahan. Seiring berjalannya waktu, dua sosok senior developer kami beserta Rijal memutuskan untuk melangkah ke babak karir berikutnya. Kepergian ini membawa dinamika baru: tim pengembang tidak lagi memiliki figur senior developer internal di dalam tim.
 
 Momen perpisahan hangat bersama salah seorang senior developer menjadi pengingat berharga bahwa di balik baris-baris kode dan tenggat waktu proyek, selalu ada ikatan persaudaraan profesional yang erat.
