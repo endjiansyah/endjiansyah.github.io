@@ -1,19 +1,19 @@
 ---
 lang: "en"
 title: "Growing as a Project Manager at Alkademi: From Bootcamp Desks to Leading Project Frontlines"
-description: "Reflections from Endjiansyah serving as Project Manager at Alkademi (February 2024 – February 2026), navigating project delivery without a Senior PM under direct mentorship from CTO Mas Alfan, to a strategic transition back into software engineering."
+description: "Reflections from Endjiansyah serving as Technical Project Manager at Alkademi (February 2024 – February 2026), navigating project delivery without a Senior PM under direct mentorship from CTO Mas Alfan, stewarding technical orchestration and stakeholder representation, to a strategic transition back into software engineering."
 date: 2024-02-01
 endDate: 2026-02-28
 dateLabel: "February 2024 – February 2026"
 type: "bootcamp"
 coverImage: "/assets/img/stories/project-manager-alkademi/cover.webp"
-tags: ["Endjiansyah", "Alkademi", "Project Manager", "CTO Mas Alfan", "Leadership", "Software Engineering", "Tech Management", "Agile", "Career Journey"]
+tags: ["Endjiansyah", "Alkademi", "Project Manager", "Technical Project Manager", "TPM", "CTO Mas Alfan", "WJIS 2024", "West Java Investment Summit", "Leadership", "Software Engineering", "Tech Management", "Agile", "Career Journey"]
 order: 1
 ---
 
 Every career trajectory features pivotal turning points. For me, that moment arrived in early 2024. Following the completion of an intensive bootcamp cohort at Alkademi, an unexpected vote of confidence emerged: I was appointed as a **Project Manager (PM)** at Alkademi. This trust stemmed from the leadership style, proactive communication, and problem-solving orientation demonstrated throughout the bootcamp.
 
-Transitioning from a bootcamp participant to stewarding technology projects was no trivial leap. Yet across this journey, my foundation in technical leadership and project execution was forged directly on the frontlines.
+Transitioning from a bootcamp participant to stewarding technology projects was no trivial leap. Yet across this journey, my foundation in technical leadership, agile delivery, and engineering depth was forged directly on the frontlines.
 
 ---
 
@@ -46,13 +46,23 @@ The team formation around the round table held a unique dynamic:
 
 As a PM emerging from the exact same bootcamp cohort, our communication was organic, empathetic, yet rigorously professional. This round table bore witness to countless breakthroughs in technical architecture and shared celebrations for every production release.
 
+Team dynamics naturally experience transitions and farewells as well. A memorable milestone was when **Mas Alif** decided to embark on his next career chapter. As his former student in the bootcamp and the PM working alongside him, this simple farewell moment served as a warm reminder that behind codebases and sprint deadlines lies a profound bond of professional camaraderie.
+
+![Farewell moment between Endjiansyah and senior developer Alif at the Alkademi office](/assets/img/stories/project-manager-alkademi/perpisahan-senior-dev-alif-alkademi.webp)
+*Endjiansyah alongside Mas Alif (senior developer & former bootcamp mentor) during a warm farewell moment at Alkademi.*
+
 ---
 
-### The Common Thread Across Diverse Initiatives
+### Stewarding the TPM Mandate: Technical Depth, Rigorous Delivery
 
-Reviewing the wider spectrum of initiatives in this portfolio—from regional platforms with the **ASEAN Foundation**, healthcare and social aid systems for **AWS in Communities in Karawang**, AI literacy piloting with **Minecraft Education** reviewed by VP Gibran, educator empowerment in **Microsoft Elevate**, to community hackathons like **Lailatul Coding**—a shared foundation becomes evident.
+The scope of this journey resonated deeply with the role of a **Technical Project Manager (TPM)**: possessing a nuanced grasp of software architecture while executing end-to-end project management responsibilities. From schedule orchestration and risk mitigation to representing initiatives before high-profile stakeholders.
 
-Each of these endeavors was anchored in my role as Project Manager: orchestrating technical talent, aligning client timelines, managing cross-sector stakeholder expectations, and ensuring that every delivered system created tangible value.
+Reviewing the wider spectrum of initiatives in this portfolio—from regional platforms with the **ASEAN Foundation**, healthcare and social aid systems for **AWS in Communities in Karawang**, AI literacy piloting with **Minecraft Education** reviewed by VP Gibran, educator empowerment in **Microsoft Elevate**, to community hackathons like **Lailatul Coding**—each endeavor was powered by this synthesis of technical fluency and disciplined project execution.
+
+![Documentation of Endjiansyah showcased on the grand LED screen at The 6th West Java Investment Summit 2024](/assets/img/stories/project-manager-alkademi/endjiansyah-west-java-investment-summit-2024.webp)
+*Documentation of Endjiansyah's video profile displayed on the grand screen of The 6th West Java Investment Summit (WJIS) 2024, highlighting the tangible impact of technology initiatives.*
+
+A standout moment in program representation occurred when my interview and project impact profile were broadcast across the monumental center stage of **The 6th West Java Investment Summit (WJIS) 2024**, underscoring how technical work engineered behind the scenes bridges directly into strategic regional economic forums.
 
 ---
 
@@ -66,4 +76,4 @@ Simultaneously, the organization experienced a surge in strategic demand for spe
 
 Recognizing this strategic priority, I made the conscious transition to **refocus my energy back onto Software Engineering**. Working alongside the core engineering team—**Adnan, Farid, Hanif, and Maahir**—my focus is now dedicated to technical module design, engineering mentorship, and robust system architecture. Furthermore, the partnership with Mas Hanif Fajri remains seamlessly collaborative; on topics requiring deep technical deliberations and architectural advisory, we continue to sit together to formulate the best solutions.
 
-This journey confirms that professional roles in tech are fundamentally fluid and adaptive. Whether steering strategy as a Project Manager or architecting systems as a Software Engineer, my core mission remains unchanged: delivering the highest impact wherever the organization needs it most.
+This journey confirms that professional roles in tech are fundamentally fluid and adaptive. Whether steering strategy as a Technical Project Manager or architecting systems as a Software Engineer, my core mission remains unchanged: delivering the highest impact wherever the organization needs it most.

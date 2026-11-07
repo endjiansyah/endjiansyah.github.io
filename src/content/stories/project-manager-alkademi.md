@@ -1,18 +1,18 @@
 ---
 title: "Bertumbuh Sebagai Project Manager di Alkademi: Dari Meja Bootcamp ke Garis Depan Manajemen Proyek"
-description: "Catatan reflektif Endjiansyah memegang peran Project Manager di Alkademi (Februari 2024 – Februari 2026), bertumbuh tanpa Senior PM di bawah bimbingan langsung CTO Mas Alfan, hingga transisi strategis kembali ke rekayasa perangkat lunak."
+description: "Catatan reflektif Endjiansyah memegang peran Technical Project Manager di Alkademi (Februari 2024 – Februari 2026), bertumbuh tanpa Senior PM di bawah bimbingan langsung CTO Mas Alfan, memimpin orkestrasi teknis dan representasi pemangku kepentingan, hingga transisi strategis kembali ke rekayasa perangkat lunak."
 date: 2024-02-01
 endDate: 2026-02-28
 dateLabel: "Februari 2024 – Februari 2026"
 type: "bootcamp"
 coverImage: "/assets/img/stories/project-manager-alkademi/cover.webp"
-tags: ["Endjiansyah", "Alkademi", "Project Manager", "CTO Mas Alfan", "Leadership", "Software Engineering", "Tech Management", "Agile", "Career Journey"]
+tags: ["Endjiansyah", "Alkademi", "Project Manager", "Technical Project Manager", "TPM", "CTO Mas Alfan", "WJIS 2024", "West Java Investment Summit", "Leadership", "Software Engineering", "Tech Management", "Agile", "Career Journey"]
 order: 1
 ---
 
 Setiap perjalanan karir selalu memiliki titik belok yang menentukan. Bagi saya, titik itu bermula di awal tahun 2024. Setelah menyelesaikan rangkaian bootcamp intensif di Alkademi, sebuah kepercayaan besar tiba tanpa diduga: saya diminta mengemban tanggung jawab sebagai **Project Manager (PM)** di Alkademi. Kepercayaan ini lahir setelah manajemen melihat gaya kepemimpinan, inisiatif komunikasi, serta kemampuan mengurai masalah yang saya tunjukkan selama masa pelatihan.
 
-Melangkah dari seorang peserta bootcamp menjadi nakhoda proyek tentu bukan lompatan kecil. Namun, justru di fase perjalanan inilah fondasi kepemimpinan dan manajemen teknologi saya ditempa secara nyata di garis depan.
+Melangkah dari seorang peserta bootcamp menjadi nakhoda proyek tentu bukan lompatan kecil. Namun, justru di fase perjalanan inilah fondasi kepemimpinan, manajemen proyek, dan kedalaman rekayasa teknologi saya ditempa secara nyata di garis depan.
 
 ---
 
@@ -45,13 +45,23 @@ Formasi tim di meja bundar saat itu memiliki dinamika yang sangat istimewa:
 
 Sebagai PM yang tumbuh dari almamater bootcamp yang sama, komunikasi di antara kami berjalan sangat cair namun tetap profesional. Meja bundar ini menjadi saksi lahirnya berbagai solusi atas kebuntuan teknis hingga perayaan modul-modul yang berhasil dirilis ke tahap produksi.
 
+Dinamika tim tentu juga melewati fase pasang surut dan perpisahan. Salah satu momen berkesan adalah ketika **Mas Alif** memutuskan untuk melangkah ke babak karir berikutnya. Sebagai mantan murid saat bootcamp sekaligus PM yang bekerja berdampingan dengannya, momen perpisahan sederhana ini menjadi pengingat hangat bahwa di balik baris-baris kode dan tenggat waktu proyek, selalu ada ikatan persaudaraan profesional yang erat.
+
+![Momen perpisahan Endjiansyah bersama senior developer Alif di kantor Alkademi](/assets/img/stories/project-manager-alkademi/perpisahan-senior-dev-alif-alkademi.webp)
+*Endjiansyah bersama Mas Alif (senior developer & mantan mentor bootcamp) pada momen perpisahan hangat di Alkademi.*
+
 ---
 
-### Benang Merah di Balik Beragam Inisiatif
+### Menjalankan Mandat TPM: Paham Teknis, Tuntas Eksekusi
 
-Jika melihat berbagai cerita yang tertulis di portofolio ini—mulai dari inisiatif digital bersama **ASEAN Foundation**, proyek sistem Posyandu dan Bansos **AWS in Communities di Karawang**, piloting literasi AI **Minecraft Education** yang ditinjau Wapres Gibran, pelatihan guru **Microsoft Elevate**, hingga gelaran **Lailatul Coding**—semuanya memiliki benang merah yang sama.
+Peran yang saya jalani terasa sangat identik dengan **Technical Project Manager (TPM)**: memiliki pemahaman mendalam tentang arsitektur perangkat lunak, namun tetap menjalankan seluruh tanggung jawab manajerial selayaknya seorang PM profesional. Mulai dari penyusunan *timeline*, mitigasi risiko, orkestrasi sumber daya, hingga menjembatani komunikasi ke pemangku kepentingan (*stakeholders*) tingkat tinggi.
 
-Setiap inisiatif tersebut digerakkan oleh peran saya sebagai Project Manager: menyatukan talenta teknis, menjaga tenggat waktu, mengelola ekspektasi mitra lintas sektor, dan memastikan setiap baris kode yang dibangun benar-benar memberikan dampak nyata bagi masyarakat.
+Jika melihat berbagai cerita yang tertulis di portofolio ini—mulai dari inisiatif digital bersama **ASEAN Foundation**, proyek sistem Posyandu dan Bansos **AWS in Communities di Karawang**, piloting literasi AI **Minecraft Education** yang ditinjau Wapres Gibran, pelatihan guru **Microsoft Elevate**, hingga gelaran **Lailatul Coding**—semuanya digerakkan oleh kombinasi kepemimpinan teknis dan manajemen proyek yang solid.
+
+![Dokumentasi profil Endjiansyah ditampilkan di panggung utama The 6th West Java Investment Summit 2024](/assets/img/stories/project-manager-alkademi/endjiansyah-west-java-investment-summit-2024.webp)
+*Dokumentasi wawancara dan profil Endjiansyah yang diputar di layar raksasa panggung utama The 6th West Java Investment Summit (WJIS) 2024 sebagai representasi dampak program teknologi.*
+
+Salah satu momen berharga dalam representasi proyek ini adalah ketika profil dan wawancara saya diputar di layar raksasa panggung utama **The 6th West Java Investment Summit (WJIS) 2024**, mencerminkan bagaimana karya teknis yang dirancang di balik layar mampu menjangkau panggung strategis investasi dan pembangunan daerah.
 
 ---
 
@@ -65,4 +75,4 @@ Di saat yang sama, Alkademi menghadapi lonjakan kebutuhan strategis pada lini pe
 
 Melihat kebutuhan esensial tersebut, saya mengambil langkah strategis untuk **kembali berfokus memperkuat divisi Software Engineering**. Bersama rekan-rekan tim developer inti—**Adnan, Farid, Hanif, dan Maahir**—fokus saya kini tercurah pada perancangan modul teknologi mutakhir, mentoring teknis, serta rekayasa sistem yang andal. Menariknya, kolaborasi dengan Mas Hanif Fajri tetap terjalin sangat erat; untuk berbagai diskusi dan keputusan yang menyangkut aspek teknikal (*technical advisory*), kami senantiasa duduk bersama menyelaraskan solusinya.
 
-Perjalanan ini membuktikan bahwa peran profesional dalam dunia teknologi bersifat dinamis dan adaptif. Baik saat memegang kemudi sebagai Project Manager maupun saat kembali menyusun arsitektur sistem sebagai Software Engineer, komitmen saya tetap satu: memberikan kontribusi terbaik di mana pun kehadiran saya paling dibutuhkan.
+Perjalanan ini membuktikan bahwa peran profesional dalam dunia teknologi bersifat dinamis dan adaptif. Baik saat memegang kemudi sebagai Technical Project Manager maupun saat kembali menyusun arsitektur sistem sebagai Software Engineer, komitmen saya tetap satu: memberikan kontribusi terbaik di mana pun kehadiran saya paling dibutuhkan.
