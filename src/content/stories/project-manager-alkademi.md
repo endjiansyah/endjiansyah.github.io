@@ -45,7 +45,9 @@ Formasi tim di meja bundar saat itu memiliki dinamika yang sangat istimewa:
 
 Sebagai PM yang tumbuh dari almamater bootcamp yang sama, komunikasi di antara kami berjalan sangat cair namun tetap profesional. Meja bundar ini menjadi saksi lahirnya berbagai solusi atas kebuntuan teknis hingga perayaan modul-modul yang berhasil dirilis ke tahap produksi.
 
-Dinamika tim tentu juga melewati fase pasang surut dan perpisahan. Salah satu momen berkesan adalah ketika salah seorang senior developer memutuskan untuk melangkah ke babak karir berikutnya. Sebagai mantan murid saat bootcamp sekaligus PM yang bekerja berdampingan dengannya, momen perpisahan sederhana ini menjadi pengingat hangat bahwa di balik baris-baris kode dan tenggat waktu proyek, selalu ada ikatan persaudaraan profesional yang erat.
+Dinamika tim tentu juga melewati fase pasang surut dan perpisahan. Seiring berjalannya waktu, dua sosok senior developer kami beserta Rijal memutuskan untuk melangkah ke babak karir berikutnya. Kepergian ini membawa dinamika baru: tim pengembang tidak lagi memiliki figur senior developer internal di dalam tim.
+
+Momen perpisahan hangat bersama salah seorang senior developer menjadi pengingat berharga bahwa di balik baris-baris kode dan tenggat waktu proyek, selalu ada ikatan persaudaraan profesional yang erat.
 
 ![Momen perpisahan Endjiansyah bersama salah satu senior developer di kantor Alkademi](/assets/img/stories/project-manager-alkademi/perpisahan-senior-dev-alkademi.webp)
 *Endjiansyah bersama salah seorang senior developer pada momen perpisahan hangat di Alkademi.*
@@ -71,8 +73,8 @@ Waktu bergulir cepat, dan memasuki awal tahun 2026, Alkademi telah bertransforma
 
 Seiring perkembangan tersebut, tongkat estafet tanggung jawab Project Manager saya serahkan kepada **Mas Hanif Fajri**, yang kini mengawal kelancaran operasional dan eksekusi proyek-proyek di Alkademi.
 
-Di saat yang sama, Alkademi menghadapi lonjakan kebutuhan strategis pada lini pengembangan modul-modul materi pembelajaran (*curriculum & technical module development*) serta akselerasi produk rekayasa perangkat lunak. Mengingat sebagian besar rekan manajemen berfokus pada sisi operasional non-teknis, kehadiran figur yang memiliki pemahaman arsitektur kode mendalam menjadi sangat krusial di garda rekayasa.
+Di sisi lain, setelah kepergian para senior developer dan Rijal, lini rekayasa perangkat lunak Alkademi kini bertumpu pada empat developer inti: **Adnan, Farid, Hanif, dan Maahir**—tanpa adanya senior developer di dalam tim. Pada saat yang sama, terjadi lonjakan kebutuhan strategis pada lini pengembangan modul-modul materi pembelajaran (*curriculum & technical module development*) serta akselerasi produk software yang membutuhkan pemahaman teknis mendalam.
 
-Melihat kebutuhan esensial tersebut, saya mengambil langkah strategis untuk **kembali berfokus memperkuat divisi Software Engineering**. Bersama rekan-rekan tim developer inti—**Adnan, Farid, Hanif, dan Maahir**—fokus saya kini tercurah pada perancangan modul teknologi mutakhir, mentoring teknis, serta rekayasa sistem yang andal. Menariknya, kolaborasi dengan Mas Hanif Fajri tetap terjalin sangat erat; untuk berbagai diskusi dan keputusan yang menyangkut aspek teknikal (*technical advisory*), kami senantiasa duduk bersama menyelaraskan solusinya.
+Mengingat sebagian besar rekan PM lainnya berlatar belakang non-teknis dan tim dev membutuhkan penguatan arah arsitektur, keputusan untuk **menggeser peran saya kembali ke lini Software Engineering** menjadi langkah yang sangat tepat dan berdampak. Bekal kepemimpinan teknis yang ditempa langsung oleh CTO Mas Alfan selama dua tahun menjadi modal berharga untuk mendampingi rekan-rekan developer dari dalam, merancang modul teknologi mutakhir, serta menjaga kualitas sistem Alkademi ke depan. Menariknya, kolaborasi dengan Mas Hanif Fajri tetap terjalin sangat erat; untuk berbagai diskusi dan keputusan yang menyangkut aspek teknikal (*technical advisory*), kami senantiasa duduk bersama menyelaraskan solusinya.
 
 Perjalanan ini membuktikan bahwa peran profesional dalam dunia teknologi bersifat dinamis dan adaptif. Baik saat memegang kemudi sebagai Technical Project Manager maupun saat kembali menyusun arsitektur sistem sebagai Software Engineer, komitmen saya tetap satu: memberikan kontribusi terbaik di mana pun kehadiran saya paling dibutuhkan.

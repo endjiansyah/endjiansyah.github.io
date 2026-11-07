@@ -46,7 +46,9 @@ The team formation around the round table held a unique dynamic:
 
 As a PM emerging from the exact same bootcamp cohort, our communication was organic, empathetic, yet rigorously professional. This round table bore witness to countless breakthroughs in technical architecture and shared celebrations for every production release.
 
-Team dynamics naturally experience transitions and farewells as well. A memorable milestone was when one of the senior developers decided to embark on his next career chapter. As his former student in the bootcamp and the PM working alongside him, this simple farewell moment served as a warm reminder that behind codebases and sprint deadlines lies a profound bond of professional camaraderie.
+Team dynamics naturally experience transitions and farewells as well. Over time, both of our senior developers alongside Rijal stepped forward into the next chapters of their careers. This departure marked a new dynamic: the internal development team was left without any senior developers.
+
+A warm farewell moment with one of the senior developers served as a treasured reminder that behind codebases and sprint deadlines lies an enduring bond of professional camaraderie.
 
 ![Farewell moment between Endjiansyah and a senior developer at the Alkademi office](/assets/img/stories/project-manager-alkademi/perpisahan-senior-dev-alkademi.webp)
 *Endjiansyah alongside a senior developer (former bootcamp mentor) during a warm farewell moment at Alkademi.*
@@ -72,8 +74,8 @@ Time progressed, and by early 2026, Alkademi had scaled substantially. The organ
 
 With this evolution, the operational baton of Project Manager was handed over to **Mas Hanif Fajri**, who now stewards project deliveries across Alkademi.
 
-Simultaneously, the organization experienced a surge in strategic demand for specialized technical curriculum authoring, module development, and direct software engineering. Because most project management colleagues were dedicated to operational and non-technical domains, having leadership with deep, hands-on architectural understanding at the engineering front became essential.
+On the other hand, following the departure of the senior developers and Rijal, Alkademi's software engineering division now relied entirely on the four core developers: **Adnan, Farid, Hanif, and Maahir**—with no internal senior developer remaining on the team. Concurrently, a strategic surge emerged in demand for specialized technical curriculum authoring, module development, and accelerated software delivery requiring nuanced technical leadership.
 
-Recognizing this strategic priority, I made the conscious transition to **refocus my energy back onto Software Engineering**. Working alongside the core engineering team—**Adnan, Farid, Hanif, and Maahir**—my focus is now dedicated to technical module design, engineering mentorship, and robust system architecture. Furthermore, the partnership with Mas Hanif Fajri remains seamlessly collaborative; on topics requiring deep technical deliberations and architectural advisory, we continue to sit together to formulate the best solutions.
+Given that most fellow PMs came from non-technical operational backgrounds and the developer team required architectural guidance from within, the decision to **transition my role back to Software Engineering** proved to be both timely and impactful. The two years of technical leadership honed directly under CTO Mas Alfan served as an invaluable asset to guide fellow engineers from the frontlines, design cutting-edge technology modules, and uphold software quality across Alkademi's platforms. Furthermore, the collaboration with Mas Hanif Fajri remains deeply integrated; on complex architectural questions and technical advisory, we continue to sit together to formulate the best solutions.
 
 This journey confirms that professional roles in tech are fundamentally fluid and adaptive. Whether steering strategy as a Technical Project Manager or architecting systems as a Software Engineer, my core mission remains unchanged: delivering the highest impact wherever the organization needs it most.
