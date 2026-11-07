@@ -135,14 +135,15 @@ const articleSchema = {
             {langStories.map((story: any) => {
               const sStyle = storyTypeStyle(story.data.type);
               return (
-                <a href={`${base}/stories/${story.slug.replace(/-en$/, '')}`} class="group block bg-[#F8F9FA] rounded-2xl overflow-hidden border border-gray-100 hover:border-brand-dark/20 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                <a href={`${base}/stories/${story.slug.replace(/-en$/, '')}`} class="group relative block bg-white rounded-2xl overflow-hidden border border-gray-200/80 shadow-sm hover:shadow-xl hover:border-blue-500/30 transition-all duration-500 ease-out hover:-translate-y-1.5">
+                  <div class="absolute -inset-px bg-gradient-to-r from-blue-500/10 via-teal-500/10 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                   <div class="aspect-video overflow-hidden bg-gray-100 relative">
                     <img src={story.data.coverImage} alt={`${story.data.title} — dokumentasi kegiatan Endjiansyah`} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900/50 to-transparent"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900/50 to-transparent opacity-70 group-hover:opacity-40 transition-opacity"></div>
                     <span class={`absolute top-3 left-3 px-2.5 py-0.5 text-[10px] font-semibold rounded-full ${sStyle.badge}`}>{sStyle.label}</span>
                   </div>
-                  <div class="p-5">
-                    <h4 class="text-base font-semibold text-gray-900 group-hover:text-brand-dark transition-colors mb-1">{story.data.title}</h4>
+                  <div class="p-5 relative z-10">
+                    <h4 class="text-base font-semibold text-gray-900 group-hover:text-blue-600 transition-colors mb-1">{story.data.title}</h4>
                     <p class="text-gray-500 text-xs line-clamp-2">{story.data.description}</p>
                   </div>
                 </a>
