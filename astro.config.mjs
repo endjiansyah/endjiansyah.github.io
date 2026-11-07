@@ -43,7 +43,7 @@ function buildImageMap() {
 function sitemapImagesHome() {
   return [
     {
-      url: `${SITE}/assets/profile.webp`,
+      url: `${SITE}/assets/endjiansyah.webp`,
       title: 'Endjiansyah — Software Engineer, AI-Augmented Developer & Technical Mentor',
       caption: 'Endjiansyah — Software Engineer, AI-Augmented Developer & Technical Mentor',
     },

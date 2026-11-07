@@ -41,35 +41,47 @@ const INITIAL_EDU_COUNT = 6;
 
 const personSchema = {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "@id": "https://endjiansyah.github.io/#person",
-  "name": "Endjiansyah",
-  "alternateName": "Endji Ansyah",
-  "url": "https://endjiansyah.github.io",
-  // ImageObject lengkap: Google Images butuh dimensi + caption, bukan sekadar string URL.
-  "image": {
-    "@type": "ImageObject",
-    "@id": "https://endjiansyah.github.io/#portrait",
-    "url": "https://endjiansyah.github.io/assets/profile.webp",
-    "contentUrl": "https://endjiansyah.github.io/assets/profile.webp",
-    "width": 382,
-    "height": 382,
-    "caption": "Foto Endjiansyah, Software Engineer, AI-Augmented Developer & Technical Mentor",
-    "name": "Endjiansyah",
-    "encodingFormat": "image/webp",
-    "representativeOfPage": true,
-    "author": { "@id": "https://endjiansyah.github.io/#person" }
-  },
-  "description": "Software Engineer, AI-Augmented Developer & Technical Mentor",
-  "jobTitle": "Software Engineer / Technical Mentor",
-  "knowsLanguage": ["id", "en"],
-  "worksFor": {
-    "@type": "Organization",
-    "name": "Alkademi"
-  },
-  "sameAs": [
-    "https://github.com/endjiansyah",
-    "https://www.linkedin.com/in/endjiansyah/"
+  "@graph": [
+    {
+      "@type": "ProfilePage",
+      "@id": "https://endjiansyah.github.io/#webpage",
+      "url": "https://endjiansyah.github.io",
+      "name": "Endjiansyah — Software Engineer, AI-Augmented Developer & Technical Mentor",
+      "primaryImageOfPage": { "@id": "https://endjiansyah.github.io/#portrait" },
+      "mainEntity": { "@id": "https://endjiansyah.github.io/#person" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://endjiansyah.github.io/#person",
+      "name": "Endjiansyah",
+      "alternateName": ["Endji Ansyah", "Endji"],
+      "url": "https://endjiansyah.github.io",
+      // ImageObject lengkap: Google Images butuh dimensi + caption, bukan sekadar string URL.
+      "image": {
+        "@type": "ImageObject",
+        "@id": "https://endjiansyah.github.io/#portrait",
+        "url": "https://endjiansyah.github.io/assets/endjiansyah.webp",
+        "contentUrl": "https://endjiansyah.github.io/assets/endjiansyah.webp",
+        "width": 382,
+        "height": 382,
+        "caption": "Foto Endjiansyah, Software Engineer, AI-Augmented Developer & Technical Mentor",
+        "name": "Endjiansyah",
+        "encodingFormat": "image/webp",
+        "representativeOfPage": true,
+        "author": { "@id": "https://endjiansyah.github.io/#person" }
+      },
+      "description": "Software Engineer, AI-Augmented Developer & Technical Mentor",
+      "jobTitle": "Software Engineer / Technical Mentor",
+      "knowsLanguage": ["id", "en"],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Alkademi"
+      },
+      "sameAs": [
+        "https://github.com/endjiansyah",
+        "https://www.linkedin.com/in/endjiansyah/"
+      ]
+    }
   ]
 };
 
@@ -232,7 +244,7 @@ const education: TItem[] = [
 <BaseLayout
   lang={lang}
   title={`Endjiansyah — Software Engineer, AI-Augmented Developer & Technical Mentor`}
-  ogImage="/assets/profile.webp"
+  ogImage="/assets/endjiansyah.webp"
   jsonSchema={personSchema}
 >
   <Navbar slot="nav" />
@@ -279,7 +291,7 @@ const education: TItem[] = [
         <div class="relative group">
           <div class="absolute -inset-3 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full blur-2xl opacity-30 group-hover:opacity-60 transition duration-700"></div>
           <div class="relative w-56 h-56 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-white/15 shadow-2xl transition-all duration-500 hover:border-blue-400/50 z-10">
-            <img src="/assets/profile.webp" alt="Endjiansyah — Software Engineer, AI-Augmented Developer & Technical Mentor" width="382" height="382" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
+            <img src="/assets/endjiansyah.webp" alt="Foto Profil Endjiansyah — Software Engineer, AI-Augmented Developer & Technical Mentor" width="382" height="382" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
           </div>
         </div>
       </div>
