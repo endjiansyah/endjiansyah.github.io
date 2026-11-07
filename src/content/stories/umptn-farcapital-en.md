@@ -52,9 +52,22 @@ For me personally, this proved that technology is truly a universal language cap
 
 ---
 
+### "Kamar Bersama": The Shared Sanctuary for Decompressing and Fellowship
+
+At the bootcamp dormitory, I shared a room with **Obi Emanuel Pranata**, a resilient colleague from Jayapura, Papua—who later achieved a proud milestone as one of the standout bootcamp participants hired directly by Far Capital.
+
+Although every participant was officially allocated their own bed and room, our room swiftly evolved into a special gathering hub affectionately known as **"Kamar Bersama" (The Shared Room)**. Every night after grueling twelve-hour coding sprints that tested mental endurance, this room became a natural magnet for friends across the dormitory.
+
+For fellow participants, visiting our room was the ultimate remedy for shedding cognitive overload and fatigue after wrestling with complex programming architectures. They sought a safe, welcoming space to share challenges, vent frustrations, or simply laugh out loud while sitting in a circle on the floor playing UNO cards. Serving as a trusted confidant and a source of refreshing camaraderie became one of my most cherished memories—affirming that beyond intensive technical syllabi, human empathy and shared fellowship are the true catalysts that kept our spirits high through to the finish line.
+
+![Camaraderie of bootcamp participants unwinding in Kamar Bersama at Alkademi Far Capital dormitory](/assets/img/stories/umptn-farcapital/kamar-bersama-refreshing-bootcamp-farcapital.webp)
+*Warm camaraderie of Far Capital bootcamp peers gathering in "Kamar Bersama" to decompress, play UNO cards, and support one another after intensive full-day coding sessions.*
+
+---
+
 ### Reflections & the Impact of the Journey
 
-The experience in Bandung was not merely about writing lines of code â€” it was about shaping a *problem-solving* mindset, teamwork under *deadline* pressure, and building a solid professional network.
+The experience in Bandung was not merely about writing lines of code — it was about shaping a *problem-solving* mindset, teamwork under *deadline* pressure, and building a solid professional network.
 
 This vocational collaboration initiative was also widely covered in the news, showing a strong commitment to advancing local technology talent. More coverage of the program can be accessed via [Far Capital's coverage](https://careers.farcapital.com.my/perusahaan-properti-malaysia-investasi-rp-40-miliar-ke-startup-bandung/).
 

@@ -51,6 +51,19 @@ Bagi saya pribadi, pengalaman ini membuktikan bahwa teknologi adalah bahasa univ
 
 ---
 
+### "Kamar Bersama": Ruang Rehat dan Katarsis Teman-Teman Bootcamp
+
+Di asrama bootcamp, saya menempati kamar bersama **Obi Emanuel Pranata**, rekan tangguh asal Jayapura, Papua—yang kelak menorehkan pencapaian membanggakan sebagai salah satu peserta bootcamp yang berhasil direkrut dan berkarier langsung di Far Capital.
+
+Meski setiap peserta telah mendapatkan alokasi kamar dan kasur masing-masing, kamar kami berdua dengan cepat bertransformasi menjadi ruang istimewa yang akrab dijuluki **"Kamar Bersama"**. Setiap malam usai sesi koding belasan jam yang menguras tenaga dan pikiran, kamar ini menjadi magnet berkumpulnya kawan-kawan dari berbagai kamar lain.
+
+Bagi rekan-rekan seperjuangan, datang ke kamar kami adalah cara terbaik untuk meredakan beban mental dan kejenuhan setelah seharian berkutat dengan logika pemrograman yang rumit. Mereka mencari ruang yang hangat untuk bercerita, bertukar keluh kesah, atau sekadar tertawa lepas sambil duduk melingkar di lantai bermain kartu UNO. Menjadi tempat bersandar sekaligus kawan *refreshing* yang mampu mencairkan ketegangan menjadi salah satu memori paling berharga—menegaskan bahwa di balik kurikulum teknologi yang padat, empati dan kebersamaan manusialah yang menjaga api semangat kami tetap menyala hingga akhir.
+
+![Momen kebersamaan kawan-kawan bootcamp Far Capital berkumpul di Kamar Bersama untuk melepas penat](/assets/img/stories/umptn-farcapital/kamar-bersama-refreshing-bootcamp-farcapital.webp)
+*Momen hangat kawan-kawan bootcamp Far Capital berkumpul di "Kamar Bersama" untuk melepas jenuh, bermain kartu UNO, dan saling menguatkan mental usai seharian penuh belajar koding.*
+
+---
+
 ### Refleksi & Dampak Perjalanan
 
 Pengalaman di Bandung bukan sekadar tentang penulisan baris kode, melainkan tentang pembentukan pola pikir *problem-solving*, kerja sama tim dalam tekanan *deadline*, serta pembentukan jejaring profesional yang solid. 
