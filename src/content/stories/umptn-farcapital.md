@@ -64,6 +64,29 @@ Bagi rekan-rekan seperjuangan, datang ke kamar kami adalah cara terbaik untuk me
 
 ---
 
+### Jejak Persahabatan Pasca-Bootcamp: Saling Menjaga di Mana Pun Berada
+
+Kemampuan merawat hubungan tulus selama tiga bulan bootcamp berbuah manis menjadi jejaring persaudaraan yang melampaui waktu dan jarak. Di mana pun posisi dan fase karir yang saya jalani, kawan-kawan seperjuangan selalu hadir memberi dukungan nyata hingga hari ini, meski kini kami berkarya di berbagai penjuru.
+
+Bagi kawan-kawan yang diterima berkarier di **Far Capital**, kebersamaan kami tidak pernah luntur. Karena masih berada di satu kota (Bandung), akhir pekan atau hari libur kerap kami isi dengan sesi belajar teknologi baru, *peer-coding*, hingga *hangout* bersama. Duduk lesehan di lantai membuka laptop bersama **Obi, Fakhry, dan Roni** serasa membawa kembali atmosfer hangat masa-masa asrama dulu.
+
+![Endjiansyah belajar dan eksplorasi teknologi bersama rekan-rekan Far Capital di Bandung](/assets/img/stories/umptn-farcapital/belajar-bersama-kawan-farcapital-bandung.webp)
+*Sesi belajar dan eksplorasi teknologi santai di akhir pekan bersama kawan-kawan Far Capital (Obi, Fakhry, Roni) di Bandung.*
+
+Tak hanya soal koding, waktu luang juga kami manfaatkan untuk menyegarkan pikiran bersama, seperti momen seru berenang dan berekreasi bersama **Rendy, Fakhry, Bayu, dan Hanif**.
+
+![Endjiansyah berekreasi dan berenang bersama kawan-kawan bootcamp Far Capital](/assets/img/stories/umptn-farcapital/renang-bersama-kawan-bootcamp-farcapital.webp)
+*Momen refreshing berenang dan berekreasi bersama Rendy, Fakhry, Bayu, dan Hanif di sela-sela rutinitas.*
+
+Jejaring silaturahmi ini juga merentang ke kota-kota lain. Saat bertandang ke Jakarta Selatan dalam agenda event Alkademi di Paragon Community Hub, saya selalu menyempatkan diri bersua dengan **Mas Arif**, rekan bootcamp yang kini berkiprah sebagai software engineer di **Allo Bank**. Setiap kali Mas Arif berkunjung ke Bandung pun, ia selalu menghubungi saya untuk berkeliling dan mengeksplorasi Kota Kembang bersama.
+
+![Endjiansyah bertemu kembali dengan Mas Arif dari Allo Bank di event Alkademi Paragon Jakarta Selatan](/assets/img/stories/umptn-farcapital/endjiansyah-reuni-mas-arif-paragon-jakarta.webp)
+*Momen reuni hangat Endjiansyah bersama Mas Arif (Allo Bank) saat agenda kegiatan Alkademi di Paragon Community Hub, Jakarta Selatan.*
+
+Bahkan, kehangatan itu terbukti ketika **Tegar dan Latifah** rela menempuh perjalanan jauh ke Jepara, menyempatkan diri bertamu langsung ke rumah saya demi merawat tali silaturahmi yang telah terjalin. Hubungan tulus inilah harta karun sesungguhnya dari masa bootcamp—sebuah ekosistem pertemanan yang saling menguatkan, saling membuka pintu kesempatan, dan selalu ada untuk satu sama lain di setiap langkah perjalanan.
+
+---
+
 ### Refleksi & Dampak Perjalanan
 
 Pengalaman di Bandung bukan sekadar tentang penulisan baris kode, melainkan tentang pembentukan pola pikir *problem-solving*, kerja sama tim dalam tekanan *deadline*, serta pembentukan jejaring profesional yang solid. 
