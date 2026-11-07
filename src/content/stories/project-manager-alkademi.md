@@ -37,18 +37,18 @@ Belajar langsung dari pucuk pimpinan teknologi memberikan perspektif helikopter 
 Salah satu memori paling berkesan dalam keseharian sebagai PM adalah sesi-sesi diskusi di meja bundar kantor Alkademi. Di meja inilah seluruh tim developer Alkademi tahun 2024 berkumpul membuka laptop masing-masing untuk *daily standup*, *sprint review*, hingga *brainstorming* arsitektur solusi.
 
 Formasi tim di meja bundar saat itu memiliki dinamika yang sangat istimewa:
-- **Mas Robet dan Mas Alif**: Dua sosok senior developer di Alkademi yang pada tahun sebelumnya merupakan mentor kami saat menjalani bootcamp.
+- **Dua sosok senior developer**: Mentor kami saat menjalani bootcamp di tahun sebelumnya yang turut membimbing fondasi teknis kami.
 - **Adnan, Farid, Hanif, Maahir, dan Rijal**: Rekan-rekan junior mereka yang juga merupakan sahabat seperjuangan saya sejak masa bootcamp Far Capital.
 
 ![Seluruh tim developer Alkademi 2024 berkumpul di meja bundar kantor Alkademi](/assets/img/stories/project-manager-alkademi/diskusi-tim-meja-bundar-alkademi.webp)
-*Momen kebersamaan seluruh tim developer Alkademi tahun 2024 di meja bundar: Robet dan Alif (senior developer & mantan mentor bootcamp), bersama Adnan, Farid, Hanif, Maahir, dan Rijal.*
+*Momen kebersamaan seluruh tim developer Alkademi tahun 2024 di meja bundar bersama para senior developer, Adnan, Farid, Hanif, Maahir, dan Rijal.*
 
 Sebagai PM yang tumbuh dari almamater bootcamp yang sama, komunikasi di antara kami berjalan sangat cair namun tetap profesional. Meja bundar ini menjadi saksi lahirnya berbagai solusi atas kebuntuan teknis hingga perayaan modul-modul yang berhasil dirilis ke tahap produksi.
 
-Dinamika tim tentu juga melewati fase pasang surut dan perpisahan. Salah satu momen berkesan adalah ketika **Mas Alif** memutuskan untuk melangkah ke babak karir berikutnya. Sebagai mantan murid saat bootcamp sekaligus PM yang bekerja berdampingan dengannya, momen perpisahan sederhana ini menjadi pengingat hangat bahwa di balik baris-baris kode dan tenggat waktu proyek, selalu ada ikatan persaudaraan profesional yang erat.
+Dinamika tim tentu juga melewati fase pasang surut dan perpisahan. Salah satu momen berkesan adalah ketika salah seorang senior developer memutuskan untuk melangkah ke babak karir berikutnya. Sebagai mantan murid saat bootcamp sekaligus PM yang bekerja berdampingan dengannya, momen perpisahan sederhana ini menjadi pengingat hangat bahwa di balik baris-baris kode dan tenggat waktu proyek, selalu ada ikatan persaudaraan profesional yang erat.
 
-![Momen perpisahan Endjiansyah bersama senior developer Alif di kantor Alkademi](/assets/img/stories/project-manager-alkademi/perpisahan-senior-dev-alif-alkademi.webp)
-*Endjiansyah bersama Mas Alif (senior developer & mantan mentor bootcamp) pada momen perpisahan hangat di Alkademi.*
+![Momen perpisahan Endjiansyah bersama salah satu senior developer di kantor Alkademi](/assets/img/stories/project-manager-alkademi/perpisahan-senior-dev-alkademi.webp)
+*Endjiansyah bersama salah seorang senior developer pada momen perpisahan hangat di Alkademi.*
 
 ---
 

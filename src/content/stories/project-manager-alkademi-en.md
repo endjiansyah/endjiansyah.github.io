@@ -38,18 +38,18 @@ Learning directly under executive engineering leadership instilled a comprehensi
 Among the most enduring memories of daily life as a PM are the collaborative sessions held around the circular table at Alkademi's office. This was where the entire 2024 Alkademi developer cohort gathered with laptops open for daily standups, sprint retrospectives, and architecture brainstorming.
 
 The team formation around the round table held a unique dynamic:
-- **Mas Robet and Mas Alif**: Senior developers at Alkademi who had mentored our cohort during the bootcamp the previous year.
-- **Adnan, Farid, Hanif, Maahir, and Rijal**: Their juniors who were also my fellow bootcamp peers from the Far Capital program.
+- **Two senior developers**: Former bootcamp mentors from the previous year who helped cultivate our engineering foundation.
+- **Adnan, Farid, Hanif, Maahir, and Rijal**: Their junior peers who were also my fellow bootcamp peers from the Far Capital program.
 
 ![The complete 2024 Alkademi developer team gathered around the round table](/assets/img/stories/project-manager-alkademi/diskusi-tim-meja-bundar-alkademi.webp)
-*The complete 2024 Alkademi developer team gathered around the circular table: Robet and Alif (senior developers & former bootcamp mentors), alongside Adnan, Farid, Hanif, Maahir, and Rijal.*
+*The complete 2024 Alkademi developer team gathered around the circular table alongside the senior developers, Adnan, Farid, Hanif, Maahir, and Rijal.*
 
 As a PM emerging from the exact same bootcamp cohort, our communication was organic, empathetic, yet rigorously professional. This round table bore witness to countless breakthroughs in technical architecture and shared celebrations for every production release.
 
-Team dynamics naturally experience transitions and farewells as well. A memorable milestone was when **Mas Alif** decided to embark on his next career chapter. As his former student in the bootcamp and the PM working alongside him, this simple farewell moment served as a warm reminder that behind codebases and sprint deadlines lies a profound bond of professional camaraderie.
+Team dynamics naturally experience transitions and farewells as well. A memorable milestone was when one of the senior developers decided to embark on his next career chapter. As his former student in the bootcamp and the PM working alongside him, this simple farewell moment served as a warm reminder that behind codebases and sprint deadlines lies a profound bond of professional camaraderie.
 
-![Farewell moment between Endjiansyah and senior developer Alif at the Alkademi office](/assets/img/stories/project-manager-alkademi/perpisahan-senior-dev-alif-alkademi.webp)
-*Endjiansyah alongside Mas Alif (senior developer & former bootcamp mentor) during a warm farewell moment at Alkademi.*
+![Farewell moment between Endjiansyah and a senior developer at the Alkademi office](/assets/img/stories/project-manager-alkademi/perpisahan-senior-dev-alkademi.webp)
+*Endjiansyah alongside a senior developer (former bootcamp mentor) during a warm farewell moment at Alkademi.*
 
 ---
 
