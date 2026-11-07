@@ -69,7 +69,10 @@ Reviewing the wider spectrum of initiatives in this portfolio—from regional pl
 ![Endjiansyah attending The 6th West Java Investment Summit 2024](/assets/img/stories/project-manager-alkademi/endjiansyah-west-java-investment-summit-2024.webp)
 *Endjiansyah participating in The 6th West Java Investment Summit (WJIS) 2024, where technology program documentation was featured on the main stage screen.*
 
-A standout moment in program representation was participating in **The 6th West Java Investment Summit (WJIS) 2024**, where our technology initiatives and program documentation were showcased on the grand center stage of this regional investment forum.
+A standout moment in program representation was attending **The 6th West Java Investment Summit (WJIS) 2024** alongside CTO Mas Alfan. At this regional investment and development summit, our technology documentation was featured across the center stage screens, complemented by an interactive digital installation showcasing technology aspirations and contributions from across West Java.
+
+![Mas Alfan CTO of Alkademi attending The 6th West Java Investment Summit 2024 alongside Endjiansyah](/assets/img/stories/project-manager-alkademi/cto-alfan-wjis-2024-alkademi.webp)
+*Mas Alfan (CTO of Alkademi) before the interactive digital showcase at The 6th West Java Investment Summit (WJIS) 2024—attending the summit alongside Endjiansyah as Alkademi's technology impact was spotlighted.*
 
 ---
 

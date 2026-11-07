@@ -68,7 +68,10 @@ Jika melihat berbagai cerita yang tertulis di portofolio ini—mulai dari inisia
 ![Endjiansyah saat mengikuti event The 6th West Java Investment Summit 2024](/assets/img/stories/project-manager-alkademi/endjiansyah-west-java-investment-summit-2024.webp)
 *Endjiansyah saat mengikuti event The 6th West Java Investment Summit (WJIS) 2024, di mana dokumentasi dan dampak program teknologi ditampilkan di panggung utama.*
 
-Salah satu momen berharga dalam representasi proyek ini adalah ketika berkesempatan mengikuti event **The 6th West Java Investment Summit (WJIS) 2024**, di mana dokumentasi dan hasil implementasi teknologi kami ditampilkan di panggung utama forum investasi dan pembangunan daerah tersebut.
+Salah satu momen berharga dalam representasi proyek ini adalah ketika berkesempatan mengikuti event **The 6th West Java Investment Summit (WJIS) 2024** bersama CTO Mas Alfan. Di forum investasi dan pembangunan daerah bergengsi ini, dokumentasi dan hasil implementasi teknologi kami ditampilkan di panggung utama, sekaligus dirayakan melalui instalasi interaktif digital yang memuat aspirasi dan karya insan teknologi Jawa Barat.
+
+![Mas Alfan CTO Alkademi saat menghadiri The 6th West Java Investment Summit 2024 bersama Endjiansyah](/assets/img/stories/project-manager-alkademi/cto-alfan-wjis-2024-alkademi.webp)
+*Mas Alfan (CTO Alkademi) di hadapan instalasi interaktif The 6th West Java Investment Summit (WJIS) 2024—momen menghadiri summit bersama Endjiansyah di mana karya dan aspirasi teknologi Alkademi dipamerkan.*
 
 ---
 
