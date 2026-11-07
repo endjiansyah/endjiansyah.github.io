@@ -29,22 +29,30 @@ Dukungan beliau membuka jalan bagi koordinasi yang sangat mulus antara tim penge
 
 ### Momen Sosialisasi di Gedung Serbaguna Desa Gombongsari
 
-Puncak implementasi proyek ini berlangsung di **Gedung Serbaguna Desa Gombongsari**, tempat dilaksanakannya sosialisasi dan uji coba langsung penggunaan platform digital posyandu kepada puluhan kader dan masyarakat.
+Puncak implementasi proyek ini berlangsung di **Gedung Serbaguna Desa Gombongsari**, tempat dilaksanakannya sosialisasi dan pelatihan langsung penggunaan platform digital posyandu **Gumelis** kepada perangkat desa, kader posyandu, dan tokoh masyarakat setempat.
 
-Sebagai PM, peran saya tidak hanya mengawasi baris kode dan *sprint task* tim, melainkan berdiri di depan para kader posyandu untuk menjelaskan bagaimana teknologi ini memudahkan pencatatan manual mereka sehari-hari.
+Sebagai PM, peran saya tidak hanya mengawasi baris kode dan *sprint task* tim, melainkan berdiri langsung di hadapan para perangkat desa dan kader posyandu untuk memandu alur sistem—mulai dari pendaftaran akun warga, verifikasi identitas, hingga pengoperasian modul harian posyandu.
 
 ![Endjiansyah memaparkan modul skrining kesehatan digital di hadapan peserta sosialisasi Desa Gombongsari](/assets/img/stories/aws-communities-rawamerta/endjiansyah-memaparkan-proyek.webp)
 *Endjiansyah saat memaparkan fitur dan kemudahan integrasi data kesehatan warga desa.*
+
+Didampingi tim teknis yang mengoperasikan demonstrasi langsung, kami membedah setiap formulir input agar mudah dipahami oleh pengguna di tingkat desa.
+
+![Endjiansyah menjelaskan alur input data diri aplikasi Gumelis kepada perangkat desa dan kader di Desa Gombongsari](/assets/img/stories/aws-communities-rawamerta/endjiansyah-menjelaskan-aplikasi-gumelis-perangkat-desa.webp)
+*Endjiansyah mendemonstrasikan antarmuka pengisian data diri warga pada aplikasi Gumelis di hadapan perangkat desa Gombongsari.*
 
 ---
 
 ### Solusi Nyata: Rekam Kesehatan Balita & Skrining Warga
 
-Sistem ini dirancang dengan antarmuka yang sangat bersih dan mudah dipahami, mengakomodasi kebutuhan kader yang sebelumnya terbiasa dengan buku register manual yang tebal.
+Sistem ini dirancang dengan antarmuka yang sangat bersih dan mudah dipahami, mengakomodasi kebutuhan kader dan aparat desa yang sebelumnya terbiasa dengan buku register manual yang tebal.
 
 Dua modul utamanya mencakup:
 1. **Skrining Kesehatan Warga**: Memungkinkan warga dan tenaga medis mendata riwayat pemeriksaan secara daring sehingga rekam jejak kesehatan tersimpan aman dan terstruktur.
 2. **Rekam Kesehatan Balita**: Membantu pencatatan tumbuh kembang anak (berat badan, tinggi badan, imunisasi) untuk mempermudah deteksi dini risiko *stunting*.
+
+![Endjiansyah memandu simulasi pengisian modul riwayat kesehatan pada aplikasi Gumelis](/assets/img/stories/aws-communities-rawamerta/endjiansyah-sosialisasi-gumelis-riwayat-kesehatan.webp)
+*Endjiansyah memaparkan modul riwayat dan skrining kesehatan aplikasi Gumelis didampingi tim pengembang yang menjalankan live testing.*
 
 ![Sosialisasi modul rekam kesehatan balita untuk kader posyandu di Desa Gombongsari Rawamerta](/assets/img/stories/aws-communities-rawamerta/sosialisasi-rekam-kesehatan-balita.webp)
 *Pemaparan modul rekam kesehatan balita untuk mempermudah pemantauan tumbuh kembang anak secara berkala.*

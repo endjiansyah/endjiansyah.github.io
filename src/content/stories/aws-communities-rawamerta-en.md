@@ -30,22 +30,30 @@ His proactive support paved the way for seamless collaboration between our techn
 
 ### Socialization Session at Gombongsari Multipurpose Hall
 
-The core milestone took place at the **Gombongsari Village Multipurpose Hall**, where we conducted hands-on training and trial sessions with dozens of community health volunteers and residents.
+The core milestone took place at the **Gombongsari Village Multipurpose Hall**, where we conducted hands-on training and live walkthroughs of the **Gumelis** platform for village officials, posyandu healthcare volunteers, and local community representatives.
 
-As a PM, my responsibility extended beyond tracking GitHub commits and sprint tasks; I stood in front of the community to demonstrate how this digital tool directly simplifies their traditional paper-based workflows.
+As a PM, my responsibility extended beyond tracking GitHub commits and sprint tasks; I stood directly before village administrators and posyandu workers to guide them through every step of the system—from citizen account onboarding and credential verification to daily operational posyandu logging.
 
 ![Endjiansyah presenting the digital health screening module before community participants in Gombongsari](/assets/img/stories/aws-communities-rawamerta/endjiansyah-memaparkan-proyek.webp)
 *Endjiansyah presenting platform features and workflow integration for local village health data.*
+
+Accompanied by our technical team running live system simulations, we walked through every form and dashboard metric to ensure seamless usability for village-level operators.
+
+![Endjiansyah explaining the Gumelis citizen data registration workflow to village officials in Gombongsari](/assets/img/stories/aws-communities-rawamerta/endjiansyah-menjelaskan-aplikasi-gumelis-perangkat-desa.webp)
+*Endjiansyah demonstrating the citizen registration and profile interface on the Gumelis app before Gombongsari village administrators.*
 
 ---
 
 ### Real Solutions: Toddler Growth Records & Resident Screening
 
-The platform was built with an intuitive, accessible user interface to cater to volunteers transitioning from bulky physical logbooks.
+The platform was built with an intuitive, accessible user interface to cater to volunteers and village staff transitioning from bulky physical logbooks.
 
 Key modules include:
 1. **Resident Health Screening**: Enables structured digital health records during routine community check-ups.
 2. **Toddler Health & Growth Tracking**: Tracks height, weight, and immunization timelines to facilitate early stunting prevention.
+
+![Endjiansyah guiding the Gumelis health history screening simulation](/assets/img/stories/aws-communities-rawamerta/endjiansyah-sosialisasi-gumelis-riwayat-kesehatan.webp)
+*Endjiansyah presenting the health history screening module on Gumelis alongside our development team running interactive tests.*
 
 ![Demonstration of the toddler health monitoring module for posyandu volunteers in Gombongsari Rawamerta](/assets/img/stories/aws-communities-rawamerta/sosialisasi-rekam-kesehatan-balita.webp)
 *Showcasing the toddler health tracking module to simplify routine child development monitoring.*
