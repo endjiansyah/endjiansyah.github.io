@@ -14,7 +14,7 @@ interface Props {
 
 const { 
   title, 
-  description = 'Portfolio Endjiansyah. Berakar dari pengembangan fundamental hingga menakhodai arsitektur sistem berskala enterprise.', 
+  description = 'Portfolio Endjiansyah (Endji). Berakar dari pengembangan fundamental hingga menakhodai arsitektur sistem berskala enterprise.', 
   lang: langProp,
   ogImage = '/assets/Logokedip.webp',
   ogImageAlt,
@@ -30,7 +30,7 @@ const localeDate = pageLang === 'en' ? 'en-US' : 'id-ID';
 // Dimensi asli gambar OG (dibaca dari header file) agar og:image:width/height akurat.
 const ogImageDim = readImageDimensions(ogImage);
 // Alt OG: pakai yang dikirim halaman, kalau tidak ada susun dari title agar tetap deskriptif.
-const ogImageAltText = ogImageAlt ?? `${title} — Endjiansyah`;
+const ogImageAltText = ogImageAlt ?? `${title} — Endjiansyah (Endji)`;
 ---
 
 <html lang={pageLang} class="scroll-smooth overflow-x-hidden">
@@ -41,8 +41,8 @@ const ogImageAltText = ogImageAlt ?? `${title} — Endjiansyah`;
   <!-- Basic SEO -->
   <title>{title}</title>
   <meta name="description" content={description} />
-  <meta name="keywords" content="Endjiansyah, Endji Ansyah, Software Engineer, AI-Augmented Developer, Technical Mentor, Educator, Fullstack Developer, Backend Developer, Programmer Jepara, TALL Stack, Golang, Web Developer Indonesia, Portfolio" />
-  <meta name="author" content="Endjiansyah" />
+  <meta name="keywords" content="Endji, Endjiansyah, Endji Ansyah, Endji Software Engineer, Endji Developer, Software Engineer, AI-Augmented Developer, Technical Mentor, Educator, Fullstack Developer, Backend Developer, Programmer Jepara, TALL Stack, Golang, Web Developer Indonesia, Portfolio" />
+  <meta name="author" content="Endjiansyah (Endji)" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href={canonicalURL.href} />
   <!-- hreflang: beri tahu Google bahwa / dan /en/ padanannya masing-masing -->

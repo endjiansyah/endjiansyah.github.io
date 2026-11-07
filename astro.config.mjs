@@ -44,8 +44,8 @@ function sitemapImagesHome() {
   return [
     {
       url: `${SITE}/assets/endjiansyah.webp`,
-      title: 'Endjiansyah — Software Engineer, AI-Augmented Developer & Technical Mentor',
-      caption: 'Endjiansyah — Software Engineer, AI-Augmented Developer & Technical Mentor',
+      title: 'Endjiansyah (Endji) — Software Engineer, AI-Augmented Developer & Technical Mentor',
+      caption: 'Endjiansyah (Endji) — Software Engineer, AI-Augmented Developer & Technical Mentor',
     },
   ];
 }

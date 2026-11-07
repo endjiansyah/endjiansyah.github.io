@@ -29,8 +29,8 @@ export const ui: Dict = {
   // Hero
   'hero.contact': { id: 'Hubungi Saya', en: 'Contact Me' },
   'hero.bio': {
-    id: 'Halo, saya Endjiansyah. Saya seorang Software Engineer, AI-Augmented Developer, dan Educator di Alkademi. Saya berfokus pada pengembangan aplikasi web skala penuh, pengelolaan sistem edukasi digital, serta pembimbingan teknis (Technical Mentorship) pada berbagai program kolaborasi edukasi dan sosial nasional.',
-    en: "Hi, I'm Endjiansyah. I'm a Software Engineer, AI-Augmented Developer, and Educator at Alkademi. I focus on full-scale web application development, digital education systems management, and technical mentorship across national education and social collaboration programs.",
+    id: 'Halo, saya Endjiansyah (akrab disapa Endji). Saya seorang Software Engineer, AI-Augmented Developer, dan Educator di Alkademi. Saya berfokus pada pengembangan aplikasi web skala penuh, pengelolaan sistem edukasi digital, serta pembimbingan teknis (Technical Mentorship) pada berbagai program kolaborasi edukasi dan sosial nasional.',
+    en: "Hi, I'm Endjiansyah (commonly known as Endji). I'm a Software Engineer, AI-Augmented Developer, and Educator at Alkademi. I focus on full-scale web application development, digital education systems management, and technical mentorship across national education and social collaboration programs.",
   },
 
   // Journey
