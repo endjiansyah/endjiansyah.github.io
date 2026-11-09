@@ -79,7 +79,7 @@ Beyond software engineering, downtime is also treasured for rejuvenating camarad
 ![Endjiansyah swimming and unwinding with Far Capital bootcamp peers](/assets/img/stories/umptn-farcapital/renang-bersama-kawan-bootcamp-farcapital.webp)
 *Refreshing swimming session and leisure gathering with Rendy, Fakhry, Bayu, and Hanif amidst busy professional schedules.*
 
-This network of genuine fellowship extends far beyond Bandung. Whenever I travel to South Jakarta for Alkademi initiatives at the Paragon Community Hub, I regularly catch up with **Mas Arif**, who now thrives as a software engineer at **Allo Bank**. Likewise, whenever Mas Arif visits Bandung, we always reconnect to explore the city together.
+This network of genuine fellowship extends far beyond Bandung. Whenever I travel to South Jakarta for Alkademi initiatives at the Paragon Community Hub (such as mentoring during the [Kids Corner at Alkademi Fest](/en/stories/alkademifest-kids-corner-2025)), I regularly catch up with **Mas Arif**, who now thrives as a software engineer at **Allo Bank**. Likewise, whenever Mas Arif visits Bandung, we always reconnect to explore the city together.
 
 ![Endjiansyah reuniting with Mas Arif from Allo Bank during an Alkademi event at Paragon South Jakarta](/assets/img/stories/umptn-farcapital/endjiansyah-reuni-mas-arif-paragon-jakarta.webp)
 *Warm reunion between Endjiansyah and Mas Arif (Allo Bank) during an Alkademi program at Paragon Community Hub, South Jakarta.*
@@ -94,4 +94,4 @@ The experience in Bandung was not merely about writing lines of code — it was 
 
 This vocational collaboration initiative was also widely covered in the news, showing a strong commitment to advancing local technology talent. More coverage of the program can be accessed via [Far Capital's coverage](https://careers.farcapital.com.my/perusahaan-properti-malaysia-investasi-rp-40-miliar-ke-startup-bandung/).
 
-This experience laid a solid foundation that carried me to my next technical and product leadership roles.
+This experience laid a solid foundation that carried me to my next technical and product leadership roles, including leading initiatives as [Technical Project Manager at Alkademi](/en/stories/project-manager-alkademi).

@@ -10,7 +10,7 @@ tags: ["Endjiansyah", "Alkademi", "Project Manager", "Technical Project Manager"
 order: 1
 ---
 
-Setiap perjalanan karir selalu memiliki titik belok yang menentukan. Bagi saya, titik itu bermula di awal tahun 2024. Setelah menyelesaikan rangkaian bootcamp intensif di Alkademi, sebuah kepercayaan besar tiba tanpa diduga: saya diminta mengemban tanggung jawab sebagai **Project Manager (PM)** di Alkademi. Kepercayaan ini lahir setelah manajemen melihat gaya kepemimpinan, inisiatif komunikasi, serta kemampuan mengurai masalah yang saya tunjukkan selama masa pelatihan.
+Setiap perjalanan karir selalu memiliki titik belok yang menentukan. Bagi saya, titik itu bermula di awal tahun 2024. Setelah menyelesaikan rangkaian [bootcamp intensif Far Capital di Alkademi](/stories/umptn-farcapital), sebuah kepercayaan besar tiba tanpa diduga: saya diminta mengemban tanggung jawab sebagai **Project Manager (PM)** di Alkademi. Kepercayaan ini lahir setelah manajemen melihat gaya kepemimpinan, inisiatif komunikasi, serta kemampuan mengurai masalah yang saya tunjukkan selama masa pelatihan.
 
 Melangkah dari seorang peserta bootcamp menjadi nakhoda proyek tentu bukan lompatan kecil. Namun, justru di fase perjalanan inilah fondasi kepemimpinan, manajemen proyek, dan kedalaman rekayasa teknologi saya ditempa secara nyata di garis depan.
 
@@ -38,7 +38,7 @@ Salah satu memori paling berkesan dalam keseharian sebagai PM adalah sesi-sesi d
 
 Formasi tim di meja bundar saat itu memiliki dinamika yang sangat istimewa:
 - **Dua sosok senior developer**: Mentor kami saat menjalani bootcamp di tahun sebelumnya yang turut membimbing fondasi teknis kami.
-- **Adnan, Farid, Hanif, Maahir, dan Rijal**: Rekan-rekan junior mereka yang juga merupakan sahabat seperjuangan saya sejak masa bootcamp Far Capital.
+- **Adnan, Farid, Hanif, Maahir, dan Rijal**: Rekan-rekan junior mereka yang juga merupakan sahabat seperjuangan saya sejak masa [bootcamp Far Capital](/stories/umptn-farcapital).
 
 ![Seluruh tim developer Alkademi 2024 berkumpul di meja bundar kantor Alkademi](/assets/img/stories/project-manager-alkademi/diskusi-tim-meja-bundar-alkademi.webp)
 *Momen kebersamaan seluruh tim developer Alkademi tahun 2024 di meja bundar bersama para senior developer, Adnan, Farid, Hanif, Maahir, dan Rijal.*
@@ -63,7 +63,7 @@ Momen perpisahan hangat bersama salah seorang senior developer menjadi pengingat
 
 Peran yang saya jalani terasa sangat identik dengan **Technical Project Manager (TPM)**: memiliki pemahaman mendalam tentang arsitektur perangkat lunak, namun tetap menjalankan seluruh tanggung jawab manajerial selayaknya seorang PM profesional. Mulai dari penyusunan *timeline*, mitigasi risiko, orkestrasi sumber daya, hingga menjembatani komunikasi ke pemangku kepentingan (*stakeholders*) tingkat tinggi.
 
-Jika melihat berbagai cerita yang tertulis di portofolio ini—mulai dari inisiatif digital bersama **ASEAN Foundation**, proyek sistem Posyandu dan Bansos **AWS in Communities di Karawang**, piloting literasi AI **Minecraft Education** yang ditinjau Wapres Gibran, pelatihan guru **Microsoft Elevate**, hingga gelaran **Lailatul Coding**—semuanya digerakkan oleh kombinasi kepemimpinan teknis dan manajemen proyek yang solid.
+Jika melihat berbagai cerita yang tertulis di portofolio ini—mulai dari inisiatif digital bersama [**ASEAN Foundation**](/stories/kunjungan-asean-foundation), proyek sistem Posyandu dan Bansos [**AWS in Communities di Karawang**](/stories/aws-communities-rawamerta), piloting literasi AI [**Minecraft Education**](/stories/elevaite-minecraft-education) yang ditinjau Wapres Gibran, pelatihan guru [**Microsoft Elevate**](/stories/elevaite-educators), hingga gelaran [**Lailatul Coding**](/stories/lailatul-coding-2026)—semuanya digerakkan oleh kombinasi kepemimpinan teknis dan manajemen proyek yang solid.
 
 ![Endjiansyah saat mengikuti event The 6th West Java Investment Summit 2024](/assets/img/stories/project-manager-alkademi/endjiansyah-west-java-investment-summit-2024.webp)
 *Endjiansyah saat mengikuti event The 6th West Java Investment Summit (WJIS) 2024, di mana dokumentasi dan dampak program teknologi ditampilkan di panggung utama.*

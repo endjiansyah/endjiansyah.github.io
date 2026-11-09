@@ -11,7 +11,7 @@ tags: ["Endjiansyah", "Alkademi", "Project Manager", "Technical Project Manager"
 order: 1
 ---
 
-Every career trajectory features pivotal turning points. For me, that moment arrived in early 2024. Following the completion of an intensive bootcamp cohort at Alkademi, an unexpected vote of confidence emerged: I was appointed as a **Project Manager (PM)** at Alkademi. This trust stemmed from the leadership style, proactive communication, and problem-solving orientation demonstrated throughout the bootcamp.
+Every career trajectory features pivotal turning points. For me, that moment arrived in early 2024. Following the completion of an intensive [Far Capital bootcamp cohort at Alkademi](/en/stories/umptn-farcapital), an unexpected vote of confidence emerged: I was appointed as a **Project Manager (PM)** at Alkademi. This trust stemmed from the leadership style, proactive communication, and problem-solving orientation demonstrated throughout the bootcamp.
 
 Transitioning from a bootcamp participant to stewarding technology projects was no trivial leap. Yet across this journey, my foundation in technical leadership, agile delivery, and engineering depth was forged directly on the frontlines.
 
@@ -39,7 +39,7 @@ Among the most enduring memories of daily life as a PM are the collaborative ses
 
 The team formation around the round table held a unique dynamic:
 - **Two senior developers**: Former bootcamp mentors from the previous year who helped cultivate our engineering foundation.
-- **Adnan, Farid, Hanif, Maahir, and Rijal**: Their junior peers who were also my fellow bootcamp peers from the Far Capital program.
+- **Adnan, Farid, Hanif, Maahir, and Rijal**: Their junior peers who were also my fellow bootcamp peers from the [Far Capital bootcamp](/en/stories/umptn-farcapital).
 
 ![The complete 2024 Alkademi developer team gathered around the round table](/assets/img/stories/project-manager-alkademi/diskusi-tim-meja-bundar-alkademi.webp)
 *The complete 2024 Alkademi developer team gathered around the circular table alongside the senior developers, Adnan, Farid, Hanif, Maahir, and Rijal.*
@@ -64,7 +64,7 @@ A warm farewell moment with one of the senior developers served as a treasured r
 
 The scope of this journey resonated deeply with the role of a **Technical Project Manager (TPM)**: possessing a nuanced grasp of software architecture while executing end-to-end project management responsibilities. From schedule orchestration and risk mitigation to representing initiatives before high-profile stakeholders.
 
-Reviewing the wider spectrum of initiatives in this portfolio—from regional platforms with the **ASEAN Foundation**, healthcare and social aid systems for **AWS in Communities in Karawang**, AI literacy piloting with **Minecraft Education** reviewed by VP Gibran, educator empowerment in **Microsoft Elevate**, to community hackathons like **Lailatul Coding**—each endeavor was powered by this synthesis of technical fluency and disciplined project execution.
+Reviewing the wider spectrum of initiatives in this portfolio—from regional platforms with the [**ASEAN Foundation**](/en/stories/kunjungan-asean-foundation), healthcare and social aid systems for [**AWS in Communities in Karawang**](/en/stories/aws-communities-rawamerta), AI literacy piloting with [**Minecraft Education**](/en/stories/elevaite-minecraft-education) reviewed by VP Gibran, educator empowerment in [**Microsoft Elevate**](/en/stories/elevaite-educators), to community hackathons like [**Lailatul Coding**](/en/stories/lailatul-coding-2026)—each endeavor was powered by this synthesis of technical fluency and disciplined project execution.
 
 ![Endjiansyah attending The 6th West Java Investment Summit 2024](/assets/img/stories/project-manager-alkademi/endjiansyah-west-java-investment-summit-2024.webp)
 *Endjiansyah participating in The 6th West Java Investment Summit (WJIS) 2024, where technology program documentation was featured on the main stage screen.*

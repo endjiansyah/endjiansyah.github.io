@@ -59,4 +59,4 @@ The gathering concluded with a pre-dawn meal together and a group photo of all p
 ![Group photo of participants and mentors at Lailatul Coding X Markas Bandung on April 4, 2024](/assets/img/stories/lailatul-coding-x-2024/foto-bersama-lailatul-coding-markas-bandung.webp)
 *Group photo of participants and mentors celebrating the completion of their overnight mission at Markas Bandung.*
 
-Ten years of Lailatul Coding prove that small, consistent acts of kindness performed collectively create lasting, exponential impact. May every line of code written during this blessed night bring continuous benefit to community centers, schools, and orphanages across Indonesia.
+Ten years of Lailatul Coding prove that small, consistent acts of kindness performed collectively create lasting, exponential impact—a culture of engineering for good that evolved forward into [Lailatul Coding 2026](/en/stories/lailatul-coding-2026). May every line of code written during this blessed night bring continuous benefit to community centers, schools, and orphanages across Indonesia.

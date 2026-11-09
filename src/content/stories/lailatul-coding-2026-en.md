@@ -12,7 +12,7 @@ order: 1
 
 The cherished Ramadan tradition for Indonesia's tech community returned with fresh energy in 2026. Hosted at **BBPVP Bandung (Balai Besar Pelatihan Vokasi dan Produktivitas Bandung)** on **March 8, 2026**, **Lailatul Coding 2026** convened under an inspiring banner: *“Deploy Kebaikan dari Hati” (Deploy Goodness from the Heart)*.
 
-While past editions focused on conventional hackathons, Lailatul Coding 2026 embraced a transformative paradigm of the artificial intelligence era: **Vibe Coding** (*AI-Augmented Software Development*). From late afternoon until the pre-dawn sahur meal, ideas, energy, and a shared dedication to giving back fused together to build meaningful technological solutions.
+While past editions like [Lailatul Coding X 2024](/en/stories/lailatul-coding-x-2024) centered around overnight conventional coding sprints, Lailatul Coding 2026 embraced a transformative paradigm of the artificial intelligence era: **Vibe Coding** (*AI-Augmented Software Development*). From late afternoon until the pre-dawn sahur meal, ideas, energy, and a shared dedication to giving back fused together to build meaningful technological solutions.
 
 ---
 

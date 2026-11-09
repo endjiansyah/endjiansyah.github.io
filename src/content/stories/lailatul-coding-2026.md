@@ -11,7 +11,7 @@ order: 1
 
 Tradisi berkah Ramadhan bagi komunitas pegiat teknologi kembali bergulir di tahun 2026. Bertempat di **BBPVP Bandung (Balai Besar Pelatihan Vokasi dan Produktivitas Bandung)** pada **8 Maret 2026**, diselenggarakan **Lailatul Coding 2026** dengan tajuk penuh makna: *“Deploy Kebaikan dari Hati”*.
 
-Jika edisi-edisi sebelumnya berfokus pada *coding* konvensional, Lailatul Coding 2026 membawa hembusan paradigma baru yang sangat segar di era kecerdasan buatan: **Vibe Coding** (*AI-Augmented Development*). Dari waktu sore menjelang berbuka puasa hingga waktu sahur tiba, ratusan ide, energi, dan semangat berbagi melebur menjadi satu untuk membangun solusi nyata lewat teknologi.
+Jika edisi sebelumnya seperti [Lailatul Coding X 2024](/stories/lailatul-coding-x-2024) berfokus pada *coding* konvensional maraton semalam suntuk, Lailatul Coding 2026 membawa hembusan paradigma baru yang sangat segar di era kecerdasan buatan: **Vibe Coding** (*AI-Augmented Development*). Dari waktu sore menjelang berbuka puasa hingga waktu sahur tiba, ratusan ide, energi, dan semangat berbagi melebur menjadi satu untuk membangun solusi nyata lewat teknologi.
 
 ---
 

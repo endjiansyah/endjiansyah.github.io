@@ -11,7 +11,7 @@ tags: ["Endjiansyah", "Project Management", "AWS in Communities", "Alkademi", "P
 order: 2
 ---
 
-Bringing modern technology to grassroots communities is always a unique challenge, accompanied by profound fulfillment. From **August to October 2024**, I served as **Project Manager (PM)** under the prestigious **AWS in Communities** CSR initiative, focusing on digitalizing community healthcare, child health monitoring, and posyandu services across **Rawamerta District, Karawang Regency**.
+Bringing modern technology to grassroots communities is always a unique challenge, accompanied by profound fulfillment. From **August to October 2024**, serving in my role as [**Project Manager at Alkademi**](/en/stories/project-manager-alkademi), I led delivery under the prestigious **AWS in Communities** CSR initiative, focusing on digitalizing community healthcare, child health monitoring, and posyandu services across **Rawamerta District, Karawang Regency**.
 
 Leading a dedicated development team—**Farid, Karlina, Khalil, and Affan**—we engineered and delivered **Gumelis**, a digital platform tailored for village resident health screening and toddler growth tracking.
 

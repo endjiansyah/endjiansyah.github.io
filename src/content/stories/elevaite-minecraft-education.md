@@ -9,7 +9,7 @@ tags: ["Endjiansyah", "Alkademi", "elevAIte Indonesia", "Minecraft Education", "
 order: 1
 ---
 
-Sebagai bagian dari inisiatif besar **elevAIte Indonesia** bersama **Alkademi**, program *Piloting AI Coding* berbasis **Minecraft Education** diluncurkan untuk memperkenalkan kecerdasan buatan (*Artificial Intelligence*) dan logika pemrograman kepada generasi muda Indonesia melalui pendekatan *game-based learning*.
+Sebagai bagian dari inisiatif besar **elevAIte Indonesia** bersama **Alkademi** (yang juga bersinergi dengan pelatihan pendidik [Microsoft Elevate](/stories/elevaite-educators) serta orkestrasi teknis [Project Management](/stories/project-manager-alkademi)), program *Piloting AI Coding* berbasis **Minecraft Education** diluncurkan untuk memperkenalkan kecerdasan buatan (*Artificial Intelligence*) dan logika pemrograman kepada generasi muda Indonesia melalui pendekatan *game-based learning*.
 
 Sebelum puncak kegiatan peninjauan resmi, kami dari tim Alkademi telah terlebih dahulu melaksanakan rangkaian persiapan intensif dan uji coba kurikulum di 3 sekolah percontohan di Jakarta:
 1. **Kinderfield Duren Sawit**

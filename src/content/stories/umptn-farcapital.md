@@ -78,7 +78,7 @@ Tak hanya soal koding, waktu luang juga kami manfaatkan untuk menyegarkan pikira
 ![Endjiansyah berekreasi dan berenang bersama kawan-kawan bootcamp Far Capital](/assets/img/stories/umptn-farcapital/renang-bersama-kawan-bootcamp-farcapital.webp)
 *Momen refreshing berenang dan berekreasi bersama Rendy, Fakhry, Bayu, dan Hanif di sela-sela rutinitas.*
 
-Jejaring silaturahmi ini juga merentang ke kota-kota lain. Saat bertandang ke Jakarta Selatan dalam agenda event Alkademi di Paragon Community Hub, saya selalu menyempatkan diri bersua dengan **Mas Arif**, rekan bootcamp yang kini berkiprah sebagai software engineer di **Allo Bank**. Setiap kali Mas Arif berkunjung ke Bandung pun, ia selalu menghubungi saya untuk berkeliling dan mengeksplorasi Kota Kembang bersama.
+Jejaring silaturahmi ini juga merentang ke kota-kota lain. Saat bertandang ke Jakarta Selatan dalam agenda event Alkademi di Paragon Community Hub (seperti saat mengawal sesi [Kids Corner di Alkademi Fest](/stories/alkademifest-kids-corner-2025)), saya selalu menyempatkan diri bersua dengan **Mas Arif**, rekan bootcamp yang kini berkiprah sebagai software engineer di **Allo Bank**. Setiap kali Mas Arif berkunjung ke Bandung pun, ia selalu menghubungi saya untuk berkeliling dan mengeksplorasi Kota Kembang bersama.
 
 ![Endjiansyah bertemu kembali dengan Mas Arif dari Allo Bank di event Alkademi Paragon Jakarta Selatan](/assets/img/stories/umptn-farcapital/endjiansyah-reuni-mas-arif-paragon-jakarta.webp)
 *Momen reuni hangat Endjiansyah bersama Mas Arif (Allo Bank) saat agenda kegiatan Alkademi di Paragon Community Hub, Jakarta Selatan.*
@@ -93,4 +93,4 @@ Pengalaman di Bandung bukan sekadar tentang penulisan baris kode, melainkan tent
 
 Inisiatif kerja sama vokasi ini juga sempat diberitakan secara luas, menunjukkan komitmen kuat dalam memajukan talenta teknologi lokal. Informasi selengkapnya mengenai liputan program ini dapat diakses melalui [liputan Far Capital](https://careers.farcapital.com.my/perusahaan-properti-malaysia-investasi-rp-40-miliar-ke-startup-bandung/).
 
-Pengalaman ini menjadi fondasi kokoh yang mengantarkan langkah saya ke peran-peran teknis dan kepemimpinan produk selanjutnya.
+Pengalaman ini menjadi fondasi kokoh yang mengantarkan langkah saya ke peran-peran teknis dan kepemimpinan produk selanjutnya, termasuk saat dipercaya memegang kendali sebagai [Project Manager di Alkademi](/stories/project-manager-alkademi).

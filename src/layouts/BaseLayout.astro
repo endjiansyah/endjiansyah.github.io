@@ -194,6 +194,22 @@ const ogImageAltText = ogImageAlt ?? `${title} — Endjiansyah (Endji)`;
     .prose a:hover {
       color: #3b82f6;
     }
+    .prose a[href*="/stories/"] {
+      color: #1d4ed8;
+      text-decoration: underline;
+      text-decoration-color: #93c5fd;
+      text-decoration-thickness: 1.5px;
+      text-underline-offset: 4px;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+    .prose a[href*="/stories/"]:hover {
+      color: #2563eb;
+      text-decoration-color: #2563eb;
+      background-color: #eff6ff;
+      border-radius: 4px;
+      padding: 0 2px;
+    }
 
     /* Mobile responsive prose overrides */
     @media (max-width: 640px) {

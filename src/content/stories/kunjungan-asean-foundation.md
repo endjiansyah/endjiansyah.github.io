@@ -33,7 +33,7 @@ Berdiri di bawah lambang resmi ASEAN yang megah diapit jajaran bendera negara-ne
 ![Endjiansyah bersama rekan kerja di depan lambang resmi ASEAN Secretariat Heritage Building Jakarta](/assets/img/stories/kunjungan-asean-foundation/endjiansyah-rekan-lambang-asean-heritage-building.webp)
 *Endjiansyah bersama rekan kerja berfoto di lobi utama ASEAN Secretariat Heritage Building dengan latar lambang resmi ASEAN dan bendera negara-negara anggota.*
 
-Dari proyek-proyek rekayasa perangkat lunak berskala daerah hingga dipercaya berkontribusi dalam inisiatif platform digital kawasan, perjalanan ini menegaskan pentingnya konsistensi, integritas teknis, dan kerja sama tim yang solid.
+Dari proyek-proyek rekayasa perangkat lunak berskala daerah hingga dipercaya mengawal delivery platform kawasan sebagai [Technical Project Manager di Alkademi](/stories/project-manager-alkademi), perjalanan ini menegaskan pentingnya konsistensi, integritas teknis, dan kerja sama tim yang solid.
 
 ![Endjiansyah berpose di depan lambang resmi ASEAN di ASEAN Secretariat Heritage Building Jakarta](/assets/img/stories/kunjungan-asean-foundation/endjiansyah-lambang-asean-secretariat-jakarta.webp)
 *Momen reflektif Endjiansyah di depan lambang ASEAN, mempertegas komitmen menghadirkan solusi teknologi yang berdampak luas.*

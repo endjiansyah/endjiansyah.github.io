@@ -22,14 +22,36 @@ const base = lang === 'en' ? '/en' : '';
 const localeDate = date.toLocaleDateString(lang === 'en' ? 'en-US' : 'id-ID', { year: 'numeric', month: 'long' });
 
 const style = storyTypeStyle(type);
+
+const isBootcampCore = slug === 'umptn-farcapital';
+const isPMCore = slug === 'project-manager-alkademi';
+const isCore = isBootcampCore || isPMCore;
+
+// Custom styling config for core cards vs regular cards
+let cardBorderBg = 'bg-white border border-gray-200/80 shadow-sm hover:shadow-2xl hover:border-blue-500/30';
+let ambientGlow = 'from-blue-500/10 via-teal-500/10 to-transparent';
+let titleHoverColor = 'group-hover:text-blue-200';
+let dateIconColor = 'text-blue-500';
+
+if (isBootcampCore) {
+  cardBorderBg = 'bg-gradient-to-b from-amber-50/70 via-white to-white border-2 border-amber-500/60 shadow-lg shadow-amber-500/15 hover:shadow-2xl hover:shadow-amber-500/30 hover:border-amber-400';
+  ambientGlow = 'from-amber-500/20 via-orange-500/15 to-transparent';
+  titleHoverColor = 'group-hover:text-amber-200';
+  dateIconColor = 'text-amber-500';
+} else if (isPMCore) {
+  cardBorderBg = 'bg-gradient-to-b from-blue-50/70 via-white to-white border-2 border-blue-500/60 shadow-lg shadow-blue-500/15 hover:shadow-2xl hover:shadow-blue-500/30 hover:border-blue-400';
+  ambientGlow = 'from-blue-600/20 via-cyan-500/15 to-transparent';
+  titleHoverColor = 'group-hover:text-blue-200';
+  dateIconColor = 'text-blue-500';
+}
 ---
 
 <a 
   href={`${base}/stories/${slug}`} 
-  class="reveal reveal-up group relative flex flex-col justify-between block h-full bg-white rounded-3xl overflow-hidden border border-gray-200/80 shadow-sm hover:shadow-2xl hover:border-blue-500/30 transition-all duration-500 ease-out hover:-translate-y-1.5"
+  class={`reveal reveal-up group relative flex flex-col justify-between block h-full rounded-3xl overflow-hidden transition-all duration-500 ease-out hover:-translate-y-1.5 ${cardBorderBg}`}
 >
   <!-- Ambient Hover Glow -->
-  <div class="absolute -inset-px bg-gradient-to-r from-blue-500/10 via-teal-500/10 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+  <div class={`absolute -inset-px bg-gradient-to-r rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none ${ambientGlow}`}></div>
 
   <div class="h-52 w-full overflow-hidden relative bg-gray-900">
     <img 
@@ -49,9 +71,19 @@ const style = storyTypeStyle(type);
       </span>
     </div>
 
+    <!-- Core Milestone Badge (Top-Right) -->
+    {isCore && (
+      <div class="absolute top-4 right-4 z-10">
+        <span class={`px-2.5 py-1 text-[11px] font-bold rounded-full text-white shadow-md flex items-center gap-1 backdrop-blur-md ${isBootcampCore ? 'bg-amber-500 shadow-amber-500/40' : 'bg-blue-600 shadow-blue-600/40'}`}>
+          <svg class="w-3 h-3 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          {lang === 'id' ? 'Titik Balik' : 'Turning Point'}
+        </span>
+      </div>
+    )}
+
     <!-- Title on Image Overlay -->
     <div class="absolute bottom-4 left-5 right-5">
-      <h4 class="text-white text-lg font-bold leading-tight group-hover:text-blue-200 transition-colors line-clamp-2">
+      <h4 class={`text-white text-lg font-bold leading-tight transition-colors line-clamp-2 ${titleHoverColor}`}>
         {title}
       </h4>
     </div>
@@ -61,7 +93,7 @@ const style = storyTypeStyle(type);
     <div>
       <!-- Date display -->
       <div class="flex items-center gap-2 text-xs font-semibold text-gray-400 mb-3 tracking-wider uppercase">
-        <svg class="w-3.5 h-3.5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+        <svg class={`w-3.5 h-3.5 ${dateIconColor}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
         {dateLabel || localeDate}
       </div>
 

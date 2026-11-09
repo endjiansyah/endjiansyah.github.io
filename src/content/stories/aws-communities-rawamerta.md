@@ -10,7 +10,7 @@ tags: ["Endjiansyah", "Project Management", "AWS in Communities", "Alkademi", "P
 order: 2
 ---
 
-Membawa teknologi mutakhir ke tingkat akar rumput (*grassroots*) selalu menghadirkan tantangan tersendiri, sekaligus kepuasan batin yang mendalam. Selama periode **Agustus hingga Oktober 2024**, saya mendapatkan amanah sebagai **Project Manager (PM)** dalam program CSR bergengsi **AWS in Communities**, berfokus pada digitalisasi layanan, pemantauan kesehatan, serta pintu posyandu di wilayah **Kecamatan Rawamerta, Kabupaten Karawang**.
+Membawa teknologi mutakhir ke tingkat akar rumput (*grassroots*) selalu menghadirkan tantangan tersendiri, sekaligus kepuasan batin yang mendalam. Selama periode **Agustus hingga Oktober 2024**, saya mendapatkan amanah dalam kapasitas sebagai [**Project Manager di Alkademi**](/stories/project-manager-alkademi) untuk memimpin program CSR bergengsi **AWS in Communities**, berfokus pada digitalisasi layanan, pemantauan kesehatan, serta pintu posyandu di wilayah **Kecamatan Rawamerta, Kabupaten Karawang**.
 
 Di proyek ini, saya memimpin tim pengembang muda yang luar biasa solid: **Farid, Karlina, Khalil, dan Affan** sebagai tim *developer*. Bersama-sama, kami merancang dan mengeksekusi sistem yang diberi nama **Gumelis**—sebuah platform pendataan, rekam kesehatan balita, dan skrining kesehatan digital untuk warga desa.
 

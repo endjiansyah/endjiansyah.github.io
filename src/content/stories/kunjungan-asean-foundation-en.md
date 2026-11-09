@@ -34,7 +34,7 @@ Standing beneath the iconic ASEAN emblem flanked by the national flags of Southe
 ![Endjiansyah with a colleague in front of the official ASEAN emblem at the ASEAN Secretariat Heritage Building Jakarta](/assets/img/stories/kunjungan-asean-foundation/endjiansyah-rekan-lambang-asean-heritage-building.webp)
 *Endjiansyah alongside a colleague in the grand hall of the ASEAN Secretariat Heritage Building, backed by the official ASEAN emblem and member flags.*
 
-From local software engineering projects to contributing to regional digital platform initiatives, this milestone reaffirms the enduring value of consistency, technical craftsmanship, and resilient teamwork.
+From local software engineering projects to orchestrating regional platform delivery as [Technical Project Manager at Alkademi](/en/stories/project-manager-alkademi), this milestone reaffirms the enduring value of consistency, technical craftsmanship, and resilient teamwork.
 
 ![Endjiansyah standing before the official ASEAN emblem at the ASEAN Secretariat Heritage Building Jakarta](/assets/img/stories/kunjungan-asean-foundation/endjiansyah-lambang-asean-secretariat-jakarta.webp)
 *A reflective moment for Endjiansyah before the ASEAN emblem, reinforcing the dedication to delivering technology that makes an enduring impact.*
