@@ -23,25 +23,30 @@ const localeDate = date.toLocaleDateString(lang === 'en' ? 'en-US' : 'id-ID', { 
 
 const style = storyTypeStyle(type);
 
-const isBootcampCore = slug === 'umptn-farcapital';
-const isPMCore = slug === 'project-manager-alkademi';
+const isCore = slug === 'umptn-farcapital' || slug === 'project-manager-alkademi';
 
-// Custom styling config: regular cards are plain white, core cards feature a subtle gradient background
+// Styling config: regular cards are flat white, core cards feature a subtle, high-contrast white gradient
 let cardBorderBg = 'bg-white border border-gray-200/80 shadow-sm hover:shadow-2xl hover:border-blue-500/30';
 let ambientGlow = 'from-blue-500/10 via-teal-500/10 to-transparent';
 let titleHoverColor = 'group-hover:text-blue-200';
+let dateTextColor = 'text-gray-400';
 let dateIconColor = 'text-blue-500';
+let descTextColor = 'text-gray-600';
+let dividerBorder = 'border-gray-100';
+let tagClass = 'bg-gray-100/70 text-gray-500 border-gray-200/50 group-hover:border-blue-200';
+let moreTagColor = 'text-gray-400';
 
-if (isBootcampCore) {
-  cardBorderBg = 'bg-gradient-to-br from-amber-100/50 via-amber-50/60 to-white border border-amber-200/80 shadow-sm hover:shadow-2xl hover:border-amber-400/60';
-  ambientGlow = 'from-amber-500/20 via-orange-500/15 to-transparent';
-  titleHoverColor = 'group-hover:text-amber-200';
-  dateIconColor = 'text-amber-600';
-} else if (isPMCore) {
-  cardBorderBg = 'bg-gradient-to-br from-blue-100/50 via-blue-50/60 to-white border border-blue-200/80 shadow-sm hover:shadow-2xl hover:border-blue-400/60';
-  ambientGlow = 'from-blue-600/20 via-cyan-500/15 to-transparent';
+if (isCore) {
+  // Pure white-to-slate gradient that makes the card feel premium without any color clash
+  cardBorderBg = 'bg-gradient-to-b from-white via-slate-50/70 to-slate-100/80 border border-slate-300/80 shadow-md hover:shadow-2xl hover:border-blue-500/40';
+  ambientGlow = 'from-blue-500/15 via-teal-500/10 to-transparent';
   titleHoverColor = 'group-hover:text-blue-200';
+  dateTextColor = 'text-slate-500 font-medium';
   dateIconColor = 'text-blue-600';
+  descTextColor = 'text-slate-700 font-normal';
+  dividerBorder = 'border-slate-200/80';
+  tagClass = 'bg-white/95 text-slate-700 border-slate-200/90 shadow-2xs group-hover:border-blue-300';
+  moreTagColor = 'text-slate-500';
 }
 ---
 
@@ -81,25 +86,25 @@ if (isBootcampCore) {
   <div class="p-6 sm:p-7 flex flex-col justify-between flex-1 relative z-10">
     <div>
       <!-- Date display -->
-      <div class="flex items-center gap-2 text-xs font-semibold text-gray-400 mb-3 tracking-wider uppercase">
+      <div class={`flex items-center gap-2 text-xs mb-3 tracking-wider uppercase ${dateTextColor}`}>
         <svg class={`w-3.5 h-3.5 ${dateIconColor}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
         {dateLabel || localeDate}
       </div>
 
-      <p class="text-gray-600 text-sm leading-relaxed mb-6 line-clamp-3 font-normal">
+      <p class={`text-sm leading-relaxed mb-6 line-clamp-3 ${descTextColor}`}>
         {description}
       </p>
     </div>
 
     {tags && tags.length > 0 && (
-      <div class="flex gap-2 flex-wrap pt-4 border-t border-gray-100 items-center">
+      <div class={`flex gap-2 flex-wrap pt-4 border-t items-center ${dividerBorder}`}>
         {tags.slice(0, 3).map((tag) => (
-          <span class="px-3 py-0.5 bg-gray-100/70 text-gray-500 rounded-full text-xs font-medium border border-gray-200/50 group-hover:border-blue-200 transition-colors">
+          <span class={`px-3 py-0.5 rounded-full text-xs font-medium border transition-colors ${tagClass}`}>
             #{tag}
           </span>
         ))}
         {tags.length > 3 && (
-          <span class="px-2 py-0.5 text-gray-400 text-xs font-medium" title={tags.slice(3).map((t) => `#${t}`).join(', ')}>
+          <span class={`px-2 py-0.5 text-xs font-medium ${moreTagColor}`} title={tags.slice(3).map((t) => `#${t}`).join(', ')}>
             +{tags.length - 3}
           </span>
         )}
