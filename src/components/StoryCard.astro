@@ -24,9 +24,9 @@ const localeDate = date.toLocaleDateString(lang === 'en' ? 'en-US' : 'id-ID', { 
 const style = storyTypeStyle(type);
 
 const isCore = slug === 'umptn-farcapital' || slug === 'project-manager-alkademi';
-// Core cards feature a delicate champagne gold background gradient; border and typography remain 100% standard
+// Core cards feature an emas tipis / kuning tipis dengan gradasi putih background; border and typography remain 100% standard
 const cardBg = isCore
-  ? 'bg-gradient-to-b from-amber-50/60 via-white to-amber-50/40'
+  ? 'bg-gradient-to-b from-amber-100/45 via-white to-amber-50/30'
   : 'bg-white';
 ---
 
@@ -36,6 +36,11 @@ const cardBg = isCore
 >
   <!-- Ambient Hover Glow -->
   <div class="absolute -inset-px bg-gradient-to-r from-blue-500/10 via-teal-500/10 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+
+  <!-- Deepened subtle gold gradient on hover for core cards -->
+  {isCore && (
+    <div class="absolute inset-0 bg-gradient-to-b from-amber-200/40 via-amber-100/25 to-amber-100/35 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+  )}
 
   <div class="h-52 w-full overflow-hidden relative bg-gray-900">
     <img 
