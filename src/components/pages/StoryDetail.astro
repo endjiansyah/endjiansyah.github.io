@@ -81,16 +81,16 @@ const articleSchema = {
 
   <main>
     <!-- Cover Hero -->
-    <div class="relative w-full h-[50vh] md:h-[60vh] overflow-hidden bg-brand-dark">
+    <div class="relative isolate flex min-h-[32rem] sm:min-h-[36rem] md:min-h-[60vh] flex-col w-full overflow-hidden bg-brand-dark">
       <img
         src={entry.data.coverImage}
         alt={`${entry.data.title} — dokumentasi kegiatan Endjiansyah`}
-        class="w-full h-full object-cover opacity-40"
+        class="absolute inset-0 w-full h-full object-cover opacity-40"
       />
       <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/60 to-transparent"></div>
 
       <!-- Content overlay -->
-      <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-12 md:p-20">
+      <div class="relative z-10 mt-auto px-6 pt-32 pb-8 sm:px-12 sm:pt-36 sm:pb-12 md:px-20 md:pt-40 md:pb-20">
         <div class="max-w-4xl mx-auto">
           <a href={`${base}/#stories`} class="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm mb-6 group">
             <svg class="w-4 h-4 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
