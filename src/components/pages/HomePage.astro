@@ -111,14 +111,18 @@ const experience: TItem[] = [
     },
     detail: {
       id: [
-        'Memimpin technical mentorship dan penyusunan modul untuk Microsoft Elevate Program.',
-        'Membimbing Games for Inclusion (Telkom x Agate x Alkademi) bagi siswa disabilitas di SLBN 1 Buleleng.',
-        'Mengintegrasikan AI-Assisted Workflow dalam pengawasan siswa magang dan code review.',
+        '<strong>Microsoft Elevate Program</strong> (Nov 2025–Sep 2026): Memimpin penyusunan modul & technical mentorship untuk ribuan pendidik se-Indonesia, termasuk sesi Training of Trainers (ToT) untuk <a href="/stories/elevaite-educators" class="text-blue-600 hover:underline font-medium">Wardah Inspiring Teacher Gen 8</a> (ParagonCorp).',
+        '<strong>Games for Inclusion</strong> (Telkom × Agate × Alkademi): Mendampingi <a href="/stories/games-for-inclusion" class="text-blue-600 hover:underline font-medium">upskilling teknologi game & AI</a> bagi siswa disabilitas tunarungu di SLBN 1 Buleleng, Bali Utara.',
+        '<strong>Holiday Camp 2025</strong> (Agate Academy): Mengajar <em>computational thinking</em> & game development via MakeCode Arcade kepada anak SD & SMP. <a href="/stories/holiday-camp-2025" class="text-blue-600 hover:underline font-medium">Baca ceritanya →</a>',
+        '<strong>Lailatul Coding 2026 & X 2024</strong>: Memandu sesi <a href="/stories/lailatul-coding-2026" class="text-blue-600 hover:underline font-medium">Vibe Coding AI-Augmented</a> & menjadi <a href="/stories/lailatul-coding-x-2024" class="text-blue-600 hover:underline font-medium">mentor teknis Lailatul Coding X</a> — coding maraton semalam suntuk untuk rumah ibadah & panti asuhan.',
+        '<strong>AlkademiFest Kids Corner 2025</strong>: Memfasilitasi <a href="/stories/alkademifest-kids-corner-2025" class="text-blue-600 hover:underline font-medium">sesi teknologi interaktif</a> bagi anak usia 5–12 tahun dengan pendekatan bermain & computational thinking.',
       ],
       en: [
-        'Leading technical mentorship and module authoring for the Microsoft Elevate Program.',
-        'Mentoring Games for Inclusion (Telkom x Agate x Alkademi) for students with disabilities at SLBN 1 Buleleng.',
-        'Integrating an AI-Assisted Workflow to supervise interns and conduct code reviews.',
+        '<strong>Microsoft Elevate Program</strong> (Nov 2025–Sep 2026): Led module authoring & technical mentorship for thousands of educators nationwide, including a Training of Trainers (ToT) session for <a href="/stories/elevaite-educators" class="text-blue-600 hover:underline font-medium">Wardah Inspiring Teacher Gen 8</a> (ParagonCorp).',
+        '<strong>Games for Inclusion</strong> (Telkom × Agate × Alkademi): Mentored <a href="/stories/games-for-inclusion" class="text-blue-600 hover:underline font-medium">game tech & AI upskilling</a> for students with hearing disabilities at SLBN 1 Buleleng, North Bali.',
+        '<strong>Holiday Camp 2025</strong> (Agate Academy): Taught computational thinking & game development via MakeCode Arcade to elementary & junior-high students. <a href="/stories/holiday-camp-2025" class="text-blue-600 hover:underline font-medium">Read the story →</a>',
+        '<strong>Lailatul Coding 2026 & X 2024</strong>: Facilitated the <a href="/stories/lailatul-coding-2026" class="text-blue-600 hover:underline font-medium">Vibe Coding (AI-Augmented)</a> session & served as <a href="/stories/lailatul-coding-x-2024" class="text-blue-600 hover:underline font-medium">technical mentor at Lailatul Coding X</a> — an overnight coding marathon building websites for mosques & orphanages.',
+        '<strong>AlkademiFest Kids Corner 2025</strong>: Facilitated <a href="/stories/alkademifest-kids-corner-2025" class="text-blue-600 hover:underline font-medium">interactive technology sessions</a> for children aged 5–12, introducing computational thinking through play.',
       ],
     },
     current: true,
@@ -377,7 +381,7 @@ const education: TItem[] = [
                       <div class="timeline-detail hidden mt-3 bg-white border border-blue-100 rounded-xl p-4">
                         <ul class="space-y-2 text-gray-600 leading-relaxed text-sm list-disc list-outside ml-4">
                           {item.detail[lang].map((li) => (
-                            <li>{li}</li>
+                            <li set:html={li}></li>
                           ))}
                         </ul>
                       </div>
@@ -424,7 +428,7 @@ const education: TItem[] = [
                     <div class="timeline-detail mt-3 bg-white border border-amber-100 rounded-xl p-4">
                       <ul class="space-y-2 text-gray-600 leading-relaxed text-sm list-disc list-outside ml-4">
                         {item.detail[lang].map((li) => (
-                          <li>{li}</li>
+                          <li set:html={li}></li>
                         ))}
                       </ul>
                     </div>
