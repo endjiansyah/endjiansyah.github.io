@@ -31,14 +31,17 @@ const cardBgClass = isCore
   ? 'bg-gradient-to-b from-[#FEF9DC] via-white to-[#FDF3CE] hover:from-[#F9EAA0] hover:via-[#FFFEF5] hover:to-[#F0D27F]'
   : 'bg-white';
 
-const titleHoverClass = isCore ? 'group-hover:text-[#B8860B]' : 'group-hover:text-blue-200';
+const titleHoverClass = isCore ? 'group-hover:text-[#FDE047]' : 'group-hover:text-blue-200';
 const calendarIconClass = isCore ? 'text-[#EFBF04]' : 'text-blue-500';
 const tagHoverClass = isCore ? 'group-hover:border-[#EFBF04]/60' : 'group-hover:border-blue-200';
+const shadowClass = isCore
+  ? 'shadow-sm hover:shadow-[0_20px_50px_rgba(239,191,4,0.25)]'
+  : 'shadow-sm hover:shadow-2xl';
 ---
 
 <a 
   href={`${base}/stories/${slug}`} 
-  class={`reveal reveal-up group relative flex flex-col justify-between block h-full ${cardBgClass} rounded-3xl overflow-hidden border border-gray-200/80 shadow-sm hover:shadow-2xl transition-all duration-500 ease-out hover:-translate-y-1.5`}
+  class={`reveal reveal-up group relative flex flex-col justify-between block h-full ${cardBgClass} rounded-3xl overflow-hidden border border-gray-200/80 ${shadowClass} transition-all duration-500 ease-out hover:-translate-y-1.5`}
 >
   <!-- Ambient Hover Glow: only on standard cards so core cards stay purely gold/yellow without blue clash -->
   {!isCore && (
