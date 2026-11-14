@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://endjiansyah.github.io/sitemap-index.xml
+Sitemap: https://endjiansyah.github.io/sitemap.xml
