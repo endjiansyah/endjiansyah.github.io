@@ -35,7 +35,7 @@ const titleHoverClass = isCore ? 'group-hover:text-[#FDE047]' : 'group-hover:tex
 const calendarIconClass = isCore ? 'text-[#EFBF04]' : 'text-blue-500';
 const tagHoverClass = isCore ? 'group-hover:border-[#EFBF04]/60' : 'group-hover:border-blue-200';
 const shadowClass = isCore
-  ? 'shadow-sm hover:shadow-[0_20px_50px_rgba(239,191,4,0.25)]'
+  ? 'shadow-sm hover:shadow-[0_0_35px_rgba(239,191,4,0.45),0_15px_30px_rgba(240,210,127,0.3)]'
   : 'shadow-sm hover:shadow-2xl';
 ---
 
@@ -43,8 +43,10 @@ const shadowClass = isCore
   href={`${base}/stories/${slug}`} 
   class={`reveal reveal-up group relative flex flex-col justify-between block h-full ${cardBgClass} rounded-3xl overflow-hidden border border-gray-200/80 ${shadowClass} transition-all duration-500 ease-out hover:-translate-y-1.5`}
 >
-  <!-- Ambient Hover Glow: only on standard cards so core cards stay purely gold/yellow without blue clash -->
-  {!isCore && (
+  <!-- Ambient Hover Glow -->
+  {isCore ? (
+    <div class="absolute -inset-px bg-gradient-to-r from-[#EFBF04]/25 via-[#F0D27F]/20 to-[#EFBF04]/25 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+  ) : (
     <div class="absolute -inset-px bg-gradient-to-r from-blue-500/10 via-teal-500/10 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
   )}
 
