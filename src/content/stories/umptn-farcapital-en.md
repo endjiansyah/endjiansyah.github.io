@@ -1,17 +1,17 @@
 ---
 lang: "en"
-title: "A Career Turning Point in Bandung: UMPTN Farcapital & Alkademi"
+title: "A Career Turning Point in Bandung: UMPTN Far Capital & Alkademi"
 description: "Notes from an intensive 3-month journey in Bandung with Alkademi & Far Capital — from mentors including Sandhika Galih to executing an OCR system project."
 date: 2022-11-01
 endDate: 2023-01-31
 dateLabel: "November 2022 - January 2023"
 type: "bootcamp"
 coverImage: "/assets/img/stories/umptn-farcapital/cover.webp"
-tags: ["Endjiansyah", "Alkademi", "Far Capital", "Farcapital", "Bootcamp", "Sandhika Galih", "Shandika Galih", "TALL Stack", "Bandung"]
+tags: ["Endjiansyah", "Alkademi", "Far Capital", "Bootcamp", "Sandhika Galih", "Shandika Galih", "TALL Stack", "Bandung"]
 order: 2
 ---
 
-The intensive training program of Alkademi through **UMPTN Farcapital** (Far Capital) became a *pivotal moment* in my career journey as a Software Engineer. Starting with selection in October 2022, this program took me away from home to Bandung for a three-month on-site *bootcamp*.
+The intensive training program of Alkademi through **UMPTN Far Capital** became a *pivotal moment* in my career journey as a Software Engineer. Starting with selection in October 2022, this program took me away from home to Bandung for a three-month on-site *bootcamp*.
 
 The early phase consisted of self-learning and online mentoring to align basic technical foundations. But the real acceleration happened when all participants gathered in Bandung to forge their technical skills intensively alongside inspiring mentors and industry practitioners, including valuable guidance from **Sandhika Galih** (Web Programming UNPAS) and senior Alkademi instructors.
 
@@ -31,7 +31,7 @@ Entering the third month (January 2023), all the material was tested through a f
 
 The main challenges of this project were extraction accuracy and integrating a responsive backend workflow. A solid team collaboration and mentor guidance were the keys to completing this project on time.
 
-![Endjiansyah with Alkademi UMPTN Farcapital Bandung team and mentor Sandhika Galih](/assets/img/stories/umptn-farcapital/cover.webp)
+![Endjiansyah with Alkademi UMPTN Far Capital Bandung team and mentor Sandhika Galih](/assets/img/stories/umptn-farcapital/cover.webp)
 *Endjiansyah together with Alkademi and Far Capital participants and mentors during the bootcamp program in Bandung.*
 
 ---
@@ -42,12 +42,12 @@ Beyond the technical lines of code and architectural sprints, one of the greates
 
 I found lifelong friends in **Mas Ameerul** from Malaysia, **Tegar** from Medan, **Nando** from Muara Enim, **Mas Arif** from Bukittinggi, and **Obi** from Papua. Our diverse dialects, cultural backgrounds, and life perspectives blended into an unbreakable bond. Between intensive study sessions, we explored Bandung together—from historical visits to the Geological Museum to unwinding by scenic waterfalls nestled in the highlands.
 
-![Endjiansyah with fellow UMPTN Farcapital participants visiting the Geological Museum of Bandung](/assets/img/stories/umptn-farcapital/teman-lintas-daerah-museum-geologi.webp)
+![Endjiansyah with fellow UMPTN Far Capital participants visiting the Geological Museum of Bandung](/assets/img/stories/umptn-farcapital/teman-lintas-daerah-museum-geologi.webp)
 *Endjiansyah alongside fellow participants from across regions during a cultural visit to Museum Geologi Bandung.*
 
 For me personally, this proved that technology is truly a universal language capable of uniting people across any geographic boundary. The fellowship forged during those months wasn't merely a transient bootcamp memory—it remains vibrant, supportive, and strongly maintained to this day in 2026.
 
-![Camaraderie of UMPTN Farcapital friends unwinding at a waterfall in Bandung](/assets/img/stories/umptn-farcapital/kebersamaan-curug-bandung.webp)
+![Camaraderie of UMPTN Far Capital friends unwinding at a waterfall in Bandung](/assets/img/stories/umptn-farcapital/kebersamaan-curug-bandung.webp)
 *A refreshing moment of camaraderie unwinding by a highland waterfall in Bandung.*
 
 ---
