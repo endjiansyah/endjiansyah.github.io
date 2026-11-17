@@ -44,6 +44,11 @@ Sesi demi sesi mengupas tuntas keterampilan abad ke-21 (*21st Century Skills*), 
 ![Endjiansyah mengajak para pendidik SMA Alfa Centauri Bandung bergabung ke portal kelas daring Elevate Alkademi](/assets/img/stories/elevaite-educators/sma-alfa-centauri-bandung-join-kelas.webp)
 *Momen interaktif saat Endjiansyah memandu para guru di SMA Alfa Centauri Bandung terhubung ke ekosistem kelas daring portal Elevate Alkademi.*
 
+Seluruh alur pendaftaran, akses modul pembelajaran, hingga jadwal kegiatan terintegrasi secara terpusat melalui platform resmi [**alkademi.elevaite.id**](https://alkademi.elevaite.id/). Melalui portal ini, inisiatif Microsoft Elevate menargetkan dampak nyata hingga **5.000 Guru sebagai Master Trainer** dan **505.000 Guru peserta pelatihan coding & AI** di seluruh penjuru Indonesia.
+
+![Tampilan landing page portal resmi program Microsoft Elevate Alkademi di alkademi.elevaite.id](/assets/img/stories/elevaite-educators/portal-web-alkademi-elevaite.webp)
+*Antarmuka landing page resmi Microsoft Elevate bersama Alkademi (alkademi.elevaite.id) bertajuk "Masa Depan Dimulai di Kelas, Keterampilan AI untuk Guru dan Siswa".*
+
 ---
 
 ### Dari Blok Visual Menuju Logika Teks

@@ -45,6 +45,11 @@ Throughout the cohorts, participants explored 21st-century skills, computational
 ![Endjiansyah guiding educators at SMA Alfa Centauri Bandung to connect to the online learning cohort on the Alkademi Elevate portal](/assets/img/stories/elevaite-educators/sma-alfa-centauri-bandung-join-kelas.webp)
 *An interactive session as Endjiansyah guides educators at SMA Alfa Centauri Bandung to connect with the online learning ecosystem on the Elevate Alkademi portal.*
 
+The entire onboarding flow, curriculum modules, and event schedules were managed centrally through the official portal at [**alkademi.elevaite.id**](https://alkademi.elevaite.id/). Through this platform, the Microsoft Elevate initiative targeted a nationwide impact of **5,000 Teachers as Master Trainers** and **505,000 Educator Participants in coding and AI upskilling** across Indonesia.
+
+![Landing page of the official Microsoft Elevate Alkademi portal at alkademi.elevaite.id](/assets/img/stories/elevaite-educators/portal-web-alkademi-elevaite.webp)
+*The official landing page interface of Microsoft Elevate with Alkademi (alkademi.elevaite.id) entitled "Masa Depan Dimulai di Kelas, Keterampilan AI untuk Guru dan Siswa" (The Future Begins in the Classroom: AI Skills for Educators and Students).*
+
 ---
 
 ### Bridging Visual Blocks to Text-Based Logic
