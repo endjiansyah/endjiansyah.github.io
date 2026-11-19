@@ -25,7 +25,7 @@ Why **Minecraft Education**? The platform serves as an intuitive digital sandbox
 
 During the sessions, students designed interactive simulations, including modeling urban infrastructure and landmarks into virtual coordinate-based worlds.
 
-![Alkademi mentoring team at SMP Labschool Rawamangun Jakarta for elevAIte Indonesia Minecraft Education program](/assets/img/stories/elevaite-minecraft-education/tim-mentor-alkademi-labschool.webp)
+![Endjiansyah and Alkademi mentoring team at SMP Labschool Rawamangun Jakarta for elevAIte Indonesia Minecraft Education program](/assets/img/stories/elevaite-minecraft-education/tim-mentor-alkademi-labschool.webp)
 *Endjiansyah together with the Alkademi mentoring team at SMP Labschool Rawamangun preparing and facilitating the Minecraft Education piloting.*
 
 ---
@@ -36,8 +36,8 @@ The highlight of the piloting took place at **SMP Labschool Rawamangun**, where 
 
 The Vice President interacted with young coders, witnessed live demonstrations of their virtual worlds, and emphasized the strategic importance of mastering AI and coding skills responsibly to prepare Indonesia's digital generation for *Indonesia Emas 2045*.
 
-![Vice President Gibran Rakabuming Raka observing AI Coding Minecraft Education session accompanied by Endjiansyah and Alkademi team](/assets/img/stories/elevaite-minecraft-education/peninjauan-wapres-gibran-minecraft-ai-coding.webp)
-*Vice President Gibran Rakabuming Raka watching student Minecraft coding demonstrations, accompanied by Endjiansyah and the Alkademi team.*
+![Endjiansyah accompanying Vice President Gibran Rakabuming Raka during AI Coding Minecraft Education review at Labschool Rawamangun](/assets/img/stories/elevaite-minecraft-education/peninjauan-wapres-gibran-minecraft-ai-coding.webp)
+*Endjiansyah and the Alkademi team accompanying Vice President of the Republic of Indonesia Gibran Rakabuming Raka observing student Minecraft coding demonstrations.*
 
 ---
 

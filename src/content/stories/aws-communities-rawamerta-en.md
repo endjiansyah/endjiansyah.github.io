@@ -23,7 +23,7 @@ Successful technology adoption in regional areas hinges on supportive local lead
 
 His proactive support paved the way for seamless collaboration between our technical team, village leaders, midwives, and dedicated community posyandu volunteers (kader).
 
-![Alkademi developer team with Camat Rawamerta Pak Angga at Gombongsari Multipurpose Hall Karawang](/assets/img/stories/aws-communities-rawamerta/tim-dan-camat-rawamerta.webp)
+![Endjiansyah and Alkademi developer team with Camat Rawamerta Pak Angga at Gombongsari Multipurpose Hall Karawang](/assets/img/stories/aws-communities-rawamerta/tim-dan-camat-rawamerta.webp)
 *Endjiansyah (PM) with the developer team (Farid, Karlina, Khalil, Affan) accompanying Camat Rawamerta Pak Angga during the opening briefing.*
 
 ---

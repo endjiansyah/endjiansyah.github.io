@@ -22,7 +22,7 @@ Kunci keberhasilan implementasi sebuah sistem di daerah terletak pada keterbukaa
 
 Dukungan beliau membuka jalan bagi koordinasi yang sangat mulus antara tim pengembang dengan para kepala desa, bidan desa, dan kader posyandu setempat.
 
-![Tim pengembang Alkademi bersama Camat Rawamerta Pak Angga di Gedung Serbaguna Desa Gombongsari Karawang](/assets/img/stories/aws-communities-rawamerta/tim-dan-camat-rawamerta.webp)
+![Endjiansyah dan tim Alkademi bersama Camat Rawamerta Pak Angga di Gedung Serbaguna Desa Gombongsari Karawang](/assets/img/stories/aws-communities-rawamerta/tim-dan-camat-rawamerta.webp)
 *Endjiansyah (PM) bersama tim developer (Farid, Karlina, Khalil, Affan) mendampingi Camat Rawamerta Pak Angga saat pembukaan sosialisasi sistem.*
 
 ---

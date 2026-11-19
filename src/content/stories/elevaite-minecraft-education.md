@@ -24,7 +24,7 @@ Mengapa menggunakan **Minecraft Education**? Karena game ini bukan sekadar hibur
 
 Dalam sesi pelatihan, siswa diajak merancang proyek interaktif, termasuk menduplikasi lingkungan sekitar seperti tata ruang kota dan infrastruktur publik ke dalam dunia virtual berbasis koordinat dan logika pemrograman.
 
-![Tim mentor Alkademi di SMP Labschool Rawamangun Jakarta untuk program Minecraft Education elevAIte Indonesia](/assets/img/stories/elevaite-minecraft-education/tim-mentor-alkademi-labschool.webp)
+![Endjiansyah bersama tim mentor Alkademi di SMP Labschool Rawamangun Jakarta untuk program Minecraft Education elevAIte Indonesia](/assets/img/stories/elevaite-minecraft-education/tim-mentor-alkademi-labschool.webp)
 *Endjiansyah bersama tim mentor Alkademi di SMP Labschool Rawamangun Jakarta dalam persiapan dan pelaksanaan piloting Minecraft Education.*
 
 ---
@@ -35,8 +35,8 @@ Puncak momen bersejarah dari piloting program ini berlangsung di **SMP Labschool
 
 Wapres berdialog langsung dengan para siswa, mengamati bagaimana anak-anak mempresentasikan hasil rancangan dunia Minecraft mereka, serta menegaskan pentingnya penguasaan teknologi digital, kecerdasan buatan, dan keterampilan *coding* secara terarah dan beretika sejak bangku sekolah demi menyongsong Indonesia Emas 2045.
 
-![Wakil Presiden Gibran Rakabuming Raka meninjau langsung pembelajaran AI Coding Minecraft Education didampingi Endjiansyah dan tim Alkademi](/assets/img/stories/elevaite-minecraft-education/peninjauan-wapres-gibran-minecraft-ai-coding.webp)
-*Wakil Presiden Gibran Rakabuming Raka menyaksikan demonstrasi karya coding Minecraft Education para siswa didampingi oleh Endjiansyah dan tim Alkademi.*
+![Endjiansyah mendampingi Wakil Presiden RI Gibran Rakabuming Raka saat meninjau langsung pembelajaran AI Coding Minecraft Education Alkademi](/assets/img/stories/elevaite-minecraft-education/peninjauan-wapres-gibran-minecraft-ai-coding.webp)
+*Endjiansyah mendampingi Wakil Presiden Republik Indonesia Gibran Rakabuming Raka menyaksikan demonstrasi karya coding Minecraft Education para siswa bersama tim Alkademi.*
 
 ---
 

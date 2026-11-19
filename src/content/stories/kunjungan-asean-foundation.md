@@ -21,7 +21,7 @@ Terbiasa bekerja dalam siklus rekayasa perangkat lunak, *sprint planning*, dan *
 
 Diskusi berjalan sangat produktif dan konstruktif. Kami membedah capaian fase pengembangan, mendengarkan umpan balik langsung dari pihak mitra, serta menyelaraskan roadmap strategis ke depan agar platform yang dibangun tidak hanya andal dari segi performa dan arsitektur, tetapi juga relevan dengan kebutuhan para penggunanya.
 
-![Foto bersama Endjiansyah bersama tim Alkademi di depan lambang dan bendera negara anggota di kantor ASEAN Foundation Jakarta](/assets/img/stories/kunjungan-asean-foundation/foto-bersama-asean-foundation-heritage-building.webp)
+![Endjiansyah bersama tim Alkademi di depan lambang dan bendera negara anggota di kantor ASEAN Foundation Jakarta](/assets/img/stories/kunjungan-asean-foundation/foto-bersama-asean-foundation-heritage-building.webp)
 *Endjiansyah bersama tim saat berkunjung ke kantor ASEAN Foundation di ASEAN Secretariat Heritage Building, Jakarta.*
 
 ---
