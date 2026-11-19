@@ -144,16 +144,6 @@ const videoCreditHtml = lang === 'id'
             {t(lang, 'detail.back')}
           </a>
 
-          {/* Kind badge */}
-          <span class={`inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold rounded-full mb-4 ${kind === 'video' ? 'bg-red-100 text-red-700' : 'bg-emerald-100 text-emerald-700'}`}>
-            {kind === 'video' ? (
-              <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
-            ) : (
-              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
-            )}
-            {kind === 'video' ? t(lang, 'detail.video') : t(lang, 'detail.module')}
-          </span>
-
           <h1 class="text-3xl md:text-5xl font-bold text-white tracking-tight mb-4 leading-tight">{entry.data.title}</h1>
           <p class="text-gray-300 text-base md:text-lg max-w-2xl leading-relaxed font-light mb-6">{entry.data.description}</p>
 
