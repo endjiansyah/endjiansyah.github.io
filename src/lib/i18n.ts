@@ -49,9 +49,10 @@ export const ui: Dict = {
   'journey.nowBadge': { id: 'Saat Ini', en: 'Current' },
   'journey.showDetail': { id: 'Show Detail', en: 'Show Detail' },
   'journey.hideDetail': { id: 'Hide Detail', en: 'Hide Detail' },
-  'journey.eduTitle': { id: 'Pendidikan & Pelatihan', en: 'Education & Training' },
-  'journey.eduSub': { id: 'Fondasi Vokasi & Akademik', en: 'Vocational & Academic Foundation' },
+  'journey.eduTitle': { id: 'Pendidikan & Sertifikasi', en: 'Education & Certification' },
+  'journey.eduSub': { id: 'Fondasi Vokasi, Akademik & Sertifikasi Industri', en: 'Vocational, Academic & Industry Certifications' },
   'journey.pddikti': { id: 'Verifikasi di PDDikti Kemdiktisaintek', en: 'Verify on PDDikti Kemdiktisaintek' },
+  'journey.credly': { id: 'Verifikasi Digital Badge di Credly', en: 'Verify Digital Badge on Credly' },
 
   // Works
   'works.pill': { id: 'Software Engineering Portfolio', en: 'Software Engineering Portfolio' },

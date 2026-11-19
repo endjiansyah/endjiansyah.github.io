@@ -163,22 +163,33 @@ const experience: TItem[] = [
   {
     period: 'Mar 2023 — Jul 2023',
     role: { id: 'Backend Developer', en: 'Backend Developer' },
-    org: 'CODELITE',
+    org: 'PT Cahaya Acitya Indonesia (CODELITE)',
     summary: {
-      id: 'Merancang layanan backend dengan bahasa Go (Golang) untuk membangun pemrosesan data yang stabil dan andal.',
-      en: 'Designing backend services in Go (Golang) to build stable and reliable data processing.',
+      id: 'Merancang dan memelihara layanan backend serta RESTful API dengan bahasa Go (Golang) untuk membangun pemrosesan data yang stabil dan andal.',
+      en: 'Engineered and maintained backend services and RESTful APIs using Go (Golang) to support reliable application data processing.',
     },
     detail: { id: [], en: [] },
   },
   {
-    period: 'Dec 2020 — Oct 2022',
-    role: { id: 'Freelance Web Developer', en: 'Freelance Web Developer' },
+    period: 'Dec 2020 — Feb 2024',
+    role: { id: 'Freelance Fullstack Web Developer', en: 'Freelance Fullstack Web Developer' },
     org: 'Local Clients & SMB',
     summary: {
-      id: 'Membangun solusi sistem kustom MVC berbasis PHP, CodeIgniter, dan Bootstrap untuk berbagai klien lokal.',
-      en: 'Building custom PHP MVC systems with CodeIgniter and Bootstrap for various local clients.',
+      id: 'Membangun solusi aplikasi web kustom berbasis PHP (Laravel, CodeIgniter 3), Tailwind CSS, Alpine.js, dan MySQL untuk berbagai klien dan instansi.',
+      en: 'Delivered custom end-to-end web applications using PHP (Laravel, CodeIgniter 3), Tailwind CSS, Alpine.js, and MySQL for local clients and institutions.',
     },
-    detail: { id: [], en: [] },
+    detail: {
+      id: [
+        'Mengembangkan platform event GeKAES XXV & XXVI untuk SMA Negeri 1 Jepara.',
+        'Membangun portal web resmi SMA Negeri 1 Jepara (sman1jepara.sch.id).',
+        'Menangani perbaikan bug produksi aplikasi Nipotowe untuk Kementerian Sosial di Palu.',
+      ],
+      en: [
+        'Built the GeKAES XXV & XXVI event platform for SMAN 1 Jepara.',
+        'Developed the official web portal for SMAN 1 Jepara (sman1jepara.sch.id).',
+        'Resolved production bugs for the Nipotowe application for the Ministry of Social Affairs in Palu.',
+      ],
+    },
   },
   {
     period: 'Dec 2019 — Feb 2020',
@@ -212,16 +223,35 @@ const education: TItem[] = [
     },
     detail: {
       id: [
-        'Proyek OCR kolaboratif sebagai capstone program bersama tim.',
-        'Arsitektur Laravel & TALL Stack sebagai fondasi stack profesional.',
+        'API & OCR Prototype Simulation: Membangun purwarupa sistem Optical Character Recognition (OCR) berbasis Laravel, Alpine.js, dan Livewire.',
+        'Supply Chain Management (SCM) App: Mengembangkan aplikasi pelacakan logistik dan inventaris berbasis web.',
         'Praktik rekayasa perangkat lunak modern: versioning, code review, dan kolaborasi tim.',
         'Dokumentasi perjalanan lengkap: <a href="/stories/umptn-farcapital" class="text-amber-600 hover:underline font-medium inline-flex items-center gap-1">Baca kisah bootcamp &quot;Dari Nol Hingga Bandung&quot; →</a>',
       ],
       en: [
-        'Collaborative OCR project as the program capstone.',
-        'Laravel architecture & the TALL Stack as a professional stack foundation.',
+        'API & OCR Prototype Simulation: Built working prototypes and OCR APIs modeled on financial document workflows using Laravel, Alpine.js, and Livewire.',
+        'Supply Chain Management (SCM) App: Developed a web-based inventory and supply logistics tracking application.',
         'Modern software engineering practice: versioning, code review, and team collaboration.',
         'Full journey documentation: <a href="/stories/umptn-farcapital" class="text-amber-600 hover:underline font-medium inline-flex items-center gap-1">Read the bootcamp story &quot;From Zero to Bandung&quot; →</a>',
+      ],
+    },
+  },
+  {
+    period: '2024',
+    role: { id: 'Sertifikasi Industri', en: 'Industry Certification' },
+    org: 'Amazon Web Services (AWS)',
+    summary: {
+      id: 'AWS Certified AI Practitioner (AIF-C01) — Memvalidasi pemahaman konsep fundamental AI/ML, Prompt Engineering, Generative AI, serta tata kelola keamanan cloud.',
+      en: 'AWS Certified AI Practitioner (AIF-C01) — Validating foundational AI/ML concepts, Prompt Engineering, Generative AI, and cloud security governance.',
+    },
+    detail: {
+      id: [
+        'Pemahaman mendalam mengenai kerangka kerja kecerdasan buatan dan machine learning pada ekosistem cloud AWS.',
+        'Penerapan Prompt Engineering dan model Generative AI untuk akselerasi solusi digital.',
+      ],
+      en: [
+        'Comprehensive understanding of artificial intelligence and machine learning frameworks within the AWS cloud ecosystem.',
+        'Application of Prompt Engineering and Generative AI models to accelerate digital solutions.',
       ],
     },
   },
@@ -230,8 +260,8 @@ const education: TItem[] = [
     role: { id: 'Pendidikan D2 Manajemen Informatika', en: 'D2 Diploma in Informatics Management' },
     org: 'Politeknik Negeri Malang',
     summary: {
-      id: 'Mempelajari logika dasar pemrograman, perancangan basis data relasional, algoritma, serta metodologi pengembangan perangkat lunak.',
-      en: 'Studying core programming logic, relational database design, algorithms, and software development methodology.',
+      id: 'Lulus dengan predikat sangat memuaskan (IPK: 3.90 / 4.00). Mempelajari logika dasar pemrograman, perancangan basis data relasional, algoritma, serta rekayasa perangkat lunak.',
+      en: 'Graduated with high distinction (GPA: 3.90 / 4.00). Studied core programming logic, relational database design, algorithms, and software development methodology.',
     },
     detail: { id: [], en: [] },
   },
@@ -423,6 +453,12 @@ const education: TItem[] = [
                   {item.org === 'Politeknik Negeri Malang' && (
                     <a href="https://pddikti.kemdiktisaintek.go.id/detail-mahasiswa/h8PPNWiAZ06XP9GjTv55LSnGyqGcJ3xknlA2kTTz6IwIkPc3IpPnf7273ZqUwuu7oyfiDQ==" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex items-center gap-1.5 text-xs font-semibold text-amber-600 hover:text-amber-500 transition-colors">
                       {t(lang, 'journey.pddikti')}
+                      <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                    </a>
+                  )}
+                  {item.org === 'Amazon Web Services (AWS)' && (
+                    <a href="https://www.credly.com/users/endjiansyah" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex items-center gap-1.5 text-xs font-semibold text-amber-600 hover:text-amber-500 transition-colors">
+                      {t(lang, 'journey.credly')}
                       <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                     </a>
                   )}
